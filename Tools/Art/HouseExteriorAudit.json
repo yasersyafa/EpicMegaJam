@@ -1,0 +1,541 @@
+{
+  "issues": [],
+  "boundary_sweeps": [
+    {
+      "side": "West",
+      "along": -2100,
+      "height": 100,
+      "blocked": true
+    },
+    {
+      "side": "East",
+      "along": -2100,
+      "height": 100,
+      "blocked": true
+    },
+    {
+      "side": "West",
+      "along": -1500,
+      "height": 100,
+      "blocked": true
+    },
+    {
+      "side": "East",
+      "along": -1500,
+      "height": 100,
+      "blocked": true
+    },
+    {
+      "side": "West",
+      "along": -500,
+      "height": 100,
+      "blocked": true
+    },
+    {
+      "side": "East",
+      "along": -500,
+      "height": 100,
+      "blocked": true
+    },
+    {
+      "side": "West",
+      "along": 500,
+      "height": 100,
+      "blocked": true
+    },
+    {
+      "side": "East",
+      "along": 500,
+      "height": 100,
+      "blocked": true
+    },
+    {
+      "side": "West",
+      "along": 1500,
+      "height": 100,
+      "blocked": true
+    },
+    {
+      "side": "East",
+      "along": 1500,
+      "height": 100,
+      "blocked": true
+    },
+    {
+      "side": "West",
+      "along": 2500,
+      "height": 100,
+      "blocked": true
+    },
+    {
+      "side": "East",
+      "along": 2500,
+      "height": 100,
+      "blocked": true
+    },
+    {
+      "side": "West",
+      "along": 2860,
+      "height": 100,
+      "blocked": true
+    },
+    {
+      "side": "East",
+      "along": 2860,
+      "height": 100,
+      "blocked": true
+    },
+    {
+      "side": "West",
+      "along": 3150,
+      "height": 100,
+      "blocked": true
+    },
+    {
+      "side": "East",
+      "along": 3150,
+      "height": 100,
+      "blocked": true
+    },
+    {
+      "side": "Rear",
+      "along": -2200,
+      "height": 100,
+      "blocked": true
+    },
+    {
+      "side": "Front",
+      "along": -2200,
+      "height": 100,
+      "blocked": true
+    },
+    {
+      "side": "Rear",
+      "along": -1500,
+      "height": 100,
+      "blocked": true
+    },
+    {
+      "side": "Front",
+      "along": -1500,
+      "height": 100,
+      "blocked": true
+    },
+    {
+      "side": "Rear",
+      "along": -500,
+      "height": 100,
+      "blocked": true
+    },
+    {
+      "side": "Front",
+      "along": -500,
+      "height": 100,
+      "blocked": true
+    },
+    {
+      "side": "Rear",
+      "along": 500,
+      "height": 100,
+      "blocked": true
+    },
+    {
+      "side": "Front",
+      "along": 500,
+      "height": 100,
+      "blocked": true
+    },
+    {
+      "side": "Rear",
+      "along": 1500,
+      "height": 100,
+      "blocked": true
+    },
+    {
+      "side": "Front",
+      "along": 1500,
+      "height": 100,
+      "blocked": true
+    },
+    {
+      "side": "Rear",
+      "along": 2200,
+      "height": 100,
+      "blocked": true
+    },
+    {
+      "side": "Front",
+      "along": 2200,
+      "height": 100,
+      "blocked": true
+    },
+    {
+      "side": "West",
+      "along": -2100,
+      "height": 500,
+      "blocked": true
+    },
+    {
+      "side": "East",
+      "along": -2100,
+      "height": 500,
+      "blocked": true
+    },
+    {
+      "side": "West",
+      "along": -1500,
+      "height": 500,
+      "blocked": true
+    },
+    {
+      "side": "East",
+      "along": -1500,
+      "height": 500,
+      "blocked": true
+    },
+    {
+      "side": "West",
+      "along": -500,
+      "height": 500,
+      "blocked": true
+    },
+    {
+      "side": "East",
+      "along": -500,
+      "height": 500,
+      "blocked": true
+    },
+    {
+      "side": "West",
+      "along": 500,
+      "height": 500,
+      "blocked": true
+    },
+    {
+      "side": "East",
+      "along": 500,
+      "height": 500,
+      "blocked": true
+    },
+    {
+      "side": "West",
+      "along": 1500,
+      "height": 500,
+      "blocked": true
+    },
+    {
+      "side": "East",
+      "along": 1500,
+      "height": 500,
+      "blocked": true
+    },
+    {
+      "side": "West",
+      "along": 2500,
+      "height": 500,
+      "blocked": true
+    },
+    {
+      "side": "East",
+      "along": 2500,
+      "height": 500,
+      "blocked": true
+    },
+    {
+      "side": "West",
+      "along": 2860,
+      "height": 500,
+      "blocked": true
+    },
+    {
+      "side": "East",
+      "along": 2860,
+      "height": 500,
+      "blocked": true
+    },
+    {
+      "side": "West",
+      "along": 3150,
+      "height": 500,
+      "blocked": true
+    },
+    {
+      "side": "East",
+      "along": 3150,
+      "height": 500,
+      "blocked": true
+    },
+    {
+      "side": "Rear",
+      "along": -2200,
+      "height": 500,
+      "blocked": true
+    },
+    {
+      "side": "Front",
+      "along": -2200,
+      "height": 500,
+      "blocked": true
+    },
+    {
+      "side": "Rear",
+      "along": -1500,
+      "height": 500,
+      "blocked": true
+    },
+    {
+      "side": "Front",
+      "along": -1500,
+      "height": 500,
+      "blocked": true
+    },
+    {
+      "side": "Rear",
+      "along": -500,
+      "height": 500,
+      "blocked": true
+    },
+    {
+      "side": "Front",
+      "along": -500,
+      "height": 500,
+      "blocked": true
+    },
+    {
+      "side": "Rear",
+      "along": 500,
+      "height": 500,
+      "blocked": true
+    },
+    {
+      "side": "Front",
+      "along": 500,
+      "height": 500,
+      "blocked": true
+    },
+    {
+      "side": "Rear",
+      "along": 1500,
+      "height": 500,
+      "blocked": true
+    },
+    {
+      "side": "Front",
+      "along": 1500,
+      "height": 500,
+      "blocked": true
+    },
+    {
+      "side": "Rear",
+      "along": 2200,
+      "height": 500,
+      "blocked": true
+    },
+    {
+      "side": "Front",
+      "along": 2200,
+      "height": 500,
+      "blocked": true
+    },
+    {
+      "side": "West",
+      "along": -2100,
+      "height": 950,
+      "blocked": true
+    },
+    {
+      "side": "East",
+      "along": -2100,
+      "height": 950,
+      "blocked": true
+    },
+    {
+      "side": "West",
+      "along": -1500,
+      "height": 950,
+      "blocked": true
+    },
+    {
+      "side": "East",
+      "along": -1500,
+      "height": 950,
+      "blocked": true
+    },
+    {
+      "side": "West",
+      "along": -500,
+      "height": 950,
+      "blocked": true
+    },
+    {
+      "side": "East",
+      "along": -500,
+      "height": 950,
+      "blocked": true
+    },
+    {
+      "side": "West",
+      "along": 500,
+      "height": 950,
+      "blocked": true
+    },
+    {
+      "side": "East",
+      "along": 500,
+      "height": 950,
+      "blocked": true
+    },
+    {
+      "side": "West",
+      "along": 1500,
+      "height": 950,
+      "blocked": true
+    },
+    {
+      "side": "East",
+      "along": 1500,
+      "height": 950,
+      "blocked": true
+    },
+    {
+      "side": "West",
+      "along": 2500,
+      "height": 950,
+      "blocked": true
+    },
+    {
+      "side": "East",
+      "along": 2500,
+      "height": 950,
+      "blocked": true
+    },
+    {
+      "side": "West",
+      "along": 2860,
+      "height": 950,
+      "blocked": true
+    },
+    {
+      "side": "East",
+      "along": 2860,
+      "height": 950,
+      "blocked": true
+    },
+    {
+      "side": "West",
+      "along": 3150,
+      "height": 950,
+      "blocked": true
+    },
+    {
+      "side": "East",
+      "along": 3150,
+      "height": 950,
+      "blocked": true
+    },
+    {
+      "side": "Rear",
+      "along": -2200,
+      "height": 950,
+      "blocked": true
+    },
+    {
+      "side": "Front",
+      "along": -2200,
+      "height": 950,
+      "blocked": true
+    },
+    {
+      "side": "Rear",
+      "along": -1500,
+      "height": 950,
+      "blocked": true
+    },
+    {
+      "side": "Front",
+      "along": -1500,
+      "height": 950,
+      "blocked": true
+    },
+    {
+      "side": "Rear",
+      "along": -500,
+      "height": 950,
+      "blocked": true
+    },
+    {
+      "side": "Front",
+      "along": -500,
+      "height": 950,
+      "blocked": true
+    },
+    {
+      "side": "Rear",
+      "along": 500,
+      "height": 950,
+      "blocked": true
+    },
+    {
+      "side": "Front",
+      "along": 500,
+      "height": 950,
+      "blocked": true
+    },
+    {
+      "side": "Rear",
+      "along": 1500,
+      "height": 950,
+      "blocked": true
+    },
+    {
+      "side": "Front",
+      "along": 1500,
+      "height": 950,
+      "blocked": true
+    },
+    {
+      "side": "Rear",
+      "along": 2200,
+      "height": 950,
+      "blocked": true
+    },
+    {
+      "side": "Front",
+      "along": 2200,
+      "height": 950,
+      "blocked": true
+    }
+  ],
+  "invisible_walls": [
+    {
+      "actor": "COL_House_Exterior_West",
+      "hidden_in_game": true,
+      "collision_profile": "BlockAll",
+      "simple_shapes": 1
+    },
+    {
+      "actor": "COL_House_Exterior_East",
+      "hidden_in_game": true,
+      "collision_profile": "BlockAll",
+      "simple_shapes": 1
+    },
+    {
+      "actor": "COL_House_Exterior_Rear",
+      "hidden_in_game": true,
+      "collision_profile": "BlockAll",
+      "simple_shapes": 1
+    },
+    {
+      "actor": "COL_House_Exterior_Front",
+      "hidden_in_game": true,
+      "collision_profile": "BlockAll",
+      "simple_shapes": 1
+    }
+  ],
+  "entrance_approach_clear": true,
+  "approach_hit": null,
+  "static_mesh_actors": 99,
+  "shrubs": 31,
+  "new_library_triangles": 1532,
+  "passed": true
+}
