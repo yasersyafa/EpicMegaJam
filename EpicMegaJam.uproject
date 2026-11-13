@@ -1,9 +1,31 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "{780EE17E-4E86-0E85-A085-968FBEB9B527}",
+	"EngineAssociation": "5.6",
 	"Category": "",
 	"Description": "",
 	"Plugins": [
+		{
+			"Name": "MovieRenderPipeline",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			]
+		},
+		{
+			"Name": "MoviePipelineMaskRenderPass",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			]
+		},
+		{
+			"Name": "EngineWire",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			],
+			"Optional": true
+		},
 		{
 			"Name": "ModelingToolsEditorMode",
 			"Enabled": true,
