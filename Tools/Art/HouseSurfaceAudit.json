@@ -1,0 +1,641 @@
+{
+  "success": true,
+  "renames": [
+    {
+      "from": "/Game/Game/Art/HouseSurfaces/Materials/M_Warm_Ivory_Plaster",
+      "to": "/Game/Game/Art/Environment/House/Materials/Masters/M_House_Plaster_World"
+    },
+    {
+      "from": "/Game/Game/Art/HouseSurfaces/Materials/M_Limestone_Stairs",
+      "to": "/Game/Game/Art/Environment/House/Materials/Masters/M_House_Limestone_World"
+    },
+    {
+      "from": "/Game/Game/Art/HouseSurfaces/Materials/M_Living_Woven_Taupe",
+      "to": "/Game/Game/Art/Environment/House/Materials/Masters/M_House_Carpet_WorldXY"
+    },
+    {
+      "from": "/Game/Game/Art/HouseSurfaces/Materials/M_Upholstery_Charcoal",
+      "to": "/Game/Game/Art/Environment/House/Materials/Masters/M_House_Fabric_World"
+    },
+    {
+      "from": "/Game/Game/Art/HouseSurfaces/Materials/M_Counter_Warm_Stone",
+      "to": "/Game/Game/Art/Environment/House/Materials/Masters/M_House_StoneVein_World"
+    },
+    {
+      "from": "/Game/Game/Art/HouseSurfaces/Materials/M_Shelf_Gunmetal",
+      "to": "/Game/Game/Art/Environment/House/Materials/Masters/M_House_Metal_World"
+    }
+  ],
+  "instances": [
+    {
+      "path": "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Floor_Oak_Warm",
+      "parent": "/Game/Game/Art/Environment/House/Materials/Masters/M_House_Wood_WorldXY.M_House_Wood_WorldXY"
+    },
+    {
+      "path": "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Floor_Oak_Dark",
+      "parent": "/Game/Game/Art/Environment/House/Materials/Masters/M_House_Wood_WorldXY.M_House_Wood_WorldXY"
+    },
+    {
+      "path": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Oak",
+      "parent": "/Game/Game/Art/Environment/House/Materials/Masters/M_House_Wood_WorldXY.M_House_Wood_WorldXY"
+    },
+    {
+      "path": "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Floor_Garage_Slate_60cm",
+      "parent": "/Game/Game/Art/Environment/House/Materials/Masters/M_House_Tile_WorldXY.M_House_Tile_WorldXY"
+    },
+    {
+      "path": "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Floor_WC_Charcoal_30cm",
+      "parent": "/Game/Game/Art/Environment/House/Materials/Masters/M_House_Tile_WorldXY.M_House_Tile_WorldXY"
+    },
+    {
+      "path": "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Floor_Kitchen_Checker_55cm",
+      "parent": "/Game/Game/Art/Environment/House/Materials/Masters/M_House_Tile_WorldXY.M_House_Tile_WorldXY"
+    },
+    {
+      "path": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory",
+      "parent": "/Game/Game/Art/Environment/House/Materials/Masters/M_House_Plaster_World.M_House_Plaster_World"
+    },
+    {
+      "path": "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Stair_Limestone",
+      "parent": "/Game/Game/Art/Environment/House/Materials/Masters/M_House_Limestone_World.M_House_Limestone_World"
+    },
+    {
+      "path": "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Floor_Carpet_Taupe",
+      "parent": "/Game/Game/Art/Environment/House/Materials/Masters/M_House_Carpet_WorldXY.M_House_Carpet_WorldXY"
+    },
+    {
+      "path": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Fabric_Charcoal",
+      "parent": "/Game/Game/Art/Environment/House/Materials/Masters/M_House_Fabric_World.M_House_Fabric_World"
+    },
+    {
+      "path": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Counter_Stone",
+      "parent": "/Game/Game/Art/Environment/House/Materials/Masters/M_House_StoneVein_World.M_House_StoneVein_World"
+    },
+    {
+      "path": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Shelf_Gunmetal",
+      "parent": "/Game/Game/Art/Environment/House/Materials/Masters/M_House_Metal_World.M_House_Metal_World"
+    }
+  ],
+  "assignments": [
+    {
+      "actor": "GB_Floor_Garage",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Floor_Garage_Slate_60cm.MI_House_Floor_Garage_Slate_60cm"
+    },
+    {
+      "actor": "GB_Floor_Storage",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Floor_Oak_Dark.MI_House_Floor_Oak_Dark"
+    },
+    {
+      "actor": "GB_Floor_Lobby",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Floor_Oak_Warm.MI_House_Floor_Oak_Warm"
+    },
+    {
+      "actor": "GB_Floor_Dining",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Floor_Oak_Warm.MI_House_Floor_Oak_Warm"
+    },
+    {
+      "actor": "GB_Floor_Living",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Floor_Carpet_Taupe.MI_House_Floor_Carpet_Taupe"
+    },
+    {
+      "actor": "GB_Floor_ProductionHall",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Floor_Oak_Warm.MI_House_Floor_Oak_Warm"
+    },
+    {
+      "actor": "GB_Floor_Dressing",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Floor_Oak_Warm.MI_House_Floor_Oak_Warm"
+    },
+    {
+      "actor": "GB_Floor_WC",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Floor_WC_Charcoal_30cm.MI_House_Floor_WC_Charcoal_30cm"
+    },
+    {
+      "actor": "GB_Floor_Stairs",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Stair_Limestone.MI_House_Stair_Limestone"
+    },
+    {
+      "actor": "GB_Floor_Kitchen",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Floor_Kitchen_Checker_55cm.MI_House_Floor_Kitchen_Checker_55cm"
+    },
+    {
+      "actor": "GB_Floor_Service",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Floor_Oak_Warm.MI_House_Floor_Oak_Warm"
+    },
+    {
+      "actor": "GB_Floor_HiddenRoom",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Floor_Oak_Dark.MI_House_Floor_Oak_Dark"
+    },
+    {
+      "actor": "GB_Wall_North",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Wall_West",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Wall_East",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Wall_SouthWest",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Wall_SouthEast",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Wall_GarageDiningN",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Wall_GarageDiningS",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Wall_LobbyHallS",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Wall_GarageStorageW",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Wall_GarageStorageE",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Wall_StorageLobbyW",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Wall_StorageLobbyE",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Wall_LivingDiningW",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Wall_LivingDiningE",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Wall_LivingHallW",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Wall_LivingHallE",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Wall_HallDressingW",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Wall_HallDressingE",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Wall_WCDiningN",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Wall_WCDiningS",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Wall_KitchenLiving",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Wall_WCSouth",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Wall_StairsWest",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Wall_KitchenServiceW",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Wall_KitchenServiceE",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Wall_HiddenServiceN",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Wall_HiddenServiceS",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Lintel_Entrance",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Lintel_GarageDining",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Lintel_LobbyHall",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Lintel_GarageStorage",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Lintel_StorageLobby",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Lintel_LivingDining",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Lintel_LivingHall",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Lintel_Dressing",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Lintel_WC",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Lintel_DiningKitchen",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Lintel_KitchenService",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_Lintel_HiddenRoom",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory.MI_House_Wall_Plaster_Ivory"
+    },
+    {
+      "actor": "GB_LobbyBench",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Fabric_Charcoal.MI_House_Prop_Fabric_Charcoal"
+    },
+    {
+      "actor": "GB_DiningTable",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Oak.MI_House_Prop_Oak"
+    },
+    {
+      "actor": "GB_LivingSofa",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Fabric_Charcoal.MI_House_Prop_Fabric_Charcoal"
+    },
+    {
+      "actor": "GB_LivingSideTable",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Oak.MI_House_Prop_Oak"
+    },
+    {
+      "actor": "GB_LivingA1",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Oak.MI_House_Prop_Oak"
+    },
+    {
+      "actor": "GB_KitchenCounterNorth",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Counter_Stone.MI_House_Prop_Counter_Stone"
+    },
+    {
+      "actor": "GB_KitchenIsland",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Counter_Stone.MI_House_Prop_Counter_Stone"
+    },
+    {
+      "actor": "GB_DressingTable",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Oak.MI_House_Prop_Oak"
+    },
+    {
+      "actor": "GB_DressingSeat",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Fabric_Charcoal.MI_House_Prop_Fabric_Charcoal"
+    },
+    {
+      "actor": "GB_HiddenTable",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Oak.MI_House_Prop_Oak"
+    },
+    {
+      "actor": "GB_HiddenA3",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Oak.MI_House_Prop_Oak"
+    },
+    {
+      "actor": "GB_GarageShelf_00",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Shelf_Gunmetal.MI_House_Prop_Shelf_Gunmetal"
+    },
+    {
+      "actor": "GB_GarageShelf_01",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Shelf_Gunmetal.MI_House_Prop_Shelf_Gunmetal"
+    },
+    {
+      "actor": "GB_GarageShelf_02",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Shelf_Gunmetal.MI_House_Prop_Shelf_Gunmetal"
+    },
+    {
+      "actor": "GB_GarageShelf_03",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Shelf_Gunmetal.MI_House_Prop_Shelf_Gunmetal"
+    },
+    {
+      "actor": "GB_GarageShelf_04",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Shelf_Gunmetal.MI_House_Prop_Shelf_Gunmetal"
+    },
+    {
+      "actor": "GB_GarageShelf_05",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Shelf_Gunmetal.MI_House_Prop_Shelf_Gunmetal"
+    },
+    {
+      "actor": "GB_KitchenCounterEast_00",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Counter_Stone.MI_House_Prop_Counter_Stone"
+    },
+    {
+      "actor": "GB_KitchenCounterEast_01",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Counter_Stone.MI_House_Prop_Counter_Stone"
+    },
+    {
+      "actor": "GB_KitchenCounterEast_02",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Counter_Stone.MI_House_Prop_Counter_Stone"
+    },
+    {
+      "actor": "GB_KitchenCounterEast_03",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Counter_Stone.MI_House_Prop_Counter_Stone"
+    },
+    {
+      "actor": "GB_RestrictedStep_00",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Stair_Limestone.MI_House_Stair_Limestone"
+    },
+    {
+      "actor": "GB_RestrictedStep_01",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Stair_Limestone.MI_House_Stair_Limestone"
+    },
+    {
+      "actor": "GB_RestrictedStep_02",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Stair_Limestone.MI_House_Stair_Limestone"
+    },
+    {
+      "actor": "GB_RestrictedStep_03",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Stair_Limestone.MI_House_Stair_Limestone"
+    },
+    {
+      "actor": "GB_RestrictedStep_04",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Stair_Limestone.MI_House_Stair_Limestone"
+    },
+    {
+      "actor": "GB_RestrictedStep_05",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Stair_Limestone.MI_House_Stair_Limestone"
+    },
+    {
+      "actor": "GB_RestrictedStep_06",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Stair_Limestone.MI_House_Stair_Limestone"
+    },
+    {
+      "actor": "GB_RestrictedStep_07",
+      "material": "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Stair_Limestone.MI_House_Stair_Limestone"
+    }
+  ],
+  "errors": [],
+  "before_masters": {
+    "M_Counter_Warm_Stone": {
+      "num_pixel_shader_instructions": 217,
+      "num_vertex_shader_instructions": 148,
+      "num_pixel_texture_samples": 3,
+      "num_samplers": 1
+    },
+    "M_Garage_Slate60": {
+      "num_pixel_shader_instructions": 246,
+      "num_vertex_shader_instructions": 148,
+      "num_pixel_texture_samples": 3,
+      "num_samplers": 1
+    },
+    "M_Kitchen_Checker55": {
+      "num_pixel_shader_instructions": 248,
+      "num_vertex_shader_instructions": 148,
+      "num_pixel_texture_samples": 3,
+      "num_samplers": 1
+    },
+    "M_Limestone_Stairs": {
+      "num_pixel_shader_instructions": 231,
+      "num_vertex_shader_instructions": 148,
+      "num_pixel_texture_samples": 3,
+      "num_samplers": 1
+    },
+    "M_Living_Woven_Taupe": {
+      "num_pixel_shader_instructions": 231,
+      "num_vertex_shader_instructions": 148,
+      "num_pixel_texture_samples": 3,
+      "num_samplers": 1
+    },
+    "M_Oak_Dark": {
+      "num_pixel_shader_instructions": 203,
+      "num_vertex_shader_instructions": 148,
+      "num_pixel_texture_samples": 4,
+      "num_samplers": 2
+    },
+    "M_Oak_Furniture": {
+      "num_pixel_shader_instructions": 203,
+      "num_vertex_shader_instructions": 148,
+      "num_pixel_texture_samples": 4,
+      "num_samplers": 2
+    },
+    "M_Oak_Warm": {
+      "num_pixel_shader_instructions": 203,
+      "num_vertex_shader_instructions": 148,
+      "num_pixel_texture_samples": 4,
+      "num_samplers": 2
+    },
+    "M_Shelf_Gunmetal": {
+      "num_pixel_shader_instructions": 213,
+      "num_vertex_shader_instructions": 148,
+      "num_pixel_texture_samples": 3,
+      "num_samplers": 1
+    },
+    "M_Upholstery_Charcoal": {
+      "num_pixel_shader_instructions": 213,
+      "num_vertex_shader_instructions": 148,
+      "num_pixel_texture_samples": 3,
+      "num_samplers": 1
+    },
+    "M_Warm_Ivory_Plaster": {
+      "num_pixel_shader_instructions": 234,
+      "num_vertex_shader_instructions": 148,
+      "num_pixel_texture_samples": 3,
+      "num_samplers": 1
+    },
+    "M_WC_Charcoal30": {
+      "num_pixel_shader_instructions": 247,
+      "num_vertex_shader_instructions": 148,
+      "num_pixel_texture_samples": 3,
+      "num_samplers": 1
+    }
+  },
+  "saved": true,
+  "layout_issues": [],
+  "masters": {
+    "/Game/Game/Art/Environment/House/Materials/Masters/M_House_Metal_World": {
+      "num_pixel_shader_instructions": 213,
+      "num_vertex_shader_instructions": 148,
+      "num_pixel_texture_samples": 3,
+      "num_samplers": 1
+    },
+    "/Game/Game/Art/Environment/House/Materials/Masters/M_House_StoneVein_World": {
+      "num_pixel_shader_instructions": 217,
+      "num_vertex_shader_instructions": 148,
+      "num_pixel_texture_samples": 3,
+      "num_samplers": 1
+    },
+    "/Game/Game/Art/Environment/House/Materials/Masters/M_House_Fabric_World": {
+      "num_pixel_shader_instructions": 213,
+      "num_vertex_shader_instructions": 148,
+      "num_pixel_texture_samples": 3,
+      "num_samplers": 1
+    },
+    "/Game/Game/Art/Environment/House/Materials/Masters/M_House_Carpet_WorldXY": {
+      "num_pixel_shader_instructions": 231,
+      "num_vertex_shader_instructions": 148,
+      "num_pixel_texture_samples": 3,
+      "num_samplers": 1
+    },
+    "/Game/Game/Art/Environment/House/Materials/Masters/M_House_Limestone_World": {
+      "num_pixel_shader_instructions": 231,
+      "num_vertex_shader_instructions": 148,
+      "num_pixel_texture_samples": 3,
+      "num_samplers": 1
+    },
+    "/Game/Game/Art/Environment/House/Materials/Masters/M_House_Plaster_World": {
+      "num_pixel_shader_instructions": 234,
+      "num_vertex_shader_instructions": 148,
+      "num_pixel_texture_samples": 3,
+      "num_samplers": 1
+    },
+    "/Game/Game/Art/Environment/House/Materials/Masters/M_House_Tile_WorldXY": {
+      "num_pixel_shader_instructions": 254,
+      "num_vertex_shader_instructions": 148,
+      "num_pixel_texture_samples": 3,
+      "num_samplers": 1
+    },
+    "/Game/Game/Art/Environment/House/Materials/Masters/M_House_Wood_WorldXY": {
+      "num_pixel_shader_instructions": 203,
+      "num_vertex_shader_instructions": 148,
+      "num_pixel_texture_samples": 4,
+      "num_samplers": 2
+    }
+  },
+  "texture": {
+    "path": "/Game/Game/Art/Environment/House/Textures/Wood/T_House_OakPlanks_BC.T_House_OakPlanks_BC",
+    "max_resolution": 1024,
+    "srgb": true,
+    "streaming": true,
+    "compression": "<TextureCompressionSettings.TC_DEFAULT: 0>"
+  },
+  "deleted_unused_redirectors": [
+    "/Game/Game/Art/HouseSurfaces/Materials/M_Oak_Dark",
+    "/Game/Game/Art/HouseSurfaces/Materials/M_Shelf_Gunmetal",
+    "/Game/Game/Art/HouseSurfaces/Materials/M_Counter_Warm_Stone",
+    "/Game/Game/Art/HouseSurfaces/Materials/M_Upholstery_Charcoal",
+    "/Game/Game/Art/HouseSurfaces/Materials/M_Living_Woven_Taupe",
+    "/Game/Game/Art/HouseSurfaces/Materials/M_Limestone_Stairs",
+    "/Game/Game/Art/HouseSurfaces/Materials/M_Warm_Ivory_Plaster",
+    "/Game/Game/Art/HouseSurfaces/Materials/M_Garage_Slate60",
+    "/Game/Game/Art/HouseSurfaces/Materials/M_Oak_Warm",
+    "/Game/Game/Art/HouseSurfaces/Materials/M_Kitchen_Checker55",
+    "/Game/Game/Art/HouseSurfaces/Materials/M_WC_Charcoal30",
+    "/Game/Game/Art/HouseSurfaces/Materials/M_Oak_Furniture"
+  ],
+  "asset_counts": {
+    "MaterialInstanceConstant": 12,
+    "Material": 8,
+    "Texture2D": 1
+  },
+  "assets": [
+    {
+      "path": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Shelf_Gunmetal",
+      "class": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Counter_Stone",
+      "class": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Fabric_Charcoal",
+      "class": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Floor_Carpet_Taupe",
+      "class": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Stair_Limestone",
+      "class": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/Game/Art/Environment/House/Materials/Instances/Walls/MI_House_Wall_Plaster_Ivory",
+      "class": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Floor_Kitchen_Checker_55cm",
+      "class": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Floor_WC_Charcoal_30cm",
+      "class": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Floor_Garage_Slate_60cm",
+      "class": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Oak",
+      "class": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/Game/Art/Environment/House/Materials/Masters/M_House_Metal_World",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/Game/Art/Environment/House/Materials/Masters/M_House_StoneVein_World",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/Game/Art/Environment/House/Materials/Masters/M_House_Fabric_World",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/Game/Art/Environment/House/Materials/Masters/M_House_Carpet_WorldXY",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/Game/Art/Environment/House/Materials/Masters/M_House_Limestone_World",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/Game/Art/Environment/House/Materials/Masters/M_House_Plaster_World",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Floor_Oak_Dark",
+      "class": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Floor_Oak_Warm",
+      "class": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/Game/Art/Environment/House/Materials/Masters/M_House_Tile_WorldXY",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/Game/Art/Environment/House/Textures/Wood/T_House_OakPlanks_BC",
+      "class": "Texture2D"
+    },
+    {
+      "path": "/Game/Game/Art/Environment/House/Materials/Masters/M_House_Wood_WorldXY",
+      "class": "Material"
+    }
+  ],
+  "instance_assignment_issues": []
+}

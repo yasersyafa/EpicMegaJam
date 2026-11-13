@@ -1,0 +1,289 @@
+[
+  {
+    "name": "SM_House_Sofa_ThreeSeat",
+    "file": "SM_House_Sofa_ThreeSeat.obj",
+    "triangles": 4800,
+    "vertices": 3456,
+    "slots": [
+      "Wood",
+      "Fabric",
+      "Tan"
+    ]
+  },
+  {
+    "name": "SM_House_Sofa_TwoSeat",
+    "file": "SM_House_Sofa_TwoSeat.obj",
+    "triangles": 4200,
+    "vertices": 3024,
+    "slots": [
+      "Wood",
+      "Fabric",
+      "Tan"
+    ]
+  },
+  {
+    "name": "SM_House_Armchair",
+    "file": "SM_House_Armchair.obj",
+    "triangles": 3600,
+    "vertices": 2592,
+    "slots": [
+      "Wood",
+      "Fabric",
+      "Tan"
+    ]
+  },
+  {
+    "name": "SM_House_Table_Coffee",
+    "file": "SM_House_Table_Coffee.obj",
+    "triangles": 600,
+    "vertices": 528,
+    "slots": [
+      "Wood"
+    ]
+  },
+  {
+    "name": "SM_House_Table_Side",
+    "file": "SM_House_Table_Side.obj",
+    "triangles": 600,
+    "vertices": 528,
+    "slots": [
+      "Wood"
+    ]
+  },
+  {
+    "name": "SM_House_Table_Meeting",
+    "file": "SM_House_Table_Meeting.obj",
+    "triangles": 2800,
+    "vertices": 3016,
+    "slots": [
+      "Wood",
+      "Paper",
+      "Ink",
+      "Ivory"
+    ]
+  },
+  {
+    "name": "SM_House_Chair_Dining",
+    "file": "SM_House_Chair_Dining.obj",
+    "triangles": 872,
+    "vertices": 740,
+    "slots": [
+      "Metal",
+      "Fabric"
+    ]
+  },
+  {
+    "name": "SM_House_Desk_Office",
+    "file": "SM_House_Desk_Office.obj",
+    "triangles": 2356,
+    "vertices": 2008,
+    "slots": [
+      "Wood",
+      "Metal",
+      "Paper",
+      "Ink",
+      "Ivory"
+    ]
+  },
+  {
+    "name": "SM_House_Console",
+    "file": "SM_House_Console.obj",
+    "triangles": 900,
+    "vertices": 744,
+    "slots": [
+      "Wood"
+    ]
+  },
+  {
+    "name": "SM_House_FlightCase_Yellow",
+    "file": "SM_House_FlightCase_Yellow.obj",
+    "triangles": 3344,
+    "vertices": 2990,
+    "slots": [
+      "Rubber",
+      "Metal",
+      "Yellow",
+      "Paper"
+    ]
+  },
+  {
+    "name": "SM_House_FlightCase_Black",
+    "file": "SM_House_FlightCase_Black.obj",
+    "triangles": 3344,
+    "vertices": 2990,
+    "slots": [
+      "Rubber",
+      "Metal",
+      "Paper"
+    ]
+  },
+  {
+    "name": "SM_House_Rack_Equipment",
+    "file": "SM_House_Rack_Equipment.obj",
+    "triangles": 3060,
+    "vertices": 2880,
+    "slots": [
+      "Metal",
+      "Yellow",
+      "Rubber"
+    ]
+  },
+  {
+    "name": "SM_House_Kitchen_Cabinet",
+    "file": "SM_House_Kitchen_Cabinet.obj",
+    "triangles": 796,
+    "vertices": 676,
+    "slots": [
+      "Rubber",
+      "Wood",
+      "Metal",
+      "Stone"
+    ]
+  },
+  {
+    "name": "SM_House_Kitchen_Sink",
+    "file": "SM_House_Kitchen_Sink.obj",
+    "triangles": 1580,
+    "vertices": 1316,
+    "slots": [
+      "Rubber",
+      "Wood",
+      "Metal",
+      "Stone"
+    ]
+  },
+  {
+    "name": "SM_House_Kitchen_Cooker",
+    "file": "SM_House_Kitchen_Cooker.obj",
+    "triangles": 2344,
+    "vertices": 1830,
+    "slots": [
+      "Rubber",
+      "Wood",
+      "Metal",
+      "Stone",
+      "Mirror"
+    ]
+  },
+  {
+    "name": "SM_House_Kitchen_Refrigerator",
+    "file": "SM_House_Kitchen_Refrigerator.obj",
+    "triangles": 996,
+    "vertices": 756,
+    "slots": [
+      "Metal",
+      "Ivory"
+    ]
+  },
+  {
+    "name": "SM_House_Bathroom_Toilet",
+    "file": "SM_House_Bathroom_Toilet.obj",
+    "triangles": 1152,
+    "vertices": 805,
+    "slots": [
+      "Ivory",
+      "Metal"
+    ]
+  },
+  {
+    "name": "SM_House_Bathroom_Basin",
+    "file": "SM_House_Bathroom_Basin.obj",
+    "triangles": 996,
+    "vertices": 756,
+    "slots": [
+      "Wood",
+      "Ivory",
+      "Rubber",
+      "Metal"
+    ]
+  },
+  {
+    "name": "SM_House_Vanity_Illuminated",
+    "file": "SM_House_Vanity_Illuminated.obj",
+    "triangles": 2800,
+    "vertices": 2304,
+    "slots": [
+      "Wood",
+      "Mirror",
+      "Bulb",
+      "Ivory",
+      "Ink"
+    ]
+  },
+  {
+    "name": "SM_House_ClothesRail",
+    "file": "SM_House_ClothesRail.obj",
+    "triangles": 5808,
+    "vertices": 4686,
+    "slots": [
+      "Metal",
+      "Burgundy",
+      "Tan"
+    ]
+  },
+  {
+    "name": "SM_House_Plant_Potted",
+    "file": "SM_House_Plant_Potted.obj",
+    "triangles": 1472,
+    "vertices": 1765,
+    "slots": [
+      "Terracotta",
+      "Soil",
+      "Leaf"
+    ]
+  },
+  {
+    "name": "SM_House_Lamp_Floor",
+    "file": "SM_House_Lamp_Floor.obj",
+    "triangles": 520,
+    "vertices": 405,
+    "slots": [
+      "Metal",
+      "Tan",
+      "Bulb"
+    ]
+  },
+  {
+    "name": "SM_House_Lamp_Desk",
+    "file": "SM_House_Lamp_Desk.obj",
+    "triangles": 356,
+    "vertices": 364,
+    "slots": [
+      "Metal",
+      "Bulb"
+    ]
+  },
+  {
+    "name": "SM_House_Rug_Bordered",
+    "file": "SM_House_Rug_Bordered.obj",
+    "triangles": 156,
+    "vertices": 192,
+    "slots": [
+      "Tan",
+      "Burgundy"
+    ]
+  },
+  {
+    "name": "SM_House_Mirror_Wall",
+    "file": "SM_House_Mirror_Wall.obj",
+    "triangles": 600,
+    "vertices": 432,
+    "slots": [
+      "Wood",
+      "Mirror"
+    ]
+  },
+  {
+    "name": "SM_House_Cabinet_Tall",
+    "file": "SM_House_Cabinet_Tall.obj",
+    "triangles": 4808,
+    "vertices": 3788,
+    "slots": [
+      "Wood",
+      "Metal",
+      "Burgundy",
+      "Tan",
+      "Rubber"
+    ]
+  }
+]

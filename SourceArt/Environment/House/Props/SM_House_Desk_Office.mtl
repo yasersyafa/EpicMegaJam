@@ -1,0 +1,15 @@
+newmtl Wood
+Kd 0.2500 0.1200 0.0500
+d 1
+newmtl Metal
+Kd 0.1600 0.1700 0.1800
+d 1
+newmtl Paper
+Kd 0.7500 0.7200 0.6400
+d 1
+newmtl Ink
+Kd 0.0250 0.0300 0.0280
+d 1
+newmtl Ivory
+Kd 0.7200 0.6900 0.6100
+d 1

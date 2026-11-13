@@ -1,0 +1,9 @@
+newmtl Metal
+Kd 0.1600 0.1700 0.1800
+d 1
+newmtl Tan
+Kd 0.3500 0.2700 0.1800
+d 1
+newmtl Bulb
+Kd 1.0000 0.6500 0.2500
+d 1
