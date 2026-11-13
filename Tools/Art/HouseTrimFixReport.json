@@ -1,0 +1,35 @@
+{
+  "success": true,
+  "assets": [
+    "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_Garage",
+    "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_Storage",
+    "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_Lobby",
+    "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_Dining",
+    "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_Living",
+    "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_ProductionHall",
+    "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_Dressing",
+    "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_WC",
+    "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_Kitchen",
+    "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_Service",
+    "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_HiddenRoom"
+  ],
+  "actors": [],
+  "errors": [],
+  "ceiling_height_cm": 340,
+  "stair_ceiling_height_cm": 430,
+  "character_height_cm": 176,
+  "reimported_rooms": [
+    "Garage",
+    "Storage",
+    "Lobby",
+    "Dining",
+    "Living",
+    "ProductionHall",
+    "Dressing",
+    "WC",
+    "Kitchen",
+    "Service",
+    "HiddenRoom"
+  ],
+  "saved": true
+}

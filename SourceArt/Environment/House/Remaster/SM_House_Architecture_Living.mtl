@@ -1,0 +1,6 @@
+newmtl PanelInset
+Kd 0.3200 0.3100 0.2400
+d 1
+newmtl AgedIvory
+Kd 0.4800 0.4400 0.3400
+d 1

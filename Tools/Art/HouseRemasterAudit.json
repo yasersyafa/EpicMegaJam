@@ -1,0 +1,401 @@
+{
+  "issues": [],
+  "rooms": [
+    {
+      "room": "GB_Floor_Garage",
+      "ceiling_bottom_cm": 340.0,
+      "capsule_clearance_cm": 164.0,
+      "collision_blocks": true,
+      "collision_height_cm": 340.00000059604645
+    },
+    {
+      "room": "GB_Floor_Storage",
+      "ceiling_bottom_cm": 340.0,
+      "capsule_clearance_cm": 164.0,
+      "collision_blocks": true,
+      "collision_height_cm": 340.00000059604645
+    },
+    {
+      "room": "GB_Floor_Lobby",
+      "ceiling_bottom_cm": 340.0,
+      "capsule_clearance_cm": 164.0,
+      "collision_blocks": true,
+      "collision_height_cm": 340.00000059604645
+    },
+    {
+      "room": "GB_Floor_Dining",
+      "ceiling_bottom_cm": 340.0,
+      "capsule_clearance_cm": 164.0,
+      "collision_blocks": true,
+      "collision_height_cm": 340.00000059604645
+    },
+    {
+      "room": "GB_Floor_Living",
+      "ceiling_bottom_cm": 340.0,
+      "capsule_clearance_cm": 164.0,
+      "collision_blocks": true,
+      "collision_height_cm": 340.00000059604645
+    },
+    {
+      "room": "GB_Floor_ProductionHall",
+      "ceiling_bottom_cm": 340.0,
+      "capsule_clearance_cm": 164.0,
+      "collision_blocks": true,
+      "collision_height_cm": 340.00000059604645
+    },
+    {
+      "room": "GB_Floor_Dressing",
+      "ceiling_bottom_cm": 340.0,
+      "capsule_clearance_cm": 164.0,
+      "collision_blocks": true,
+      "collision_height_cm": 340.00000059604645
+    },
+    {
+      "room": "GB_Floor_WC",
+      "ceiling_bottom_cm": 340.0,
+      "capsule_clearance_cm": 164.0,
+      "collision_blocks": true,
+      "collision_height_cm": 340.00000059604645
+    },
+    {
+      "room": "GB_Floor_Kitchen",
+      "ceiling_bottom_cm": 340.0,
+      "capsule_clearance_cm": 164.0,
+      "collision_blocks": true,
+      "collision_height_cm": 340.00000059604645
+    },
+    {
+      "room": "GB_Floor_Service",
+      "ceiling_bottom_cm": 340.0,
+      "capsule_clearance_cm": 164.0,
+      "collision_blocks": true,
+      "collision_height_cm": 340.00000059604645
+    },
+    {
+      "room": "GB_Floor_HiddenRoom",
+      "ceiling_bottom_cm": 340.0,
+      "capsule_clearance_cm": 164.0,
+      "collision_blocks": true,
+      "collision_height_cm": 340.00000059604645
+    }
+  ],
+  "meshes": [
+    {
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "lod_triangles": [
+        48
+      ],
+      "slots": 1
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_Garage.SM_House_Architecture_Garage",
+      "lod_triangles": [
+        3264,
+        1958,
+        980
+      ],
+      "slots": 2
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_Storage.SM_House_Architecture_Storage",
+      "lod_triangles": [
+        1632,
+        980,
+        490
+      ],
+      "slots": 2
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_Lobby.SM_House_Architecture_Lobby",
+      "lod_triangles": [
+        2448,
+        1468,
+        734
+      ],
+      "slots": 2
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_Dining.SM_House_Architecture_Dining",
+      "lod_triangles": [
+        2400,
+        1440,
+        720
+      ],
+      "slots": 2
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_Living.SM_House_Architecture_Living",
+      "lod_triangles": [
+        2544,
+        1526,
+        764
+      ],
+      "slots": 2
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_ProductionHall.SM_House_Architecture_ProductionHall",
+      "lod_triangles": [
+        1920,
+        1152,
+        576
+      ],
+      "slots": 2
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_Dressing.SM_House_Architecture_Dressing",
+      "lod_triangles": [
+        2112,
+        1268,
+        634
+      ],
+      "slots": 2
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_WC.SM_House_Architecture_WC",
+      "lod_triangles": [
+        1488,
+        892,
+        446
+      ],
+      "slots": 2
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_Kitchen.SM_House_Architecture_Kitchen",
+      "lod_triangles": [
+        2592,
+        1556,
+        778
+      ],
+      "slots": 2
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_Service.SM_House_Architecture_Service",
+      "lod_triangles": [
+        1920,
+        1152,
+        576
+      ],
+      "slots": 2
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_HiddenRoom.SM_House_Architecture_HiddenRoom",
+      "lod_triangles": [
+        2256,
+        1354,
+        676
+      ],
+      "slots": 2
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Roof_Gable.SM_House_Roof_Gable",
+      "lod_triangles": [
+        16
+      ],
+      "slots": 1
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Fixture_CeilingRose.SM_House_Fixture_CeilingRose",
+      "lod_triangles": [
+        448
+      ],
+      "slots": 1
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Fixture_Chandelier.SM_House_Fixture_Chandelier",
+      "lod_triangles": [
+        704
+      ],
+      "slots": 2
+    }
+  ],
+  "door_heights": [
+    {
+      "door": "GB_Lintel_Entrance",
+      "clear_height_cm": 240.0
+    },
+    {
+      "door": "GB_Lintel_GarageDining",
+      "clear_height_cm": 240.0
+    },
+    {
+      "door": "GB_Lintel_LobbyHall",
+      "clear_height_cm": 240.0
+    },
+    {
+      "door": "GB_Lintel_GarageStorage",
+      "clear_height_cm": 240.0
+    },
+    {
+      "door": "GB_Lintel_StorageLobby",
+      "clear_height_cm": 240.0
+    },
+    {
+      "door": "GB_Lintel_LivingDining",
+      "clear_height_cm": 240.0
+    },
+    {
+      "door": "GB_Lintel_LivingHall",
+      "clear_height_cm": 240.0
+    },
+    {
+      "door": "GB_Lintel_Dressing",
+      "clear_height_cm": 240.0
+    },
+    {
+      "door": "GB_Lintel_WC",
+      "clear_height_cm": 240.0
+    },
+    {
+      "door": "GB_Lintel_DiningKitchen",
+      "clear_height_cm": 240.0
+    },
+    {
+      "door": "GB_Lintel_KitchenService",
+      "clear_height_cm": 240.0
+    },
+    {
+      "door": "GB_Lintel_HiddenRoom",
+      "clear_height_cm": 240.0
+    }
+  ],
+  "stair_ceiling_bottom_cm": 430.0,
+  "highest_tread_cm": 180.0,
+  "stair_character_clearance_cm": 74.0,
+  "roof_collision_samples": [
+    {
+      "x": -1500,
+      "y": -1500,
+      "blocks": true
+    },
+    {
+      "x": -1500,
+      "y": -750,
+      "blocks": true
+    },
+    {
+      "x": -1500,
+      "y": 0,
+      "blocks": true
+    },
+    {
+      "x": -1500,
+      "y": 750,
+      "blocks": true
+    },
+    {
+      "x": -1500,
+      "y": 1500,
+      "blocks": true
+    },
+    {
+      "x": -750,
+      "y": -1500,
+      "blocks": true
+    },
+    {
+      "x": -750,
+      "y": -750,
+      "blocks": true
+    },
+    {
+      "x": -750,
+      "y": 0,
+      "blocks": true
+    },
+    {
+      "x": -750,
+      "y": 750,
+      "blocks": true
+    },
+    {
+      "x": -750,
+      "y": 1500,
+      "blocks": true
+    },
+    {
+      "x": 0,
+      "y": -1500,
+      "blocks": true
+    },
+    {
+      "x": 0,
+      "y": -750,
+      "blocks": true
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "blocks": true
+    },
+    {
+      "x": 0,
+      "y": 750,
+      "blocks": true
+    },
+    {
+      "x": 0,
+      "y": 1500,
+      "blocks": true
+    },
+    {
+      "x": 750,
+      "y": -1500,
+      "blocks": true
+    },
+    {
+      "x": 750,
+      "y": -750,
+      "blocks": true
+    },
+    {
+      "x": 750,
+      "y": 0,
+      "blocks": true
+    },
+    {
+      "x": 750,
+      "y": 750,
+      "blocks": true
+    },
+    {
+      "x": 750,
+      "y": 1500,
+      "blocks": true
+    },
+    {
+      "x": 1500,
+      "y": -1500,
+      "blocks": true
+    },
+    {
+      "x": 1500,
+      "y": -750,
+      "blocks": true
+    },
+    {
+      "x": 1500,
+      "y": 0,
+      "blocks": true
+    },
+    {
+      "x": 1500,
+      "y": 750,
+      "blocks": true
+    },
+    {
+      "x": 1500,
+      "y": 1500,
+      "blocks": true
+    }
+  ],
+  "roof_slabs": 2,
+  "shadowed_new_lights": 3,
+  "new_unique_mesh_triangles": 25744,
+  "material_statistics": {
+    "num_pixel_shader_instructions": 342,
+    "num_vertex_shader_instructions": 148,
+    "num_pixel_texture_samples": 3,
+    "num_samplers": 1
+  },
+  "passed": true
+}

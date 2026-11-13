@@ -1,0 +1,119 @@
+{
+  "success": true,
+  "assets": [
+    "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage",
+    "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Olive",
+    "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Service",
+    "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Timber_AgedIvory",
+    "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Timber_PanelInset",
+    "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Ceiling",
+    "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Roof_Charcoal",
+    "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_Garage",
+    "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_Storage",
+    "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_Lobby",
+    "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_Dining",
+    "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_Living",
+    "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_ProductionHall",
+    "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_Dressing",
+    "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_WC",
+    "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_Kitchen",
+    "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_Service",
+    "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_HiddenRoom",
+    "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Fixture_Chandelier",
+    "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Fixture_CeilingRose",
+    "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Roof_Gable"
+  ],
+  "actors": [
+    "RM_House_Ceiling_Garage",
+    "RM_House_Ceiling_Storage",
+    "RM_House_Ceiling_Lobby",
+    "RM_House_Ceiling_Dining",
+    "RM_House_Ceiling_Living",
+    "RM_House_Ceiling_ProductionHall",
+    "RM_House_Ceiling_Dressing",
+    "RM_House_Ceiling_WC",
+    "RM_House_Ceiling_Kitchen",
+    "RM_House_Ceiling_Service",
+    "RM_House_Ceiling_HiddenRoom",
+    "RM_House_Panelling_Garage",
+    "RM_House_Panelling_Storage",
+    "RM_House_Panelling_Lobby",
+    "RM_House_Panelling_Dining",
+    "RM_House_Panelling_Living",
+    "RM_House_Panelling_ProductionHall",
+    "RM_House_Panelling_Dressing",
+    "RM_House_Panelling_WC",
+    "RM_House_Panelling_Kitchen",
+    "RM_House_Panelling_Service",
+    "RM_House_Panelling_HiddenRoom",
+    "RM_House_Ceiling_Stairwell",
+    "RM_House_StairwellUpper_North",
+    "RM_House_StairwellUpper_East",
+    "RM_House_StairwellUpper_West",
+    "RM_House_StairwellUpper_South",
+    "RM_House_Roof_West",
+    "RM_House_Roof_East",
+    "RM_House_Gable_-1582",
+    "RM_House_Gable_1580",
+    "RM_House_Eave_-1582",
+    "RM_House_Eave_1580",
+    "RM_House_Rose_Garage",
+    "RM_House_Chandelier_Garage",
+    "RM_House_Rose_Lobby",
+    "RM_House_Chandelier_Lobby",
+    "RM_House_Rose_Dining",
+    "RM_House_Chandelier_Dining",
+    "RM_House_Rose_Living",
+    "RM_House_Chandelier_Living",
+    "RM_House_Rose_ProductionHall",
+    "RM_House_Chandelier_ProductionHall",
+    "RM_House_Rose_Dressing",
+    "RM_House_Chandelier_Dressing",
+    "RM_House_Rose_Kitchen",
+    "RM_House_Chandelier_Kitchen",
+    "RM_House_Rose_HiddenRoom",
+    "RM_House_Chandelier_HiddenRoom",
+    "RM_House_Rose_Storage",
+    "RM_House_Rose_WC",
+    "RM_House_Rose_Service"
+  ],
+  "errors": [],
+  "ceiling_height_cm": 340,
+  "stair_ceiling_height_cm": 430,
+  "character_height_cm": 176,
+  "lights": [
+    {
+      "room": "Garage",
+      "shadows": false
+    },
+    {
+      "room": "Lobby",
+      "shadows": true
+    },
+    {
+      "room": "Dining",
+      "shadows": true
+    },
+    {
+      "room": "Living",
+      "shadows": true
+    },
+    {
+      "room": "ProductionHall",
+      "shadows": false
+    },
+    {
+      "room": "Dressing",
+      "shadows": false
+    },
+    {
+      "room": "Kitchen",
+      "shadows": false
+    },
+    {
+      "room": "HiddenRoom",
+      "shadows": false
+    }
+  ],
+  "saved": true
+}

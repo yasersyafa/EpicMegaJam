@@ -1,0 +1,1153 @@
+{
+  "doors": [
+    {
+      "label": "GB_Lintel_Entrance",
+      "axis": 0,
+      "plane": 1580.0,
+      "lo": -1147.0,
+      "hi": -943.0
+    },
+    {
+      "label": "GB_Lintel_GarageDining",
+      "axis": 1,
+      "plane": -560.0,
+      "lo": -1187.0,
+      "hi": -983.0
+    },
+    {
+      "label": "GB_Lintel_LobbyHall",
+      "axis": 1,
+      "plane": -560.0,
+      "lo": 613.0,
+      "hi": 807.0
+    },
+    {
+      "label": "GB_Lintel_GarageStorage",
+      "axis": 0,
+      "plane": 200.0,
+      "lo": -1187.0,
+      "hi": -993.0
+    },
+    {
+      "label": "GB_Lintel_StorageLobby",
+      "axis": 0,
+      "plane": 460.0,
+      "lo": -1177.0,
+      "hi": -978.0
+    },
+    {
+      "label": "GB_Lintel_LivingDining",
+      "axis": 0,
+      "plane": -600.0,
+      "lo": -173.0,
+      "hi": 61.0
+    },
+    {
+      "label": "GB_Lintel_LivingHall",
+      "axis": 0,
+      "plane": 440.0,
+      "lo": -187.0,
+      "hi": 7.0
+    },
+    {
+      "label": "GB_Lintel_Dressing",
+      "axis": 0,
+      "plane": 900.0,
+      "lo": 133.0,
+      "hi": 317.0
+    },
+    {
+      "label": "GB_Lintel_WC",
+      "axis": 1,
+      "plane": 540.0,
+      "lo": -1387.0,
+      "hi": -1243.0
+    },
+    {
+      "label": "GB_Lintel_DiningKitchen",
+      "axis": 1,
+      "plane": 540.0,
+      "lo": -787.0,
+      "hi": -603.0
+    },
+    {
+      "label": "GB_Lintel_KitchenService",
+      "axis": 0,
+      "plane": 400.0,
+      "lo": 613.0,
+      "hi": 797.0
+    },
+    {
+      "label": "GB_Lintel_HiddenRoom",
+      "axis": 1,
+      "plane": 880.0,
+      "lo": 963.0,
+      "hi": 1147.0
+    }
+  ],
+  "casings": [
+    {
+      "room": "Garage",
+      "door": "GB_Lintel_GarageDining",
+      "opening": [
+        -1187.0,
+        -983.0
+      ],
+      "jamb_inner_edges": [
+        -1187.0,
+        -983.0
+      ]
+    },
+    {
+      "room": "Garage",
+      "door": "GB_Lintel_GarageStorage",
+      "opening": [
+        -1187.0,
+        -993.0
+      ],
+      "jamb_inner_edges": [
+        -1187.0,
+        -993.0
+      ]
+    },
+    {
+      "room": "Storage",
+      "door": "GB_Lintel_GarageStorage",
+      "opening": [
+        -1187.0,
+        -993.0
+      ],
+      "jamb_inner_edges": [
+        -1187.0,
+        -993.0
+      ]
+    },
+    {
+      "room": "Storage",
+      "door": "GB_Lintel_StorageLobby",
+      "opening": [
+        -1177.0,
+        -978.0
+      ],
+      "jamb_inner_edges": [
+        -1177.0,
+        -978.0
+      ]
+    },
+    {
+      "room": "Lobby",
+      "door": "GB_Lintel_Entrance",
+      "opening": [
+        -1147.0,
+        -943.0
+      ],
+      "jamb_inner_edges": [
+        -1147.0,
+        -943.0
+      ]
+    },
+    {
+      "room": "Lobby",
+      "door": "GB_Lintel_LobbyHall",
+      "opening": [
+        613.0,
+        807.0
+      ],
+      "jamb_inner_edges": [
+        613.0,
+        807.0
+      ]
+    },
+    {
+      "room": "Lobby",
+      "door": "GB_Lintel_StorageLobby",
+      "opening": [
+        -1177.0,
+        -978.0
+      ],
+      "jamb_inner_edges": [
+        -1177.0,
+        -978.0
+      ]
+    },
+    {
+      "room": "Dining",
+      "door": "GB_Lintel_GarageDining",
+      "opening": [
+        -1187.0,
+        -983.0
+      ],
+      "jamb_inner_edges": [
+        -1187.0,
+        -983.0
+      ]
+    },
+    {
+      "room": "Dining",
+      "door": "GB_Lintel_LivingDining",
+      "opening": [
+        -173.0,
+        61.0
+      ],
+      "jamb_inner_edges": [
+        -173.0,
+        61.0
+      ]
+    },
+    {
+      "room": "Dining",
+      "door": "GB_Lintel_WC",
+      "opening": [
+        -1387.0,
+        -1243.0
+      ],
+      "jamb_inner_edges": [
+        -1387.0,
+        -1243.0
+      ]
+    },
+    {
+      "room": "Dining",
+      "door": "GB_Lintel_DiningKitchen",
+      "opening": [
+        -787.0,
+        -603.0
+      ],
+      "jamb_inner_edges": [
+        -787.0,
+        -603.0
+      ]
+    },
+    {
+      "room": "Living",
+      "door": "GB_Lintel_LivingDining",
+      "opening": [
+        -173.0,
+        61.0
+      ],
+      "jamb_inner_edges": [
+        -173.0,
+        61.0
+      ]
+    },
+    {
+      "room": "Living",
+      "door": "GB_Lintel_LivingHall",
+      "opening": [
+        -187.0,
+        7.0
+      ],
+      "jamb_inner_edges": [
+        -187.0,
+        7.0
+      ]
+    },
+    {
+      "room": "Living",
+      "door": "GB_Lintel_DiningKitchen",
+      "opening": [
+        -787.0,
+        -603.0
+      ],
+      "jamb_inner_edges": [
+        -787.0,
+        -603.0
+      ]
+    },
+    {
+      "room": "ProductionHall",
+      "door": "GB_Lintel_LobbyHall",
+      "opening": [
+        613.0,
+        807.0
+      ],
+      "jamb_inner_edges": [
+        613.0,
+        807.0
+      ]
+    },
+    {
+      "room": "ProductionHall",
+      "door": "GB_Lintel_LivingHall",
+      "opening": [
+        -187.0,
+        7.0
+      ],
+      "jamb_inner_edges": [
+        -187.0,
+        7.0
+      ]
+    },
+    {
+      "room": "ProductionHall",
+      "door": "GB_Lintel_Dressing",
+      "opening": [
+        133.0,
+        317.0
+      ],
+      "jamb_inner_edges": [
+        133.0,
+        317.0
+      ]
+    },
+    {
+      "room": "Dressing",
+      "door": "GB_Lintel_Dressing",
+      "opening": [
+        133.0,
+        317.0
+      ],
+      "jamb_inner_edges": [
+        133.0,
+        317.0
+      ]
+    },
+    {
+      "room": "WC",
+      "door": "GB_Lintel_WC",
+      "opening": [
+        -1387.0,
+        -1243.0
+      ],
+      "jamb_inner_edges": [
+        -1387.0,
+        -1243.0
+      ]
+    },
+    {
+      "room": "Kitchen",
+      "door": "GB_Lintel_DiningKitchen",
+      "opening": [
+        -787.0,
+        -603.0
+      ],
+      "jamb_inner_edges": [
+        -787.0,
+        -603.0
+      ]
+    },
+    {
+      "room": "Kitchen",
+      "door": "GB_Lintel_KitchenService",
+      "opening": [
+        613.0,
+        797.0
+      ],
+      "jamb_inner_edges": [
+        613.0,
+        797.0
+      ]
+    },
+    {
+      "room": "Service",
+      "door": "GB_Lintel_KitchenService",
+      "opening": [
+        613.0,
+        797.0
+      ],
+      "jamb_inner_edges": [
+        613.0,
+        797.0
+      ]
+    },
+    {
+      "room": "Service",
+      "door": "GB_Lintel_HiddenRoom",
+      "opening": [
+        963.0,
+        1147.0
+      ],
+      "jamb_inner_edges": [
+        963.0,
+        1147.0
+      ]
+    },
+    {
+      "room": "HiddenRoom",
+      "door": "GB_Lintel_HiddenRoom",
+      "opening": [
+        963.0,
+        1147.0
+      ],
+      "jamb_inner_edges": [
+        963.0,
+        1147.0
+      ]
+    }
+  ],
+  "panels": [
+    {
+      "room": "Garage",
+      "axis": 0,
+      "wallplane": -1582.0,
+      "lo": -1569.0,
+      "hi": -573.0
+    },
+    {
+      "room": "Garage",
+      "axis": 1,
+      "wallplane": -1582.0,
+      "lo": -1569.0,
+      "hi": 187.0
+    },
+    {
+      "room": "Garage",
+      "axis": 1,
+      "wallplane": -560.0,
+      "lo": -1569.0,
+      "hi": -1195.1
+    },
+    {
+      "room": "Garage",
+      "axis": 1,
+      "wallplane": -560.0,
+      "lo": -974.9,
+      "hi": 187.0
+    },
+    {
+      "room": "Garage",
+      "axis": 0,
+      "wallplane": 200.0,
+      "lo": -1569.0,
+      "hi": -1195.1
+    },
+    {
+      "room": "Garage",
+      "axis": 0,
+      "wallplane": 200.0,
+      "lo": -984.9,
+      "hi": -573.0
+    },
+    {
+      "room": "Storage",
+      "axis": 1,
+      "wallplane": -1582.0,
+      "lo": 213.0,
+      "hi": 447.0
+    },
+    {
+      "room": "Storage",
+      "axis": 1,
+      "wallplane": -560.0,
+      "lo": 213.0,
+      "hi": 447.0
+    },
+    {
+      "room": "Storage",
+      "axis": 0,
+      "wallplane": 200.0,
+      "lo": -1569.0,
+      "hi": -1195.1
+    },
+    {
+      "room": "Storage",
+      "axis": 0,
+      "wallplane": 200.0,
+      "lo": -984.9,
+      "hi": -573.0
+    },
+    {
+      "room": "Storage",
+      "axis": 0,
+      "wallplane": 460.0,
+      "lo": -1569.0,
+      "hi": -1185.1
+    },
+    {
+      "room": "Storage",
+      "axis": 0,
+      "wallplane": 460.0,
+      "lo": -969.9,
+      "hi": -573.0
+    },
+    {
+      "room": "Lobby",
+      "axis": 1,
+      "wallplane": -1582.0,
+      "lo": 473.0,
+      "hi": 1567.0
+    },
+    {
+      "room": "Lobby",
+      "axis": 0,
+      "wallplane": 1580.0,
+      "lo": -1569.0,
+      "hi": -1155.1
+    },
+    {
+      "room": "Lobby",
+      "axis": 0,
+      "wallplane": 1580.0,
+      "lo": -934.9,
+      "hi": -573.0
+    },
+    {
+      "room": "Lobby",
+      "axis": 1,
+      "wallplane": -560.0,
+      "lo": 473.0,
+      "hi": 604.9
+    },
+    {
+      "room": "Lobby",
+      "axis": 1,
+      "wallplane": -560.0,
+      "lo": 815.1,
+      "hi": 1567.0
+    },
+    {
+      "room": "Lobby",
+      "axis": 0,
+      "wallplane": 460.0,
+      "lo": -1569.0,
+      "hi": -1185.1
+    },
+    {
+      "room": "Lobby",
+      "axis": 0,
+      "wallplane": 460.0,
+      "lo": -969.9,
+      "hi": -573.0
+    },
+    {
+      "room": "Dining",
+      "axis": 0,
+      "wallplane": -1582.0,
+      "lo": -547.0,
+      "hi": 527.0
+    },
+    {
+      "room": "Dining",
+      "axis": 1,
+      "wallplane": -560.0,
+      "lo": -1569.0,
+      "hi": -1195.1
+    },
+    {
+      "room": "Dining",
+      "axis": 1,
+      "wallplane": -560.0,
+      "lo": -974.9,
+      "hi": -613.0
+    },
+    {
+      "room": "Dining",
+      "axis": 0,
+      "wallplane": -600.0,
+      "lo": -547.0,
+      "hi": -181.1
+    },
+    {
+      "room": "Dining",
+      "axis": 0,
+      "wallplane": -600.0,
+      "lo": 69.1,
+      "hi": 527.0
+    },
+    {
+      "room": "Dining",
+      "axis": 1,
+      "wallplane": 540.0,
+      "lo": -1569.0,
+      "hi": -1395.1
+    },
+    {
+      "room": "Dining",
+      "axis": 1,
+      "wallplane": 540.0,
+      "lo": -1234.9,
+      "hi": -795.1
+    },
+    {
+      "room": "Living",
+      "axis": 1,
+      "wallplane": -560.0,
+      "lo": -587.0,
+      "hi": 427.0
+    },
+    {
+      "room": "Living",
+      "axis": 0,
+      "wallplane": -600.0,
+      "lo": -547.0,
+      "hi": -181.1
+    },
+    {
+      "room": "Living",
+      "axis": 0,
+      "wallplane": -600.0,
+      "lo": 69.1,
+      "hi": 527.0
+    },
+    {
+      "room": "Living",
+      "axis": 0,
+      "wallplane": 440.0,
+      "lo": -547.0,
+      "hi": -195.1
+    },
+    {
+      "room": "Living",
+      "axis": 0,
+      "wallplane": 440.0,
+      "lo": 15.1,
+      "hi": 527.0
+    },
+    {
+      "room": "Living",
+      "axis": 1,
+      "wallplane": 540.0,
+      "lo": -587.0,
+      "hi": 427.0
+    },
+    {
+      "room": "ProductionHall",
+      "axis": 1,
+      "wallplane": -560.0,
+      "lo": 453.0,
+      "hi": 604.9
+    },
+    {
+      "room": "ProductionHall",
+      "axis": 1,
+      "wallplane": -560.0,
+      "lo": 815.1,
+      "hi": 887.0
+    },
+    {
+      "room": "ProductionHall",
+      "axis": 0,
+      "wallplane": 440.0,
+      "lo": -547.0,
+      "hi": -195.1
+    },
+    {
+      "room": "ProductionHall",
+      "axis": 0,
+      "wallplane": 440.0,
+      "lo": 15.1,
+      "hi": 527.0
+    },
+    {
+      "room": "ProductionHall",
+      "axis": 0,
+      "wallplane": 900.0,
+      "lo": -547.0,
+      "hi": 124.9
+    },
+    {
+      "room": "ProductionHall",
+      "axis": 0,
+      "wallplane": 900.0,
+      "lo": 325.1,
+      "hi": 527.0
+    },
+    {
+      "room": "ProductionHall",
+      "axis": 1,
+      "wallplane": 540.0,
+      "lo": 453.0,
+      "hi": 887.0
+    },
+    {
+      "room": "Dressing",
+      "axis": 0,
+      "wallplane": 1580.0,
+      "lo": -547.0,
+      "hi": 527.0
+    },
+    {
+      "room": "Dressing",
+      "axis": 1,
+      "wallplane": -560.0,
+      "lo": 913.0,
+      "hi": 1567.0
+    },
+    {
+      "room": "Dressing",
+      "axis": 0,
+      "wallplane": 900.0,
+      "lo": -547.0,
+      "hi": 124.9
+    },
+    {
+      "room": "Dressing",
+      "axis": 0,
+      "wallplane": 900.0,
+      "lo": 325.1,
+      "hi": 527.0
+    },
+    {
+      "room": "Dressing",
+      "axis": 1,
+      "wallplane": 540.0,
+      "lo": 913.0,
+      "hi": 1567.0
+    },
+    {
+      "room": "WC",
+      "axis": 0,
+      "wallplane": -1582.0,
+      "lo": 553.0,
+      "hi": 1057.0
+    },
+    {
+      "room": "WC",
+      "axis": 1,
+      "wallplane": 540.0,
+      "lo": -1569.0,
+      "hi": -1395.1
+    },
+    {
+      "room": "WC",
+      "axis": 1,
+      "wallplane": 540.0,
+      "lo": -1234.9,
+      "hi": -1013.0
+    },
+    {
+      "room": "WC",
+      "axis": 0,
+      "wallplane": -1000.0,
+      "lo": 553.0,
+      "hi": 1057.0
+    },
+    {
+      "room": "WC",
+      "axis": 1,
+      "wallplane": 1070.0,
+      "lo": -1569.0,
+      "hi": -1013.0
+    },
+    {
+      "room": "Kitchen",
+      "axis": 1,
+      "wallplane": 1580.0,
+      "lo": -987.0,
+      "hi": 387.0
+    },
+    {
+      "room": "Kitchen",
+      "axis": 1,
+      "wallplane": 540.0,
+      "lo": -987.0,
+      "hi": -795.1
+    },
+    {
+      "room": "Kitchen",
+      "axis": 1,
+      "wallplane": 540.0,
+      "lo": -594.9,
+      "hi": 387.0
+    },
+    {
+      "room": "Kitchen",
+      "axis": 0,
+      "wallplane": -1000.0,
+      "lo": 553.0,
+      "hi": 1085.0
+    },
+    {
+      "room": "Kitchen",
+      "axis": 0,
+      "wallplane": 400.0,
+      "lo": 553.0,
+      "hi": 604.9
+    },
+    {
+      "room": "Kitchen",
+      "axis": 0,
+      "wallplane": 400.0,
+      "lo": 805.1,
+      "hi": 1567.0
+    },
+    {
+      "room": "Service",
+      "axis": 0,
+      "wallplane": 1580.0,
+      "lo": 553.0,
+      "hi": 867.0
+    },
+    {
+      "room": "Service",
+      "axis": 1,
+      "wallplane": 540.0,
+      "lo": 413.0,
+      "hi": 1567.0
+    },
+    {
+      "room": "Service",
+      "axis": 0,
+      "wallplane": 400.0,
+      "lo": 553.0,
+      "hi": 604.9
+    },
+    {
+      "room": "Service",
+      "axis": 0,
+      "wallplane": 400.0,
+      "lo": 805.1,
+      "hi": 867.0
+    },
+    {
+      "room": "Service",
+      "axis": 1,
+      "wallplane": 880.0,
+      "lo": 413.0,
+      "hi": 954.9
+    },
+    {
+      "room": "Service",
+      "axis": 1,
+      "wallplane": 880.0,
+      "lo": 1155.1,
+      "hi": 1567.0
+    },
+    {
+      "room": "HiddenRoom",
+      "axis": 1,
+      "wallplane": 1580.0,
+      "lo": 413.0,
+      "hi": 1567.0
+    },
+    {
+      "room": "HiddenRoom",
+      "axis": 0,
+      "wallplane": 1580.0,
+      "lo": 893.0,
+      "hi": 1567.0
+    },
+    {
+      "room": "HiddenRoom",
+      "axis": 0,
+      "wallplane": 400.0,
+      "lo": 893.0,
+      "hi": 1567.0
+    },
+    {
+      "room": "HiddenRoom",
+      "axis": 1,
+      "wallplane": 880.0,
+      "lo": 413.0,
+      "hi": 954.9
+    },
+    {
+      "room": "HiddenRoom",
+      "axis": 1,
+      "wallplane": 880.0,
+      "lo": 1155.1,
+      "hi": 1567.0
+    }
+  ],
+  "cornice_runs": [
+    {
+      "room": "Garage",
+      "axis": 0,
+      "plane": -1568.0,
+      "lo": -1569.0,
+      "hi": -573.0
+    },
+    {
+      "room": "Garage",
+      "axis": 1,
+      "plane": -1568.0,
+      "lo": -1569.0,
+      "hi": 187.0
+    },
+    {
+      "room": "Garage",
+      "axis": 1,
+      "plane": -574.0,
+      "lo": -1569.0,
+      "hi": 187.0
+    },
+    {
+      "room": "Garage",
+      "axis": 0,
+      "plane": 186.0,
+      "lo": -1569.0,
+      "hi": -573.0
+    },
+    {
+      "room": "Storage",
+      "axis": 1,
+      "plane": -1568.0,
+      "lo": 213.0,
+      "hi": 447.0
+    },
+    {
+      "room": "Storage",
+      "axis": 1,
+      "plane": -574.0,
+      "lo": 213.0,
+      "hi": 447.0
+    },
+    {
+      "room": "Storage",
+      "axis": 0,
+      "plane": 214.0,
+      "lo": -1569.0,
+      "hi": -573.0
+    },
+    {
+      "room": "Storage",
+      "axis": 0,
+      "plane": 446.0,
+      "lo": -1569.0,
+      "hi": -573.0
+    },
+    {
+      "room": "Lobby",
+      "axis": 1,
+      "plane": -1568.0,
+      "lo": 473.0,
+      "hi": 1567.0
+    },
+    {
+      "room": "Lobby",
+      "axis": 0,
+      "plane": 1566.0,
+      "lo": -1569.0,
+      "hi": -573.0
+    },
+    {
+      "room": "Lobby",
+      "axis": 1,
+      "plane": -574.0,
+      "lo": 473.0,
+      "hi": 1567.0
+    },
+    {
+      "room": "Lobby",
+      "axis": 0,
+      "plane": 474.0,
+      "lo": -1569.0,
+      "hi": -573.0
+    },
+    {
+      "room": "Dining",
+      "axis": 0,
+      "plane": -1568.0,
+      "lo": -547.0,
+      "hi": 527.0
+    },
+    {
+      "room": "Dining",
+      "axis": 1,
+      "plane": -546.0,
+      "lo": -1569.0,
+      "hi": -613.0
+    },
+    {
+      "room": "Dining",
+      "axis": 0,
+      "plane": -614.0,
+      "lo": -547.0,
+      "hi": 527.0
+    },
+    {
+      "room": "Dining",
+      "axis": 1,
+      "plane": 526.0,
+      "lo": -1569.0,
+      "hi": -613.0
+    },
+    {
+      "room": "Living",
+      "axis": 1,
+      "plane": -546.0,
+      "lo": -587.0,
+      "hi": 427.0
+    },
+    {
+      "room": "Living",
+      "axis": 0,
+      "plane": -586.0,
+      "lo": -547.0,
+      "hi": 527.0
+    },
+    {
+      "room": "Living",
+      "axis": 0,
+      "plane": 426.0,
+      "lo": -547.0,
+      "hi": 527.0
+    },
+    {
+      "room": "Living",
+      "axis": 1,
+      "plane": 526.0,
+      "lo": -587.0,
+      "hi": 427.0
+    },
+    {
+      "room": "ProductionHall",
+      "axis": 1,
+      "plane": -546.0,
+      "lo": 453.0,
+      "hi": 887.0
+    },
+    {
+      "room": "ProductionHall",
+      "axis": 0,
+      "plane": 454.0,
+      "lo": -547.0,
+      "hi": 527.0
+    },
+    {
+      "room": "ProductionHall",
+      "axis": 0,
+      "plane": 886.0,
+      "lo": -547.0,
+      "hi": 527.0
+    },
+    {
+      "room": "ProductionHall",
+      "axis": 1,
+      "plane": 526.0,
+      "lo": 453.0,
+      "hi": 887.0
+    },
+    {
+      "room": "Dressing",
+      "axis": 0,
+      "plane": 1566.0,
+      "lo": -547.0,
+      "hi": 527.0
+    },
+    {
+      "room": "Dressing",
+      "axis": 1,
+      "plane": -546.0,
+      "lo": 913.0,
+      "hi": 1567.0
+    },
+    {
+      "room": "Dressing",
+      "axis": 0,
+      "plane": 914.0,
+      "lo": -547.0,
+      "hi": 527.0
+    },
+    {
+      "room": "Dressing",
+      "axis": 1,
+      "plane": 526.0,
+      "lo": 913.0,
+      "hi": 1567.0
+    },
+    {
+      "room": "WC",
+      "axis": 0,
+      "plane": -1568.0,
+      "lo": 553.0,
+      "hi": 1057.0
+    },
+    {
+      "room": "WC",
+      "axis": 1,
+      "plane": 554.0,
+      "lo": -1569.0,
+      "hi": -1013.0
+    },
+    {
+      "room": "WC",
+      "axis": 0,
+      "plane": -1014.0,
+      "lo": 553.0,
+      "hi": 1057.0
+    },
+    {
+      "room": "WC",
+      "axis": 1,
+      "plane": 1056.0,
+      "lo": -1569.0,
+      "hi": -1013.0
+    },
+    {
+      "room": "Kitchen",
+      "axis": 1,
+      "plane": 1566.0,
+      "lo": -987.0,
+      "hi": 387.0
+    },
+    {
+      "room": "Kitchen",
+      "axis": 1,
+      "plane": 554.0,
+      "lo": -987.0,
+      "hi": 387.0
+    },
+    {
+      "room": "Kitchen",
+      "axis": 0,
+      "plane": -986.0,
+      "lo": 553.0,
+      "hi": 1085.0
+    },
+    {
+      "room": "Kitchen",
+      "axis": 0,
+      "plane": 386.0,
+      "lo": 553.0,
+      "hi": 1567.0
+    },
+    {
+      "room": "Service",
+      "axis": 0,
+      "plane": 1566.0,
+      "lo": 553.0,
+      "hi": 867.0
+    },
+    {
+      "room": "Service",
+      "axis": 1,
+      "plane": 554.0,
+      "lo": 413.0,
+      "hi": 1567.0
+    },
+    {
+      "room": "Service",
+      "axis": 0,
+      "plane": 414.0,
+      "lo": 553.0,
+      "hi": 867.0
+    },
+    {
+      "room": "Service",
+      "axis": 1,
+      "plane": 866.0,
+      "lo": 413.0,
+      "hi": 1567.0
+    },
+    {
+      "room": "HiddenRoom",
+      "axis": 1,
+      "plane": 1566.0,
+      "lo": 413.0,
+      "hi": 1567.0
+    },
+    {
+      "room": "HiddenRoom",
+      "axis": 0,
+      "plane": 1566.0,
+      "lo": 893.0,
+      "hi": 1567.0
+    },
+    {
+      "room": "HiddenRoom",
+      "axis": 0,
+      "plane": 414.0,
+      "lo": 893.0,
+      "hi": 1567.0
+    },
+    {
+      "room": "HiddenRoom",
+      "axis": 1,
+      "plane": 894.0,
+      "lo": 413.0,
+      "hi": 1567.0
+    }
+  ],
+  "passed": true
+}

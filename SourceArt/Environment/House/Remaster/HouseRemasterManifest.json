@@ -1,0 +1,220 @@
+[
+  {
+    "name": "SM_House_Architecture_Garage",
+    "file": "SM_House_Architecture_Garage.obj",
+    "triangles": 3264,
+    "vertices": 6528,
+    "slots": [
+      "PanelInset",
+      "AgedIvory"
+    ],
+    "location": [
+      -1071.0,
+      -691.0,
+      0
+    ],
+    "room": "Garage",
+    "category": "Architecture"
+  },
+  {
+    "name": "SM_House_Architecture_Storage",
+    "file": "SM_House_Architecture_Storage.obj",
+    "triangles": 1632,
+    "vertices": 3264,
+    "slots": [
+      "PanelInset",
+      "AgedIvory"
+    ],
+    "location": [
+      -1071.0,
+      330.0,
+      0
+    ],
+    "room": "Storage",
+    "category": "Architecture"
+  },
+  {
+    "name": "SM_House_Architecture_Lobby",
+    "file": "SM_House_Architecture_Lobby.obj",
+    "triangles": 2448,
+    "vertices": 4896,
+    "slots": [
+      "PanelInset",
+      "AgedIvory"
+    ],
+    "location": [
+      -1071.0,
+      1020.0,
+      0
+    ],
+    "room": "Lobby",
+    "category": "Architecture"
+  },
+  {
+    "name": "SM_House_Architecture_Dining",
+    "file": "SM_House_Architecture_Dining.obj",
+    "triangles": 2400,
+    "vertices": 4800,
+    "slots": [
+      "PanelInset",
+      "AgedIvory"
+    ],
+    "location": [
+      -10.0,
+      -1091.0,
+      0
+    ],
+    "room": "Dining",
+    "category": "Architecture"
+  },
+  {
+    "name": "SM_House_Architecture_Living",
+    "file": "SM_House_Architecture_Living.obj",
+    "triangles": 2544,
+    "vertices": 5088,
+    "slots": [
+      "PanelInset",
+      "AgedIvory"
+    ],
+    "location": [
+      -10.0,
+      -80.0,
+      0
+    ],
+    "room": "Living",
+    "category": "Architecture"
+  },
+  {
+    "name": "SM_House_Architecture_ProductionHall",
+    "file": "SM_House_Architecture_ProductionHall.obj",
+    "triangles": 1920,
+    "vertices": 3840,
+    "slots": [
+      "PanelInset",
+      "AgedIvory"
+    ],
+    "location": [
+      -10.0,
+      670.0,
+      0
+    ],
+    "room": "ProductionHall",
+    "category": "Architecture"
+  },
+  {
+    "name": "SM_House_Architecture_Dressing",
+    "file": "SM_House_Architecture_Dressing.obj",
+    "triangles": 2112,
+    "vertices": 4224,
+    "slots": [
+      "PanelInset",
+      "AgedIvory"
+    ],
+    "location": [
+      -10.0,
+      1240.0,
+      0
+    ],
+    "room": "Dressing",
+    "category": "Architecture"
+  },
+  {
+    "name": "SM_House_Architecture_WC",
+    "file": "SM_House_Architecture_WC.obj",
+    "triangles": 1488,
+    "vertices": 2976,
+    "slots": [
+      "PanelInset",
+      "AgedIvory"
+    ],
+    "location": [
+      805.0,
+      -1291.0,
+      0
+    ],
+    "room": "WC",
+    "category": "Architecture"
+  },
+  {
+    "name": "SM_House_Architecture_Kitchen",
+    "file": "SM_House_Architecture_Kitchen.obj",
+    "triangles": 2592,
+    "vertices": 5184,
+    "slots": [
+      "PanelInset",
+      "AgedIvory"
+    ],
+    "location": [
+      1060.0,
+      -300.0,
+      0
+    ],
+    "room": "Kitchen",
+    "category": "Architecture"
+  },
+  {
+    "name": "SM_House_Architecture_Service",
+    "file": "SM_House_Architecture_Service.obj",
+    "triangles": 1920,
+    "vertices": 3840,
+    "slots": [
+      "PanelInset",
+      "AgedIvory"
+    ],
+    "location": [
+      710.0,
+      990.0,
+      0
+    ],
+    "room": "Service",
+    "category": "Architecture"
+  },
+  {
+    "name": "SM_House_Architecture_HiddenRoom",
+    "file": "SM_House_Architecture_HiddenRoom.obj",
+    "triangles": 2256,
+    "vertices": 4512,
+    "slots": [
+      "PanelInset",
+      "AgedIvory"
+    ],
+    "location": [
+      1230.0,
+      990.0,
+      0
+    ],
+    "room": "HiddenRoom",
+    "category": "Architecture"
+  },
+  {
+    "name": "SM_House_Fixture_Chandelier",
+    "file": "SM_House_Fixture_Chandelier.obj",
+    "triangles": 704,
+    "vertices": 657,
+    "slots": [
+      "Brass",
+      "Glass"
+    ],
+    "category": "Fixture"
+  },
+  {
+    "name": "SM_House_Fixture_CeilingRose",
+    "file": "SM_House_Fixture_CeilingRose.obj",
+    "triangles": 448,
+    "vertices": 297,
+    "slots": [
+      "AgedIvory"
+    ],
+    "category": "Fixture"
+  },
+  {
+    "name": "SM_House_Roof_Gable",
+    "file": "SM_House_Roof_Gable.obj",
+    "triangles": 16,
+    "vertices": 30,
+    "slots": [
+      "Sage"
+    ],
+    "category": "Roof"
+  }
+]

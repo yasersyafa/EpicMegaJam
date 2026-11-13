@@ -1,0 +1,3898 @@
+{
+  "actors": [
+    {
+      "label": "SkyLight",
+      "class": "SkyLight",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119040970) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_extent": [
+        256.0,
+        256.0,
+        256.0
+      ]
+    },
+    {
+      "label": "SkyAtmosphere",
+      "class": "SkyAtmosphere",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190418C0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        56.0,
+        0.0,
+        0.0
+      ],
+      "bounds_extent": [
+        184.0,
+        128.0,
+        128.0
+      ]
+    },
+    {
+      "label": "ExponentialHeightFog",
+      "class": "ExponentialHeightFog",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119040CE0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_extent": [
+        128.0,
+        128.0,
+        128.0
+      ]
+    },
+    {
+      "label": "VolumetricCloud",
+      "class": "VolumetricCloud",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119041690) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_extent": [
+        128.0,
+        128.0,
+        128.0
+      ]
+    },
+    {
+      "label": "DirectionalLight",
+      "class": "DirectionalLight",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        2.5,
+        2.5,
+        2.5
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119040D30) {pitch: -72.000000, yaw: -30.000000, roll: -0.000000}>",
+      "bounds_origin": [
+        80.28497019894525,
+        -46.35254915624216,
+        -252.21865432604096
+      ],
+      "bounds_extent": [
+        345.0127909082117,
+        314.6632815426453,
+        380.21865432604096
+      ]
+    },
+    {
+      "label": "Reference_FloorPlan",
+      "class": "StaticMeshActor",
+      "location": [
+        0.0,
+        0.0,
+        -30.0
+      ],
+      "scale": [
+        32.0,
+        32.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119041690) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        0.0,
+        0.0,
+        -30.0
+      ],
+      "bounds_extent": [
+        1600.0,
+        1600.0,
+        7.105427357601002e-15
+      ],
+      "mesh": "/Engine/BasicShapes/Plane.Plane",
+      "materials": [
+        "/Game/Game/References/FloorPlan_Mat.FloorPlan_Mat"
+      ]
+    },
+    {
+      "label": "GB_Floor_Garage",
+      "class": "StaticMeshActor",
+      "location": [
+        -1071.0,
+        -691.0,
+        -10.0
+      ],
+      "scale": [
+        10.22,
+        17.82,
+        0.2
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119040E20) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -1071.0,
+        -691.0,
+        -10.0
+      ],
+      "bounds_extent": [
+        511.0,
+        891.0,
+        10.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Floor_Garage_Slate_60cm.MI_House_Floor_Garage_Slate_60cm"
+      ]
+    },
+    {
+      "label": "GB_Floor_Storage",
+      "class": "StaticMeshActor",
+      "location": [
+        -1071.0,
+        330.0,
+        -10.0
+      ],
+      "scale": [
+        10.22,
+        2.6,
+        0.2
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119040EC0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -1071.0,
+        330.0,
+        -10.0
+      ],
+      "bounds_extent": [
+        511.0,
+        130.0,
+        10.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Floor_Oak_Dark.MI_House_Floor_Oak_Dark"
+      ]
+    },
+    {
+      "label": "GB_Floor_Lobby",
+      "class": "StaticMeshActor",
+      "location": [
+        -1071.0,
+        1020.0,
+        -10.0
+      ],
+      "scale": [
+        10.22,
+        11.2,
+        0.2
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119040F60) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -1071.0,
+        1020.0,
+        -10.0
+      ],
+      "bounds_extent": [
+        511.0,
+        560.0,
+        10.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Floor_Oak_Warm.MI_House_Floor_Oak_Warm"
+      ]
+    },
+    {
+      "label": "GB_Floor_Dining",
+      "class": "StaticMeshActor",
+      "location": [
+        -10.0,
+        -1091.0,
+        -10.0
+      ],
+      "scale": [
+        11.0,
+        9.82,
+        0.2
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119041000) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -10.0,
+        -1091.0,
+        -10.0
+      ],
+      "bounds_extent": [
+        550.0,
+        491.0,
+        10.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Floor_Oak_Warm.MI_House_Floor_Oak_Warm"
+      ]
+    },
+    {
+      "label": "GB_Floor_Living",
+      "class": "StaticMeshActor",
+      "location": [
+        -10.0,
+        -80.0,
+        -10.0
+      ],
+      "scale": [
+        11.0,
+        10.4,
+        0.2
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190410A0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -10.0,
+        -80.0,
+        -10.0
+      ],
+      "bounds_extent": [
+        550.0,
+        520.0,
+        10.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Floor_Carpet_Taupe.MI_House_Floor_Carpet_Taupe"
+      ]
+    },
+    {
+      "label": "GB_Floor_ProductionHall",
+      "class": "StaticMeshActor",
+      "location": [
+        -10.0,
+        670.0,
+        -10.0
+      ],
+      "scale": [
+        11.0,
+        4.6,
+        0.2
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119040FB0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -10.0,
+        670.0,
+        -10.0
+      ],
+      "bounds_extent": [
+        550.0,
+        230.0,
+        10.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Floor_Oak_Warm.MI_House_Floor_Oak_Warm"
+      ]
+    },
+    {
+      "label": "GB_Floor_Dressing",
+      "class": "StaticMeshActor",
+      "location": [
+        -10.0,
+        1240.0,
+        -10.0
+      ],
+      "scale": [
+        11.0,
+        6.8,
+        0.2
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119040D30) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -10.0,
+        1240.0,
+        -10.0
+      ],
+      "bounds_extent": [
+        550.0,
+        340.0,
+        10.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Floor_Oak_Warm.MI_House_Floor_Oak_Warm"
+      ]
+    },
+    {
+      "label": "GB_Floor_WC",
+      "class": "StaticMeshActor",
+      "location": [
+        805.0,
+        -1291.0,
+        -10.0
+      ],
+      "scale": [
+        5.3,
+        5.82,
+        0.2
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190412D0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        805.0,
+        -1291.0,
+        -10.0
+      ],
+      "bounds_extent": [
+        265.0,
+        291.0,
+        10.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Floor_WC_Charcoal_30cm.MI_House_Floor_WC_Charcoal_30cm"
+      ]
+    },
+    {
+      "label": "GB_Floor_Kitchen",
+      "class": "StaticMeshActor",
+      "location": [
+        1060.0,
+        -300.0,
+        -10.0
+      ],
+      "scale": [
+        10.4,
+        14.0,
+        0.2
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119041320) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        1060.0,
+        -300.0,
+        -10.0
+      ],
+      "bounds_extent": [
+        520.0,
+        700.0,
+        10.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Floor_Kitchen_Checker_55cm.MI_House_Floor_Kitchen_Checker_55cm"
+      ]
+    },
+    {
+      "label": "GB_Floor_Service",
+      "class": "StaticMeshActor",
+      "location": [
+        710.0,
+        990.0,
+        -10.0
+      ],
+      "scale": [
+        3.4,
+        11.8,
+        0.2
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119041280) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        710.0,
+        990.0,
+        -10.0
+      ],
+      "bounds_extent": [
+        170.0,
+        590.0,
+        10.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Floor_Oak_Warm.MI_House_Floor_Oak_Warm"
+      ]
+    },
+    {
+      "label": "GB_Floor_HiddenRoom",
+      "class": "StaticMeshActor",
+      "location": [
+        1230.0,
+        990.0,
+        -10.0
+      ],
+      "scale": [
+        7.0,
+        11.8,
+        0.2
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119041410) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        1230.0,
+        990.0,
+        -10.0
+      ],
+      "bounds_extent": [
+        350.0,
+        590.0,
+        10.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Floor_Oak_Dark.MI_House_Floor_Oak_Dark"
+      ]
+    },
+    {
+      "label": "GB_Wall_North",
+      "class": "StaticMeshActor",
+      "location": [
+        -1.0,
+        -1582.0,
+        170.0
+      ],
+      "scale": [
+        31.88,
+        0.26,
+        3.4
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190415A0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -1.0,
+        -1582.0,
+        170.0
+      ],
+      "bounds_extent": [
+        1594.0,
+        13.0,
+        170.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Wall_West",
+      "class": "StaticMeshActor",
+      "location": [
+        -1582.0,
+        -1.0,
+        170.0
+      ],
+      "scale": [
+        0.26,
+        31.88,
+        3.4
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190417D0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -1582.0,
+        -1.0,
+        170.0
+      ],
+      "bounds_extent": [
+        13.0,
+        1594.0,
+        170.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Wall_East",
+      "class": "StaticMeshActor",
+      "location": [
+        1580.0,
+        -1.0,
+        170.0
+      ],
+      "scale": [
+        0.26,
+        31.88,
+        3.4
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190414B0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        1580.0,
+        -1.0,
+        170.0
+      ],
+      "bounds_extent": [
+        13.0,
+        1594.0,
+        170.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Wall_SouthWest",
+      "class": "StaticMeshActor",
+      "location": [
+        -1371.0,
+        1580.0,
+        170.0
+      ],
+      "scale": [
+        4.48,
+        0.26,
+        3.4
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119075E10) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -1371.0,
+        1580.0,
+        170.0
+      ],
+      "bounds_extent": [
+        224.0,
+        13.0,
+        170.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Wall_SouthEast",
+      "class": "StaticMeshActor",
+      "location": [
+        325.0,
+        1580.0,
+        170.0
+      ],
+      "scale": [
+        25.36,
+        0.26,
+        3.4
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119076040) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        325.0,
+        1580.0,
+        170.0
+      ],
+      "bounds_extent": [
+        1268.0,
+        13.0,
+        170.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Wall_GarageDiningN",
+      "class": "StaticMeshActor",
+      "location": [
+        -560.0,
+        -1391.0,
+        170.0
+      ],
+      "scale": [
+        0.26,
+        4.08,
+        3.4
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190765E0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -560.0,
+        -1391.0,
+        170.0
+      ],
+      "bounds_extent": [
+        13.0,
+        204.0,
+        170.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Wall_GarageDiningS",
+      "class": "StaticMeshActor",
+      "location": [
+        -560.0,
+        -185.0,
+        170.0
+      ],
+      "scale": [
+        0.26,
+        15.96,
+        3.4
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190766D0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -560.0,
+        -185.0,
+        170.0
+      ],
+      "bounds_extent": [
+        13.0,
+        798.0,
+        170.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Wall_LobbyHallS",
+      "class": "StaticMeshActor",
+      "location": [
+        -560.0,
+        1200.0,
+        170.0
+      ],
+      "scale": [
+        0.26,
+        7.86,
+        3.4
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119076630) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -560.0,
+        1200.0,
+        170.0
+      ],
+      "bounds_extent": [
+        13.0,
+        393.0,
+        170.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Wall_GarageStorageW",
+      "class": "StaticMeshActor",
+      "location": [
+        -1391.0,
+        200.0,
+        170.0
+      ],
+      "scale": [
+        4.08,
+        0.26,
+        3.4
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119076770) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -1391.0,
+        200.0,
+        170.0
+      ],
+      "bounds_extent": [
+        204.0,
+        13.0,
+        170.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Wall_GarageStorageE",
+      "class": "StaticMeshActor",
+      "location": [
+        -770.0,
+        200.0,
+        170.0
+      ],
+      "scale": [
+        4.46,
+        0.26,
+        3.4
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119076810) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -770.0,
+        200.0,
+        170.0
+      ],
+      "bounds_extent": [
+        223.0,
+        13.0,
+        170.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Wall_StorageLobbyW",
+      "class": "StaticMeshActor",
+      "location": [
+        -1386.0,
+        460.0,
+        170.0
+      ],
+      "scale": [
+        4.18,
+        0.26,
+        3.4
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190768B0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -1386.0,
+        460.0,
+        170.0
+      ],
+      "bounds_extent": [
+        209.0,
+        13.0,
+        170.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Wall_StorageLobbyE",
+      "class": "StaticMeshActor",
+      "location": [
+        -762.5,
+        460.0,
+        170.0
+      ],
+      "scale": [
+        4.31,
+        0.26,
+        3.4
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119076950) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -762.5,
+        460.0,
+        170.0
+      ],
+      "bounds_extent": [
+        215.5,
+        13.0,
+        170.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Wall_LivingDiningW",
+      "class": "StaticMeshActor",
+      "location": [
+        -362.5,
+        -600.0,
+        170.0
+      ],
+      "scale": [
+        3.79,
+        0.26,
+        3.4
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190769F0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -362.5,
+        -600.0,
+        170.0
+      ],
+      "bounds_extent": [
+        189.5,
+        13.0,
+        170.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Wall_LivingDiningE",
+      "class": "StaticMeshActor",
+      "location": [
+        295.0,
+        -600.0,
+        170.0
+      ],
+      "scale": [
+        4.68,
+        0.26,
+        3.4
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119076A90) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        295.0,
+        -600.0,
+        170.0
+      ],
+      "bounds_extent": [
+        234.0,
+        13.0,
+        170.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Wall_LivingHallW",
+      "class": "StaticMeshActor",
+      "location": [
+        -380.0,
+        440.0,
+        170.0
+      ],
+      "scale": [
+        3.86,
+        0.26,
+        3.4
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119076B30) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -380.0,
+        440.0,
+        170.0
+      ],
+      "bounds_extent": [
+        193.0,
+        13.0,
+        170.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Wall_LivingHallE",
+      "class": "StaticMeshActor",
+      "location": [
+        280.0,
+        440.0,
+        170.0
+      ],
+      "scale": [
+        5.46,
+        0.26,
+        3.4
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119076BD0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        280.0,
+        440.0,
+        170.0
+      ],
+      "bounds_extent": [
+        273.0,
+        13.0,
+        170.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Wall_HallDressingW",
+      "class": "StaticMeshActor",
+      "location": [
+        -220.0,
+        900.0,
+        170.0
+      ],
+      "scale": [
+        7.06,
+        0.26,
+        3.4
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119076C70) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -220.0,
+        900.0,
+        170.0
+      ],
+      "bounds_extent": [
+        353.0,
+        13.0,
+        170.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Wall_HallDressingE",
+      "class": "StaticMeshActor",
+      "location": [
+        435.0,
+        900.0,
+        170.0
+      ],
+      "scale": [
+        2.36,
+        0.26,
+        3.4
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119076D10) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        435.0,
+        900.0,
+        170.0
+      ],
+      "bounds_extent": [
+        118.0,
+        13.0,
+        170.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Wall_WCDiningN",
+      "class": "StaticMeshActor",
+      "location": [
+        540.0,
+        -1491.0,
+        170.0
+      ],
+      "scale": [
+        0.26,
+        2.08,
+        3.4
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119076DB0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        540.0,
+        -1491.0,
+        170.0
+      ],
+      "bounds_extent": [
+        13.0,
+        104.0,
+        170.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Wall_WCDiningS",
+      "class": "StaticMeshActor",
+      "location": [
+        540.0,
+        -1015.0,
+        170.0
+      ],
+      "scale": [
+        0.26,
+        4.56,
+        3.4
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119076E50) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        540.0,
+        -1015.0,
+        170.0
+      ],
+      "bounds_extent": [
+        13.0,
+        228.0,
+        170.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Wall_KitchenLiving",
+      "class": "StaticMeshActor",
+      "location": [
+        540.0,
+        495.0,
+        170.0
+      ],
+      "scale": [
+        0.26,
+        21.96,
+        3.4
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119076EF0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        540.0,
+        495.0,
+        170.0
+      ],
+      "bounds_extent": [
+        13.0,
+        1098.0,
+        170.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Wall_WCSouth",
+      "class": "StaticMeshActor",
+      "location": [
+        810.0,
+        -1000.0,
+        170.0
+      ],
+      "scale": [
+        5.5,
+        0.26,
+        3.4
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119076FE0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        810.0,
+        -1000.0,
+        170.0
+      ],
+      "bounds_extent": [
+        275.0,
+        13.0,
+        170.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Wall_StairsWest",
+      "class": "StaticMeshActor",
+      "location": [
+        1070.0,
+        -1291.0,
+        170.0
+      ],
+      "scale": [
+        0.26,
+        6.08,
+        3.4
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119077030) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        1070.0,
+        -1291.0,
+        170.0
+      ],
+      "bounds_extent": [
+        13.0,
+        304.0,
+        170.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Wall_KitchenServiceW",
+      "class": "StaticMeshActor",
+      "location": [
+        570.0,
+        400.0,
+        170.0
+      ],
+      "scale": [
+        0.86,
+        0.26,
+        3.4
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119076F90) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        570.0,
+        400.0,
+        170.0
+      ],
+      "bounds_extent": [
+        43.0,
+        13.0,
+        170.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Wall_KitchenServiceE",
+      "class": "StaticMeshActor",
+      "location": [
+        1195.0,
+        400.0,
+        170.0
+      ],
+      "scale": [
+        7.96,
+        0.26,
+        3.4
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119077120) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        1195.0,
+        400.0,
+        170.0
+      ],
+      "bounds_extent": [
+        398.0,
+        13.0,
+        170.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Wall_HiddenServiceN",
+      "class": "StaticMeshActor",
+      "location": [
+        880.0,
+        675.0,
+        170.0
+      ],
+      "scale": [
+        0.26,
+        5.76,
+        3.4
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190771C0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        880.0,
+        675.0,
+        170.0
+      ],
+      "bounds_extent": [
+        13.0,
+        288.0,
+        170.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Wall_HiddenServiceS",
+      "class": "StaticMeshActor",
+      "location": [
+        880.0,
+        1370.0,
+        170.0
+      ],
+      "scale": [
+        0.26,
+        4.46,
+        3.4
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119077260) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        880.0,
+        1370.0,
+        170.0
+      ],
+      "bounds_extent": [
+        13.0,
+        223.0,
+        170.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Lintel_Entrance",
+      "class": "StaticMeshActor",
+      "location": [
+        -1045.0,
+        1580.0,
+        290.0
+      ],
+      "scale": [
+        2.56,
+        0.26,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119077300) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -1045.0,
+        1580.0,
+        290.0
+      ],
+      "bounds_extent": [
+        128.0,
+        13.0,
+        50.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Lintel_GarageDining",
+      "class": "StaticMeshActor",
+      "location": [
+        -560.0,
+        -1085.0,
+        290.0
+      ],
+      "scale": [
+        0.26,
+        2.56,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190773A0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -560.0,
+        -1085.0,
+        290.0
+      ],
+      "bounds_extent": [
+        13.0,
+        128.0,
+        50.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Lintel_LobbyHall",
+      "class": "StaticMeshActor",
+      "location": [
+        -560.0,
+        710.0,
+        290.0
+      ],
+      "scale": [
+        0.26,
+        2.46,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119077440) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -560.0,
+        710.0,
+        290.0
+      ],
+      "bounds_extent": [
+        13.0,
+        123.0,
+        50.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Lintel_GarageStorage",
+      "class": "StaticMeshActor",
+      "location": [
+        -1090.0,
+        200.0,
+        290.0
+      ],
+      "scale": [
+        2.46,
+        0.26,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190774E0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -1090.0,
+        200.0,
+        290.0
+      ],
+      "bounds_extent": [
+        123.0,
+        13.0,
+        50.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Lintel_StorageLobby",
+      "class": "StaticMeshActor",
+      "location": [
+        -1077.5,
+        460.0,
+        290.0
+      ],
+      "scale": [
+        2.51,
+        0.26,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119077580) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -1077.5,
+        460.0,
+        290.0
+      ],
+      "bounds_extent": [
+        125.5,
+        13.0,
+        50.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Lintel_LivingDining",
+      "class": "StaticMeshActor",
+      "location": [
+        -57.5,
+        -600.0,
+        290.0
+      ],
+      "scale": [
+        2.41,
+        0.26,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119077620) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -57.5,
+        -600.0,
+        290.0
+      ],
+      "bounds_extent": [
+        120.5,
+        13.0,
+        50.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Lintel_LivingHall",
+      "class": "StaticMeshActor",
+      "location": [
+        -90.0,
+        440.0,
+        290.0
+      ],
+      "scale": [
+        2.46,
+        0.26,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190776C0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -90.0,
+        440.0,
+        290.0
+      ],
+      "bounds_extent": [
+        123.0,
+        13.0,
+        50.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Lintel_Dressing",
+      "class": "StaticMeshActor",
+      "location": [
+        225.0,
+        900.0,
+        290.0
+      ],
+      "scale": [
+        2.36,
+        0.26,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119077760) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        225.0,
+        900.0,
+        290.0
+      ],
+      "bounds_extent": [
+        118.0,
+        13.0,
+        50.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Lintel_WC",
+      "class": "StaticMeshActor",
+      "location": [
+        540.0,
+        -1315.0,
+        290.0
+      ],
+      "scale": [
+        0.26,
+        1.96,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119077850) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        540.0,
+        -1315.0,
+        290.0
+      ],
+      "bounds_extent": [
+        13.0,
+        98.0,
+        50.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Lintel_DiningKitchen",
+      "class": "StaticMeshActor",
+      "location": [
+        540.0,
+        -695.0,
+        290.0
+      ],
+      "scale": [
+        0.26,
+        2.36,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190778A0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        540.0,
+        -695.0,
+        290.0
+      ],
+      "bounds_extent": [
+        13.0,
+        118.0,
+        50.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Lintel_KitchenService",
+      "class": "StaticMeshActor",
+      "location": [
+        705.0,
+        400.0,
+        290.0
+      ],
+      "scale": [
+        2.36,
+        0.26,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119077800) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        705.0,
+        400.0,
+        290.0
+      ],
+      "bounds_extent": [
+        118.0,
+        13.0,
+        50.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_Lintel_HiddenRoom",
+      "class": "StaticMeshActor",
+      "location": [
+        880.0,
+        1055.0,
+        290.0
+      ],
+      "scale": [
+        0.26,
+        2.36,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119077990) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        880.0,
+        1055.0,
+        290.0
+      ],
+      "bounds_extent": [
+        13.0,
+        118.0,
+        50.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "GB_RestrictedStep_00",
+      "class": "StaticMeshActor",
+      "location": [
+        1324.999997079689,
+        -1030.0,
+        10.0
+      ],
+      "scale": [
+        4.949999999999999,
+        0.6,
+        0.2
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119077A30) {pitch: 0.000000, yaw: -179.999999, roll: 0.000000}>",
+      "bounds_origin": [
+        1324.999997079689,
+        -1030.0,
+        10.0
+      ],
+      "bounds_extent": [
+        247.50000073007777,
+        30.00000602314327,
+        10.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Stair_Limestone.MI_House_Stair_Limestone"
+      ]
+    },
+    {
+      "label": "GB_RestrictedStep_01",
+      "class": "StaticMeshActor",
+      "location": [
+        1325.0,
+        -1090.0,
+        30.0
+      ],
+      "scale": [
+        4.949999999999999,
+        0.6,
+        0.4
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119077AD0) {pitch: 0.000000, yaw: -179.999999, roll: 0.000000}>",
+      "bounds_origin": [
+        1325.0,
+        -1090.0,
+        30.0
+      ],
+      "bounds_extent": [
+        247.50000073007777,
+        30.000006023143214,
+        20.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Stair_Limestone.MI_House_Stair_Limestone"
+      ]
+    },
+    {
+      "label": "GB_RestrictedStep_02",
+      "class": "StaticMeshActor",
+      "location": [
+        1325.000002920311,
+        -1150.0,
+        40.0
+      ],
+      "scale": [
+        4.949999999999999,
+        0.6,
+        0.6
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119077B70) {pitch: 0.000000, yaw: -179.999999, roll: 0.000000}>",
+      "bounds_origin": [
+        1325.000002920311,
+        -1150.0,
+        40.0
+      ],
+      "bounds_extent": [
+        247.50000073007777,
+        30.000006023143214,
+        30.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Stair_Limestone.MI_House_Stair_Limestone"
+      ]
+    },
+    {
+      "label": "GB_RestrictedStep_03",
+      "class": "StaticMeshActor",
+      "location": [
+        1325.0000058406229,
+        -1209.9999999999995,
+        50.0
+      ],
+      "scale": [
+        4.949999999999999,
+        0.6,
+        0.8
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119077C10) {pitch: 0.000000, yaw: -179.999999, roll: 0.000000}>",
+      "bounds_origin": [
+        1325.0000058406229,
+        -1209.9999999999995,
+        50.0
+      ],
+      "bounds_extent": [
+        247.50000073007777,
+        30.000006023143214,
+        40.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Stair_Limestone.MI_House_Stair_Limestone"
+      ]
+    },
+    {
+      "label": "GB_RestrictedStep_04",
+      "class": "StaticMeshActor",
+      "location": [
+        1325.0000087609344,
+        -1269.9999999999998,
+        60.0
+      ],
+      "scale": [
+        4.949999999999999,
+        0.6,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119077CB0) {pitch: 0.000000, yaw: -179.999999, roll: 0.000000}>",
+      "bounds_origin": [
+        1325.0000087609344,
+        -1269.9999999999998,
+        60.0
+      ],
+      "bounds_extent": [
+        247.50000073007777,
+        30.000006023143214,
+        50.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Stair_Limestone.MI_House_Stair_Limestone"
+      ]
+    },
+    {
+      "label": "GB_RestrictedStep_05",
+      "class": "StaticMeshActor",
+      "location": [
+        1325.000011681246,
+        -1329.9999999999995,
+        70.0
+      ],
+      "scale": [
+        4.949999999999999,
+        0.6,
+        1.2
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119077D50) {pitch: 0.000000, yaw: -179.999999, roll: 0.000000}>",
+      "bounds_origin": [
+        1325.000011681246,
+        -1329.9999999999995,
+        70.0
+      ],
+      "bounds_extent": [
+        247.50000073007777,
+        30.000006023143214,
+        60.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Stair_Limestone.MI_House_Stair_Limestone"
+      ]
+    },
+    {
+      "label": "GB_RestrictedStep_06",
+      "class": "StaticMeshActor",
+      "location": [
+        1325.0000146015573,
+        -1389.9999999999995,
+        80.0
+      ],
+      "scale": [
+        4.949999999999999,
+        0.6,
+        1.4
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119077DF0) {pitch: 0.000000, yaw: -179.999999, roll: 0.000000}>",
+      "bounds_origin": [
+        1325.0000146015573,
+        -1389.9999999999995,
+        80.0
+      ],
+      "bounds_extent": [
+        247.50000073007777,
+        30.000006023143214,
+        70.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Stair_Limestone.MI_House_Stair_Limestone"
+      ]
+    },
+    {
+      "label": "GB_RestrictedStep_07",
+      "class": "StaticMeshActor",
+      "location": [
+        1325.000017521868,
+        -1449.9999999999989,
+        90.0
+      ],
+      "scale": [
+        4.949999999999999,
+        0.6,
+        1.6
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119077E90) {pitch: 0.000000, yaw: -179.999999, roll: 0.000000}>",
+      "bounds_origin": [
+        1325.000017521868,
+        -1449.9999999999989,
+        90.0
+      ],
+      "bounds_extent": [
+        247.50000073007777,
+        30.000006023143214,
+        80.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Stair_Limestone.MI_House_Stair_Limestone"
+      ]
+    },
+    {
+      "label": "GB_PlayerStart_Lobby",
+      "class": "PlayerStart",
+      "location": [
+        -1040.0,
+        1490.0,
+        100.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119077F30) {pitch: 0.000000, yaw: -90.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -1040.0,
+        1434.0,
+        100.0
+      ],
+      "bounds_extent": [
+        128.0,
+        184.0,
+        128.0
+      ]
+    },
+    {
+      "label": "GB_Label_Stairs",
+      "class": "TextRenderActor",
+      "location": [
+        1325.0,
+        -1291.0,
+        2.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119076090) {pitch: 0.000000, yaw: 0.000000, roll: 90.000000}>",
+      "bounds_origin": [
+        1325.0,
+        -1291.0,
+        2.0
+      ],
+      "bounds_extent": [
+        128.0,
+        128.0,
+        128.0
+      ]
+    },
+    {
+      "label": "ART_House_SurfaceGrade",
+      "class": "PostProcessVolume",
+      "location": [
+        0.0,
+        0.0,
+        100.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119084060) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        0.0,
+        0.0,
+        100.0
+      ],
+      "bounds_extent": [
+        100.0,
+        100.0,
+        100.0
+      ]
+    },
+    {
+      "label": "LIGHT_House_Living_Practical_N360",
+      "class": "PointLight",
+      "location": [
+        -360.0,
+        -420.0,
+        102.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119077FD0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -360.0,
+        -420.0,
+        102.0
+      ],
+      "bounds_extent": [
+        128.0,
+        128.0,
+        128.0
+      ]
+    },
+    {
+      "label": "LIGHT_House_Living_Practical_435",
+      "class": "PointLight",
+      "location": [
+        435.0,
+        245.0,
+        150.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119076090) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        435.0,
+        245.0,
+        150.0
+      ],
+      "bounds_extent": [
+        128.0,
+        128.0,
+        128.0
+      ]
+    },
+    {
+      "label": "LIGHT_House_Lobby_Practical_N1450",
+      "class": "PointLight",
+      "location": [
+        -1450.0,
+        1390.0,
+        125.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119077FD0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -1450.0,
+        1390.0,
+        125.0
+      ],
+      "bounds_extent": [
+        128.0,
+        128.0,
+        128.0
+      ]
+    },
+    {
+      "label": "LIGHT_House_Dining_Practical_365",
+      "class": "PointLight",
+      "location": [
+        365.0,
+        -1440.0,
+        125.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119076090) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        365.0,
+        -1440.0,
+        125.0
+      ],
+      "bounds_extent": [
+        128.0,
+        128.0,
+        128.0
+      ]
+    },
+    {
+      "label": "LIGHT_House_Dressing_Practical_350",
+      "class": "PointLight",
+      "location": [
+        350.0,
+        1230.0,
+        150.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119077FD0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        350.0,
+        1230.0,
+        150.0
+      ],
+      "bounds_extent": [
+        128.0,
+        128.0,
+        128.0
+      ]
+    },
+    {
+      "label": "LIGHT_House_HiddenRoom_Practical_1270",
+      "class": "PointLight",
+      "location": [
+        1270.0,
+        1030.0,
+        140.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119076090) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        1270.0,
+        1030.0,
+        140.0
+      ],
+      "bounds_extent": [
+        128.0,
+        128.0,
+        128.0
+      ]
+    },
+    {
+      "label": "GB_RestrictedStep_8",
+      "class": "StaticMeshActor",
+      "location": [
+        1325.000018,
+        -1530.0,
+        100.0
+      ],
+      "scale": [
+        4.95,
+        0.6,
+        1.6
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190840B0) {pitch: 0.000000, yaw: -179.999999, roll: 0.000000}>",
+      "bounds_origin": [
+        1325.000018,
+        -1530.0,
+        100.0
+      ],
+      "bounds_extent": [
+        247.5000005235986,
+        30.00000431968988,
+        80.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Floors/MI_House_Stair_Limestone.MI_House_Stair_Limestone"
+      ]
+    },
+    {
+      "label": "RM_House_Ceiling_Garage",
+      "class": "StaticMeshActor",
+      "location": [
+        -1071.0,
+        -691.0,
+        346.0
+      ],
+      "scale": [
+        10.22,
+        17.82,
+        0.12
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119084060) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -1071.0,
+        -691.0,
+        346.0
+      ],
+      "bounds_extent": [
+        511.0,
+        891.0,
+        6.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Ceiling.MI_House_Plaster_Ceiling"
+      ]
+    },
+    {
+      "label": "RM_House_Ceiling_Storage",
+      "class": "StaticMeshActor",
+      "location": [
+        -1071.0,
+        330.0,
+        346.0
+      ],
+      "scale": [
+        10.22,
+        2.6,
+        0.12
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119084100) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -1071.0,
+        330.0,
+        346.0
+      ],
+      "bounds_extent": [
+        511.0,
+        130.0,
+        6.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Ceiling.MI_House_Plaster_Ceiling"
+      ]
+    },
+    {
+      "label": "RM_House_Ceiling_Lobby",
+      "class": "StaticMeshActor",
+      "location": [
+        -1071.0,
+        1020.0,
+        346.0
+      ],
+      "scale": [
+        10.22,
+        11.2,
+        0.12
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190841A0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -1071.0,
+        1020.0,
+        346.0
+      ],
+      "bounds_extent": [
+        511.0,
+        560.0,
+        6.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Ceiling.MI_House_Plaster_Ceiling"
+      ]
+    },
+    {
+      "label": "RM_House_Ceiling_Dining",
+      "class": "StaticMeshActor",
+      "location": [
+        -10.0,
+        -1091.0,
+        346.0
+      ],
+      "scale": [
+        11.0,
+        9.82,
+        0.12
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119084290) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -10.0,
+        -1091.0,
+        346.0
+      ],
+      "bounds_extent": [
+        550.0,
+        491.0,
+        6.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Ceiling.MI_House_Plaster_Ceiling"
+      ]
+    },
+    {
+      "label": "RM_House_Ceiling_Living",
+      "class": "StaticMeshActor",
+      "location": [
+        -10.0,
+        -80.0,
+        346.0
+      ],
+      "scale": [
+        11.0,
+        10.4,
+        0.12
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119084330) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -10.0,
+        -80.0,
+        346.0
+      ],
+      "bounds_extent": [
+        550.0,
+        520.0,
+        6.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Ceiling.MI_House_Plaster_Ceiling"
+      ]
+    },
+    {
+      "label": "RM_House_Ceiling_ProductionHall",
+      "class": "StaticMeshActor",
+      "location": [
+        -10.0,
+        670.0,
+        346.0
+      ],
+      "scale": [
+        11.0,
+        4.6,
+        0.12
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190843D0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -10.0,
+        670.0,
+        346.0
+      ],
+      "bounds_extent": [
+        550.0,
+        230.0,
+        6.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Ceiling.MI_House_Plaster_Ceiling"
+      ]
+    },
+    {
+      "label": "RM_House_Ceiling_Dressing",
+      "class": "StaticMeshActor",
+      "location": [
+        -10.0,
+        1240.0,
+        346.0
+      ],
+      "scale": [
+        11.0,
+        6.8,
+        0.12
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119084470) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -10.0,
+        1240.0,
+        346.0
+      ],
+      "bounds_extent": [
+        550.0,
+        340.0,
+        6.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Ceiling.MI_House_Plaster_Ceiling"
+      ]
+    },
+    {
+      "label": "RM_House_Ceiling_WC",
+      "class": "StaticMeshActor",
+      "location": [
+        805.0,
+        -1291.0,
+        346.0
+      ],
+      "scale": [
+        5.3,
+        5.82,
+        0.12
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119084510) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        805.0,
+        -1291.0,
+        346.0
+      ],
+      "bounds_extent": [
+        265.0,
+        291.0,
+        6.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Ceiling.MI_House_Plaster_Ceiling"
+      ]
+    },
+    {
+      "label": "RM_House_Ceiling_Kitchen",
+      "class": "StaticMeshActor",
+      "location": [
+        1060.0,
+        -300.0,
+        346.0
+      ],
+      "scale": [
+        10.4,
+        14.0,
+        0.12
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190845B0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        1060.0,
+        -300.0,
+        346.0
+      ],
+      "bounds_extent": [
+        520.0,
+        700.0,
+        6.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Ceiling.MI_House_Plaster_Ceiling"
+      ]
+    },
+    {
+      "label": "RM_House_Ceiling_Service",
+      "class": "StaticMeshActor",
+      "location": [
+        710.0,
+        990.0,
+        346.0
+      ],
+      "scale": [
+        3.4,
+        11.8,
+        0.12
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119084650) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        710.0,
+        990.0,
+        346.0
+      ],
+      "bounds_extent": [
+        170.0,
+        590.0,
+        6.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Ceiling.MI_House_Plaster_Ceiling"
+      ]
+    },
+    {
+      "label": "RM_House_Ceiling_HiddenRoom",
+      "class": "StaticMeshActor",
+      "location": [
+        1230.0,
+        990.0,
+        346.0
+      ],
+      "scale": [
+        7.0,
+        11.8,
+        0.12
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190846F0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        1230.0,
+        990.0,
+        346.0
+      ],
+      "bounds_extent": [
+        350.0,
+        590.0,
+        6.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Ceiling.MI_House_Plaster_Ceiling"
+      ]
+    },
+    {
+      "label": "RM_House_Panelling_Garage",
+      "class": "StaticMeshActor",
+      "location": [
+        -1071.0,
+        -691.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119084790) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -1071.0,
+        -691.0,
+        169.0
+      ],
+      "bounds_extent": [
+        501.25,
+        881.25,
+        169.0
+      ],
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_Garage.SM_House_Architecture_Garage",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Timber_AgedIvory.MI_House_Timber_AgedIvory",
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Timber_PanelInset.MI_House_Timber_PanelInset"
+      ]
+    },
+    {
+      "label": "RM_House_Panelling_Storage",
+      "class": "StaticMeshActor",
+      "location": [
+        -1071.0,
+        330.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119084830) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -1071.0,
+        330.0,
+        169.0
+      ],
+      "bounds_extent": [
+        501.25,
+        120.25,
+        169.0
+      ],
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_Storage.SM_House_Architecture_Storage",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Timber_AgedIvory.MI_House_Timber_AgedIvory",
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Timber_PanelInset.MI_House_Timber_PanelInset"
+      ]
+    },
+    {
+      "label": "RM_House_Panelling_Lobby",
+      "class": "StaticMeshActor",
+      "location": [
+        -1071.0,
+        1020.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119084790) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -1071.0,
+        1020.0,
+        169.0
+      ],
+      "bounds_extent": [
+        501.25,
+        550.25,
+        169.0
+      ],
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_Lobby.SM_House_Architecture_Lobby",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Timber_AgedIvory.MI_House_Timber_AgedIvory",
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Timber_PanelInset.MI_House_Timber_PanelInset"
+      ]
+    },
+    {
+      "label": "RM_House_Panelling_Dining",
+      "class": "StaticMeshActor",
+      "location": [
+        -10.0,
+        -1091.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119084830) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -10.0,
+        -1088.125,
+        169.0
+      ],
+      "bounds_extent": [
+        540.25,
+        484.125,
+        169.0
+      ],
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_Dining.SM_House_Architecture_Dining",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Timber_AgedIvory.MI_House_Timber_AgedIvory",
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Timber_PanelInset.MI_House_Timber_PanelInset"
+      ]
+    },
+    {
+      "label": "RM_House_Panelling_Living",
+      "class": "StaticMeshActor",
+      "location": [
+        -10.0,
+        -80.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119084790) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -10.0,
+        -82.875,
+        169.0
+      ],
+      "bounds_extent": [
+        540.25,
+        513.125,
+        169.0
+      ],
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_Living.SM_House_Architecture_Living",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Timber_AgedIvory.MI_House_Timber_AgedIvory",
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Timber_PanelInset.MI_House_Timber_PanelInset"
+      ]
+    },
+    {
+      "label": "RM_House_Panelling_ProductionHall",
+      "class": "StaticMeshActor",
+      "location": [
+        -10.0,
+        670.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190849C0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -10.0,
+        670.0,
+        169.0
+      ],
+      "bounds_extent": [
+        540.25,
+        220.25,
+        169.0
+      ],
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_ProductionHall.SM_House_Architecture_ProductionHall",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Timber_AgedIvory.MI_House_Timber_AgedIvory",
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Timber_PanelInset.MI_House_Timber_PanelInset"
+      ]
+    },
+    {
+      "label": "RM_House_Panelling_Dressing",
+      "class": "StaticMeshActor",
+      "location": [
+        -10.0,
+        1240.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119084790) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -10.0,
+        1240.0,
+        169.0
+      ],
+      "bounds_extent": [
+        540.25,
+        330.25,
+        169.0
+      ],
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_Dressing.SM_House_Architecture_Dressing",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Timber_AgedIvory.MI_House_Timber_AgedIvory",
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Timber_PanelInset.MI_House_Timber_PanelInset"
+      ]
+    },
+    {
+      "label": "RM_House_Panelling_WC",
+      "class": "StaticMeshActor",
+      "location": [
+        805.0,
+        -1291.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190849C0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        805.0,
+        -1291.0,
+        169.0
+      ],
+      "bounds_extent": [
+        255.25,
+        281.25,
+        169.0
+      ],
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_WC.SM_House_Architecture_WC",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Timber_AgedIvory.MI_House_Timber_AgedIvory",
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Timber_PanelInset.MI_House_Timber_PanelInset"
+      ]
+    },
+    {
+      "label": "RM_House_Panelling_Kitchen",
+      "class": "StaticMeshActor",
+      "location": [
+        1060.0,
+        -300.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119084790) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        1060.0,
+        -300.0,
+        169.0
+      ],
+      "bounds_extent": [
+        510.25,
+        690.25,
+        169.0
+      ],
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_Kitchen.SM_House_Architecture_Kitchen",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Timber_AgedIvory.MI_House_Timber_AgedIvory",
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Timber_PanelInset.MI_House_Timber_PanelInset"
+      ]
+    },
+    {
+      "label": "RM_House_Panelling_Service",
+      "class": "StaticMeshActor",
+      "location": [
+        710.0,
+        990.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190849C0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        710.0,
+        990.0,
+        169.0
+      ],
+      "bounds_extent": [
+        160.25,
+        580.25,
+        169.0
+      ],
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_Service.SM_House_Architecture_Service",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Timber_AgedIvory.MI_House_Timber_AgedIvory",
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Timber_PanelInset.MI_House_Timber_PanelInset"
+      ]
+    },
+    {
+      "label": "RM_House_Panelling_HiddenRoom",
+      "class": "StaticMeshActor",
+      "location": [
+        1230.0,
+        990.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119084790) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        1230.0,
+        990.0,
+        169.0
+      ],
+      "bounds_extent": [
+        340.25,
+        580.25,
+        169.0
+      ],
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Architecture_HiddenRoom.SM_House_Architecture_HiddenRoom",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Timber_AgedIvory.MI_House_Timber_AgedIvory",
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Timber_PanelInset.MI_House_Timber_PanelInset"
+      ]
+    },
+    {
+      "label": "RM_House_Ceiling_Stairwell",
+      "class": "StaticMeshActor",
+      "location": [
+        1325.0,
+        -1291.0,
+        436.0
+      ],
+      "scale": [
+        5.3,
+        6.08,
+        0.12
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190849C0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        1325.0,
+        -1291.0,
+        436.0
+      ],
+      "bounds_extent": [
+        265.0,
+        304.0,
+        6.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Ceiling.MI_House_Plaster_Ceiling"
+      ]
+    },
+    {
+      "label": "RM_House_StairwellUpper_North",
+      "class": "StaticMeshActor",
+      "location": [
+        1325.0,
+        -1582.0,
+        385.0
+      ],
+      "scale": [
+        5.3,
+        0.26,
+        0.9
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119084790) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        1325.0,
+        -1582.0,
+        385.0
+      ],
+      "bounds_extent": [
+        265.0,
+        13.0,
+        45.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "RM_House_StairwellUpper_East",
+      "class": "StaticMeshActor",
+      "location": [
+        1580.0,
+        -1291.0,
+        385.0
+      ],
+      "scale": [
+        0.26,
+        6.08,
+        0.9
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119084BF0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        1580.0,
+        -1291.0,
+        385.0
+      ],
+      "bounds_extent": [
+        13.0,
+        304.0,
+        45.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "RM_House_StairwellUpper_West",
+      "class": "StaticMeshActor",
+      "location": [
+        1070.0,
+        -1291.0,
+        385.0
+      ],
+      "scale": [
+        0.26,
+        6.08,
+        0.9
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119084C90) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        1070.0,
+        -1291.0,
+        385.0
+      ],
+      "bounds_extent": [
+        13.0,
+        304.0,
+        45.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "RM_House_StairwellUpper_South",
+      "class": "StaticMeshActor",
+      "location": [
+        1325.0,
+        -1000.0,
+        385.0
+      ],
+      "scale": [
+        5.3,
+        0.26,
+        0.9
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119084D30) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        1325.0,
+        -1000.0,
+        385.0
+      ],
+      "bounds_extent": [
+        265.0,
+        13.0,
+        45.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "RM_House_Roof_West",
+      "class": "StaticMeshActor",
+      "location": [
+        -830.0,
+        -1.0,
+        550.0
+      ],
+      "scale": [
+        16.745148551147583,
+        33.5,
+        0.16
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119084DD0) {pitch: 7.549422, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -830.0,
+        -1.0,
+        550.0
+      ],
+      "bounds_extent": [
+        831.0510506598075,
+        1675.0,
+        117.93065550879533
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Roof_Charcoal.MI_House_Roof_Charcoal"
+      ]
+    },
+    {
+      "label": "RM_House_Roof_East",
+      "class": "StaticMeshActor",
+      "location": [
+        830.0,
+        -1.0,
+        550.0
+      ],
+      "scale": [
+        16.745148551147583,
+        33.5,
+        0.16
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119084E70) {pitch: -7.549422, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        829.9999999999999,
+        -1.0,
+        550.0
+      ],
+      "bounds_extent": [
+        831.0510506598075,
+        1675.0,
+        117.93065550879533
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Roof_Charcoal.MI_House_Roof_Charcoal"
+      ]
+    },
+    {
+      "label": "RM_House_Gable_-1582",
+      "class": "StaticMeshActor",
+      "location": [
+        0.0,
+        -1582.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119084F10) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        0.0,
+        -1582.0,
+        500.0
+      ],
+      "bounds_extent": [
+        1595.0,
+        13.0,
+        160.0
+      ],
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Roof_Gable.SM_House_Roof_Gable",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "RM_House_Gable_1580",
+      "class": "StaticMeshActor",
+      "location": [
+        0.0,
+        1580.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119084FB0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        0.0,
+        1580.0,
+        500.0
+      ],
+      "bounds_extent": [
+        1595.0,
+        13.0,
+        160.0
+      ],
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Roof_Gable.SM_House_Roof_Gable",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "RM_House_Eave_-1582",
+      "class": "StaticMeshActor",
+      "location": [
+        -1582.0,
+        -1.0,
+        395.0
+      ],
+      "scale": [
+        0.26,
+        31.88,
+        1.1
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119084F10) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -1582.0,
+        -1.0,
+        395.0
+      ],
+      "bounds_extent": [
+        13.0,
+        1594.0,
+        55.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "RM_House_Eave_1580",
+      "class": "StaticMeshActor",
+      "location": [
+        1580.0,
+        -1.0,
+        395.0
+      ],
+      "scale": [
+        0.26,
+        31.88,
+        1.1
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119084FB0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        1580.0,
+        -1.0,
+        395.0
+      ],
+      "bounds_extent": [
+        13.0,
+        1594.0,
+        55.0
+      ],
+      "mesh": "/Engine/BasicShapes/Cube.Cube",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Plaster_Sage.MI_House_Plaster_Sage"
+      ]
+    },
+    {
+      "label": "RM_House_Rose_Garage",
+      "class": "StaticMeshActor",
+      "location": [
+        -1071.0,
+        -691.0,
+        339.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190850F0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -1071.0,
+        -691.0,
+        336.5
+      ],
+      "bounds_extent": [
+        38.0,
+        38.0,
+        2.5
+      ],
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Fixture_CeilingRose.SM_House_Fixture_CeilingRose",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Timber_AgedIvory.MI_House_Timber_AgedIvory"
+      ]
+    },
+    {
+      "label": "RM_House_Chandelier_Garage",
+      "class": "StaticMeshActor",
+      "location": [
+        -1071.0,
+        -691.0,
+        335.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119085190) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -1071.0,
+        -691.0,
+        310.0
+      ],
+      "bounds_extent": [
+        39.0,
+        39.0,
+        25.0
+      ],
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Fixture_Chandelier.SM_House_Fixture_Chandelier",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Shelf_Gunmetal.MI_House_Prop_Shelf_Gunmetal",
+        "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Bulb.MI_House_Prop_Bulb"
+      ]
+    },
+    {
+      "label": "LIGHT_House_Remaster_Garage",
+      "class": "PointLight",
+      "location": [
+        -1071.0,
+        -691.0,
+        285.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190850F0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -1071.0,
+        -691.0,
+        285.0
+      ],
+      "bounds_extent": [
+        128.0,
+        128.0,
+        128.0
+      ]
+    },
+    {
+      "label": "RM_House_Rose_Lobby",
+      "class": "StaticMeshActor",
+      "location": [
+        -1071.0,
+        1020.0,
+        339.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119085190) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -1071.0,
+        1020.0,
+        336.5
+      ],
+      "bounds_extent": [
+        38.0,
+        38.0,
+        2.5
+      ],
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Fixture_CeilingRose.SM_House_Fixture_CeilingRose",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Timber_AgedIvory.MI_House_Timber_AgedIvory"
+      ]
+    },
+    {
+      "label": "RM_House_Chandelier_Lobby",
+      "class": "StaticMeshActor",
+      "location": [
+        -1071.0,
+        1020.0,
+        335.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190850F0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -1071.0,
+        1020.0,
+        310.0
+      ],
+      "bounds_extent": [
+        39.0,
+        39.0,
+        25.0
+      ],
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Fixture_Chandelier.SM_House_Fixture_Chandelier",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Shelf_Gunmetal.MI_House_Prop_Shelf_Gunmetal",
+        "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Bulb.MI_House_Prop_Bulb"
+      ]
+    },
+    {
+      "label": "LIGHT_House_Remaster_Lobby",
+      "class": "PointLight",
+      "location": [
+        -1071.0,
+        1020.0,
+        285.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119085190) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -1071.0,
+        1020.0,
+        285.0
+      ],
+      "bounds_extent": [
+        128.0,
+        128.0,
+        128.0
+      ]
+    },
+    {
+      "label": "RM_House_Rose_Dining",
+      "class": "StaticMeshActor",
+      "location": [
+        -10.0,
+        -1091.0,
+        339.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190850F0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -10.0,
+        -1091.0,
+        336.5
+      ],
+      "bounds_extent": [
+        38.0,
+        38.0,
+        2.5
+      ],
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Fixture_CeilingRose.SM_House_Fixture_CeilingRose",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Timber_AgedIvory.MI_House_Timber_AgedIvory"
+      ]
+    },
+    {
+      "label": "RM_House_Chandelier_Dining",
+      "class": "StaticMeshActor",
+      "location": [
+        -10.0,
+        -1091.0,
+        335.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119085190) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -10.0,
+        -1091.0,
+        310.0
+      ],
+      "bounds_extent": [
+        39.0,
+        39.0,
+        25.0
+      ],
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Fixture_Chandelier.SM_House_Fixture_Chandelier",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Shelf_Gunmetal.MI_House_Prop_Shelf_Gunmetal",
+        "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Bulb.MI_House_Prop_Bulb"
+      ]
+    },
+    {
+      "label": "LIGHT_House_Remaster_Dining",
+      "class": "PointLight",
+      "location": [
+        -10.0,
+        -1091.0,
+        285.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190850F0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -10.0,
+        -1091.0,
+        285.0
+      ],
+      "bounds_extent": [
+        128.0,
+        128.0,
+        128.0
+      ]
+    },
+    {
+      "label": "RM_House_Rose_Living",
+      "class": "StaticMeshActor",
+      "location": [
+        -10.0,
+        -80.0,
+        339.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119085190) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -10.0,
+        -80.0,
+        336.5
+      ],
+      "bounds_extent": [
+        38.0,
+        38.0,
+        2.5
+      ],
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Fixture_CeilingRose.SM_House_Fixture_CeilingRose",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Timber_AgedIvory.MI_House_Timber_AgedIvory"
+      ]
+    },
+    {
+      "label": "RM_House_Chandelier_Living",
+      "class": "StaticMeshActor",
+      "location": [
+        -10.0,
+        -80.0,
+        335.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190850F0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -10.0,
+        -80.0,
+        310.0
+      ],
+      "bounds_extent": [
+        39.0,
+        39.0,
+        25.0
+      ],
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Fixture_Chandelier.SM_House_Fixture_Chandelier",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Shelf_Gunmetal.MI_House_Prop_Shelf_Gunmetal",
+        "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Bulb.MI_House_Prop_Bulb"
+      ]
+    },
+    {
+      "label": "LIGHT_House_Remaster_Living",
+      "class": "PointLight",
+      "location": [
+        -10.0,
+        -80.0,
+        285.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D119085190) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -10.0,
+        -80.0,
+        285.0
+      ],
+      "bounds_extent": [
+        128.0,
+        128.0,
+        128.0
+      ]
+    },
+    {
+      "label": "RM_House_Rose_ProductionHall",
+      "class": "StaticMeshActor",
+      "location": [
+        -10.0,
+        670.0,
+        339.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190850F0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -10.0,
+        670.0,
+        336.5
+      ],
+      "bounds_extent": [
+        38.0,
+        38.0,
+        2.5
+      ],
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Fixture_CeilingRose.SM_House_Fixture_CeilingRose",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Timber_AgedIvory.MI_House_Timber_AgedIvory"
+      ]
+    },
+    {
+      "label": "RM_House_Chandelier_ProductionHall",
+      "class": "StaticMeshActor",
+      "location": [
+        -10.0,
+        670.0,
+        335.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190855A0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -10.0,
+        670.0,
+        310.0
+      ],
+      "bounds_extent": [
+        39.0,
+        39.0,
+        25.0
+      ],
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Fixture_Chandelier.SM_House_Fixture_Chandelier",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Shelf_Gunmetal.MI_House_Prop_Shelf_Gunmetal",
+        "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Bulb.MI_House_Prop_Bulb"
+      ]
+    },
+    {
+      "label": "LIGHT_House_Remaster_ProductionHall",
+      "class": "PointLight",
+      "location": [
+        -10.0,
+        670.0,
+        285.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190855F0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -10.0,
+        670.0,
+        285.0
+      ],
+      "bounds_extent": [
+        128.0,
+        128.0,
+        128.0
+      ]
+    },
+    {
+      "label": "RM_House_Rose_Dressing",
+      "class": "StaticMeshActor",
+      "location": [
+        -10.0,
+        1240.0,
+        339.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190855A0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -10.0,
+        1240.0,
+        336.5
+      ],
+      "bounds_extent": [
+        38.0,
+        38.0,
+        2.5
+      ],
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Fixture_CeilingRose.SM_House_Fixture_CeilingRose",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Timber_AgedIvory.MI_House_Timber_AgedIvory"
+      ]
+    },
+    {
+      "label": "RM_House_Chandelier_Dressing",
+      "class": "StaticMeshActor",
+      "location": [
+        -10.0,
+        1240.0,
+        335.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190855F0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -10.0,
+        1240.0,
+        310.0
+      ],
+      "bounds_extent": [
+        39.0,
+        39.0,
+        25.0
+      ],
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Fixture_Chandelier.SM_House_Fixture_Chandelier",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Shelf_Gunmetal.MI_House_Prop_Shelf_Gunmetal",
+        "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Bulb.MI_House_Prop_Bulb"
+      ]
+    },
+    {
+      "label": "LIGHT_House_Remaster_Dressing",
+      "class": "PointLight",
+      "location": [
+        -10.0,
+        1240.0,
+        285.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190855A0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -10.0,
+        1240.0,
+        285.0
+      ],
+      "bounds_extent": [
+        128.0,
+        128.0,
+        128.0
+      ]
+    },
+    {
+      "label": "RM_House_Rose_Kitchen",
+      "class": "StaticMeshActor",
+      "location": [
+        1060.0,
+        -300.0,
+        339.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190855F0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        1060.0,
+        -300.0,
+        336.5
+      ],
+      "bounds_extent": [
+        38.0,
+        38.0,
+        2.5
+      ],
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Fixture_CeilingRose.SM_House_Fixture_CeilingRose",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Timber_AgedIvory.MI_House_Timber_AgedIvory"
+      ]
+    },
+    {
+      "label": "RM_House_Chandelier_Kitchen",
+      "class": "StaticMeshActor",
+      "location": [
+        1060.0,
+        -300.0,
+        335.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190855A0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        1060.0,
+        -300.0,
+        310.0
+      ],
+      "bounds_extent": [
+        39.0,
+        39.0,
+        25.0
+      ],
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Fixture_Chandelier.SM_House_Fixture_Chandelier",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Shelf_Gunmetal.MI_House_Prop_Shelf_Gunmetal",
+        "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Bulb.MI_House_Prop_Bulb"
+      ]
+    },
+    {
+      "label": "LIGHT_House_Remaster_Kitchen",
+      "class": "PointLight",
+      "location": [
+        1060.0,
+        -300.0,
+        285.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190855F0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        1060.0,
+        -300.0,
+        285.0
+      ],
+      "bounds_extent": [
+        128.0,
+        128.0,
+        128.0
+      ]
+    },
+    {
+      "label": "RM_House_Rose_HiddenRoom",
+      "class": "StaticMeshActor",
+      "location": [
+        1230.0,
+        990.0,
+        339.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190855A0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        1230.0,
+        990.0,
+        336.5
+      ],
+      "bounds_extent": [
+        38.0,
+        38.0,
+        2.5
+      ],
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Fixture_CeilingRose.SM_House_Fixture_CeilingRose",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Timber_AgedIvory.MI_House_Timber_AgedIvory"
+      ]
+    },
+    {
+      "label": "RM_House_Chandelier_HiddenRoom",
+      "class": "StaticMeshActor",
+      "location": [
+        1230.0,
+        990.0,
+        335.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190855F0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        1230.0,
+        990.0,
+        310.0
+      ],
+      "bounds_extent": [
+        39.0,
+        39.0,
+        25.0
+      ],
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Fixture_Chandelier.SM_House_Fixture_Chandelier",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Shelf_Gunmetal.MI_House_Prop_Shelf_Gunmetal",
+        "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Bulb.MI_House_Prop_Bulb"
+      ]
+    },
+    {
+      "label": "LIGHT_House_Remaster_HiddenRoom",
+      "class": "PointLight",
+      "location": [
+        1230.0,
+        990.0,
+        285.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190855A0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        1230.0,
+        990.0,
+        285.0
+      ],
+      "bounds_extent": [
+        128.0,
+        128.0,
+        128.0
+      ]
+    },
+    {
+      "label": "RM_House_Rose_Storage",
+      "class": "StaticMeshActor",
+      "location": [
+        -1071.0,
+        330.0,
+        339.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190855F0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -1071.0,
+        330.0,
+        336.5
+      ],
+      "bounds_extent": [
+        38.0,
+        38.0,
+        2.5
+      ],
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Fixture_CeilingRose.SM_House_Fixture_CeilingRose",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Timber_AgedIvory.MI_House_Timber_AgedIvory"
+      ]
+    },
+    {
+      "label": "LIGHT_House_Remaster_Storage",
+      "class": "PointLight",
+      "location": [
+        -1071.0,
+        330.0,
+        305.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190855A0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        -1071.0,
+        330.0,
+        305.0
+      ],
+      "bounds_extent": [
+        128.0,
+        128.0,
+        128.0
+      ]
+    },
+    {
+      "label": "RM_House_Rose_WC",
+      "class": "StaticMeshActor",
+      "location": [
+        805.0,
+        -1291.0,
+        339.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190855F0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        805.0,
+        -1291.0,
+        336.5
+      ],
+      "bounds_extent": [
+        38.0,
+        38.0,
+        2.5
+      ],
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Fixture_CeilingRose.SM_House_Fixture_CeilingRose",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Timber_AgedIvory.MI_House_Timber_AgedIvory"
+      ]
+    },
+    {
+      "label": "LIGHT_House_Remaster_WC",
+      "class": "PointLight",
+      "location": [
+        805.0,
+        -1291.0,
+        305.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190855A0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        805.0,
+        -1291.0,
+        305.0
+      ],
+      "bounds_extent": [
+        128.0,
+        128.0,
+        128.0
+      ]
+    },
+    {
+      "label": "RM_House_Rose_Service",
+      "class": "StaticMeshActor",
+      "location": [
+        710.0,
+        990.0,
+        339.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190855F0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        710.0,
+        990.0,
+        336.5
+      ],
+      "bounds_extent": [
+        38.0,
+        38.0,
+        2.5
+      ],
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Remaster/SM_House_Fixture_CeilingRose.SM_House_Fixture_CeilingRose",
+      "materials": [
+        "/Game/Game/Art/Environment/House/Materials/Instances/Remaster/MI_House_Timber_AgedIvory.MI_House_Timber_AgedIvory"
+      ]
+    },
+    {
+      "label": "LIGHT_House_Remaster_Service",
+      "class": "PointLight",
+      "location": [
+        710.0,
+        990.0,
+        305.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": "<Struct 'Rotator' (0x000001D1190855A0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "bounds_origin": [
+        710.0,
+        990.0,
+        305.0
+      ],
+      "bounds_extent": [
+        128.0,
+        128.0,
+        128.0
+      ]
+    }
+  ],
+  "characters": [],
+  "world": "/Game/Game/Levels/SB_GrayBox.SB_GrayBox"
+}
