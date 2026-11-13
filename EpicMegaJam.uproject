@@ -23,8 +23,7 @@
 			"Enabled": true,
 			"TargetAllowList": [
 				"Editor"
-			],
-			"Optional": true
+			]
 		},
 		{
 			"Name": "ModelingToolsEditorMode",
