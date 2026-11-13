@@ -1,0 +1,1099 @@
+{
+  "target": "Current Windows PC editor; asset validation, not a minimum-hardware FPS guarantee",
+  "issues": [],
+  "assets": [
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Armchair.SM_House_Armchair",
+      "lods": [
+        {
+          "triangles": 3600,
+          "vertices": 2592,
+          "sections": 3,
+          "uv_channels": 1,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 1980,
+          "vertices": 1584,
+          "sections": 3,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 900,
+          "vertices": 856,
+          "sections": 3,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        }
+      ],
+      "material_slots": [
+        {
+          "name": "Wood",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Oak.MI_House_Prop_Oak",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Fabric",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Fabric_Charcoal.MI_House_Prop_Fabric_Charcoal",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Tan",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Tan.MI_House_Prop_Tan",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        }
+      ],
+      "collision_shapes": 1
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Bathroom_Basin.SM_House_Bathroom_Basin",
+      "lods": [
+        {
+          "triangles": 996,
+          "vertices": 752,
+          "sections": 4,
+          "uv_channels": 1,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 548,
+          "vertices": 442,
+          "sections": 4,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 248,
+          "vertices": 245,
+          "sections": 4,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        }
+      ],
+      "material_slots": [
+        {
+          "name": "Wood",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Oak.MI_House_Prop_Oak",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Ivory",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Ivory.MI_House_Prop_Ivory",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Rubber",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Rubber.MI_House_Prop_Rubber",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Metal",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Shelf_Gunmetal.MI_House_Prop_Shelf_Gunmetal",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        }
+      ],
+      "collision_shapes": 1
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Bathroom_Toilet.SM_House_Bathroom_Toilet",
+      "lods": [
+        {
+          "triangles": 1152,
+          "vertices": 801,
+          "sections": 2,
+          "uv_channels": 1,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 634,
+          "vertices": 482,
+          "sections": 2,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 288,
+          "vertices": 255,
+          "sections": 1,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        }
+      ],
+      "material_slots": [
+        {
+          "name": "Ivory",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Ivory.MI_House_Prop_Ivory",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Metal",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Shelf_Gunmetal.MI_House_Prop_Shelf_Gunmetal",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        }
+      ],
+      "collision_shapes": 1
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Cabinet_Tall.SM_House_Cabinet_Tall",
+      "lods": [
+        {
+          "triangles": 4808,
+          "vertices": 3784,
+          "sections": 5,
+          "uv_channels": 1,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 2644,
+          "vertices": 2266,
+          "sections": 5,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 1202,
+          "vertices": 1283,
+          "sections": 5,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        }
+      ],
+      "material_slots": [
+        {
+          "name": "Wood",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Oak.MI_House_Prop_Oak",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Metal",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Shelf_Gunmetal.MI_House_Prop_Shelf_Gunmetal",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Burgundy",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Burgundy.MI_House_Prop_Burgundy",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Tan",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Tan.MI_House_Prop_Tan",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Rubber",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Rubber.MI_House_Prop_Rubber",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        }
+      ],
+      "collision_shapes": 1
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Chair_Dining.SM_House_Chair_Dining",
+      "lods": [
+        {
+          "triangles": 872,
+          "vertices": 728,
+          "sections": 2,
+          "uv_channels": 1,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 480,
+          "vertices": 452,
+          "sections": 2,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 218,
+          "vertices": 246,
+          "sections": 2,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        }
+      ],
+      "material_slots": [
+        {
+          "name": "Metal",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Shelf_Gunmetal.MI_House_Prop_Shelf_Gunmetal",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Fabric",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Fabric_Charcoal.MI_House_Prop_Fabric_Charcoal",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        }
+      ],
+      "collision_shapes": 1
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_ClothesRail.SM_House_ClothesRail",
+      "lods": [
+        {
+          "triangles": 5808,
+          "vertices": 4612,
+          "sections": 3,
+          "uv_channels": 1,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 3194,
+          "vertices": 2921,
+          "sections": 3,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 1452,
+          "vertices": 1544,
+          "sections": 3,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        }
+      ],
+      "material_slots": [
+        {
+          "name": "Metal",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Shelf_Gunmetal.MI_House_Prop_Shelf_Gunmetal",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Burgundy",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Burgundy.MI_House_Prop_Burgundy",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Tan",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Tan.MI_House_Prop_Tan",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        }
+      ],
+      "collision_shapes": 1
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Console.SM_House_Console",
+      "lods": [
+        {
+          "triangles": 900,
+          "vertices": 736,
+          "sections": 1,
+          "uv_channels": 1,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 494,
+          "vertices": 461,
+          "sections": 1,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 224,
+          "vertices": 252,
+          "sections": 1,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        }
+      ],
+      "material_slots": [
+        {
+          "name": "Wood",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Oak.MI_House_Prop_Oak",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        }
+      ],
+      "collision_shapes": 1
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Desk_Office.SM_House_Desk_Office",
+      "lods": [
+        {
+          "triangles": 2356,
+          "vertices": 1985,
+          "sections": 5,
+          "uv_channels": 1,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 1295,
+          "vertices": 1262,
+          "sections": 5,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 588,
+          "vertices": 658,
+          "sections": 5,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        }
+      ],
+      "material_slots": [
+        {
+          "name": "Wood",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Oak.MI_House_Prop_Oak",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Metal",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Shelf_Gunmetal.MI_House_Prop_Shelf_Gunmetal",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Paper",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Paper.MI_House_Prop_Paper",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Ink",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Ink.MI_House_Prop_Ink",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Ivory",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Ivory.MI_House_Prop_Ivory",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        }
+      ],
+      "collision_shapes": 1
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_FlightCase_Black.SM_House_FlightCase_Black",
+      "lods": [
+        {
+          "triangles": 3344,
+          "vertices": 2980,
+          "sections": 3,
+          "uv_channels": 1,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 1840,
+          "vertices": 1852,
+          "sections": 3,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 836,
+          "vertices": 1152,
+          "sections": 3,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        }
+      ],
+      "material_slots": [
+        {
+          "name": "Rubber",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Rubber.MI_House_Prop_Rubber",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Metal",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Shelf_Gunmetal.MI_House_Prop_Shelf_Gunmetal",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Paper",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Paper.MI_House_Prop_Paper",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        }
+      ],
+      "collision_shapes": 1
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_FlightCase_Yellow.SM_House_FlightCase_Yellow",
+      "lods": [
+        {
+          "triangles": 3344,
+          "vertices": 2980,
+          "sections": 4,
+          "uv_channels": 1,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 1840,
+          "vertices": 1852,
+          "sections": 4,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 836,
+          "vertices": 1152,
+          "sections": 4,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        }
+      ],
+      "material_slots": [
+        {
+          "name": "Rubber",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Rubber.MI_House_Prop_Rubber",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Metal",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Shelf_Gunmetal.MI_House_Prop_Shelf_Gunmetal",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Yellow",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Yellow.MI_House_Prop_Yellow",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Paper",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Paper.MI_House_Prop_Paper",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        }
+      ],
+      "collision_shapes": 1
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Kitchen_Cabinet.SM_House_Kitchen_Cabinet",
+      "lods": [
+        {
+          "triangles": 796,
+          "vertices": 672,
+          "sections": 4,
+          "uv_channels": 1,
+          "reversed_index_buffer": false
+        }
+      ],
+      "material_slots": [
+        {
+          "name": "Rubber",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Rubber.MI_House_Prop_Rubber",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Wood",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Oak.MI_House_Prop_Oak",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Metal",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Shelf_Gunmetal.MI_House_Prop_Shelf_Gunmetal",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Stone",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Counter_Stone.MI_House_Prop_Counter_Stone",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        }
+      ],
+      "collision_shapes": 1
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Kitchen_Cooker.SM_House_Kitchen_Cooker",
+      "lods": [
+        {
+          "triangles": 2344,
+          "vertices": 1816,
+          "sections": 5,
+          "uv_channels": 1,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 1290,
+          "vertices": 1099,
+          "sections": 5,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 585,
+          "vertices": 618,
+          "sections": 5,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        }
+      ],
+      "material_slots": [
+        {
+          "name": "Rubber",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Rubber.MI_House_Prop_Rubber",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Wood",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Oak.MI_House_Prop_Oak",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Metal",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Shelf_Gunmetal.MI_House_Prop_Shelf_Gunmetal",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Stone",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Counter_Stone.MI_House_Prop_Counter_Stone",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Mirror",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Mirror.MI_House_Prop_Mirror",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        }
+      ],
+      "collision_shapes": 1
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Kitchen_Refrigerator.SM_House_Kitchen_Refrigerator",
+      "lods": [
+        {
+          "triangles": 996,
+          "vertices": 752,
+          "sections": 2,
+          "uv_channels": 1,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 548,
+          "vertices": 432,
+          "sections": 2,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 248,
+          "vertices": 238,
+          "sections": 2,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        }
+      ],
+      "material_slots": [
+        {
+          "name": "Metal",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Shelf_Gunmetal.MI_House_Prop_Shelf_Gunmetal",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Ivory",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Ivory.MI_House_Prop_Ivory",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        }
+      ],
+      "collision_shapes": 1
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Kitchen_Sink.SM_House_Kitchen_Sink",
+      "lods": [
+        {
+          "triangles": 1580,
+          "vertices": 1304,
+          "sections": 4,
+          "uv_channels": 1,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 868,
+          "vertices": 792,
+          "sections": 4,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 394,
+          "vertices": 440,
+          "sections": 4,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        }
+      ],
+      "material_slots": [
+        {
+          "name": "Rubber",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Rubber.MI_House_Prop_Rubber",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Wood",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Oak.MI_House_Prop_Oak",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Metal",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Shelf_Gunmetal.MI_House_Prop_Shelf_Gunmetal",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Stone",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Counter_Stone.MI_House_Prop_Counter_Stone",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        }
+      ],
+      "collision_shapes": 1
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Lamp_Desk.SM_House_Lamp_Desk",
+      "lods": [
+        {
+          "triangles": 356,
+          "vertices": 355,
+          "sections": 2,
+          "uv_channels": 1,
+          "reversed_index_buffer": false
+        }
+      ],
+      "material_slots": [
+        {
+          "name": "Metal",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Shelf_Gunmetal.MI_House_Prop_Shelf_Gunmetal",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Bulb",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Bulb.MI_House_Prop_Bulb",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        }
+      ],
+      "collision_shapes": 0
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Lamp_Floor.SM_House_Lamp_Floor",
+      "lods": [
+        {
+          "triangles": 520,
+          "vertices": 425,
+          "sections": 3,
+          "uv_channels": 1,
+          "reversed_index_buffer": false
+        }
+      ],
+      "material_slots": [
+        {
+          "name": "Metal",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Shelf_Gunmetal.MI_House_Prop_Shelf_Gunmetal",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Tan",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Tan.MI_House_Prop_Tan",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Bulb",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Bulb.MI_House_Prop_Bulb",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        }
+      ],
+      "collision_shapes": 0
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Mirror_Wall.SM_House_Mirror_Wall",
+      "lods": [
+        {
+          "triangles": 600,
+          "vertices": 432,
+          "sections": 2,
+          "uv_channels": 1,
+          "reversed_index_buffer": false
+        }
+      ],
+      "material_slots": [
+        {
+          "name": "Wood",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Oak.MI_House_Prop_Oak",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Mirror",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Mirror.MI_House_Prop_Mirror",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        }
+      ],
+      "collision_shapes": 0
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Plant_Potted.SM_House_Plant_Potted",
+      "lods": [
+        {
+          "triangles": 1472,
+          "vertices": 1401,
+          "sections": 3,
+          "uv_channels": 1,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 810,
+          "vertices": 901,
+          "sections": 3,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 367,
+          "vertices": 471,
+          "sections": 3,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        }
+      ],
+      "material_slots": [
+        {
+          "name": "Terracotta",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Terracotta.MI_House_Prop_Terracotta",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Soil",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Soil.MI_House_Prop_Soil",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Leaf",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Leaf.MI_House_Prop_Leaf",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        }
+      ],
+      "collision_shapes": 1
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Rack_Equipment.SM_House_Rack_Equipment",
+      "lods": [
+        {
+          "triangles": 3060,
+          "vertices": 2880,
+          "sections": 3,
+          "uv_channels": 1,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 1682,
+          "vertices": 1843,
+          "sections": 3,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 764,
+          "vertices": 1109,
+          "sections": 3,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        }
+      ],
+      "material_slots": [
+        {
+          "name": "Metal",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Shelf_Gunmetal.MI_House_Prop_Shelf_Gunmetal",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Rubber",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Rubber.MI_House_Prop_Rubber",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Yellow",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Yellow.MI_House_Prop_Yellow",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        }
+      ],
+      "collision_shapes": 1
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Rug_Bordered.SM_House_Rug_Bordered",
+      "lods": [
+        {
+          "triangles": 156,
+          "vertices": 192,
+          "sections": 2,
+          "uv_channels": 1,
+          "reversed_index_buffer": false
+        }
+      ],
+      "material_slots": [
+        {
+          "name": "Tan",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Tan.MI_House_Prop_Tan",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Burgundy",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Burgundy.MI_House_Prop_Burgundy",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        }
+      ],
+      "collision_shapes": 0
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Sofa_ThreeSeat.SM_House_Sofa_ThreeSeat",
+      "lods": [
+        {
+          "triangles": 4800,
+          "vertices": 3456,
+          "sections": 3,
+          "uv_channels": 1,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 2640,
+          "vertices": 2077,
+          "sections": 3,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 1200,
+          "vertices": 1118,
+          "sections": 3,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        }
+      ],
+      "material_slots": [
+        {
+          "name": "Wood",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Oak.MI_House_Prop_Oak",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Fabric",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Fabric_Charcoal.MI_House_Prop_Fabric_Charcoal",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Tan",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Tan.MI_House_Prop_Tan",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        }
+      ],
+      "collision_shapes": 1
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Sofa_TwoSeat.SM_House_Sofa_TwoSeat",
+      "lods": [
+        {
+          "triangles": 4200,
+          "vertices": 3024,
+          "sections": 3,
+          "uv_channels": 1,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 2310,
+          "vertices": 1836,
+          "sections": 3,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 1050,
+          "vertices": 990,
+          "sections": 3,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        }
+      ],
+      "material_slots": [
+        {
+          "name": "Wood",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Oak.MI_House_Prop_Oak",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Fabric",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Fabric_Charcoal.MI_House_Prop_Fabric_Charcoal",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Tan",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Tan.MI_House_Prop_Tan",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        }
+      ],
+      "collision_shapes": 1
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Table_Coffee.SM_House_Table_Coffee",
+      "lods": [
+        {
+          "triangles": 600,
+          "vertices": 520,
+          "sections": 1,
+          "uv_channels": 1,
+          "reversed_index_buffer": false
+        }
+      ],
+      "material_slots": [
+        {
+          "name": "Wood",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Oak.MI_House_Prop_Oak",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        }
+      ],
+      "collision_shapes": 1
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Table_Meeting.SM_House_Table_Meeting",
+      "lods": [
+        {
+          "triangles": 2800,
+          "vertices": 2972,
+          "sections": 4,
+          "uv_channels": 1,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 1540,
+          "vertices": 2018,
+          "sections": 4,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 700,
+          "vertices": 912,
+          "sections": 4,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        }
+      ],
+      "material_slots": [
+        {
+          "name": "Wood",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Oak.MI_House_Prop_Oak",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Paper",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Paper.MI_House_Prop_Paper",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Ink",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Ink.MI_House_Prop_Ink",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Ivory",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Ivory.MI_House_Prop_Ivory",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        }
+      ],
+      "collision_shapes": 1
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Table_Side.SM_House_Table_Side",
+      "lods": [
+        {
+          "triangles": 600,
+          "vertices": 520,
+          "sections": 1,
+          "uv_channels": 1,
+          "reversed_index_buffer": false
+        }
+      ],
+      "material_slots": [
+        {
+          "name": "Wood",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Oak.MI_House_Prop_Oak",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        }
+      ],
+      "collision_shapes": 1
+    },
+    {
+      "mesh": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Vanity_Illuminated.SM_House_Vanity_Illuminated",
+      "lods": [
+        {
+          "triangles": 2800,
+          "vertices": 2267,
+          "sections": 5,
+          "uv_channels": 1,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 1540,
+          "vertices": 1428,
+          "sections": 5,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        },
+        {
+          "triangles": 699,
+          "vertices": 719,
+          "sections": 5,
+          "uv_channels": 0,
+          "reversed_index_buffer": false
+        }
+      ],
+      "material_slots": [
+        {
+          "name": "Wood",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Oak.MI_House_Prop_Oak",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Mirror",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Mirror.MI_House_Prop_Mirror",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Bulb",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Bulb.MI_House_Prop_Bulb",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Ivory",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Ivory.MI_House_Prop_Ivory",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        },
+        {
+          "name": "Ink",
+          "material": "/Game/Game/Art/Environment/House/Materials/Instances/Props/MI_House_Prop_Ink.MI_House_Prop_Ink",
+          "blend": "<BlendMode.BLEND_OPAQUE: 0>"
+        }
+      ],
+      "collision_shapes": 1
+    }
+  ],
+  "optimizations": [],
+  "positive_scale_only": true,
+  "prop_actors": 74,
+  "unique_meshes": 26,
+  "unique_library_lod0_triangles": 54860,
+  "scene_lod0_triangles_before_culling": 141532,
+  "scene_lod2_triangles_before_culling": 41476,
+  "all_static": true,
+  "mesh_draw_command_instancing": 1,
+  "lights": [
+    {
+      "actor": "LIGHT_House_Living_Practical_N360",
+      "cast_shadows": false,
+      "radius": 260.0
+    },
+    {
+      "actor": "LIGHT_House_Living_Practical_435",
+      "cast_shadows": false,
+      "radius": 260.0
+    },
+    {
+      "actor": "LIGHT_House_Lobby_Practical_N1450",
+      "cast_shadows": false,
+      "radius": 260.0
+    },
+    {
+      "actor": "LIGHT_House_Dining_Practical_365",
+      "cast_shadows": false,
+      "radius": 260.0
+    },
+    {
+      "actor": "LIGHT_House_Dressing_Practical_350",
+      "cast_shadows": false,
+      "radius": 260.0
+    },
+    {
+      "actor": "LIGHT_House_HiddenRoom_Practical_1270",
+      "cast_shadows": false,
+      "radius": 260.0
+    }
+  ],
+  "passed": true
+}

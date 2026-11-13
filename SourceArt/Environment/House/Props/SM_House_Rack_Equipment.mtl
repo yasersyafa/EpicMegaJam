@@ -1,0 +1,9 @@
+newmtl Metal
+Kd 0.1600 0.1700 0.1800
+d 1
+newmtl Yellow
+Kd 0.4800 0.2500 0.0350
+d 1
+newmtl Rubber
+Kd 0.0180 0.0200 0.0220
+d 1

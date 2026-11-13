@@ -1,0 +1,4 @@
+[mcp_servers.unreal]
+command = "C:\\Program Files\\nodejs\\node.exe"
+args = ["C:\\Users\\asus\\Documents\\ChatGPT\\ibra\\tools\\unreal-mcp\\mcp-server\\dist\\index.js"]
+env = { "UNREAL_MCP_PROFILE" = "search", "UNREAL_MCP_MODE" = "standard" }

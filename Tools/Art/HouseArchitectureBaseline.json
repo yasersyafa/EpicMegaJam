@@ -1,0 +1,651 @@
+[
+  {
+    "label": "GB_Floor_Garage",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEE040) {x: -1071.000000, y: -691.000000, z: -10.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEE040) {x: 10.220000, y: 17.820000, z: 0.200000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEDB90) {x: -1071.000000, y: -691.000000, z: -10.000000}>, <Struct 'Vector' (0x00000146C7AEE0E0) {x: 511.000000, y: 891.000000, z: 10.000000}>)"
+  },
+  {
+    "label": "GB_Floor_Storage",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEDB90) {x: -1071.000000, y: 330.000000, z: -10.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEDB90) {x: 10.220000, y: 2.600000, z: 0.200000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEE130) {x: -1071.000000, y: 330.000000, z: -10.000000}>, <Struct 'Vector' (0x00000146C7AEE180) {x: 511.000000, y: 130.000000, z: 10.000000}>)"
+  },
+  {
+    "label": "GB_Floor_Lobby",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEE130) {x: -1071.000000, y: 1020.000000, z: -10.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEE130) {x: 10.220000, y: 11.200000, z: 0.200000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEE0E0) {x: -1071.000000, y: 1020.000000, z: -10.000000}>, <Struct 'Vector' (0x00000146C7AEE1D0) {x: 511.000000, y: 560.000000, z: 10.000000}>)"
+  },
+  {
+    "label": "GB_Floor_Dining",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEE0E0) {x: -10.000000, y: -1091.000000, z: -10.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEE0E0) {x: 11.000000, y: 9.820000, z: 0.200000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEE180) {x: -10.000000, y: -1091.000000, z: -10.000000}>, <Struct 'Vector' (0x00000146C7AEE220) {x: 550.000000, y: 491.000000, z: 10.000000}>)"
+  },
+  {
+    "label": "GB_Floor_Living",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEE180) {x: -10.000000, y: -80.000000, z: -10.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEE180) {x: 11.000000, y: 10.400000, z: 0.200000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEE1D0) {x: -10.000000, y: -80.000000, z: -10.000000}>, <Struct 'Vector' (0x00000146C7AEE270) {x: 550.000000, y: 520.000000, z: 10.000000}>)"
+  },
+  {
+    "label": "GB_Floor_ProductionHall",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEE1D0) {x: -10.000000, y: 670.000000, z: -10.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEE1D0) {x: 11.000000, y: 4.600000, z: 0.200000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEE2C0) {x: -10.000000, y: 670.000000, z: -10.000000}>, <Struct 'Vector' (0x00000146C7AEE310) {x: 550.000000, y: 230.000000, z: 10.000000}>)"
+  },
+  {
+    "label": "GB_Floor_Dressing",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEE2C0) {x: -10.000000, y: 1240.000000, z: -10.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEE2C0) {x: 11.000000, y: 6.800000, z: 0.200000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEE360) {x: -10.000000, y: 1240.000000, z: -10.000000}>, <Struct 'Vector' (0x00000146C7AEE3B0) {x: 550.000000, y: 340.000000, z: 10.000000}>)"
+  },
+  {
+    "label": "GB_Floor_WC",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEE360) {x: 805.000000, y: -1291.000000, z: -10.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEE360) {x: 5.300000, y: 5.820000, z: 0.200000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEE310) {x: 805.000000, y: -1291.000000, z: -10.000000}>, <Struct 'Vector' (0x00000146C7AEE400) {x: 265.000000, y: 291.000000, z: 10.000000}>)"
+  },
+  {
+    "label": "GB_Floor_Stairs",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEE310) {x: 1325.000000, y: -1291.000000, z: -10.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEE310) {x: 5.100000, y: 5.820000, z: 0.200000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEE3B0) {x: 1325.000000, y: -1291.000000, z: -10.000000}>, <Struct 'Vector' (0x00000146C7AEE450) {x: 255.000000, y: 291.000000, z: 10.000000}>)"
+  },
+  {
+    "label": "GB_Floor_Kitchen",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEE3B0) {x: 1060.000000, y: -300.000000, z: -10.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEE3B0) {x: 10.400000, y: 14.000000, z: 0.200000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEE4A0) {x: 1060.000000, y: -300.000000, z: -10.000000}>, <Struct 'Vector' (0x00000146C7AEE4F0) {x: 520.000000, y: 700.000000, z: 10.000000}>)"
+  },
+  {
+    "label": "GB_Floor_Service",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEE4A0) {x: 710.000000, y: 990.000000, z: -10.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEE4A0) {x: 3.400000, y: 11.800000, z: 0.200000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEE540) {x: 710.000000, y: 990.000000, z: -10.000000}>, <Struct 'Vector' (0x00000146C7AEE590) {x: 170.000000, y: 590.000000, z: 10.000000}>)"
+  },
+  {
+    "label": "GB_Floor_HiddenRoom",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEE540) {x: 1230.000000, y: 990.000000, z: -10.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEE540) {x: 7.000000, y: 11.800000, z: 0.200000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEE5E0) {x: 1230.000000, y: 990.000000, z: -10.000000}>, <Struct 'Vector' (0x00000146C7AEE630) {x: 350.000000, y: 590.000000, z: 10.000000}>)"
+  },
+  {
+    "label": "GB_Wall_North",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEE5E0) {x: -1.000000, y: -1582.000000, z: 150.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEE5E0) {x: 31.880000, y: 0.260000, z: 3.000000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEE590) {x: -1.000000, y: -1582.000000, z: 150.000000}>, <Struct 'Vector' (0x00000146C7AEE680) {x: 1594.000000, y: 13.000000, z: 150.000000}>)"
+  },
+  {
+    "label": "GB_Wall_West",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEE590) {x: -1582.000000, y: -1.000000, z: 150.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEE590) {x: 0.260000, y: 31.880000, z: 3.000000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEE630) {x: -1582.000000, y: -1.000000, z: 150.000000}>, <Struct 'Vector' (0x00000146C7AEE6D0) {x: 13.000000, y: 1594.000000, z: 150.000000}>)"
+  },
+  {
+    "label": "GB_Wall_East",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEE630) {x: 1580.000000, y: -1.000000, z: 150.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEE630) {x: 0.260000, y: 31.880000, z: 3.000000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEE680) {x: 1580.000000, y: -1.000000, z: 150.000000}>, <Struct 'Vector' (0x00000146C7AEE720) {x: 13.000000, y: 1594.000000, z: 150.000000}>)"
+  },
+  {
+    "label": "GB_Wall_SouthWest",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEE680) {x: -1371.000000, y: 1580.000000, z: 150.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEE680) {x: 4.480000, y: 0.260000, z: 3.000000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEE770) {x: -1371.000000, y: 1580.000000, z: 150.000000}>, <Struct 'Vector' (0x00000146C7AEE7C0) {x: 224.000000, y: 13.000000, z: 150.000000}>)"
+  },
+  {
+    "label": "GB_Wall_SouthEast",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEE770) {x: 325.000000, y: 1580.000000, z: 150.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEE770) {x: 25.360000, y: 0.260000, z: 3.000000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEE810) {x: 325.000000, y: 1580.000000, z: 150.000000}>, <Struct 'Vector' (0x00000146C7AEE860) {x: 1268.000000, y: 13.000000, z: 150.000000}>)"
+  },
+  {
+    "label": "GB_Wall_GarageDiningN",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEE810) {x: -560.000000, y: -1391.000000, z: 150.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEE810) {x: 0.260000, y: 4.080000, z: 3.000000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEE8B0) {x: -560.000000, y: -1391.000000, z: 150.000000}>, <Struct 'Vector' (0x00000146C7AEE900) {x: 13.000000, y: 204.000000, z: 150.000000}>)"
+  },
+  {
+    "label": "GB_Wall_GarageDiningS",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEE8B0) {x: -560.000000, y: -185.000000, z: 150.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEE8B0) {x: 0.260000, y: 15.960000, z: 3.000000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEE950) {x: -560.000000, y: -185.000000, z: 150.000000}>, <Struct 'Vector' (0x00000146C7AEE9A0) {x: 13.000000, y: 798.000000, z: 150.000000}>)"
+  },
+  {
+    "label": "GB_Wall_LobbyHallS",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEE950) {x: -560.000000, y: 1200.000000, z: 150.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEE950) {x: 0.260000, y: 7.860000, z: 3.000000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEE9F0) {x: -560.000000, y: 1200.000000, z: 150.000000}>, <Struct 'Vector' (0x00000146C7AEEA40) {x: 13.000000, y: 393.000000, z: 150.000000}>)"
+  },
+  {
+    "label": "GB_Wall_GarageStorageW",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEE9F0) {x: -1391.000000, y: 200.000000, z: 150.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEE9F0) {x: 4.080000, y: 0.260000, z: 3.000000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEEA90) {x: -1391.000000, y: 200.000000, z: 150.000000}>, <Struct 'Vector' (0x00000146C7AEEAE0) {x: 204.000000, y: 13.000000, z: 150.000000}>)"
+  },
+  {
+    "label": "GB_Wall_GarageStorageE",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEEA90) {x: -770.000000, y: 200.000000, z: 150.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEEA90) {x: 4.460000, y: 0.260000, z: 3.000000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEEB30) {x: -770.000000, y: 200.000000, z: 150.000000}>, <Struct 'Vector' (0x00000146C7AEEB80) {x: 223.000000, y: 13.000000, z: 150.000000}>)"
+  },
+  {
+    "label": "GB_Wall_StorageLobbyW",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEEB30) {x: -1386.000000, y: 460.000000, z: 150.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEEB30) {x: 4.180000, y: 0.260000, z: 3.000000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEEBD0) {x: -1386.000000, y: 460.000000, z: 150.000000}>, <Struct 'Vector' (0x00000146C7AEEC20) {x: 209.000000, y: 13.000000, z: 150.000000}>)"
+  },
+  {
+    "label": "GB_Wall_StorageLobbyE",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEEBD0) {x: -762.500000, y: 460.000000, z: 150.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEEBD0) {x: 4.310000, y: 0.260000, z: 3.000000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEEC70) {x: -762.500000, y: 460.000000, z: 150.000000}>, <Struct 'Vector' (0x00000146C7AEECC0) {x: 215.500000, y: 13.000000, z: 150.000000}>)"
+  },
+  {
+    "label": "GB_Wall_LivingDiningW",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEEC70) {x: -362.500000, y: -600.000000, z: 150.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEEC70) {x: 4.210000, y: 0.260000, z: 3.000000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEED10) {x: -362.500000, y: -600.000000, z: 150.000000}>, <Struct 'Vector' (0x00000146C7AEED60) {x: 210.500000, y: 13.000000, z: 150.000000}>)"
+  },
+  {
+    "label": "GB_Wall_LivingDiningE",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEED10) {x: 295.000000, y: -600.000000, z: 150.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEED10) {x: 5.160000, y: 0.260000, z: 3.000000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEEDB0) {x: 295.000000, y: -600.000000, z: 150.000000}>, <Struct 'Vector' (0x00000146C7AEEE00) {x: 258.000000, y: 13.000000, z: 150.000000}>)"
+  },
+  {
+    "label": "GB_Wall_LivingHallW",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEEDB0) {x: -380.000000, y: 440.000000, z: 150.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEEDB0) {x: 3.860000, y: 0.260000, z: 3.000000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEEE50) {x: -380.000000, y: 440.000000, z: 150.000000}>, <Struct 'Vector' (0x00000146C7AEEEA0) {x: 193.000000, y: 13.000000, z: 150.000000}>)"
+  },
+  {
+    "label": "GB_Wall_LivingHallE",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEEE50) {x: 280.000000, y: 440.000000, z: 150.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEEE50) {x: 5.460000, y: 0.260000, z: 3.000000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEEEF0) {x: 280.000000, y: 440.000000, z: 150.000000}>, <Struct 'Vector' (0x00000146C7AEEF40) {x: 273.000000, y: 13.000000, z: 150.000000}>)"
+  },
+  {
+    "label": "GB_Wall_HallDressingW",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEEEF0) {x: -220.000000, y: 900.000000, z: 150.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEEEF0) {x: 7.060000, y: 0.260000, z: 3.000000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEEF90) {x: -220.000000, y: 900.000000, z: 150.000000}>, <Struct 'Vector' (0x00000146C7AEEFE0) {x: 353.000000, y: 13.000000, z: 150.000000}>)"
+  },
+  {
+    "label": "GB_Wall_HallDressingE",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEEF90) {x: 435.000000, y: 900.000000, z: 150.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEEF90) {x: 2.360000, y: 0.260000, z: 3.000000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEF030) {x: 435.000000, y: 900.000000, z: 150.000000}>, <Struct 'Vector' (0x00000146C7AEF080) {x: 118.000000, y: 13.000000, z: 150.000000}>)"
+  },
+  {
+    "label": "GB_Wall_WCDiningN",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEF030) {x: 540.000000, y: -1491.000000, z: 150.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEF030) {x: 0.260000, y: 2.080000, z: 3.000000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEF0D0) {x: 540.000000, y: -1491.000000, z: 150.000000}>, <Struct 'Vector' (0x00000146C7AEF120) {x: 13.000000, y: 104.000000, z: 150.000000}>)"
+  },
+  {
+    "label": "GB_Wall_WCDiningS",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEF0D0) {x: 540.000000, y: -1015.000000, z: 150.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEF0D0) {x: 0.260000, y: 4.560000, z: 3.000000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEF170) {x: 540.000000, y: -1015.000000, z: 150.000000}>, <Struct 'Vector' (0x00000146C7AEF1C0) {x: 13.000000, y: 228.000000, z: 150.000000}>)"
+  },
+  {
+    "label": "GB_Wall_KitchenLiving",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEF170) {x: 540.000000, y: 495.000000, z: 150.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEF170) {x: 0.260000, y: 21.960000, z: 3.000000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEF210) {x: 540.000000, y: 495.000000, z: 150.000000}>, <Struct 'Vector' (0x00000146C7AEF260) {x: 13.000000, y: 1098.000000, z: 150.000000}>)"
+  },
+  {
+    "label": "GB_Wall_WCSouth",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEF210) {x: 1060.000000, y: -1000.000000, z: 150.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEF210) {x: 10.660000, y: 0.260000, z: 3.000000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEF1C0) {x: 1060.000000, y: -1000.000000, z: 150.000000}>, <Struct 'Vector' (0x00000146C7AEF2B0) {x: 533.000000, y: 13.000000, z: 150.000000}>)"
+  },
+  {
+    "label": "GB_Wall_StairsWest",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEF1C0) {x: 1070.000000, y: -1291.000000, z: 150.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEF1C0) {x: 0.260000, y: 6.080000, z: 3.000000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEF300) {x: 1070.000000, y: -1291.000000, z: 150.000000}>, <Struct 'Vector' (0x00000146C7AEF350) {x: 13.000000, y: 304.000000, z: 150.000000}>)"
+  },
+  {
+    "label": "GB_Wall_KitchenServiceW",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEF300) {x: 570.000000, y: 400.000000, z: 150.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEF300) {x: 0.860000, y: 0.260000, z: 3.000000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEF3A0) {x: 570.000000, y: 400.000000, z: 150.000000}>, <Struct 'Vector' (0x00000146C7AEF3F0) {x: 43.000000, y: 13.000000, z: 150.000000}>)"
+  },
+  {
+    "label": "GB_Wall_KitchenServiceE",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEF3A0) {x: 1195.000000, y: 400.000000, z: 150.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEF3A0) {x: 7.960000, y: 0.260000, z: 3.000000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEF440) {x: 1195.000000, y: 400.000000, z: 150.000000}>, <Struct 'Vector' (0x00000146C7AEF490) {x: 398.000000, y: 13.000000, z: 150.000000}>)"
+  },
+  {
+    "label": "GB_Wall_HiddenServiceN",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEF440) {x: 880.000000, y: 675.000000, z: 150.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEF440) {x: 0.260000, y: 5.760000, z: 3.000000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEF4E0) {x: 880.000000, y: 675.000000, z: 150.000000}>, <Struct 'Vector' (0x00000146C7AEF530) {x: 13.000000, y: 288.000000, z: 150.000000}>)"
+  },
+  {
+    "label": "GB_Wall_HiddenServiceS",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEF4E0) {x: 880.000000, y: 1370.000000, z: 150.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEF4E0) {x: 0.260000, y: 4.460000, z: 3.000000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEF580) {x: 880.000000, y: 1370.000000, z: 150.000000}>, <Struct 'Vector' (0x00000146C7AEF5D0) {x: 13.000000, y: 223.000000, z: 150.000000}>)"
+  },
+  {
+    "label": "GB_Lintel_Entrance",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEF580) {x: -1045.000000, y: 1580.000000, z: 270.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEF580) {x: 2.560000, y: 0.260000, z: 0.600000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEF620) {x: -1045.000000, y: 1580.000000, z: 270.000000}>, <Struct 'Vector' (0x00000146C7AEF670) {x: 128.000000, y: 13.000000, z: 30.000000}>)"
+  },
+  {
+    "label": "GB_Lintel_GarageDining",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEF620) {x: -560.000000, y: -1085.000000, z: 270.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEF620) {x: 0.260000, y: 2.560000, z: 0.600000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEF6C0) {x: -560.000000, y: -1085.000000, z: 270.000000}>, <Struct 'Vector' (0x00000146C7AEF710) {x: 13.000000, y: 128.000000, z: 30.000000}>)"
+  },
+  {
+    "label": "GB_Lintel_LobbyHall",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEF6C0) {x: -560.000000, y: 710.000000, z: 270.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEF6C0) {x: 0.260000, y: 2.460000, z: 0.600000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEF760) {x: -560.000000, y: 710.000000, z: 270.000000}>, <Struct 'Vector' (0x00000146C7AEF7B0) {x: 13.000000, y: 123.000000, z: 30.000000}>)"
+  },
+  {
+    "label": "GB_Lintel_GarageStorage",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEF760) {x: -1090.000000, y: 200.000000, z: 270.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEF760) {x: 2.460000, y: 0.260000, z: 0.600000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEF800) {x: -1090.000000, y: 200.000000, z: 270.000000}>, <Struct 'Vector' (0x00000146C7AEF850) {x: 123.000000, y: 13.000000, z: 30.000000}>)"
+  },
+  {
+    "label": "GB_Lintel_StorageLobby",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEF800) {x: -1077.500000, y: 460.000000, z: 270.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEF800) {x: 2.510000, y: 0.260000, z: 0.600000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEF8A0) {x: -1077.500000, y: 460.000000, z: 270.000000}>, <Struct 'Vector' (0x00000146C7AEF8F0) {x: 125.500000, y: 13.000000, z: 30.000000}>)"
+  },
+  {
+    "label": "GB_Lintel_LivingDining",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEF8A0) {x: -57.500000, y: -600.000000, z: 270.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEF8A0) {x: 2.410000, y: 0.260000, z: 0.600000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEF940) {x: -57.500000, y: -600.000000, z: 270.000000}>, <Struct 'Vector' (0x00000146C7AEF990) {x: 120.500000, y: 13.000000, z: 30.000000}>)"
+  },
+  {
+    "label": "GB_Lintel_LivingHall",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEF940) {x: -90.000000, y: 440.000000, z: 270.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEF940) {x: 2.460000, y: 0.260000, z: 0.600000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEF9E0) {x: -90.000000, y: 440.000000, z: 270.000000}>, <Struct 'Vector' (0x00000146C7AEFA30) {x: 123.000000, y: 13.000000, z: 30.000000}>)"
+  },
+  {
+    "label": "GB_Lintel_Dressing",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEF9E0) {x: 225.000000, y: 900.000000, z: 270.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEF9E0) {x: 2.360000, y: 0.260000, z: 0.600000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEFA80) {x: 225.000000, y: 900.000000, z: 270.000000}>, <Struct 'Vector' (0x00000146C7AEFAD0) {x: 118.000000, y: 13.000000, z: 30.000000}>)"
+  },
+  {
+    "label": "GB_Lintel_WC",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEFA80) {x: 540.000000, y: -1315.000000, z: 270.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEFA80) {x: 0.260000, y: 1.960000, z: 0.600000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEFA30) {x: 540.000000, y: -1315.000000, z: 270.000000}>, <Struct 'Vector' (0x00000146C7AEFB20) {x: 13.000000, y: 98.000000, z: 30.000000}>)"
+  },
+  {
+    "label": "GB_Lintel_DiningKitchen",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEFA30) {x: 540.000000, y: -695.000000, z: 270.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEFA30) {x: 0.260000, y: 2.360000, z: 0.600000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEFB70) {x: 540.000000, y: -695.000000, z: 270.000000}>, <Struct 'Vector' (0x00000146C7AEFBC0) {x: 13.000000, y: 118.000000, z: 30.000000}>)"
+  },
+  {
+    "label": "GB_Lintel_KitchenService",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEFB70) {x: 705.000000, y: 400.000000, z: 270.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEFB70) {x: 2.360000, y: 0.260000, z: 0.600000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEFC10) {x: 705.000000, y: 400.000000, z: 270.000000}>, <Struct 'Vector' (0x00000146C7AEFC60) {x: 118.000000, y: 13.000000, z: 30.000000}>)"
+  },
+  {
+    "label": "GB_Lintel_HiddenRoom",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7AEFC10) {x: 880.000000, y: 1055.000000, z: 270.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7AEFC10) {x: 0.260000, y: 2.360000, z: 0.600000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7AEFCB0) {x: 880.000000, y: 1055.000000, z: 270.000000}>, <Struct 'Vector' (0x00000146C7AEFD00) {x: 13.000000, y: 118.000000, z: 30.000000}>)"
+  },
+  {
+    "label": "GB_RestrictedStep_00",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7B307E0) {x: 1345.000000, y: -1480.000000, z: 10.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7B307E0) {x: 3.900000, y: 0.600000, z: 0.200000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7B30880) {x: 1345.000000, y: -1480.000000, z: 10.000000}>, <Struct 'Vector' (0x00000146C7B308D0) {x: 195.000000, y: 30.000000, z: 10.000000}>)"
+  },
+  {
+    "label": "GB_RestrictedStep_01",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7B30880) {x: 1345.000000, y: -1420.000000, z: 20.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7B30880) {x: 3.900000, y: 0.600000, z: 0.400000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7B30920) {x: 1345.000000, y: -1420.000000, z: 20.000000}>, <Struct 'Vector' (0x00000146C7B30970) {x: 195.000000, y: 30.000000, z: 20.000000}>)"
+  },
+  {
+    "label": "GB_RestrictedStep_02",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7B30920) {x: 1345.000000, y: -1360.000000, z: 30.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7B30920) {x: 3.900000, y: 0.600000, z: 0.600000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7B309C0) {x: 1345.000000, y: -1360.000000, z: 30.000000}>, <Struct 'Vector' (0x00000146C7B30A10) {x: 195.000000, y: 30.000000, z: 30.000000}>)"
+  },
+  {
+    "label": "GB_RestrictedStep_03",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7B309C0) {x: 1345.000000, y: -1300.000000, z: 40.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7B309C0) {x: 3.900000, y: 0.600000, z: 0.800000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7B30A60) {x: 1345.000000, y: -1300.000000, z: 40.000000}>, <Struct 'Vector' (0x00000146C7B30AB0) {x: 195.000000, y: 30.000000, z: 40.000000}>)"
+  },
+  {
+    "label": "GB_RestrictedStep_04",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7B30A60) {x: 1345.000000, y: -1240.000000, z: 50.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7B30A60) {x: 3.900000, y: 0.600000, z: 1.000000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7B30B00) {x: 1345.000000, y: -1240.000000, z: 50.000000}>, <Struct 'Vector' (0x00000146C7B30B50) {x: 195.000000, y: 30.000000, z: 50.000000}>)"
+  },
+  {
+    "label": "GB_RestrictedStep_05",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7B30B00) {x: 1345.000000, y: -1180.000000, z: 60.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7B30B00) {x: 3.900000, y: 0.600000, z: 1.200000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7B30BA0) {x: 1345.000000, y: -1180.000000, z: 60.000000}>, <Struct 'Vector' (0x00000146C7B30BF0) {x: 195.000000, y: 30.000000, z: 60.000000}>)"
+  },
+  {
+    "label": "GB_RestrictedStep_06",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7B30BA0) {x: 1345.000000, y: -1120.000000, z: 70.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7B30BA0) {x: 3.900000, y: 0.600000, z: 1.400000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7B30C40) {x: 1345.000000, y: -1120.000000, z: 70.000000}>, <Struct 'Vector' (0x00000146C7B30C90) {x: 195.000000, y: 30.000000, z: 70.000000}>)"
+  },
+  {
+    "label": "GB_RestrictedStep_07",
+    "class": "StaticMeshActor",
+    "location": "<Struct 'Vector' (0x00000146C7B30C40) {x: 1345.000000, y: -1060.000000, z: 80.000000}>",
+    "scale": "<Struct 'Vector' (0x00000146C7B30C40) {x: 3.900000, y: 0.600000, z: 1.600000}>",
+    "mesh": "/Engine/BasicShapes/Cube.Cube",
+    "materials": [
+      "/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial"
+    ],
+    "bounds": "(<Struct 'Vector' (0x00000146C7B30CE0) {x: 1345.000000, y: -1060.000000, z: 80.000000}>, <Struct 'Vector' (0x00000146C7B30D30) {x: 195.000000, y: 30.000000, z: 80.000000}>)"
+  }
+]

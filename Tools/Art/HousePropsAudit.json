@@ -1,0 +1,1278 @@
+{
+  "success": true,
+  "meshes": [
+    {
+      "asset": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Sofa_ThreeSeat.SM_House_Sofa_ThreeSeat",
+      "source_triangles": 4800,
+      "lod_count": 3,
+      "material_slots": 3,
+      "collision_shapes": 1
+    },
+    {
+      "asset": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Sofa_TwoSeat.SM_House_Sofa_TwoSeat",
+      "source_triangles": 4200,
+      "lod_count": 3,
+      "material_slots": 3,
+      "collision_shapes": 1
+    },
+    {
+      "asset": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Armchair.SM_House_Armchair",
+      "source_triangles": 3600,
+      "lod_count": 3,
+      "material_slots": 3,
+      "collision_shapes": 1
+    },
+    {
+      "asset": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Table_Coffee.SM_House_Table_Coffee",
+      "source_triangles": 600,
+      "lod_count": 1,
+      "material_slots": 1,
+      "collision_shapes": 1
+    },
+    {
+      "asset": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Table_Side.SM_House_Table_Side",
+      "source_triangles": 600,
+      "lod_count": 1,
+      "material_slots": 1,
+      "collision_shapes": 1
+    },
+    {
+      "asset": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Table_Meeting.SM_House_Table_Meeting",
+      "source_triangles": 2800,
+      "lod_count": 3,
+      "material_slots": 4,
+      "collision_shapes": 1
+    },
+    {
+      "asset": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Chair_Dining.SM_House_Chair_Dining",
+      "source_triangles": 872,
+      "lod_count": 3,
+      "material_slots": 2,
+      "collision_shapes": 1
+    },
+    {
+      "asset": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Desk_Office.SM_House_Desk_Office",
+      "source_triangles": 2356,
+      "lod_count": 3,
+      "material_slots": 5,
+      "collision_shapes": 1
+    },
+    {
+      "asset": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Console.SM_House_Console",
+      "source_triangles": 900,
+      "lod_count": 3,
+      "material_slots": 1,
+      "collision_shapes": 1
+    },
+    {
+      "asset": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_FlightCase_Yellow.SM_House_FlightCase_Yellow",
+      "source_triangles": 3344,
+      "lod_count": 3,
+      "material_slots": 4,
+      "collision_shapes": 1
+    },
+    {
+      "asset": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_FlightCase_Black.SM_House_FlightCase_Black",
+      "source_triangles": 3344,
+      "lod_count": 3,
+      "material_slots": 3,
+      "collision_shapes": 1
+    },
+    {
+      "asset": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Rack_Equipment.SM_House_Rack_Equipment",
+      "source_triangles": 3060,
+      "lod_count": 3,
+      "material_slots": 3,
+      "collision_shapes": 1
+    },
+    {
+      "asset": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Kitchen_Cabinet.SM_House_Kitchen_Cabinet",
+      "source_triangles": 796,
+      "lod_count": 1,
+      "material_slots": 4,
+      "collision_shapes": 1
+    },
+    {
+      "asset": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Kitchen_Sink.SM_House_Kitchen_Sink",
+      "source_triangles": 1580,
+      "lod_count": 3,
+      "material_slots": 4,
+      "collision_shapes": 1
+    },
+    {
+      "asset": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Kitchen_Cooker.SM_House_Kitchen_Cooker",
+      "source_triangles": 2344,
+      "lod_count": 3,
+      "material_slots": 5,
+      "collision_shapes": 1
+    },
+    {
+      "asset": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Kitchen_Refrigerator.SM_House_Kitchen_Refrigerator",
+      "source_triangles": 996,
+      "lod_count": 3,
+      "material_slots": 2,
+      "collision_shapes": 1
+    },
+    {
+      "asset": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Bathroom_Toilet.SM_House_Bathroom_Toilet",
+      "source_triangles": 1152,
+      "lod_count": 3,
+      "material_slots": 2,
+      "collision_shapes": 1
+    },
+    {
+      "asset": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Bathroom_Basin.SM_House_Bathroom_Basin",
+      "source_triangles": 996,
+      "lod_count": 3,
+      "material_slots": 4,
+      "collision_shapes": 1
+    },
+    {
+      "asset": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Vanity_Illuminated.SM_House_Vanity_Illuminated",
+      "source_triangles": 2800,
+      "lod_count": 3,
+      "material_slots": 5,
+      "collision_shapes": 1
+    },
+    {
+      "asset": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_ClothesRail.SM_House_ClothesRail",
+      "source_triangles": 5808,
+      "lod_count": 3,
+      "material_slots": 3,
+      "collision_shapes": 1
+    },
+    {
+      "asset": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Plant_Potted.SM_House_Plant_Potted",
+      "source_triangles": 1472,
+      "lod_count": 3,
+      "material_slots": 3,
+      "collision_shapes": 1
+    },
+    {
+      "asset": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Lamp_Floor.SM_House_Lamp_Floor",
+      "source_triangles": 520,
+      "lod_count": 1,
+      "material_slots": 3,
+      "collision_shapes": 0
+    },
+    {
+      "asset": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Lamp_Desk.SM_House_Lamp_Desk",
+      "source_triangles": 356,
+      "lod_count": 1,
+      "material_slots": 2,
+      "collision_shapes": 0
+    },
+    {
+      "asset": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Rug_Bordered.SM_House_Rug_Bordered",
+      "source_triangles": 156,
+      "lod_count": 1,
+      "material_slots": 2,
+      "collision_shapes": 0
+    },
+    {
+      "asset": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Mirror_Wall.SM_House_Mirror_Wall",
+      "source_triangles": 600,
+      "lod_count": 1,
+      "material_slots": 2,
+      "collision_shapes": 0
+    },
+    {
+      "asset": "/Game/Game/Art/Environment/House/Meshes/Props/SM_House_Cabinet_Tall.SM_House_Cabinet_Tall",
+      "source_triangles": 4808,
+      "lod_count": 3,
+      "material_slots": 5,
+      "collision_shapes": 1
+    }
+  ],
+  "placements": [
+    {
+      "mesh": "Table_Meeting",
+      "room": "Dining",
+      "location": [
+        -10,
+        -1100,
+        0
+      ],
+      "yaw": 0,
+      "scale": 1.0,
+      "variant": null,
+      "actor": "PROP_House_Dining_Table_Meeting_01"
+    },
+    {
+      "mesh": "Chair_Dining",
+      "room": "Dining",
+      "location": [
+        -185,
+        -1250,
+        0
+      ],
+      "yaw": 180,
+      "scale": 1.15,
+      "variant": null,
+      "actor": "PROP_House_Dining_Chair_Dining_01"
+    },
+    {
+      "mesh": "Chair_Dining",
+      "room": "Dining",
+      "location": [
+        -185,
+        -950,
+        0
+      ],
+      "yaw": 0,
+      "scale": 1.15,
+      "variant": null,
+      "actor": "PROP_House_Dining_Chair_Dining_02"
+    },
+    {
+      "mesh": "Chair_Dining",
+      "room": "Dining",
+      "location": [
+        -68,
+        -1250,
+        0
+      ],
+      "yaw": 180,
+      "scale": 1.15,
+      "variant": null,
+      "actor": "PROP_House_Dining_Chair_Dining_03"
+    },
+    {
+      "mesh": "Chair_Dining",
+      "room": "Dining",
+      "location": [
+        -68,
+        -950,
+        0
+      ],
+      "yaw": 0,
+      "scale": 1.15,
+      "variant": null,
+      "actor": "PROP_House_Dining_Chair_Dining_04"
+    },
+    {
+      "mesh": "Chair_Dining",
+      "room": "Dining",
+      "location": [
+        49,
+        -1250,
+        0
+      ],
+      "yaw": 180,
+      "scale": 1.15,
+      "variant": null,
+      "actor": "PROP_House_Dining_Chair_Dining_05"
+    },
+    {
+      "mesh": "Chair_Dining",
+      "room": "Dining",
+      "location": [
+        49,
+        -950,
+        0
+      ],
+      "yaw": 0,
+      "scale": 1.15,
+      "variant": null,
+      "actor": "PROP_House_Dining_Chair_Dining_06"
+    },
+    {
+      "mesh": "Chair_Dining",
+      "room": "Dining",
+      "location": [
+        166,
+        -1250,
+        0
+      ],
+      "yaw": 180,
+      "scale": 1.15,
+      "variant": null,
+      "actor": "PROP_House_Dining_Chair_Dining_07"
+    },
+    {
+      "mesh": "Chair_Dining",
+      "room": "Dining",
+      "location": [
+        166,
+        -950,
+        0
+      ],
+      "yaw": 0,
+      "scale": 1.15,
+      "variant": null,
+      "actor": "PROP_House_Dining_Chair_Dining_08"
+    },
+    {
+      "mesh": "Chair_Dining",
+      "room": "Dining",
+      "location": [
+        -290,
+        -1100,
+        0
+      ],
+      "yaw": 90,
+      "scale": 1.15,
+      "variant": null,
+      "actor": "PROP_House_Dining_Chair_Dining_09"
+    },
+    {
+      "mesh": "Chair_Dining",
+      "room": "Dining",
+      "location": [
+        270,
+        -1100,
+        0
+      ],
+      "yaw": -90,
+      "scale": 1.15,
+      "variant": null,
+      "actor": "PROP_House_Dining_Chair_Dining_10"
+    },
+    {
+      "mesh": "Plant_Potted",
+      "room": "Dining",
+      "location": [
+        -445,
+        -1450,
+        0
+      ],
+      "yaw": 0,
+      "scale": 1.3,
+      "variant": null,
+      "actor": "PROP_House_Dining_Plant_Potted_01"
+    },
+    {
+      "mesh": "Console",
+      "room": "Dining",
+      "location": [
+        380,
+        -1440,
+        0
+      ],
+      "yaw": 180,
+      "scale": 1.0,
+      "variant": null,
+      "actor": "PROP_House_Dining_Console_01"
+    },
+    {
+      "mesh": "FlightCase_Black",
+      "room": "Dining",
+      "location": [
+        420,
+        -1200,
+        0
+      ],
+      "yaw": 0,
+      "scale": 1.0,
+      "variant": null,
+      "actor": "PROP_House_Dining_FlightCase_Black_01"
+    },
+    {
+      "mesh": "Lamp_Desk",
+      "room": "Dining",
+      "location": [
+        365,
+        -1440,
+        80
+      ],
+      "yaw": 0,
+      "scale": 1.0,
+      "variant": null,
+      "actor": "PROP_House_Dining_Lamp_Desk_01"
+    },
+    {
+      "mesh": "Rack_Equipment",
+      "room": "Garage",
+      "location": [
+        -1485,
+        -1390,
+        0
+      ],
+      "yaw": 90,
+      "scale": 1.0,
+      "variant": null,
+      "actor": "PROP_House_Garage_Rack_Equipment_01"
+    },
+    {
+      "mesh": "Rack_Equipment",
+      "room": "Garage",
+      "location": [
+        -1485,
+        -1040,
+        0
+      ],
+      "yaw": 90,
+      "scale": 1.0,
+      "variant": null,
+      "actor": "PROP_House_Garage_Rack_Equipment_02"
+    },
+    {
+      "mesh": "Rack_Equipment",
+      "room": "Garage",
+      "location": [
+        -1485,
+        -690,
+        0
+      ],
+      "yaw": 90,
+      "scale": 1.0,
+      "variant": null,
+      "actor": "PROP_House_Garage_Rack_Equipment_03"
+    },
+    {
+      "mesh": "Rack_Equipment",
+      "room": "Garage",
+      "location": [
+        -1485,
+        -340,
+        0
+      ],
+      "yaw": 90,
+      "scale": 1.0,
+      "variant": null,
+      "actor": "PROP_House_Garage_Rack_Equipment_04"
+    },
+    {
+      "mesh": "Rack_Equipment",
+      "room": "Garage",
+      "location": [
+        -1485,
+        10,
+        0
+      ],
+      "yaw": 90,
+      "scale": 1.0,
+      "variant": null,
+      "actor": "PROP_House_Garage_Rack_Equipment_05"
+    },
+    {
+      "mesh": "FlightCase_Yellow",
+      "room": "Garage",
+      "location": [
+        -690,
+        -1430,
+        0
+      ],
+      "yaw": -90,
+      "scale": 1.0,
+      "variant": null,
+      "actor": "PROP_House_Garage_FlightCase_Yellow_01"
+    },
+    {
+      "mesh": "FlightCase_Black",
+      "room": "Garage",
+      "location": [
+        -690,
+        -850,
+        0
+      ],
+      "yaw": -90,
+      "scale": 1.0,
+      "variant": null,
+      "actor": "PROP_House_Garage_FlightCase_Black_02"
+    },
+    {
+      "mesh": "FlightCase_Yellow",
+      "room": "Garage",
+      "location": [
+        -690,
+        -490,
+        0
+      ],
+      "yaw": -90,
+      "scale": 1.0,
+      "variant": null,
+      "actor": "PROP_House_Garage_FlightCase_Yellow_02"
+    },
+    {
+      "mesh": "FlightCase_Black",
+      "room": "Garage",
+      "location": [
+        -690,
+        -80,
+        0
+      ],
+      "yaw": -90,
+      "scale": 1.0,
+      "variant": null,
+      "actor": "PROP_House_Garage_FlightCase_Black_03"
+    },
+    {
+      "mesh": "FlightCase_Black",
+      "room": "Garage",
+      "location": [
+        -1330,
+        -1480,
+        0
+      ],
+      "yaw": 90,
+      "scale": 1.0,
+      "variant": null,
+      "actor": "PROP_House_Garage_FlightCase_Black_04"
+    },
+    {
+      "mesh": "FlightCase_Yellow",
+      "room": "Garage",
+      "location": [
+        -1120,
+        -1460,
+        0
+      ],
+      "yaw": 180,
+      "scale": 1.0,
+      "variant": null,
+      "actor": "PROP_House_Garage_FlightCase_Yellow_03"
+    },
+    {
+      "mesh": "FlightCase_Yellow",
+      "room": "Garage",
+      "location": [
+        -1120,
+        -1460,
+        75
+      ],
+      "yaw": 180,
+      "scale": 1.0,
+      "variant": null,
+      "actor": "PROP_House_Garage_FlightCase_Yellow_04"
+    },
+    {
+      "mesh": "FlightCase_Black",
+      "room": "Garage",
+      "location": [
+        -900,
+        -1460,
+        0
+      ],
+      "yaw": 180,
+      "scale": 1.0,
+      "variant": null,
+      "actor": "PROP_House_Garage_FlightCase_Black_05"
+    },
+    {
+      "mesh": "FlightCase_Yellow",
+      "room": "Garage",
+      "location": [
+        -690,
+        -1240,
+        0
+      ],
+      "yaw": -90,
+      "scale": 1.0,
+      "variant": null,
+      "actor": "PROP_House_Garage_FlightCase_Yellow_05"
+    },
+    {
+      "mesh": "FlightCase_Yellow",
+      "room": "Storage",
+      "location": [
+        -1420,
+        330,
+        0
+      ],
+      "yaw": 90,
+      "scale": 1.0,
+      "variant": null,
+      "actor": "PROP_House_Storage_FlightCase_Yellow_06"
+    },
+    {
+      "mesh": "FlightCase_Black",
+      "room": "Storage",
+      "location": [
+        -760,
+        330,
+        0
+      ],
+      "yaw": -90,
+      "scale": 1.0,
+      "variant": null,
+      "actor": "PROP_House_Storage_FlightCase_Black_06"
+    },
+    {
+      "mesh": "Rug_Bordered",
+      "room": "Living",
+      "location": [
+        -10,
+        -80,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        2.45,
+        1.85,
+        1
+      ],
+      "variant": null,
+      "actor": "PROP_House_Living_Rug_Bordered_01"
+    },
+    {
+      "mesh": "Sofa_ThreeSeat",
+      "room": "Living",
+      "location": [
+        -65,
+        -427,
+        0
+      ],
+      "yaw": 180,
+      "scale": 1.2,
+      "variant": null,
+      "actor": "PROP_House_Living_Sofa_ThreeSeat_01"
+    },
+    {
+      "mesh": "Sofa_TwoSeat",
+      "room": "Living",
+      "location": [
+        364,
+        -50,
+        0
+      ],
+      "yaw": -90,
+      "scale": 1.25,
+      "variant": null,
+      "actor": "PROP_House_Living_Sofa_TwoSeat_01"
+    },
+    {
+      "mesh": "Sofa_TwoSeat",
+      "room": "Living",
+      "location": [
+        100,
+        280,
+        0
+      ],
+      "yaw": 0,
+      "scale": 1.1,
+      "variant": "Burgundy",
+      "actor": "PROP_House_Living_Sofa_TwoSeat_02"
+    },
+    {
+      "mesh": "Armchair",
+      "room": "Living",
+      "location": [
+        -350,
+        155,
+        0
+      ],
+      "yaw": 45,
+      "scale": 1.15,
+      "variant": null,
+      "actor": "PROP_House_Living_Armchair_01"
+    },
+    {
+      "mesh": "Table_Coffee",
+      "room": "Living",
+      "location": [
+        -30,
+        -60,
+        0
+      ],
+      "yaw": 90,
+      "scale": 1.2,
+      "variant": null,
+      "actor": "PROP_House_Living_Table_Coffee_01"
+    },
+    {
+      "mesh": "Table_Side",
+      "room": "Living",
+      "location": [
+        -360,
+        -420,
+        0
+      ],
+      "yaw": 0,
+      "scale": 1.0,
+      "variant": null,
+      "actor": "PROP_House_Living_Table_Side_01"
+    },
+    {
+      "mesh": "Lamp_Desk",
+      "room": "Living",
+      "location": [
+        -360,
+        -420,
+        55
+      ],
+      "yaw": 0,
+      "scale": 1.0,
+      "variant": null,
+      "actor": "PROP_House_Living_Lamp_Desk_02"
+    },
+    {
+      "mesh": "Lamp_Floor",
+      "room": "Living",
+      "location": [
+        435,
+        245,
+        0
+      ],
+      "yaw": 0,
+      "scale": 1.0,
+      "variant": null,
+      "actor": "PROP_House_Living_Lamp_Floor_01"
+    },
+    {
+      "mesh": "Plant_Potted",
+      "room": "Living",
+      "location": [
+        -430,
+        310,
+        0
+      ],
+      "yaw": 0,
+      "scale": 1.15,
+      "variant": null,
+      "actor": "PROP_House_Living_Plant_Potted_02"
+    },
+    {
+      "mesh": "Console",
+      "room": "Living",
+      "location": [
+        435,
+        -335,
+        0
+      ],
+      "yaw": -90,
+      "scale": 1.0,
+      "variant": null,
+      "actor": "PROP_House_Living_Console_02"
+    },
+    {
+      "mesh": "Rug_Bordered",
+      "room": "Lobby",
+      "location": [
+        -1050,
+        1110,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1.25,
+        1.5,
+        1
+      ],
+      "variant": null,
+      "actor": "PROP_House_Lobby_Rug_Bordered_02"
+    },
+    {
+      "mesh": "Sofa_TwoSeat",
+      "room": "Lobby",
+      "location": [
+        -1440,
+        1050,
+        0
+      ],
+      "yaw": 90,
+      "scale": 1.15,
+      "variant": null,
+      "actor": "PROP_House_Lobby_Sofa_TwoSeat_03"
+    },
+    {
+      "mesh": "Console",
+      "room": "Lobby",
+      "location": [
+        -1450,
+        1390,
+        0
+      ],
+      "yaw": 90,
+      "scale": 1.0,
+      "variant": null,
+      "actor": "PROP_House_Lobby_Console_03"
+    },
+    {
+      "mesh": "Lamp_Desk",
+      "room": "Lobby",
+      "location": [
+        -1450,
+        1390,
+        80
+      ],
+      "yaw": 0,
+      "scale": 1.0,
+      "variant": null,
+      "actor": "PROP_House_Lobby_Lamp_Desk_03"
+    },
+    {
+      "mesh": "Plant_Potted",
+      "room": "Lobby",
+      "location": [
+        -1460,
+        635,
+        0
+      ],
+      "yaw": 0,
+      "scale": 1.4,
+      "variant": null,
+      "actor": "PROP_House_Lobby_Plant_Potted_03"
+    },
+    {
+      "mesh": "Table_Side",
+      "room": "Lobby",
+      "location": [
+        -1370,
+        800,
+        0
+      ],
+      "yaw": 0,
+      "scale": 1.0,
+      "variant": null,
+      "actor": "PROP_House_Lobby_Table_Side_02"
+    },
+    {
+      "mesh": "Console",
+      "room": "ProductionHall",
+      "location": [
+        445,
+        650,
+        0
+      ],
+      "yaw": -90,
+      "scale": 1.0,
+      "variant": null,
+      "actor": "PROP_House_ProductionHall_Console_04"
+    },
+    {
+      "mesh": "Plant_Potted",
+      "room": "ProductionHall",
+      "location": [
+        420,
+        795,
+        0
+      ],
+      "yaw": 0,
+      "scale": 1.0,
+      "variant": null,
+      "actor": "PROP_House_ProductionHall_Plant_Potted_04"
+    },
+    {
+      "mesh": "Kitchen_Cabinet",
+      "room": "Kitchen",
+      "location": [
+        1490,
+        -880,
+        0
+      ],
+      "yaw": -90,
+      "scale": [
+        1.65,
+        1,
+        1
+      ],
+      "variant": null,
+      "actor": "PROP_House_Kitchen_Kitchen_Cabinet_01"
+    },
+    {
+      "mesh": "Kitchen_Sink",
+      "room": "Kitchen",
+      "location": [
+        1490,
+        -665,
+        0
+      ],
+      "yaw": -90,
+      "scale": [
+        1.65,
+        1,
+        1
+      ],
+      "variant": null,
+      "actor": "PROP_House_Kitchen_Kitchen_Sink_01"
+    },
+    {
+      "mesh": "Kitchen_Cooker",
+      "room": "Kitchen",
+      "location": [
+        1490,
+        -450,
+        0
+      ],
+      "yaw": -90,
+      "scale": [
+        1.65,
+        1,
+        1
+      ],
+      "variant": null,
+      "actor": "PROP_House_Kitchen_Kitchen_Cooker_01"
+    },
+    {
+      "mesh": "Kitchen_Cabinet",
+      "room": "Kitchen",
+      "location": [
+        1490,
+        -235,
+        0
+      ],
+      "yaw": -90,
+      "scale": [
+        1.65,
+        1,
+        1
+      ],
+      "variant": null,
+      "actor": "PROP_House_Kitchen_Kitchen_Cabinet_02"
+    },
+    {
+      "mesh": "Kitchen_Cabinet",
+      "room": "Kitchen",
+      "location": [
+        1490,
+        -20,
+        0
+      ],
+      "yaw": -90,
+      "scale": [
+        1.65,
+        1,
+        1
+      ],
+      "variant": null,
+      "actor": "PROP_House_Kitchen_Kitchen_Cabinet_03"
+    },
+    {
+      "mesh": "Kitchen_Cabinet",
+      "room": "Kitchen",
+      "location": [
+        1490,
+        195,
+        0
+      ],
+      "yaw": -90,
+      "scale": [
+        1.65,
+        1,
+        1
+      ],
+      "variant": null,
+      "actor": "PROP_House_Kitchen_Kitchen_Cabinet_04"
+    },
+    {
+      "mesh": "Kitchen_Refrigerator",
+      "room": "Kitchen",
+      "location": [
+        645,
+        -90,
+        0
+      ],
+      "yaw": 90,
+      "scale": 1.0,
+      "variant": null,
+      "actor": "PROP_House_Kitchen_Kitchen_Refrigerator_01"
+    },
+    {
+      "mesh": "Plant_Potted",
+      "room": "Kitchen",
+      "location": [
+        1370,
+        290,
+        0
+      ],
+      "yaw": 0,
+      "scale": 0.6,
+      "variant": null,
+      "actor": "PROP_House_Kitchen_Plant_Potted_05"
+    },
+    {
+      "mesh": "Bathroom_Toilet",
+      "room": "WC",
+      "location": [
+        800,
+        -1485,
+        0
+      ],
+      "yaw": 180,
+      "scale": 1.2,
+      "variant": null,
+      "actor": "PROP_House_WC_Bathroom_Toilet_01"
+    },
+    {
+      "mesh": "Bathroom_Basin",
+      "room": "WC",
+      "location": [
+        990,
+        -1180,
+        0
+      ],
+      "yaw": -90,
+      "scale": 1.15,
+      "variant": null,
+      "actor": "PROP_House_WC_Bathroom_Basin_01"
+    },
+    {
+      "mesh": "Mirror_Wall",
+      "room": "WC",
+      "location": [
+        1044,
+        -1180,
+        0
+      ],
+      "yaw": -90,
+      "scale": 1.15,
+      "variant": null,
+      "actor": "PROP_House_WC_Mirror_Wall_01"
+    },
+    {
+      "mesh": "Rug_Bordered",
+      "room": "Dressing",
+      "location": [
+        -5,
+        1230,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1.1,
+        1.1,
+        1
+      ],
+      "variant": null,
+      "actor": "PROP_House_Dressing_Rug_Bordered_03"
+    },
+    {
+      "mesh": "Vanity_Illuminated",
+      "room": "Dressing",
+      "location": [
+        445,
+        1230,
+        0
+      ],
+      "yaw": -90,
+      "scale": 1.2,
+      "variant": null,
+      "actor": "PROP_House_Dressing_Vanity_Illuminated_01"
+    },
+    {
+      "mesh": "Chair_Dining",
+      "room": "Dressing",
+      "location": [
+        280,
+        1230,
+        0
+      ],
+      "yaw": -90,
+      "scale": 1.2,
+      "variant": null,
+      "actor": "PROP_House_Dressing_Chair_Dining_11"
+    },
+    {
+      "mesh": "ClothesRail",
+      "room": "Dressing",
+      "location": [
+        -445,
+        1190,
+        0
+      ],
+      "yaw": 90,
+      "scale": 1.3,
+      "variant": null,
+      "actor": "PROP_House_Dressing_ClothesRail_01"
+    },
+    {
+      "mesh": "Sofa_TwoSeat",
+      "room": "Dressing",
+      "location": [
+        -30,
+        1460,
+        0
+      ],
+      "yaw": 0,
+      "scale": 0.95,
+      "variant": "Tan",
+      "actor": "PROP_House_Dressing_Sofa_TwoSeat_04"
+    },
+    {
+      "mesh": "FlightCase_Black",
+      "room": "Dressing",
+      "location": [
+        -450,
+        1480,
+        0
+      ],
+      "yaw": 0,
+      "scale": 1.0,
+      "variant": null,
+      "actor": "PROP_House_Dressing_FlightCase_Black_07"
+    },
+    {
+      "mesh": "Rug_Bordered",
+      "room": "HiddenRoom",
+      "location": [
+        1230,
+        1020,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1.6,
+        1.6,
+        1
+      ],
+      "variant": null,
+      "actor": "PROP_House_HiddenRoom_Rug_Bordered_04"
+    },
+    {
+      "mesh": "Desk_Office",
+      "room": "HiddenRoom",
+      "location": [
+        1210,
+        1000,
+        0
+      ],
+      "yaw": 0,
+      "scale": 1.25,
+      "variant": null,
+      "actor": "PROP_House_HiddenRoom_Desk_Office_01"
+    },
+    {
+      "mesh": "Lamp_Desk",
+      "room": "HiddenRoom",
+      "location": [
+        1270,
+        1030,
+        97.5
+      ],
+      "yaw": 0,
+      "scale": 1.0,
+      "variant": null,
+      "actor": "PROP_House_HiddenRoom_Lamp_Desk_04"
+    },
+    {
+      "mesh": "Chair_Dining",
+      "room": "HiddenRoom",
+      "location": [
+        1140,
+        830,
+        0
+      ],
+      "yaw": 180,
+      "scale": 1.15,
+      "variant": null,
+      "actor": "PROP_House_HiddenRoom_Chair_Dining_12"
+    },
+    {
+      "mesh": "Chair_Dining",
+      "room": "HiddenRoom",
+      "location": [
+        1280,
+        830,
+        0
+      ],
+      "yaw": 180,
+      "scale": 1.15,
+      "variant": null,
+      "actor": "PROP_House_HiddenRoom_Chair_Dining_13"
+    },
+    {
+      "mesh": "Cabinet_Tall",
+      "room": "HiddenRoom",
+      "location": [
+        1480,
+        1255,
+        0
+      ],
+      "yaw": -90,
+      "scale": 1.1,
+      "variant": null,
+      "actor": "PROP_House_HiddenRoom_Cabinet_Tall_01"
+    },
+    {
+      "mesh": "Plant_Potted",
+      "room": "HiddenRoom",
+      "location": [
+        1000,
+        1460,
+        0
+      ],
+      "yaw": 0,
+      "scale": 1.1,
+      "variant": null,
+      "actor": "PROP_House_HiddenRoom_Plant_Potted_06"
+    }
+  ],
+  "removed_placeholders": [],
+  "errors": [],
+  "saved": true,
+  "verification": {
+    "prop_actors": 74,
+    "remaining_blockout": [],
+    "issues": [],
+    "collision_issues": [],
+    "door_clearances": [
+      {
+        "door": "Entrance",
+        "nearest_prop_cm": 394.5,
+        "prop": "PROP_House_Lobby_Console_03",
+        "clear_90cm": true
+      },
+      {
+        "door": "GarageDining",
+        "nearest_prop_cm": 137.2,
+        "prop": "PROP_House_Garage_FlightCase_Yellow_05",
+        "clear_90cm": true
+      },
+      {
+        "door": "LobbyHall",
+        "nearest_prop_cm": 338.4,
+        "prop": "PROP_House_Living_Plant_Potted_02",
+        "clear_90cm": true
+      },
+      {
+        "door": "GarageStorage",
+        "nearest_prop_cm": 299.9,
+        "prop": "PROP_House_Storage_FlightCase_Yellow_06",
+        "clear_90cm": true
+      },
+      {
+        "door": "StorageLobby",
+        "nearest_prop_cm": 294.1,
+        "prop": "PROP_House_Storage_FlightCase_Black_06",
+        "clear_90cm": true
+      },
+      {
+        "door": "LivingDining",
+        "nearest_prop_cm": 114.2,
+        "prop": "PROP_House_Living_Sofa_ThreeSeat_01",
+        "clear_90cm": true
+      },
+      {
+        "door": "LivingHall",
+        "nearest_prop_cm": 124.5,
+        "prop": "PROP_House_Living_Sofa_TwoSeat_02",
+        "clear_90cm": true
+      },
+      {
+        "door": "Dressing",
+        "nearest_prop_cm": 142.0,
+        "prop": "PROP_House_ProductionHall_Plant_Potted_04",
+        "clear_90cm": true
+      },
+      {
+        "door": "WC",
+        "nearest_prop_cm": 108.9,
+        "prop": "PROP_House_Dining_FlightCase_Black_01",
+        "clear_90cm": true
+      },
+      {
+        "door": "DiningKitchen",
+        "nearest_prop_cm": 283.3,
+        "prop": "PROP_House_Living_Console_02",
+        "clear_90cm": true
+      },
+      {
+        "door": "KitchenService",
+        "nearest_prop_cm": 283.7,
+        "prop": "PROP_House_ProductionHall_Console_04",
+        "clear_90cm": true
+      },
+      {
+        "door": "HiddenRoom",
+        "nearest_prop_cm": 192.5,
+        "prop": "PROP_House_HiddenRoom_Desk_Office_01",
+        "clear_90cm": true
+      }
+    ],
+    "architecture": {
+      "checked": 59,
+      "issues": []
+    }
+  }
+}

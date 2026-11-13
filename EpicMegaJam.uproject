@@ -32,6 +32,13 @@
 			"TargetAllowList": [
 				"Editor"
 			]
+		},
+		{
+			"Name": "UnrealMCPBridge",
+			"Enabled": false,
+			"TargetAllowList": [
+				"Editor"
+			]
 		}
 	]
 }
