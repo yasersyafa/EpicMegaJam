@@ -22,10 +22,12 @@ def function_graph(path, name, inputs=None, outputs=None):
 def clear_function(path,name):
     summary=call('read_blueprint_graph_summary',path=path,graphName=name)
     for node in summary['nodes']:
-        if node['type']!='K2Node_FunctionEntry':
+        if node['type'] not in ['K2Node_FunctionEntry','K2Node_FunctionResult']:
             call('remove_node',path=path,graphName=name,nodeId=node['id'])
     entry=next(n['id'] for n in summary['nodes'] if n['type']=='K2Node_FunctionEntry')
-    return Graph(path,name,entry+'.then')
+    graph=Graph(path,name,entry+'.then')
+    graph.result=next((n['id'] for n in summary['nodes'] if n['type']=='K2Node_FunctionResult'),None)
+    return graph
 
 
 def arrange_graph(path,name,comment):

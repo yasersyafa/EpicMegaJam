@@ -96,3 +96,5 @@ with open(os.path.join(unreal.Paths.project_saved_dir(),'GameplaySystemsStaging.
 unreal.log('GAMEPLAY_SYSTEMS_STAGED '+str(len(records))+' slots')
 with open(os.path.join(unreal.Paths.project_dir(),'Tools','StageDirectorMarks.py'),encoding='utf-8-sig') as stage:
     exec(compile(stage.read(),stage.name,'exec'))
+with open(os.path.join(unreal.Paths.project_dir(),'Tools','StageFreePlacement.py'),encoding='utf-8-sig') as stage:
+    exec(compile(stage.read(),stage.name,'exec'))
