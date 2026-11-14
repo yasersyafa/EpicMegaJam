@@ -52,6 +52,42 @@ Outcomes, in priority order: BLOCKED (`bPathClear`), MISSED_CLUE (`bWallVisible`
 
 Start layout: sofa across the path at (-140, 140), wardrobe against the odd west wall at (-490, -440). This gives BLOCKED on the first take. To solve, move the sofa and the wardrobe anywhere outside both zones.
 
+## L02 rules (Kitchen & Corridor)
+
+`Tools/Cinematics/BuildL02Takes.py` stages it. Both build scripts share `take_staging.py`.
+
+- **Corridor** = the Service passage (x 540..880). **Hollow wall** = `GB_Wall_KitchenServiceE` (y = 400, kitchen side), which hides the secret room.
+- **Maya path:** corridor north end (710, 1300) → service door (705, 400) → hollow wall (1100, 270), facing the wall.
+- **Props:** `SmallCabinet` (start in the corridor at (710, 830)) and `StandingLamp` (`BP_StandingLampProp`, a real point light, start in the far kitchen corner at (1150, -800)).
+
+| Flag | Rule |
+|---|---|
+| `bPathClear` | ForbidAny `SmallCabinet@L02_Corridor`, `StandingLamp@L02_Corridor` |
+| `bDoorVisible` | ForbidAny `SmallCabinet@L02_HollowWall` |
+| `bClueLit` | RequireAny `StandingLamp@L02_LampReveal`, `StandingLamp@L02_Corridor` |
+
+Outcomes: OBSTRUCTED (`bPathClear`, `bDoorVisible`), DARK (`bClueLit`), PERFECT. Putting the lamp in the corridor is the PRD trap: it lights the wall but blocks the path. To solve, move the cabinet out of the corridor and away from the wall, and put the lamp in the reveal zone at (880, 180).
+
+Gates (`SceneLevelRefs[...].GateActor`, invisible BlockAll walls hidden by `OpenSceneGate`):
+
+| Gate | Doorway | Opens after |
+|---|---|---|
+| `L01_Gate_KitchenDoor` | dining → kitchen (540, -695) | L01 |
+| `L02_Gate_SecretRoomDoor` | service → secret room (880, 1055) | L02 |
+
+The director mark is at (1250, -300) in the kitchen. The 27 dialogue rows come from catalog pages 6–7; hint 2 uses the PRD text, and the outcome CUT lines are new.
+
+## Menus
+
+| Asset | Role |
+|---|---|
+| `L_MainMenu` + `BP_MenuGameMode` | `GameDefaultMap`. Shows `WBP_MainMenu` (PLAY → `SB_GrayBox`, CREDITS, QUIT), UI-only input, mouse cursor |
+| `WBP_Credits` | 40 s `Scroll` animation (cast, team, thanks), then returns to `L_MainMenu`. SKIP returns immediately |
+| `WBP_PauseMenu` | RESUME / MAIN MENU / QUIT |
+| `IA_Pause` (Esc, P) | `BP_PlayerController.TogglePause`. `bTriggerWhenPaused` is on. In PIE, Esc stops play, so use P |
+
+`BP_PlayerController` BeginPlay restores Game-only input and hides the cursor, because the menu's UI-only input mode survives `OpenLevel`.
+
 ## Verified in PIE
 
 - ACTION with the start layout gives BLOCKED, then WAITING_FOR_CUT, the hint (`FailCount BLOCKED=1`) and `[F] CUT`.
@@ -59,6 +95,14 @@ Start layout: sofa across the path at (-140, 140), wardrobe against the odd west
 - Sofa out of the path gives flags `bPathClear=T, bWallVisible=F` and MISSED_CLUE. The camera and Maya hold through WAITING.
 - Wardrobe also moved gives PERFECT: walk, turn to the wall, auto CUT, `SCENE COMPLETE`, success dialogue, then `bLevel1Complete=true`, scene index 1, SETUP.
 - ACTION → immediate CUT gives `bCutWasEarly=true` and `L01_CUT_EARLY`. `TakeID` increments on both. State stays SETUP afterwards (stale finish ignored).
+- L02 flags for four layouts:
+  - start → OBSTRUCTED
+  - lamp in corridor (trap) → OBSTRUCTED with `bClueLit` T
+  - cabinet moved → DARK
+  - lamp in reveal → PERFECT, then 12 success lines, `bLevel2Complete`, secret room gate open (hidden, no collision), scene index 2, SETUP
+- Menus:
+  - main menu renders; CREDITS scrolls; SKIP → menu; PLAY → `SB_GrayBox`
+  - TogglePause pauses with the menu shown; a second toggle resumes
 - Director mark: ACTION off the mark stays SETUP (`TakeCount` 0). On the mark it starts TAKE_PLAYING. CUT still works.
 - `BP_PlayerCharacter`: pick up sofa → valid ghost → place moves the prop and clears `HeldProp`.
 
@@ -68,5 +112,6 @@ Start layout: sofa across the path at (-140, 140), wardrobe against the odd west
 2. Ibra's `WBP_Scene01Objective` tutorial text sits in the same bottom area as `WBP_GameHUD` subtitles and overlaps them.
 3. Ibra's static `PROP_Scene01_Wardrobe` and `CREW_Intro_SetDresser` (near the inspection point) are still in the room. Maya ends right next to that crew member.
 4. `BP_PlacementArea` is used in production but lives under `Gameplay/Testing/`. Move it in the editor when Yaser agrees.
-5. L02/L03 configs, gates (`GateActor`), the intercom and Director's Notes text from the config are not wired yet. After L01 the objective is empty until L03 is complete.
-6. Unfocused PIE can jump game time (noted in the 15 Nov devlog). Click the viewport before timing tests.
+5. L03, the intercom, the ending cinematic and the credits trigger after the ending are not built yet. Director's Notes text from the config is not shown. After L02 the objective is empty until L03 is complete.
+6. Gates are invisible walls. A visible barrier (tape, crate) would read better.
+7. Unfocused PIE can jump game time (noted in the 15 Nov devlog). Click the viewport before timing tests.
