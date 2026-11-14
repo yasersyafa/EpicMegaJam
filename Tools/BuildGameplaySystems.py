@@ -112,7 +112,7 @@ def start():
               and p.name!='L_GameplaySystems.umap'}
     (RECEIPTS/'protected_hashes.json').write_text(json.dumps(baseline,indent=2))
     print(python("import unreal; assert unreal.get_editor_subsystem(unreal.UnrealEditorSubsystem).get_game_world() is None; assert not unreal.EditorLoadingAndSavingUtils.get_dirty_map_packages(); assert not unreal.EditorLoadingAndSavingUtils.get_dirty_content_packages(); assert not unreal.EditorAssetLibrary.does_asset_exist('"+MANAGER+"')"))
-    for path,parent in [(PLAYER,'BP_PlayerCharacter_C'),(MANAGER,'Actor'),(HUD,'HUD'),(MODE,'GameModeBase')]:
+    for path,parent in [(PLAYER,'BP_FreePlacementPlayerBase_C'),(MANAGER,'Actor'),(HUD,'HUD'),(MODE,'GameModeBase')]:
         call('create_blueprint',packagePath=path,parentClass=parent)
     variables=[('SceneIndex','int','1'),('State','int','0'),('Outcome','int','0'),
                ('TakeID','int','0'),('TakeCount','int','0'),('CompletedCount','int','0'),
@@ -122,6 +122,7 @@ def start():
                ('StatusText','string','Arrange the props. F starts a take.'),('NotesText','string',''),
                ('Player','object:BP_GameplayPlayer_C','None'),('Controller','object:PlayerController','None'),
                ('ActiveProp1','object:BP_InteractableProp_C','None'),('ActiveProp2','object:BP_InteractableProp_C','None'),
+               ('ActiveArea1','object:BP_PlacementArea_C','None'),('ActiveArea2','object:BP_PlacementArea_C','None'),
                ('ActiveDirectorMark','object:Actor','None'),('AtDirectorMark','bool','false'),
                ('DirectorMarkRadius','double','100.0'),('DirectorMarkHeightTolerance','double','120.0'),
                ('Intercom','object:Actor','None')]
@@ -130,7 +131,7 @@ def start():
         for prop in range(1,3):
             variables += [(f'S{scene}Prop{prop}','object:BP_InteractableProp_C','None'),
                           (f'S{scene}Start{prop}','object:Actor','None'),
-                          (f'S{scene}Correct{prop}','name',f'S{scene}_P{prop}_B' if prop==1 else f'S{scene}_P{prop}_C')]
+                          (f'S{scene}Area{prop}','object:BP_PlacementArea_C','None')]
     for name,kind,default in variables:
         call('add_variable',path=MANAGER,variableName=name,type=kind,defaultValue=default,category='Gameplay Test')
     # Create all callable functions before building their callers.
@@ -160,11 +161,13 @@ def build_configure_scene(g):
         yes,no=g.branch(g.compare(g.get('SceneIndex'),'EqualEqual_IntInt',scene),previous)
         p=g.set('ActiveProp1',(g.get(f'S{scene}Prop1'),),yes)
         p=g.set('ActiveProp2',(g.get(f'S{scene}Prop2'),),p)
+        p=g.set('ActiveArea1',(g.get(f'S{scene}Area1'),),p)
+        p=g.set('ActiveArea2',(g.get(f'S{scene}Area2'),),p)
         p=g.set('ActiveDirectorMark',(g.get(f'S{scene}DirectorMark'),),p)
         p=g.invoke('RefreshDirectorMark',p)
-        objective={1:'SCENE 1 - ARRIVAL\nSofa: clear the walking route (slot B).\nWardrobe: expose the wall (slot C).',
-                   2:'SCENE 2 - HOLLOW WALL\nCabinet: clear the inspection mark (slot B).\nLamp: light the sealed doorway (slot C).',
-                   3:'SCENE 3 - LAST SCENE\nChair: match the staged reference (slot B).\nLamp: light the reveal (slot C).'}[scene]
+        objective={1:'SCENE 1 - ARRIVAL\nSofa: clear the walking route.\nWardrobe: expose the wall. Place freely; blue areas mark test solutions.',
+                   2:'SCENE 2 - HOLLOW WALL\nCabinet: clear the inspection area.\nLamp: light the sealed doorway. Place freely; blue areas mark test solutions.',
+                   3:'SCENE 3 - LAST SCENE\nChair: match the reference area.\nLamp: light the reveal. Place freely; blue areas mark test solutions.'}[scene]
         p=g.set('NotesText',objective, p)
         done=g.get('Completed'+str(scene))
         d,n=g.branch(done,p)
@@ -241,17 +244,8 @@ def build_functions(gs):
     build_refresh_director_mark(gs['RefreshDirectorMark'])
     build_configure_scene(gs['ConfigureScene'])
 
-    g=gs['EvaluatePuzzle'];previous=g.set('Outcome',0,g.entry)
-    for scene in range(1,4):
-        yes,no=g.branch(g.compare(g.get('SceneIndex'),'EqualEqual_IntInt',scene),previous)
-        p1=g.get('ActiveProp1');p2=g.get('ActiveProp2')
-        slot1=g.get('CurrentSlotID',owner='BP_InteractableProp_C',target=p1)
-        slot2=g.get('CurrentSlotID',owner='BP_InteractableProp_C',target=p2)
-        first,fail1=g.branch(g.compare(slot1,'EqualEqual_NameName',(g.get(f'S{scene}Correct1'),)),yes)
-        second,fail2=g.branch(g.compare(slot2,'EqualEqual_NameName',(g.get(f'S{scene}Correct2'),)),first)
-        g.set('Outcome',1,fail1);g.set('Outcome',2,fail2);g.set('Outcome',0,second)
-        previous=no
-    g.build()
+    from BuildFreePlacement import build_evaluate_puzzle
+    build_evaluate_puzzle(gs['EvaluatePuzzle'])
 
     build_start_take(gs['StartTake'])
 
@@ -288,28 +282,8 @@ def build_functions(gs):
     p=g.set('State',3,final);g.message('CALL EVERYONE TO SET - approach the intercom near the arena entrance and press E.',p)
     g.build()
 
-    g=gs['RestartScene'];p=g.set('State',0,g.entry)
-    unlock=g.fn('unlock','Controller','ResetIgnoreMoveInput',p);g.wire(g.get('Controller'),'unlock.self');p='unlock.then'
-    # Clear selection before restoring prop transforms.
-    p=g.set('HeldProp','None',p,owner='BP_GameplayPlayer_C',target=g.get('Player'))
-    p=g.set('TargetSlot','None',p,owner='BP_GameplayPlayer_C',target=g.get('Player'))
-    previous=p
-    for scene in range(1,4):
-        yes,no=g.branch(g.compare(g.get('SceneIndex'),'EqualEqual_IntInt',scene),previous)
-        completed,not_completed=g.branch(g.get('Completed'+str(scene)),yes)
-        minus=g.fn('decrement'+str(scene),'KismetMathLibrary','Subtract_IntInt',B='1');g.wire(g.get('CompletedCount'),minus+'.A')
-        cleared=g.set('CompletedCount',(minus+'.ReturnValue',),completed)
-        cleared=g.set('Completed'+str(scene),'false',cleared)
-        join=g.node('restore'+str(scene),'Sequence')
-        g.wire(cleared,join+'.execute');g.wire(not_completed,join+'.execute')
-        yes=join+'.then_0'
-        for index in range(1,3):
-            prop=g.get(f'S{scene}Prop{index}');marker=g.get(f'S{scene}Start{index}')
-            loc=g.fn(f'location{scene}{index}','Actor','K2_GetActorLocation');g.wire(marker,loc+'.self')
-            move=g.fn(f'reset{scene}{index}','Actor','K2_SetActorLocation',yes,bSweep='false',bTeleport='true');g.wire(prop,move+'.self');g.wire(loc+'.ReturnValue',move+'.NewLocation')
-            yes=g.set('CurrentSlotID',f'S{scene}_P{index}_A',move+'.then',owner='BP_InteractableProp_C',target=prop)
-        g.invoke('ConfigureScene',yes);previous=no
-    g.build()
+    from BuildFreePlacement import build_restart_free_placement
+    build_restart_free_placement(gs['RestartScene'])
 
     g=gs['ToggleNotes'];neg=g.fn('flip','KismetMathLibrary','Not_PreBool');g.wire(g.get('NotesVisible'),'flip.A')
     g.set('NotesVisible',('flip.ReturnValue',),g.entry);g.build()
@@ -369,7 +343,7 @@ def build_hud():
     g.node('cast','Cast',targetClass=CLASS);g.wire('find.then','cast.execute');g.wire('find.ReturnValue','cast.Object')
     status=g.get('StatusText',owner=CLASS,target='cast.AsBP Gameplay Test Manager')
     draw=g.fn('status','HUD','DrawText','cast.then',ScreenX='32',ScreenY='58',Scale='1.2',TextColor='(R=1,G=1,B=1,A=1)');g.wire(status,'status.Text')
-    draw=g.fn('controls','HUD','DrawText','status.then',Text='WASD move | Mouse look | E pick/place | RMB cancel | F ACTION/CUT\nTab notes | N continue | R restart scene | 1/2/3 select scene | P pause/resume | F6 mark tests (fresh PIE)',ScreenX='32',ScreenY='105',Scale='1.0',TextColor='(R=0.8,G=0.9,B=1,A=1)')
+    draw=g.fn('controls','HUD','DrawText','status.then',Text='WASD move | Mouse look | E pick/place freely | RMB cancel | F ACTION/CUT\nTab notes | N continue | R restart scene | 1/2/3 select scene | P pause/resume | F6 functional tests (fresh PIE)',ScreenX='32',ScreenY='105',Scale='1.0',TextColor='(R=0.8,G=0.9,B=1,A=1)')
     g.node('uiSequence','Sequence');g.wire('controls.then','uiSequence.execute')
     g.node('statusSequence','Sequence');g.wire('uiSequence.then_0','statusSequence.execute')
     paused=g.get('Paused',owner=CLASS,target='cast.AsBP Gameplay Test Manager')
@@ -389,15 +363,13 @@ def build_hud():
     held=g.get('HeldProp',owner='BP_GameplayPlayer_C',target=player)
     valid=g.fn('validHeld','KismetSystemLibrary','IsValid');g.wire(held,'validHeld.Object')
     holding,empty=g.branch('validHeld.ReturnValue',yes)
-    target=g.get('TargetSlot',owner='BP_GameplayPlayer_C',target=player)
-    valid=g.fn('validTarget','KismetSystemLibrary','IsValid');g.wire(target,'validTarget.Object')
-    place,invalid=g.branch('validTarget.ReturnValue',holding)
+    place,invalid=g.branch(g.get('CanPlaceFreely',owner='BP_GameplayPlayer_C',target=player),holding)
     focus=g.get('FocusProp',owner='BP_GameplayPlayer_C',target=player)
     valid=g.fn('validFocus','KismetSystemLibrary','IsValid');g.wire(focus,'validFocus.Object')
     pickup,_=g.branch('validFocus.ReturnValue',empty)
     x=g.fn('promptX','KismetMathLibrary','Subtract_DoubleDouble',B='130');g.wire('centerX.ReturnValue','promptX.A')
     y=g.fn('promptY','KismetMathLibrary','Multiply_DoubleDouble',B='.63');g.wire('draw.SizeY','promptY.A')
-    for ref,message,previous in [('place','[E] PLACE   [RMB] CANCEL',place),('invalid','NO VALID SLOT   [RMB] CANCEL',invalid),('pickup','[E] PICK UP',pickup)]:
+    for ref,message,previous in [('place','[E] PLACE FREELY   [RMB] CANCEL',place),('invalid','BLOCKED / NO FLAT SURFACE   [RMB] CANCEL',invalid),('pickup','[E] PICK UP',pickup)]:
         g.fn(ref,'HUD','DrawText',previous,Text=message,Scale='1.2',TextColor='(R=1,G=.7,B=.2,A=1)');g.wire('promptX.ReturnValue',ref+'.ScreenX');g.wire('promptY.ReturnValue',ref+'.ScreenY')
     state=g.get('State',owner=CLASS,target='cast.AsBP Gameplay Test Manager')
     setup,_=g.branch(g.compare(state,'EqualEqual_IntInt',0),'statusSequence.then_1')
