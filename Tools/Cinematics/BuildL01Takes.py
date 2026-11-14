@@ -86,6 +86,15 @@ make_area('L01_Area_Path_B', 'L01_Path', (-135.0, 130.0, 0.0), 110.0)
 make_area('L01_Area_Path_C', 'L01_Path', (-165.0, -20.0, 0.0), 110.0)
 make_area('L01_Area_WallFront', 'L01_WallFront', (-470.0, -440.0, 0.0), 140.0)
 
+# Director's mark: ACTION is accepted only within FilmSceneManager.DirectorMarkRadius (100 cm) of it.
+mark = spawn(unreal.StaticMeshActor, 'L01_DirectorMark', (240.0, -220.0, 1.0))
+mark_mesh = mark.static_mesh_component
+mark_mesh.set_static_mesh(unreal.load_asset('/Engine/BasicShapes/Cylinder'))
+mark_mesh.set_material(0, unreal.load_asset('/Game/Game/Materials/GameplayTesting/M_DirectorMark'))
+mark_mesh.set_collision_enabled(unreal.CollisionEnabled.NO_COLLISION)
+mark.set_actor_scale3d(unreal.Vector(2.0, 2.0, 0.02))
+mark.tags = [unreal.Name('mcp.placement.ok')]
+
 cam_wide = spawn(unreal.CineCameraActor, 'CINE_L01_Wide', (470.0, -200.0, 180.0), yaw=164.0, pitch=-10.0)
 cam_wall = spawn(unreal.CineCameraActor, 'CINE_L01_Wall', (-20.0, -20.0, 155.0), yaw=-142.0, pitch=-4.0)
 for c in (cam_wide, cam_wall):
@@ -190,5 +199,6 @@ camera_cuts(seq, [(0, 150, cam_wide), (150, 390, cam_wall)])
 unreal.EditorAssetLibrary.save_loaded_asset(seq)
 
 unreal.get_editor_subsystem(unreal.LevelEditorSubsystem).save_current_level()
-print('L01 staged:', [a.get_actor_label() for a in (start, maya, sofa, wardrobe, cam_wide, cam_wall)],
+print('L01 staged:', [a.get_actor_label() for a in (start, maya, sofa, wardrobe, mark, cam_wide, cam_wall)],
+      'mark path:', mark.get_path_name(),
       'standins:', [s.get_actor_label() for s in standins])

@@ -8,7 +8,7 @@ Implemented 15 Nov 2026 on `dev/falih`, UE 5.6, map `SB_GrayBox`.
 
 | State | F does |
 |---|---|
-| SETUP | `StartTake`: rejected while holding a prop or with no active config |
+| SETUP | `StartTake`: rejected while holding a prop, with no active config, or when the player is off the scene's director mark (`F_SceneLevelRefs.DirectorMark`, within `DirectorMarkRadius` 100 cm and `DirectorMarkHeightTolerance` 120 cm, as in Yaser's test level). Off the mark, a 2.5 s subtitle says "Stand on the director's mark…". An empty mark means no gate |
 | TAKE_PLAYING / AWKWARD / WAITING_FOR_CUT | `ManualCut` |
 | other states | ignored |
 
@@ -59,11 +59,12 @@ Start layout: sofa across the path at (-140, 140), wardrobe against the odd west
 - Sofa out of the path gives flags `bPathClear=T, bWallVisible=F` and MISSED_CLUE. The camera and Maya hold through WAITING.
 - Wardrobe also moved gives PERFECT: walk, turn to the wall, auto CUT, `SCENE COMPLETE`, success dialogue, then `bLevel1Complete=true`, scene index 1, SETUP.
 - ACTION → immediate CUT gives `bCutWasEarly=true` and `L01_CUT_EARLY`. `TakeID` increments on both. State stays SETUP afterwards (stale finish ignored).
+- Director mark: ACTION off the mark stays SETUP (`TakeCount` 0). On the mark it starts TAKE_PLAYING. CUT still works.
 - `BP_PlayerCharacter`: pick up sofa → valid ghost → place moves the prop and clears `HeldProp`.
 
 ## Known issues
 
-1. **ACTION is not gated.** F starts a take during Ibra's opening and arrival tutorial. If that happens, `SavedViewTarget` captures Ibra's camera and CUT returns to it. A director mark or "intro finished" gate is still needed (Yaser's director mark lives only in the test level).
+1. ~~ACTION is not gated~~. Fixed: ACTION needs the L01 director mark (`L01_DirectorMark`, orange disc at (240, -220) on the east side of the living room). F during Ibra's opening/intro is rejected because the player is not on the mark.
 2. Ibra's `WBP_Scene01Objective` tutorial text sits in the same bottom area as `WBP_GameHUD` subtitles and overlaps them.
 3. Ibra's static `PROP_Scene01_Wardrobe` and `CREW_Intro_SetDresser` (near the inspection point) are still in the room. Maya ends right next to that crew member.
 4. `BP_PlacementArea` is used in production but lives under `Gameplay/Testing/`. Move it in the editor when Yaser agrees.
