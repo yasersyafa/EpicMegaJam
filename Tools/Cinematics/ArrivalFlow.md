@@ -57,3 +57,16 @@ NPCBlockingValidation.json records frame-by-frame 55 cm horizontal body-clearanc
 against live living-room/lobby furniture bounds throughout opening, prep, approach and return.
 The test also verifies both final prop positions and all nine introduction lines. These
 checks validate the current authored layout; revalidate if furniture or markers change.
+
+## Seated conversation
+
+StartConversation calls SeatDirector before the first crew line. A fixed first-person
+camera at the armchair seat (-350,155,125), facing the approach marker, blends in over
+0.6 seconds. Movement and look input are locked with one matched pair of controller
+ignore-input calls. The standing player mesh is hidden while that view is active;
+this is a seated POV, not a finished third-person sitting animation.
+Maya reaches -190,80,0 and faces yaw 65 toward the armchair. After her dialogue and
+return to the start mark, StandDirector restores the pawn view, visibility and both
+input channels. The standing pawn remains at the safe arrival mark, so standing up
+never teleports a capsule inside the armchair. Revalidate framing if furniture moves.
+StageSeatedConversation.py rebinds the seat camera after restaging arrival actors.

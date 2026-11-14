@@ -34,3 +34,5 @@ saved=unreal.get_editor_subsystem(unreal.LevelEditorSubsystem).save_current_leve
 
 # Current arrival blocking replaces the original case prototype.
 exec(open(P+'Tools/Cinematics/FixArrivalBlocking.py').read())
+
+exec(open(P+'Tools/Cinematics/StageSeatedConversation.py').read())

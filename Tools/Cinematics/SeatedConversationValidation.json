@@ -1,0 +1,108 @@
+{
+  "samples": [
+    {
+      "t": 0.4000000059604645,
+      "stage": 0,
+      "text": ""
+    },
+    {
+      "t": 30.57243548333645,
+      "stage": 1,
+      "text": "WASD \u2014 Walk toward the house."
+    },
+    {
+      "t": 35.6477824524045,
+      "stage": 2,
+      "text": "Mouse \u2014 Look around."
+    },
+    {
+      "t": 35.71420035511255,
+      "stage": 3,
+      "text": "Approach the front door. E \u2014 Open."
+    },
+    {
+      "t": 35.78072264790535,
+      "stage": 4,
+      "text": "Tab \u2014 Open Director's Notes."
+    },
+    {
+      "t": 35.84325345605612,
+      "stage": 5,
+      "text": "Go to the living room. The crew is waiting."
+    },
+    {
+      "t": 38.71941340714693,
+      "stage": 6,
+      "text": "CREW A\nMorning, Director. We're almost ready in the front room."
+    },
+    {
+      "t": 42.37422010675073,
+      "stage": 6,
+      "text": "SURYA\nGood. How's the set looking?"
+    },
+    {
+      "t": 45.488503601402044,
+      "stage": 6,
+      "text": "CREW A\nA few pieces still need placing. Thought you'd want the final say."
+    },
+    {
+      "t": 51.12123401090503,
+      "stage": 6,
+      "text": " "
+    },
+    {
+      "t": 54.5066023170948,
+      "stage": 7,
+      "text": "MAYA\nMorning, Mr. Surya."
+    },
+    {
+      "t": 56.96652492135763,
+      "stage": 7,
+      "text": "SURYA\nMorning, Maya. Ready for your first scene?"
+    },
+    {
+      "t": 60.77867800369859,
+      "stage": 7,
+      "text": "MAYA\nAs ready as I'll ever be."
+    },
+    {
+      "t": 64.25968269258738,
+      "stage": 7,
+      "text": "SURYA\nDon't worry about getting everything perfect. We'll work through it."
+    },
+    {
+      "t": 69.17419509217143,
+      "stage": 7,
+      "text": "MAYA\nThat's reassuring. I've been going over the script all morning."
+    },
+    {
+      "t": 74.09730549156666,
+      "stage": 7,
+      "text": "SURYA\nYou'll be fine. Let's take a look at the room."
+    }
+  ],
+  "errors": [],
+  "blocking_failures": [],
+  "blocking_samples": 1336,
+  "initial_no_dialogue": true,
+  "outside_spawn": true,
+  "opening_dummy_removed": true,
+  "idle_does_not_progress": true,
+  "door_open": true,
+  "still_no_living_dialogue": true,
+  "crew_sofa_moves": true,
+  "seated_move_locked": true,
+  "seated_look_locked": true,
+  "seated_view": "CINE_Arrival_Director_Seated",
+  "maya_yaw": 64.99999999999997,
+  "maya_approached": true,
+  "finished_blank": true,
+  "maya_at_start": true,
+  "movement_enabled": true,
+  "look_restored": true,
+  "pawn_view_restored": true,
+  "sofa_placed": true,
+  "wardrobe_placed": true,
+  "notes_updated": true,
+  "dialogue_lines": 9
+}
