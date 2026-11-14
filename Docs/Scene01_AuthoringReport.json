@@ -1,0 +1,96 @@
+{
+  "tests_run": false,
+  "pie_run": false,
+  "packaging_run": false,
+  "protected_packages": 235,
+  "changed_source_packages": [],
+  "dialogue_rows": 34,
+  "compiles": {
+    "/Game/Game/UI/Scene01/Integration/WBP_Scene01Objective": {
+      "errorCount": 0,
+      "warningCount": 0,
+      "success": true,
+      "status": "UpToDate",
+      "messages": []
+    },
+    "/Game/Game/Blueprints/Scene01/BP_Scene01Player": {
+      "errorCount": 0,
+      "warningCount": 0,
+      "success": true,
+      "status": "UpToDate",
+      "messages": [
+        {
+          "severity": "info",
+          "text": "'ReturnValue' is already a 'BP Scene 01Flow Director', you don't need  Cast To BP_Scene01FlowDirector .",
+          "nodeId": "EAC0F5254107EE6DF424CBB5DFD3AD0E",
+          "nodeTitle": "Cast To BP_Scene01FlowDirector",
+          "graphName": "EventGraph"
+        },
+        {
+          "severity": "info",
+          "text": "'ReturnValue' is already a 'BP Scene 01Flow Director', you don't need  Cast To BP_Scene01FlowDirector .",
+          "nodeId": "2A390AF840EDCEA76AF2D0B2D1A86F14",
+          "nodeTitle": "Cast To BP_Scene01FlowDirector",
+          "graphName": "EventGraph"
+        }
+      ]
+    },
+    "/Game/Game/Blueprints/Scene01/ABP_Scene01Player": {
+      "errorCount": 0,
+      "warningCount": 0,
+      "success": true,
+      "status": "UpToDate",
+      "messages": []
+    },
+    "/Game/Game/Blueprints/Scene01/BP_Scene01Controller": {
+      "errorCount": 0,
+      "warningCount": 0,
+      "success": true,
+      "status": "UpToDate",
+      "messages": []
+    },
+    "/Game/Game/Blueprints/Scene01/BP_Scene01ArrivalDirector": {
+      "errorCount": 0,
+      "warningCount": 0,
+      "success": true,
+      "status": "UpToDate",
+      "messages": []
+    },
+    "/Game/Game/Blueprints/Scene01/BP_Scene01DialoguePlayer": {
+      "errorCount": 0,
+      "warningCount": 0,
+      "success": true,
+      "status": "UpToDate",
+      "messages": []
+    },
+    "/Game/Game/Blueprints/Scene01/BP_Scene01FlowDirector": {
+      "errorCount": 0,
+      "warningCount": 0,
+      "success": true,
+      "status": "UpToDate",
+      "messages": []
+    },
+    "/Game/Game/Blueprints/Scene01/BP_Scene01HUD": {
+      "errorCount": 0,
+      "warningCount": 0,
+      "success": true,
+      "status": "UpToDate",
+      "messages": [
+        {
+          "severity": "info",
+          "text": "'ReturnValue' is already a 'BP Scene 01Flow Director', you don't need  Cast To BP_Scene01FlowDirector .",
+          "nodeId": "D3616DB54971171379D1B2B1B9F3FCE6",
+          "nodeTitle": "Cast To BP_Scene01FlowDirector",
+          "graphName": "EventGraph"
+        }
+      ]
+    },
+    "/Game/Game/Blueprints/Scene01/BP_Scene01GameMode": {
+      "errorCount": 0,
+      "warningCount": 0,
+      "success": true,
+      "status": "UpToDate",
+      "messages": []
+    }
+  }
+}
