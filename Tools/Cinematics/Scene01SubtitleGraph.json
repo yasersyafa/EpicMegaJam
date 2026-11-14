@@ -1,0 +1,456 @@
+{
+  "path": "/Game/Game/UI/Scene01/WBP_Scene01Objective",
+  "graphName": "EventGraph",
+  "nodes": [
+    {
+      "ref": "caption",
+      "nodeType": "VariableGet",
+      "variableName": "DialogueCaption"
+    },
+    {
+      "ref": "startDelay",
+      "nodeType": "CallFunction",
+      "className": "KismetSystemLibrary",
+      "functionName": "Delay"
+    },
+    {
+      "ref": "string0",
+      "nodeType": "CallFunction",
+      "className": "KismetTextLibrary",
+      "functionName": "Conv_StringToText"
+    },
+    {
+      "ref": "show0",
+      "nodeType": "CallFunction",
+      "className": "TextBlock",
+      "functionName": "SetText"
+    },
+    {
+      "ref": "delay0",
+      "nodeType": "CallFunction",
+      "className": "KismetSystemLibrary",
+      "functionName": "Delay"
+    },
+    {
+      "ref": "string1",
+      "nodeType": "CallFunction",
+      "className": "KismetTextLibrary",
+      "functionName": "Conv_StringToText"
+    },
+    {
+      "ref": "show1",
+      "nodeType": "CallFunction",
+      "className": "TextBlock",
+      "functionName": "SetText"
+    },
+    {
+      "ref": "delay1",
+      "nodeType": "CallFunction",
+      "className": "KismetSystemLibrary",
+      "functionName": "Delay"
+    },
+    {
+      "ref": "string2",
+      "nodeType": "CallFunction",
+      "className": "KismetTextLibrary",
+      "functionName": "Conv_StringToText"
+    },
+    {
+      "ref": "show2",
+      "nodeType": "CallFunction",
+      "className": "TextBlock",
+      "functionName": "SetText"
+    },
+    {
+      "ref": "delay2",
+      "nodeType": "CallFunction",
+      "className": "KismetSystemLibrary",
+      "functionName": "Delay"
+    },
+    {
+      "ref": "string3",
+      "nodeType": "CallFunction",
+      "className": "KismetTextLibrary",
+      "functionName": "Conv_StringToText"
+    },
+    {
+      "ref": "show3",
+      "nodeType": "CallFunction",
+      "className": "TextBlock",
+      "functionName": "SetText"
+    },
+    {
+      "ref": "delay3",
+      "nodeType": "CallFunction",
+      "className": "KismetSystemLibrary",
+      "functionName": "Delay"
+    },
+    {
+      "ref": "string4",
+      "nodeType": "CallFunction",
+      "className": "KismetTextLibrary",
+      "functionName": "Conv_StringToText"
+    },
+    {
+      "ref": "show4",
+      "nodeType": "CallFunction",
+      "className": "TextBlock",
+      "functionName": "SetText"
+    },
+    {
+      "ref": "delay4",
+      "nodeType": "CallFunction",
+      "className": "KismetSystemLibrary",
+      "functionName": "Delay"
+    },
+    {
+      "ref": "string5",
+      "nodeType": "CallFunction",
+      "className": "KismetTextLibrary",
+      "functionName": "Conv_StringToText"
+    },
+    {
+      "ref": "show5",
+      "nodeType": "CallFunction",
+      "className": "TextBlock",
+      "functionName": "SetText"
+    },
+    {
+      "ref": "delay5",
+      "nodeType": "CallFunction",
+      "className": "KismetSystemLibrary",
+      "functionName": "Delay"
+    },
+    {
+      "ref": "string6",
+      "nodeType": "CallFunction",
+      "className": "KismetTextLibrary",
+      "functionName": "Conv_StringToText"
+    },
+    {
+      "ref": "show6",
+      "nodeType": "CallFunction",
+      "className": "TextBlock",
+      "functionName": "SetText"
+    },
+    {
+      "ref": "delay6",
+      "nodeType": "CallFunction",
+      "className": "KismetSystemLibrary",
+      "functionName": "Delay"
+    },
+    {
+      "ref": "string7",
+      "nodeType": "CallFunction",
+      "className": "KismetTextLibrary",
+      "functionName": "Conv_StringToText"
+    },
+    {
+      "ref": "show7",
+      "nodeType": "CallFunction",
+      "className": "TextBlock",
+      "functionName": "SetText"
+    },
+    {
+      "ref": "delay7",
+      "nodeType": "CallFunction",
+      "className": "KismetSystemLibrary",
+      "functionName": "Delay"
+    },
+    {
+      "ref": "string8",
+      "nodeType": "CallFunction",
+      "className": "KismetTextLibrary",
+      "functionName": "Conv_StringToText"
+    },
+    {
+      "ref": "show8",
+      "nodeType": "CallFunction",
+      "className": "TextBlock",
+      "functionName": "SetText"
+    },
+    {
+      "ref": "delay8",
+      "nodeType": "CallFunction",
+      "className": "KismetSystemLibrary",
+      "functionName": "Delay"
+    },
+    {
+      "ref": "string9",
+      "nodeType": "CallFunction",
+      "className": "KismetTextLibrary",
+      "functionName": "Conv_StringToText"
+    },
+    {
+      "ref": "show9",
+      "nodeType": "CallFunction",
+      "className": "TextBlock",
+      "functionName": "SetText"
+    }
+  ],
+  "connections": [
+    {
+      "from": "48486261.then",
+      "to": "startDelay.execute"
+    },
+    {
+      "from": "caption.DialogueCaption",
+      "to": "show0.self"
+    },
+    {
+      "from": "string0.ReturnValue",
+      "to": "show0.InText"
+    },
+    {
+      "from": "startDelay.then",
+      "to": "show0.execute"
+    },
+    {
+      "from": "show0.then",
+      "to": "delay0.execute"
+    },
+    {
+      "from": "caption.DialogueCaption",
+      "to": "show1.self"
+    },
+    {
+      "from": "string1.ReturnValue",
+      "to": "show1.InText"
+    },
+    {
+      "from": "delay0.then",
+      "to": "show1.execute"
+    },
+    {
+      "from": "show1.then",
+      "to": "delay1.execute"
+    },
+    {
+      "from": "caption.DialogueCaption",
+      "to": "show2.self"
+    },
+    {
+      "from": "string2.ReturnValue",
+      "to": "show2.InText"
+    },
+    {
+      "from": "delay1.then",
+      "to": "show2.execute"
+    },
+    {
+      "from": "show2.then",
+      "to": "delay2.execute"
+    },
+    {
+      "from": "caption.DialogueCaption",
+      "to": "show3.self"
+    },
+    {
+      "from": "string3.ReturnValue",
+      "to": "show3.InText"
+    },
+    {
+      "from": "delay2.then",
+      "to": "show3.execute"
+    },
+    {
+      "from": "show3.then",
+      "to": "delay3.execute"
+    },
+    {
+      "from": "caption.DialogueCaption",
+      "to": "show4.self"
+    },
+    {
+      "from": "string4.ReturnValue",
+      "to": "show4.InText"
+    },
+    {
+      "from": "delay3.then",
+      "to": "show4.execute"
+    },
+    {
+      "from": "show4.then",
+      "to": "delay4.execute"
+    },
+    {
+      "from": "caption.DialogueCaption",
+      "to": "show5.self"
+    },
+    {
+      "from": "string5.ReturnValue",
+      "to": "show5.InText"
+    },
+    {
+      "from": "delay4.then",
+      "to": "show5.execute"
+    },
+    {
+      "from": "show5.then",
+      "to": "delay5.execute"
+    },
+    {
+      "from": "caption.DialogueCaption",
+      "to": "show6.self"
+    },
+    {
+      "from": "string6.ReturnValue",
+      "to": "show6.InText"
+    },
+    {
+      "from": "delay5.then",
+      "to": "show6.execute"
+    },
+    {
+      "from": "show6.then",
+      "to": "delay6.execute"
+    },
+    {
+      "from": "caption.DialogueCaption",
+      "to": "show7.self"
+    },
+    {
+      "from": "string7.ReturnValue",
+      "to": "show7.InText"
+    },
+    {
+      "from": "delay6.then",
+      "to": "show7.execute"
+    },
+    {
+      "from": "show7.then",
+      "to": "delay7.execute"
+    },
+    {
+      "from": "caption.DialogueCaption",
+      "to": "show8.self"
+    },
+    {
+      "from": "string8.ReturnValue",
+      "to": "show8.InText"
+    },
+    {
+      "from": "delay7.then",
+      "to": "show8.execute"
+    },
+    {
+      "from": "show8.then",
+      "to": "delay8.execute"
+    },
+    {
+      "from": "caption.DialogueCaption",
+      "to": "show9.self"
+    },
+    {
+      "from": "string9.ReturnValue",
+      "to": "show9.InText"
+    },
+    {
+      "from": "delay8.then",
+      "to": "show9.execute"
+    }
+  ],
+  "pinDefaults": [
+    {
+      "node": "startDelay",
+      "pin": "Duration",
+      "value": 1.5
+    },
+    {
+      "node": "string0",
+      "pin": "InString",
+      "value": "CREW A\nMorning, Director. We're almost ready in the front room."
+    },
+    {
+      "node": "delay0",
+      "pin": "Duration",
+      "value": 4.51
+    },
+    {
+      "node": "string1",
+      "pin": "InString",
+      "value": "SURYA\nGood. How's the set looking?"
+    },
+    {
+      "node": "delay1",
+      "pin": "Duration",
+      "value": 3.09
+    },
+    {
+      "node": "string2",
+      "pin": "InString",
+      "value": "CREW A\nA few pieces still need placing. Thought you'd want the final say."
+    },
+    {
+      "node": "delay2",
+      "pin": "Duration",
+      "value": 5.59
+    },
+    {
+      "node": "string3",
+      "pin": "InString",
+      "value": "MAYA\nMorning, Mr. Surya."
+    },
+    {
+      "node": "delay3",
+      "pin": "Duration",
+      "value": 2.5
+    },
+    {
+      "node": "string4",
+      "pin": "InString",
+      "value": "SURYA\nMorning, Maya. Ready for your first scene?"
+    },
+    {
+      "node": "delay4",
+      "pin": "Duration",
+      "value": 3.8
+    },
+    {
+      "node": "string5",
+      "pin": "InString",
+      "value": "MAYA\nAs ready as I'll ever be."
+    },
+    {
+      "node": "delay5",
+      "pin": "Duration",
+      "value": 3.44
+    },
+    {
+      "node": "string6",
+      "pin": "InString",
+      "value": "SURYA\nDon't worry about getting everything perfect. We'll work through it."
+    },
+    {
+      "node": "delay6",
+      "pin": "Duration",
+      "value": 4.87
+    },
+    {
+      "node": "string7",
+      "pin": "InString",
+      "value": "MAYA\nThat's reassuring. I've been going over the script all morning."
+    },
+    {
+      "node": "delay7",
+      "pin": "Duration",
+      "value": 4.87
+    },
+    {
+      "node": "string8",
+      "pin": "InString",
+      "value": "SURYA\nYou'll be fine. Let's take a look at the room."
+    },
+    {
+      "node": "delay8",
+      "pin": "Duration",
+      "value": 4.87
+    },
+    {
+      "node": "string9",
+      "pin": "InString",
+      "value": " "
+    }
+  ],
+  "compile": true
+}

@@ -1,0 +1,1031 @@
+{
+  "source": "CUT! CUT! CUT! Team Review v3.0",
+  "language": "en",
+  "timing": "Estimated reading durations; no voice-over supplied.",
+  "cues": [
+    {
+      "id": "P03_01",
+      "page": 3,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "People say a camera captures the truth.",
+      "duration": 3.8
+    },
+    {
+      "id": "P03_02",
+      "page": 3,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "I don't think that's true.",
+      "duration": 3.09
+    },
+    {
+      "id": "P03_03",
+      "page": 3,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "It only captures what someone chooses to show you.",
+      "duration": 4.51
+    },
+    {
+      "id": "P03_04",
+      "page": 3,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "And I think... that's what makes films so interesting.",
+      "duration": 4.51
+    },
+    {
+      "id": "P03_05",
+      "page": 3,
+      "speaker": "CREW A",
+      "delivery": "",
+      "text": "Morning, Director. We're almost ready in the front room.",
+      "duration": 4.51
+    },
+    {
+      "id": "P03_06",
+      "page": 3,
+      "speaker": "SURYA",
+      "delivery": "",
+      "text": "Good. How's the set looking?",
+      "duration": 3.09
+    },
+    {
+      "id": "P03_07",
+      "page": 3,
+      "speaker": "CREW A",
+      "delivery": "",
+      "text": "A few pieces still need placing. Thought you'd want the final say.",
+      "duration": 5.59
+    },
+    {
+      "id": "P03_08",
+      "page": 3,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "Morning, Mr. Surya.",
+      "duration": 2.5
+    },
+    {
+      "id": "P03_09",
+      "page": 3,
+      "speaker": "SURYA",
+      "delivery": "",
+      "text": "Morning, Maya. Ready for your first scene?",
+      "duration": 3.8
+    },
+    {
+      "id": "P03_10",
+      "page": 3,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "As ready as I'll ever be.",
+      "duration": 3.44
+    },
+    {
+      "id": "P03_11",
+      "page": 3,
+      "speaker": "SURYA",
+      "delivery": "",
+      "text": "Don't worry about getting everything perfect. We'll work through it.",
+      "duration": 4.87
+    },
+    {
+      "id": "P03_12",
+      "page": 3,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "That's reassuring. I've been going over the script all morning.",
+      "duration": 4.87
+    },
+    {
+      "id": "P03_13",
+      "page": 3,
+      "speaker": "SURYA",
+      "delivery": "",
+      "text": "You'll be fine. Let's take a look at the room.",
+      "duration": 4.87
+    },
+    {
+      "id": "P04_01",
+      "page": 4,
+      "speaker": "LARAS (MAYA)",
+      "delivery": "",
+      "text": "It's strange being back.",
+      "duration": 2.73
+    },
+    {
+      "id": "P04_02",
+      "page": 4,
+      "speaker": "LARAS",
+      "delivery": "",
+      "text": "I thought I'd remember every corner of this place.",
+      "duration": 4.51
+    },
+    {
+      "id": "P04_03",
+      "page": 4,
+      "speaker": "LARAS",
+      "delivery": "",
+      "text": "Wait...",
+      "duration": 2.5
+    },
+    {
+      "id": "P04_04",
+      "page": 4,
+      "speaker": "LARAS",
+      "delivery": "",
+      "text": "Wasn't there a doorway here?",
+      "duration": 3.09
+    },
+    {
+      "id": "P04_05",
+      "page": 4,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "Sorry... should I come around this side instead?",
+      "duration": 4.16
+    },
+    {
+      "id": "P04_06",
+      "page": 4,
+      "speaker": "SURYA",
+      "delivery": "internal",
+      "text": "The blocking's a bit cramped. I should cut and clear some space.",
+      "duration": 5.59
+    },
+    {
+      "id": "P04_07",
+      "page": 4,
+      "speaker": "SURYA",
+      "delivery": "",
+      "text": "CUT! Let's open up that walkway. We'll go again.",
+      "duration": 4.51
+    },
+    {
+      "id": "P05_01",
+      "page": 5,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "I'm not quite sure what I'm meant to notice.",
+      "duration": 4.51
+    },
+    {
+      "id": "P05_02",
+      "page": 5,
+      "speaker": "SURYA",
+      "delivery": "internal",
+      "text": "The composition isn't helping her find the moment.",
+      "duration": 4.16
+    },
+    {
+      "id": "P05_03",
+      "page": 5,
+      "speaker": "LARAS",
+      "delivery": "",
+      "text": "I could've sworn there was a door here.",
+      "duration": 4.16
+    },
+    {
+      "id": "P05_04",
+      "page": 5,
+      "speaker": "LARAS",
+      "delivery": "",
+      "text": "Maybe I'm remembering it wrong.",
+      "duration": 3.09
+    },
+    {
+      "id": "P05_05",
+      "page": 5,
+      "speaker": "SURYA",
+      "delivery": "",
+      "text": "CUT! Lovely. That felt very natural.",
+      "duration": 3.44
+    },
+    {
+      "id": "P05_06",
+      "page": 5,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "Thanks. I wasn't sure if I held that last pause too long.",
+      "duration": 5.59
+    },
+    {
+      "id": "P05_07",
+      "page": 5,
+      "speaker": "SURYA",
+      "delivery": "",
+      "text": "No, it worked. Gave the moment a bit of space.",
+      "duration": 4.87
+    },
+    {
+      "id": "P05_08",
+      "page": 5,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "Great. One down, then.",
+      "duration": 2.73
+    },
+    {
+      "id": "P05_09",
+      "page": 5,
+      "speaker": "SURYA",
+      "delivery": "",
+      "text": "One down.",
+      "duration": 2.5
+    },
+    {
+      "id": "P05_10",
+      "page": 5,
+      "speaker": "CREW A",
+      "delivery": "",
+      "text": "Shall we clear the room?",
+      "duration": 3.09
+    },
+    {
+      "id": "P05_11",
+      "page": 5,
+      "speaker": "SURYA",
+      "delivery": "",
+      "text": "Yes, please. Let's move on to the kitchen.",
+      "duration": 4.16
+    },
+    {
+      "id": "P05_12",
+      "page": 5,
+      "speaker": "CREW B",
+      "delivery": "",
+      "text": "I'll bring the lighting kit through.",
+      "duration": 3.44
+    },
+    {
+      "id": "P05_13",
+      "page": 5,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "Because when you're watching a film...",
+      "duration": 3.44
+    },
+    {
+      "id": "P05_14",
+      "page": 5,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "You're only seeing a small part of what's happening.",
+      "duration": 4.51
+    },
+    {
+      "id": "P05_15",
+      "page": 5,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "Everything outside that frame...",
+      "duration": 2.73
+    },
+    {
+      "id": "P05_16",
+      "page": 5,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "Well, you just have to imagine it, don't you?",
+      "duration": 4.51
+    },
+    {
+      "id": "P05_17",
+      "page": 5,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "It's funny how easily we do that.",
+      "duration": 3.8
+    },
+    {
+      "id": "P06_01",
+      "page": 6,
+      "speaker": "CREW B",
+      "delivery": "",
+      "text": "Careful with that cable.",
+      "duration": 2.73
+    },
+    {
+      "id": "P06_02",
+      "page": 6,
+      "speaker": "CREW C",
+      "delivery": "",
+      "text": "I've got it.",
+      "duration": 2.5
+    },
+    {
+      "id": "P06_03",
+      "page": 6,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "This next one's the scene with the floor plan, right?",
+      "duration": 4.87
+    },
+    {
+      "id": "P06_04",
+      "page": 6,
+      "speaker": "SURYA",
+      "delivery": "",
+      "text": "That's right. You're starting to piece things together.",
+      "duration": 4.16
+    },
+    {
+      "id": "P06_05",
+      "page": 6,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "Okay. So she's curious, but she's trying not to frighten herself.",
+      "duration": 5.23
+    },
+    {
+      "id": "P06_06",
+      "page": 6,
+      "speaker": "SURYA",
+      "delivery": "",
+      "text": "Exactly. Don't play the fear too early.",
+      "duration": 3.8
+    },
+    {
+      "id": "P06_07",
+      "page": 6,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "Got it.",
+      "duration": 2.5
+    },
+    {
+      "id": "P06_08",
+      "page": 6,
+      "speaker": "LARAS",
+      "delivery": "",
+      "text": "Kitchen... dining room... stairs...",
+      "duration": 2.73
+    },
+    {
+      "id": "P06_09",
+      "page": 6,
+      "speaker": "LARAS",
+      "delivery": "",
+      "text": "That can't be right.",
+      "duration": 2.73
+    },
+    {
+      "id": "P06_10",
+      "page": 6,
+      "speaker": "LARAS",
+      "delivery": "",
+      "text": "If this drawing's accurate...",
+      "duration": 2.73
+    },
+    {
+      "id": "P06_11",
+      "page": 6,
+      "speaker": "LARAS",
+      "delivery": "",
+      "text": "...there should be another room here.",
+      "duration": 3.44
+    },
+    {
+      "id": "P06_12",
+      "page": 6,
+      "speaker": "LARAS",
+      "delivery": "",
+      "text": "Why would someone close it off?",
+      "duration": 3.44
+    },
+    {
+      "id": "P07_01",
+      "page": 7,
+      "speaker": "LARAS",
+      "delivery": "",
+      "text": "Hello?",
+      "duration": 2.5
+    },
+    {
+      "id": "P07_02",
+      "page": 7,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "Sorry, I can't quite get into position.",
+      "duration": 3.8
+    },
+    {
+      "id": "P07_03",
+      "page": 7,
+      "speaker": "SURYA",
+      "delivery": "internal",
+      "text": "The cabinet's getting in the way of the shot. Better move it.",
+      "duration": 5.59
+    },
+    {
+      "id": "P07_04",
+      "page": 7,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "I'm having trouble seeing the detail.",
+      "duration": 3.44
+    },
+    {
+      "id": "P07_05",
+      "page": 7,
+      "speaker": "SURYA",
+      "delivery": "internal",
+      "text": "The wall's getting lost in shadow. I need to reposition that light.",
+      "duration": 5.59
+    },
+    {
+      "id": "P07_06",
+      "page": 7,
+      "speaker": "SURYA",
+      "delivery": "",
+      "text": "CUT! Fantastic. That'll work beautifully.",
+      "duration": 3.09
+    },
+    {
+      "id": "P07_07",
+      "page": 7,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "That knocking sound caught me off guard.",
+      "duration": 3.8
+    },
+    {
+      "id": "P07_08",
+      "page": 7,
+      "speaker": "SURYA",
+      "delivery": "",
+      "text": "Sorry. We should've given you a warning.",
+      "duration": 3.8
+    },
+    {
+      "id": "P07_09",
+      "page": 7,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "No, it's fine. I think it helped.",
+      "duration": 3.8
+    },
+    {
+      "id": "P07_10",
+      "page": 7,
+      "speaker": "CREW B",
+      "delivery": "",
+      "text": "Got a bit of a creaky old building here.",
+      "duration": 4.51
+    },
+    {
+      "id": "P07_11",
+      "page": 7,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "Well, that's one way to save on sound effects.",
+      "duration": 4.51
+    },
+    {
+      "id": "P07_12",
+      "page": 7,
+      "speaker": "SURYA",
+      "delivery": "",
+      "text": "Alright. Let's move on before we lose the light.",
+      "duration": 4.51
+    },
+    {
+      "id": "P07_13",
+      "page": 7,
+      "speaker": "CREW C",
+      "delivery": "",
+      "text": "Back room's through here, Director.",
+      "duration": 3.09
+    },
+    {
+      "id": "P07_14",
+      "page": 7,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "There's another room?",
+      "duration": 2.5
+    },
+    {
+      "id": "P07_15",
+      "page": 7,
+      "speaker": "CREW C",
+      "delivery": "",
+      "text": "Yeah. Bit tucked away.",
+      "duration": 2.73
+    },
+    {
+      "id": "P07_16",
+      "page": 7,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "This building gets stranger the further in you go.",
+      "duration": 4.51
+    },
+    {
+      "id": "P07_17",
+      "page": 7,
+      "speaker": "SURYA",
+      "delivery": "",
+      "text": "Which is rather useful for our film.",
+      "duration": 3.8
+    },
+    {
+      "id": "P08_01",
+      "page": 8,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "And then there's editing.",
+      "duration": 2.73
+    },
+    {
+      "id": "P08_02",
+      "page": 8,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "You can take two completely different moments...",
+      "duration": 3.8
+    },
+    {
+      "id": "P08_03",
+      "page": 8,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "Put them together...",
+      "duration": 2.5
+    },
+    {
+      "id": "P08_04",
+      "page": 8,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "And suddenly, they tell a story.",
+      "duration": 3.44
+    },
+    {
+      "id": "P08_05",
+      "page": 8,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "But that doesn't mean it's what really happened.",
+      "duration": 4.16
+    },
+    {
+      "id": "P08_06",
+      "page": 8,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "Does it?",
+      "duration": 2.5
+    },
+    {
+      "id": "P08_07",
+      "page": 8,
+      "speaker": "CREW A",
+      "delivery": "",
+      "text": "This is the last set, sir.",
+      "duration": 3.44
+    },
+    {
+      "id": "P08_08",
+      "page": 8,
+      "speaker": "SURYA",
+      "delivery": "",
+      "text": "Good. Let's make it count.",
+      "duration": 3.09
+    },
+    {
+      "id": "P08_09",
+      "page": 8,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "So this is where Laras finally finds out what happened?",
+      "duration": 4.87
+    },
+    {
+      "id": "P08_10",
+      "page": 8,
+      "speaker": "SURYA",
+      "delivery": "",
+      "text": "Yes. Everything should come together here.",
+      "duration": 3.44
+    },
+    {
+      "id": "P08_11",
+      "page": 8,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "Right.",
+      "duration": 2.5
+    },
+    {
+      "id": "P08_12",
+      "page": 8,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "It's a good ending.",
+      "duration": 2.73
+    },
+    {
+      "id": "P08_13",
+      "page": 8,
+      "speaker": "SURYA",
+      "delivery": "",
+      "text": "Let's hope we do it justice.",
+      "duration": 3.44
+    },
+    {
+      "id": "P08_14",
+      "page": 8,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "I'll do my best.",
+      "duration": 2.73
+    },
+    {
+      "id": "P09_01",
+      "page": 9,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "Sorry, this doesn't quite match the reference.",
+      "duration": 3.8
+    },
+    {
+      "id": "P09_02",
+      "page": 9,
+      "speaker": "SURYA",
+      "delivery": "internal",
+      "text": "The continuity's off. I should check the chair placement.",
+      "duration": 4.51
+    },
+    {
+      "id": "P09_03",
+      "page": 9,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "Could we get a little more light here?",
+      "duration": 4.16
+    },
+    {
+      "id": "P09_04",
+      "page": 9,
+      "speaker": "SURYA",
+      "delivery": "internal",
+      "text": "The reveal needs to read properly. I should adjust the lamp.",
+      "duration": 5.23
+    },
+    {
+      "id": "P09_05",
+      "page": 9,
+      "speaker": "LARAS",
+      "delivery": "",
+      "text": "So this is where it leads.",
+      "duration": 3.44
+    },
+    {
+      "id": "P09_06",
+      "page": 9,
+      "speaker": "LARAS",
+      "delivery": "",
+      "text": "This room...",
+      "duration": 2.5
+    },
+    {
+      "id": "P09_07",
+      "page": 9,
+      "speaker": "LARAS",
+      "delivery": "",
+      "text": "It's exactly the same.",
+      "duration": 2.73
+    },
+    {
+      "id": "P09_08",
+      "page": 9,
+      "speaker": "LARAS",
+      "delivery": "",
+      "text": "Someone was here.",
+      "duration": 2.5
+    },
+    {
+      "id": "P09_09",
+      "page": 9,
+      "speaker": "LARAS",
+      "delivery": "",
+      "text": "What happened to them?",
+      "duration": 2.73
+    },
+    {
+      "id": "P10_01",
+      "page": 10,
+      "speaker": "SURYA",
+      "delivery": "",
+      "text": "CUT! Beautiful. That's our last scene.",
+      "duration": 3.44
+    },
+    {
+      "id": "P10_02",
+      "page": 10,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "Really? We're finished?",
+      "duration": 2.5
+    },
+    {
+      "id": "P10_03",
+      "page": 10,
+      "speaker": "SURYA",
+      "delivery": "",
+      "text": "Nearly. Just a final pickup.",
+      "duration": 3.09
+    },
+    {
+      "id": "P10_04",
+      "page": 10,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "What do you need?",
+      "duration": 2.73
+    },
+    {
+      "id": "P10_05",
+      "page": 10,
+      "speaker": "SURYA",
+      "delivery": "",
+      "text": "Something simple. One final shot to close the film.",
+      "duration": 4.51
+    },
+    {
+      "id": "P10_06",
+      "page": 10,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "Of course.",
+      "duration": 2.5
+    },
+    {
+      "id": "P10_07",
+      "page": 10,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "I suppose that's why endings matter so much.",
+      "duration": 4.16
+    },
+    {
+      "id": "P10_08",
+      "page": 10,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "They make you look at everything that came before...",
+      "duration": 4.51
+    },
+    {
+      "id": "P10_09",
+      "page": 10,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "...a little differently.",
+      "duration": 2.5
+    },
+    {
+      "id": "P10_10",
+      "page": 10,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "Sometimes all it takes is one last shot.",
+      "duration": 4.16
+    },
+    {
+      "id": "P10_11",
+      "page": 10,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "Just one.",
+      "duration": 2.5
+    },
+    {
+      "id": "P10_12",
+      "page": 10,
+      "speaker": "SURYA",
+      "delivery": "",
+      "text": "Everyone, back on set, please. One last pickup.",
+      "duration": 4.16
+    },
+    {
+      "id": "P10_13",
+      "page": 10,
+      "speaker": "CREW A",
+      "delivery": "radio",
+      "text": "Copy that.",
+      "duration": 2.5
+    },
+    {
+      "id": "P10_14",
+      "page": 10,
+      "speaker": "CREW B",
+      "delivery": "",
+      "text": "All set, Director.",
+      "duration": 2.5
+    },
+    {
+      "id": "P10_15",
+      "page": 10,
+      "speaker": "SURYA",
+      "delivery": "",
+      "text": "Thank you, everyone. Nearly done.",
+      "duration": 3.09
+    },
+    {
+      "id": "P10_16",
+      "page": 10,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "Can I ask a favour?",
+      "duration": 3.09
+    },
+    {
+      "id": "P10_17",
+      "page": 10,
+      "speaker": "SURYA",
+      "delivery": "",
+      "text": "Go on.",
+      "duration": 2.5
+    },
+    {
+      "id": "P10_18",
+      "page": 10,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "Could we leave the camera running for a moment? I'd like to try something for the ending.",
+      "duration": 7.37
+    },
+    {
+      "id": "P11_01",
+      "page": 11,
+      "speaker": "SURYA",
+      "delivery": "",
+      "text": "An improvisation?",
+      "duration": 2.5
+    },
+    {
+      "id": "P11_02",
+      "page": 11,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "Something like that.",
+      "duration": 2.5
+    },
+    {
+      "id": "P11_03",
+      "page": 11,
+      "speaker": "SURYA",
+      "delivery": "",
+      "text": "Alright. Let's give her a moment.",
+      "duration": 3.44
+    },
+    {
+      "id": "P11_04",
+      "page": 11,
+      "speaker": "CREW C",
+      "delivery": "",
+      "text": "Camera ready.",
+      "duration": 2.5
+    },
+    {
+      "id": "P11_05",
+      "page": 11,
+      "speaker": "SURYA",
+      "delivery": "",
+      "text": "And... action.",
+      "duration": 2.5
+    },
+    {
+      "id": "P11_06",
+      "page": 11,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "Okay.",
+      "duration": 2.5
+    },
+    {
+      "id": "P11_07",
+      "page": 11,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "I think I'm ready.",
+      "duration": 2.73
+    },
+    {
+      "id": "P11_08",
+      "page": 11,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "There's something I haven't told you.",
+      "duration": 3.44
+    },
+    {
+      "id": "P11_09",
+      "page": 11,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "The woman who died here...",
+      "duration": 3.09
+    },
+    {
+      "id": "P11_10",
+      "page": 11,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "Her name was Evelyn.",
+      "duration": 2.73
+    },
+    {
+      "id": "P11_11",
+      "page": 11,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "She was my sister.",
+      "duration": 2.73
+    },
+    {
+      "id": "P11_12",
+      "page": 11,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "They said it was an accident.",
+      "duration": 3.44
+    },
+    {
+      "id": "P11_13",
+      "page": 11,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "But there were four people in this house who knew what happened.",
+      "duration": 5.59
+    },
+    {
+      "id": "P11_14",
+      "page": 11,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "They made a film out of it.",
+      "duration": 3.8
+    },
+    {
+      "id": "P11_15",
+      "page": 11,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "Then they made sure nobody would ever see it.",
+      "duration": 4.51
+    },
+    {
+      "id": "P11_16",
+      "page": 11,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "I thought I wanted them to tell the truth.",
+      "duration": 4.51
+    },
+    {
+      "id": "P11_17",
+      "page": 11,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "I thought that would be enough.",
+      "duration": 3.44
+    },
+    {
+      "id": "P12_01",
+      "page": 12,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "It wasn't.",
+      "duration": 2.5
+    },
+    {
+      "id": "P12_02",
+      "page": 12,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "There's one more thing.",
+      "duration": 2.73
+    },
+    {
+      "id": "P12_03",
+      "page": 12,
+      "speaker": "MAYA",
+      "delivery": "",
+      "text": "Remember what I said about the frame?",
+      "duration": 3.8
+    },
+    {
+      "id": "P12_04",
+      "page": 12,
+      "speaker": "MAYA",
+      "delivery": "off camera",
+      "text": "Now you've seen everything.",
+      "duration": 2.73
+    }
+  ]
+}

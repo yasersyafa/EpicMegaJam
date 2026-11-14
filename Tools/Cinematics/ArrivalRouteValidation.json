@@ -1,0 +1,131 @@
+{
+  "segments": [
+    {
+      "from": [
+        -1045,
+        2280,
+        100
+      ],
+      "to": [
+        -1045,
+        1760,
+        100
+      ],
+      "blocked": false,
+      "actor": null
+    },
+    {
+      "from": [
+        -1045,
+        1760,
+        100
+      ],
+      "to": [
+        -1045,
+        1450,
+        100
+      ],
+      "blocked": false,
+      "actor": null
+    },
+    {
+      "from": [
+        -1045,
+        1450,
+        100
+      ],
+      "to": [
+        -1045,
+        710,
+        100
+      ],
+      "blocked": false,
+      "actor": null
+    },
+    {
+      "from": [
+        -1045,
+        710,
+        100
+      ],
+      "to": [
+        -750,
+        710,
+        100
+      ],
+      "blocked": false,
+      "actor": null
+    },
+    {
+      "from": [
+        -750,
+        710,
+        100
+      ],
+      "to": [
+        -350,
+        710,
+        100
+      ],
+      "blocked": false,
+      "actor": null
+    },
+    {
+      "from": [
+        -350,
+        710,
+        100
+      ],
+      "to": [
+        -90,
+        710,
+        100
+      ],
+      "blocked": false,
+      "actor": null
+    },
+    {
+      "from": [
+        -90,
+        710,
+        100
+      ],
+      "to": [
+        -90,
+        400,
+        100
+      ],
+      "blocked": false,
+      "actor": null
+    },
+    {
+      "from": [
+        -90,
+        400,
+        100
+      ],
+      "to": [
+        -200,
+        300,
+        100
+      ],
+      "blocked": false,
+      "actor": null
+    },
+    {
+      "from": [
+        -200,
+        300,
+        100
+      ],
+      "to": [
+        -280,
+        270,
+        100
+      ],
+      "blocked": false,
+      "actor": null
+    }
+  ],
+  "passed": true
+}

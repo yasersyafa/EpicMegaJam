@@ -1,0 +1,10 @@
+{
+  "success": true,
+  "errors": [],
+  "sequence": "/Game/Game/Cinematics/Opening/LS_Opening_Maya",
+  "frames": 900,
+  "seconds": 30,
+  "stand_in": "/Game/Game/Levels/SB_GrayBox.SB_GrayBox:PersistentLevel.SkeletalMeshActor_5",
+  "camera": "/Game/Game/Levels/SB_GrayBox.SB_GrayBox:PersistentLevel.CineCameraActor_2",
+  "audio": "/Game/Game/Audio/Cinematics/S_Opening_CameraPower"
+}

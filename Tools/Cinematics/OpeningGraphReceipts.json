@@ -1,0 +1,723 @@
+{
+  "note": "Graph build receipts for the authored Blueprint assets; node GUIDs refer to this checkout. Temporary log node removed after validation; final function ends at SetActorTickEnabled(false).",
+  "finish": {
+    "path": "/Game/Game/Blueprints/Cinematics/BP_OpeningDirector",
+    "graphName": "FinishOpening",
+    "nodes": [
+      {
+        "ref": "done",
+        "nodeType": "VariableGet",
+        "variableName": "bOpeningFinished"
+      },
+      {
+        "ref": "guard",
+        "nodeType": "Branch"
+      },
+      {
+        "ref": "setDone",
+        "nodeType": "VariableSet",
+        "variableName": "bOpeningFinished"
+      },
+      {
+        "ref": "inactive",
+        "nodeType": "VariableSet",
+        "variableName": "bOpeningActive"
+      },
+      {
+        "ref": "seq",
+        "nodeType": "VariableGet",
+        "variableName": "SequencePlayer"
+      },
+      {
+        "ref": "validSeq",
+        "nodeType": "CallFunction",
+        "className": "KismetSystemLibrary",
+        "functionName": "IsValid"
+      },
+      {
+        "ref": "seqGuard",
+        "nodeType": "Branch"
+      },
+      {
+        "ref": "stop",
+        "nodeType": "CallFunction",
+        "className": "MovieSceneSequencePlayer",
+        "functionName": "Stop"
+      },
+      {
+        "ref": "removeUI",
+        "nodeType": "CallFunction",
+        "className": "Widget",
+        "functionName": "RemoveFromParent"
+      },
+      {
+        "ref": "overlay",
+        "nodeType": "VariableGet",
+        "variableName": "OpeningOverlay"
+      },
+      {
+        "ref": "pc",
+        "nodeType": "CallFunction",
+        "className": "GameplayStatics",
+        "functionName": "GetPlayerController"
+      },
+      {
+        "ref": "pawn",
+        "nodeType": "CallFunction",
+        "className": "GameplayStatics",
+        "functionName": "GetPlayerPawn"
+      },
+      {
+        "ref": "restore",
+        "nodeType": "CallFunction",
+        "className": "PlayerController",
+        "functionName": "SetCinematicMode"
+      },
+      {
+        "ref": "move",
+        "nodeType": "CallFunction",
+        "className": "Controller",
+        "functionName": "ResetIgnoreMoveInput"
+      },
+      {
+        "ref": "look",
+        "nodeType": "CallFunction",
+        "className": "Controller",
+        "functionName": "ResetIgnoreLookInput"
+      },
+      {
+        "ref": "view",
+        "nodeType": "CallFunction",
+        "className": "PlayerController",
+        "functionName": "SetViewTargetWithBlend"
+      },
+      {
+        "ref": "mode",
+        "nodeType": "CallFunction",
+        "className": "WidgetBlueprintLibrary",
+        "functionName": "SetInputMode_GameOnly"
+      },
+      {
+        "ref": "openingActor",
+        "nodeType": "VariableGet",
+        "variableName": "OpeningStandIn"
+      },
+      {
+        "ref": "hide",
+        "nodeType": "CallFunction",
+        "className": "Actor",
+        "functionName": "SetActorHiddenInGame"
+      },
+      {
+        "ref": "sceneActor",
+        "nodeType": "VariableGet",
+        "variableName": "Scene1StandIn"
+      },
+      {
+        "ref": "show",
+        "nodeType": "CallFunction",
+        "className": "Actor",
+        "functionName": "SetActorHiddenInGame"
+      },
+      {
+        "ref": "createObjective",
+        "nodeType": "CallFunction",
+        "className": "WidgetBlueprintLibrary",
+        "functionName": "Create"
+      },
+      {
+        "ref": "add",
+        "nodeType": "CallFunction",
+        "className": "UserWidget",
+        "functionName": "AddToViewport"
+      },
+      {
+        "ref": "disableInput",
+        "nodeType": "CallFunction",
+        "className": "Actor",
+        "functionName": "DisableInput"
+      },
+      {
+        "ref": "noTick",
+        "nodeType": "CallFunction",
+        "className": "Actor",
+        "functionName": "SetActorTickEnabled"
+      }
+    ],
+    "connections": [
+      {
+        "from": "9EAECA7D484F0D0C9D78F6AE697A284B.then",
+        "to": "guard.execute"
+      },
+      {
+        "from": "done.bOpeningFinished",
+        "to": "guard.Condition"
+      },
+      {
+        "from": "guard.else",
+        "to": "setDone.execute"
+      },
+      {
+        "from": "setDone.then",
+        "to": "inactive.execute"
+      },
+      {
+        "from": "seq.SequencePlayer",
+        "to": "validSeq.Object"
+      },
+      {
+        "from": "inactive.then",
+        "to": "seqGuard.execute"
+      },
+      {
+        "from": "validSeq.ReturnValue",
+        "to": "seqGuard.Condition"
+      },
+      {
+        "from": "seq.SequencePlayer",
+        "to": "stop.self"
+      },
+      {
+        "from": "seqGuard.then",
+        "to": "stop.execute"
+      },
+      {
+        "from": "overlay.OpeningOverlay",
+        "to": "removeUI.self"
+      },
+      {
+        "from": "stop.then",
+        "to": "removeUI.execute"
+      },
+      {
+        "from": "seqGuard.else",
+        "to": "removeUI.execute"
+      },
+      {
+        "from": "removeUI.then",
+        "to": "restore.execute"
+      },
+      {
+        "from": "pc.ReturnValue",
+        "to": "restore.self"
+      },
+      {
+        "from": "restore.then",
+        "to": "move.execute"
+      },
+      {
+        "from": "pc.ReturnValue",
+        "to": "move.self"
+      },
+      {
+        "from": "move.then",
+        "to": "look.execute"
+      },
+      {
+        "from": "pc.ReturnValue",
+        "to": "look.self"
+      },
+      {
+        "from": "look.then",
+        "to": "view.execute"
+      },
+      {
+        "from": "pc.ReturnValue",
+        "to": "view.self"
+      },
+      {
+        "from": "pawn.ReturnValue",
+        "to": "view.NewViewTarget"
+      },
+      {
+        "from": "view.then",
+        "to": "mode.execute"
+      },
+      {
+        "from": "pc.ReturnValue",
+        "to": "mode.PlayerController"
+      },
+      {
+        "from": "mode.then",
+        "to": "hide.execute"
+      },
+      {
+        "from": "openingActor.OpeningStandIn",
+        "to": "hide.self"
+      },
+      {
+        "from": "hide.then",
+        "to": "show.execute"
+      },
+      {
+        "from": "sceneActor.Scene1StandIn",
+        "to": "show.self"
+      },
+      {
+        "from": "show.then",
+        "to": "createObjective.execute"
+      },
+      {
+        "from": "pc.ReturnValue",
+        "to": "createObjective.OwningPlayer"
+      },
+      {
+        "from": "createObjective.then",
+        "to": "add.execute"
+      },
+      {
+        "from": "createObjective.ReturnValue",
+        "to": "add.self"
+      },
+      {
+        "from": "add.then",
+        "to": "disableInput.execute"
+      },
+      {
+        "from": "pc.ReturnValue",
+        "to": "disableInput.PlayerController"
+      },
+      {
+        "from": "disableInput.then",
+        "to": "noTick.execute"
+      }
+    ],
+    "pinDefaults": [
+      {
+        "node": "setDone",
+        "pin": "bOpeningFinished",
+        "value": true
+      },
+      {
+        "node": "inactive",
+        "pin": "bOpeningActive",
+        "value": false
+      },
+      {
+        "node": "restore",
+        "pin": "bInCinematicMode",
+        "value": false
+      },
+      {
+        "node": "restore",
+        "pin": "bHidePlayer",
+        "value": true
+      },
+      {
+        "node": "restore",
+        "pin": "bAffectsHUD",
+        "value": true
+      },
+      {
+        "node": "restore",
+        "pin": "bAffectsMovement",
+        "value": true
+      },
+      {
+        "node": "restore",
+        "pin": "bAffectsTurning",
+        "value": true
+      },
+      {
+        "node": "view",
+        "pin": "BlendTime",
+        "value": 0.2
+      },
+      {
+        "node": "mode",
+        "pin": "bFlushInput",
+        "value": true
+      },
+      {
+        "node": "hide",
+        "pin": "bNewHidden",
+        "value": true
+      },
+      {
+        "node": "show",
+        "pin": "bNewHidden",
+        "value": false
+      },
+      {
+        "node": "createObjective",
+        "pin": "WidgetType",
+        "value": "/Game/Game/UI/Scene01/WBP_Scene01Objective.WBP_Scene01Objective_C"
+      },
+      {
+        "node": "add",
+        "pin": "ZOrder",
+        "value": 10
+      },
+      {
+        "node": "noTick",
+        "pin": "bEnabled",
+        "value": false
+      }
+    ],
+    "compile": true
+  },
+  "eventGraph": {
+    "path": "/Game/Game/Blueprints/Cinematics/BP_OpeningDirector",
+    "graphName": "EventGraph",
+    "nodes": [
+      {
+        "ref": "begin",
+        "nodeType": "Event",
+        "eventName": "ReceiveBeginPlay"
+      },
+      {
+        "ref": "wait",
+        "nodeType": "CallFunction",
+        "className": "KismetSystemLibrary",
+        "functionName": "Delay"
+      },
+      {
+        "ref": "pc",
+        "nodeType": "CallFunction",
+        "className": "GameplayStatics",
+        "functionName": "GetPlayerController"
+      },
+      {
+        "ref": "self",
+        "nodeType": "Self"
+      },
+      {
+        "ref": "enable",
+        "nodeType": "CallFunction",
+        "className": "Actor",
+        "functionName": "EnableInput"
+      },
+      {
+        "ref": "interval",
+        "nodeType": "CallFunction",
+        "className": "Actor",
+        "functionName": "SetActorTickInterval"
+      },
+      {
+        "ref": "cinematic",
+        "nodeType": "CallFunction",
+        "className": "PlayerController",
+        "functionName": "SetCinematicMode"
+      },
+      {
+        "ref": "inputMode",
+        "nodeType": "CallFunction",
+        "className": "WidgetBlueprintLibrary",
+        "functionName": "SetInputMode_GameOnly"
+      },
+      {
+        "ref": "storeUI",
+        "nodeType": "VariableSet",
+        "variableName": "OpeningOverlay"
+      },
+      {
+        "ref": "addUI",
+        "nodeType": "CallFunction",
+        "className": "UserWidget",
+        "functionName": "AddToViewport"
+      },
+      {
+        "ref": "createSeq",
+        "nodeType": "CallFunction",
+        "className": "LevelSequencePlayer",
+        "functionName": "CreateLevelSequencePlayer"
+      },
+      {
+        "ref": "asset",
+        "nodeType": "VariableGet",
+        "variableName": "OpeningSequence"
+      },
+      {
+        "ref": "storeSeq",
+        "nodeType": "VariableSet",
+        "variableName": "SequencePlayer"
+      },
+      {
+        "ref": "valid",
+        "nodeType": "CallFunction",
+        "className": "KismetSystemLibrary",
+        "functionName": "IsValid"
+      },
+      {
+        "ref": "guard",
+        "nodeType": "Branch"
+      },
+      {
+        "ref": "play",
+        "nodeType": "CallFunction",
+        "className": "MovieSceneSequencePlayer",
+        "functionName": "Play"
+      },
+      {
+        "ref": "active",
+        "nodeType": "VariableSet",
+        "variableName": "bOpeningActive"
+      },
+      {
+        "ref": "failFinish",
+        "nodeType": "CallFunction",
+        "className": "/Game/Game/Blueprints/Cinematics/BP_OpeningDirector.BP_OpeningDirector_C",
+        "functionName": "FinishOpening"
+      },
+      {
+        "ref": "tick",
+        "nodeType": "Event",
+        "eventName": "ReceiveTick"
+      },
+      {
+        "ref": "state",
+        "nodeType": "VariableGet",
+        "variableName": "bOpeningActive"
+      },
+      {
+        "ref": "tickGuard",
+        "nodeType": "Branch"
+      },
+      {
+        "ref": "seq",
+        "nodeType": "VariableGet",
+        "variableName": "SequencePlayer"
+      },
+      {
+        "ref": "playing",
+        "nodeType": "CallFunction",
+        "className": "MovieSceneSequencePlayer",
+        "functionName": "IsPlaying"
+      },
+      {
+        "ref": "playingGuard",
+        "nodeType": "Branch"
+      },
+      {
+        "ref": "finish",
+        "nodeType": "CallFunction",
+        "className": "/Game/Game/Blueprints/Cinematics/BP_OpeningDirector.BP_OpeningDirector_C",
+        "functionName": "FinishOpening"
+      },
+      {
+        "ref": "skip",
+        "nodeType": "InputKey",
+        "key": "SpaceBar"
+      },
+      {
+        "ref": "skipGuard",
+        "nodeType": "Branch"
+      },
+      {
+        "ref": "skipFinish",
+        "nodeType": "CallFunction",
+        "className": "/Game/Game/Blueprints/Cinematics/BP_OpeningDirector.BP_OpeningDirector_C",
+        "functionName": "FinishOpening"
+      }
+    ],
+    "connections": [
+      {
+        "from": "begin.then",
+        "to": "wait.execute"
+      },
+      {
+        "from": "wait.then",
+        "to": "enable.execute"
+      },
+      {
+        "from": "pc.ReturnValue",
+        "to": "enable.PlayerController"
+      },
+      {
+        "from": "enable.then",
+        "to": "interval.execute"
+      },
+      {
+        "from": "interval.then",
+        "to": "cinematic.execute"
+      },
+      {
+        "from": "pc.ReturnValue",
+        "to": "cinematic.self"
+      },
+      {
+        "from": "cinematic.then",
+        "to": "inputMode.execute"
+      },
+      {
+        "from": "pc.ReturnValue",
+        "to": "inputMode.PlayerController"
+      },
+      {
+        "from": "inputMode.then",
+        "to": "37EE6FAD.execute"
+      },
+      {
+        "from": "pc.ReturnValue",
+        "to": "37EE6FAD.OwningPlayer"
+      },
+      {
+        "from": "self.self",
+        "to": "37EE6FAD.WorldContextObject"
+      },
+      {
+        "from": "37EE6FAD.then",
+        "to": "storeUI.execute"
+      },
+      {
+        "from": "37EE6FAD.ReturnValue",
+        "to": "storeUI.OpeningOverlay"
+      },
+      {
+        "from": "storeUI.then",
+        "to": "addUI.execute"
+      },
+      {
+        "from": "37EE6FAD.ReturnValue",
+        "to": "addUI.self"
+      },
+      {
+        "from": "addUI.then",
+        "to": "createSeq.execute"
+      },
+      {
+        "from": "self.self",
+        "to": "createSeq.WorldContextObject"
+      },
+      {
+        "from": "asset.OpeningSequence",
+        "to": "createSeq.LevelSequence"
+      },
+      {
+        "from": "createSeq.then",
+        "to": "storeSeq.execute"
+      },
+      {
+        "from": "createSeq.ReturnValue",
+        "to": "storeSeq.SequencePlayer"
+      },
+      {
+        "from": "createSeq.ReturnValue",
+        "to": "valid.Object"
+      },
+      {
+        "from": "storeSeq.then",
+        "to": "guard.execute"
+      },
+      {
+        "from": "valid.ReturnValue",
+        "to": "guard.Condition"
+      },
+      {
+        "from": "guard.then",
+        "to": "play.execute"
+      },
+      {
+        "from": "createSeq.ReturnValue",
+        "to": "play.self"
+      },
+      {
+        "from": "play.then",
+        "to": "active.execute"
+      },
+      {
+        "from": "guard.else",
+        "to": "failFinish.execute"
+      },
+      {
+        "from": "tick.then",
+        "to": "tickGuard.execute"
+      },
+      {
+        "from": "state.bOpeningActive",
+        "to": "tickGuard.Condition"
+      },
+      {
+        "from": "seq.SequencePlayer",
+        "to": "playing.self"
+      },
+      {
+        "from": "tickGuard.then",
+        "to": "playingGuard.execute"
+      },
+      {
+        "from": "playing.ReturnValue",
+        "to": "playingGuard.Condition"
+      },
+      {
+        "from": "playingGuard.else",
+        "to": "finish.execute"
+      },
+      {
+        "from": "skip.Pressed",
+        "to": "skipGuard.execute"
+      },
+      {
+        "from": "state.bOpeningActive",
+        "to": "skipGuard.Condition"
+      },
+      {
+        "from": "skipGuard.then",
+        "to": "skipFinish.execute"
+      }
+    ],
+    "pinDefaults": [
+      {
+        "node": "wait",
+        "pin": "Duration",
+        "value": 0.15
+      },
+      {
+        "node": "interval",
+        "pin": "TickInterval",
+        "value": 0.1
+      },
+      {
+        "node": "cinematic",
+        "pin": "bInCinematicMode",
+        "value": true
+      },
+      {
+        "node": "cinematic",
+        "pin": "bHidePlayer",
+        "value": true
+      },
+      {
+        "node": "cinematic",
+        "pin": "bAffectsHUD",
+        "value": true
+      },
+      {
+        "node": "cinematic",
+        "pin": "bAffectsMovement",
+        "value": true
+      },
+      {
+        "node": "cinematic",
+        "pin": "bAffectsTurning",
+        "value": true
+      },
+      {
+        "node": "inputMode",
+        "pin": "bFlushInput",
+        "value": true
+      },
+      {
+        "node": "37EE6FAD",
+        "pin": "WidgetType",
+        "value": "/Game/Game/UI/Cinematics/WBP_OpeningOverlay.WBP_OpeningOverlay_C"
+      },
+      {
+        "node": "addUI",
+        "pin": "ZOrder",
+        "value": 100
+      },
+      {
+        "node": "createSeq",
+        "pin": "Settings",
+        "value": "(bRestoreState=True,bAutoPlay=False)"
+      },
+      {
+        "node": "active",
+        "pin": "bOpeningActive",
+        "value": true
+      }
+    ],
+    "compile": true
+  }
+}

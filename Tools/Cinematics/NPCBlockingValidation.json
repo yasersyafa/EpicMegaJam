@@ -1,0 +1,102 @@
+{
+  "samples": [
+    {
+      "t": 0.0,
+      "stage": 0,
+      "text": ""
+    },
+    {
+      "t": 31.323263995349407,
+      "stage": 1,
+      "text": "WASD \u2014 Walk toward the house."
+    },
+    {
+      "t": 36.407837960869074,
+      "stage": 2,
+      "text": "Mouse \u2014 Look around."
+    },
+    {
+      "t": 36.55028485879302,
+      "stage": 3,
+      "text": "Approach the front door. E \u2014 Open."
+    },
+    {
+      "t": 36.618299659341574,
+      "stage": 4,
+      "text": "Tab \u2014 Open Director's Notes."
+    },
+    {
+      "t": 36.68914645537734,
+      "stage": 5,
+      "text": "Go to the living room. The crew is waiting."
+    },
+    {
+      "t": 38.702927362173796,
+      "stage": 6,
+      "text": "CREW A\nMorning, Director. We're almost ready in the front room."
+    },
+    {
+      "t": 43.178383234888315,
+      "stage": 6,
+      "text": "SURYA\nGood. How's the set looking?"
+    },
+    {
+      "t": 46.29245284944773,
+      "stage": 6,
+      "text": "CREW A\nA few pieces still need placing. Thought you'd want the final say."
+    },
+    {
+      "t": 51.931448478251696,
+      "stage": 6,
+      "text": " "
+    },
+    {
+      "t": 55.33568376675248,
+      "stage": 7,
+      "text": "MAYA\nMorning, Mr. Surya."
+    },
+    {
+      "t": 57.82882745191455,
+      "stage": 7,
+      "text": "SURYA\nMorning, Maya. Ready for your first scene?"
+    },
+    {
+      "t": 61.63976163417101,
+      "stage": 7,
+      "text": "MAYA\nAs ready as I'll ever be."
+    },
+    {
+      "t": 65.0812800116837,
+      "stage": 7,
+      "text": "SURYA\nDon't worry about getting everything perfect. We'll work through it."
+    },
+    {
+      "t": 69.97407302260399,
+      "stage": 7,
+      "text": "MAYA\nThat's reassuring. I've been going over the script all morning."
+    },
+    {
+      "t": 74.8664718195796,
+      "stage": 7,
+      "text": "SURYA\nYou'll be fine. Let's take a look at the room."
+    }
+  ],
+  "errors": [],
+  "blocking_failures": [],
+  "blocking_samples": 1281,
+  "initial_no_dialogue": true,
+  "outside_spawn": true,
+  "opening_dummy_removed": true,
+  "idle_does_not_progress": true,
+  "door_open": true,
+  "still_no_living_dialogue": true,
+  "crew_sofa_moves": true,
+  "maya_approached": true,
+  "finished_blank": true,
+  "maya_at_start": true,
+  "movement_enabled": true,
+  "sofa_placed": true,
+  "wardrobe_placed": true,
+  "notes_updated": true,
+  "dialogue_lines": 9
+}
