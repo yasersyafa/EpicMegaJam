@@ -1,0 +1,811 @@
+{
+  "source": "CUT! CUT! CUT! Team Review v3.0 sections 05-14",
+  "timing": "English performance pass. Cues follow physical landmarks and practical sound. Silence clears the dialogue panel between lines.",
+  "blocks": [
+    {
+      "index": 0,
+      "name": "Scene01_Perfect",
+      "scene": 1,
+      "cues": [
+        {
+          "source": "P04_01",
+          "speaker": "LARAS (MAYA)",
+          "text": "I used to sneak down here for a glass of water.",
+          "time": 1.4
+        },
+        {
+          "source": "P04_02",
+          "speaker": "LARAS",
+          "text": "Never had to turn the light on.",
+          "time": 6.3
+        },
+        {
+          "source": "P04_04",
+          "speaker": "LARAS",
+          "text": "I'd put my hand out just here.",
+          "time": 12.4
+        },
+        {
+          "source": "P05_03",
+          "speaker": "LARAS",
+          "text": "There was a door here.",
+          "time": 17.8
+        }
+      ],
+      "duration": 22.58,
+      "next": -6,
+      "lock": true,
+      "kind": "take"
+    },
+    {
+      "index": 1,
+      "name": "Scene01_Failure_Sofa",
+      "scene": 1,
+      "cues": [
+        {
+          "source": "P04_05",
+          "speaker": "MAYA",
+          "text": "Surya? My knee catches the sofa on that turn.",
+          "time": 3.0
+        },
+        {
+          "source": "P04_06",
+          "speaker": "SURYA (internal)",
+          "text": "Cut. I'll pull the sofa out of her path.",
+          "time": 7.5
+        }
+      ],
+      "duration": 14.25,
+      "next": -7,
+      "lock": true,
+      "kind": "failure"
+    },
+    {
+      "index": 2,
+      "name": "Scene01_Failure_Wardrobe",
+      "scene": 1,
+      "cues": [
+        {
+          "source": "P05_01",
+          "speaker": "MAYA",
+          "text": "From my mark, all I can see is the wardrobe.",
+          "time": 3.0
+        },
+        {
+          "source": "P05_02",
+          "speaker": "SURYA (internal)",
+          "text": "I need the patch in frame. Move the wardrobe.",
+          "time": 7.5
+        }
+      ],
+      "duration": 13.17,
+      "next": -7,
+      "lock": true,
+      "kind": "failure"
+    },
+    {
+      "index": 3,
+      "name": "Scene01_Aftermath",
+      "scene": 1,
+      "cues": [
+        {
+          "source": "P05_05",
+          "speaker": "SURYA",
+          "text": "Cut. Keep that one.",
+          "time": 0.7
+        },
+        {
+          "source": "P05_06",
+          "speaker": "MAYA",
+          "text": "I nearly said the line before I got there.",
+          "time": 4.5
+        },
+        {
+          "source": "P05_07",
+          "speaker": "SURYA",
+          "text": "I liked the wait. We found the door with you.",
+          "time": 9.2
+        },
+        {
+          "source": "P05_08",
+          "speaker": "MAYA",
+          "text": "Good. I'll remember that.",
+          "time": 16.1
+        }
+      ],
+      "duration": 21.63,
+      "next": 4,
+      "lock": true,
+      "kind": "dialogue"
+    },
+    {
+      "index": 4,
+      "name": "CrewTransition01",
+      "scene": 1,
+      "cues": [
+        {
+          "source": "P05_10",
+          "speaker": "CREW A",
+          "text": "Wardrobe stays here, yeah?",
+          "time": 1.0
+        },
+        {
+          "source": "P05_11",
+          "speaker": "SURYA",
+          "text": "Leave it. We're in the kitchen next.",
+          "time": 5.3
+        },
+        {
+          "source": "P05_12",
+          "speaker": "CREW B",
+          "text": "Lamp coming through. Give me the doorway.",
+          "time": 13.2
+        }
+      ],
+      "duration": 30,
+      "next": 5,
+      "lock": false,
+      "kind": "traversal"
+    },
+    {
+      "index": 5,
+      "name": "Interlude01_OutOfFrame",
+      "scene": 1,
+      "cues": [
+        {
+          "source": "P05_14",
+          "speaker": "MAYA",
+          "text": "When I watch a close-up, I fill in the rest of the room.",
+          "time": 1.0
+        },
+        {
+          "source": "P05_16",
+          "speaker": "MAYA",
+          "text": "Tables. People listening. Someone holding a mic.",
+          "time": 6.5
+        },
+        {
+          "source": "P05_17",
+          "speaker": "MAYA",
+          "text": "Nobody has to show me.",
+          "time": 11.0
+        }
+      ],
+      "duration": 15,
+      "next": 6,
+      "lock": true,
+      "kind": "recording"
+    },
+    {
+      "index": 6,
+      "name": "Transition_Kitchen",
+      "scene": 2,
+      "cues": [
+        {
+          "source": "P06_01",
+          "speaker": "CREW B",
+          "text": "Watch the lamp on that corner.",
+          "time": 1.2
+        },
+        {
+          "source": "P06_02",
+          "speaker": "CREW C",
+          "text": "You're clear.",
+          "time": 5.0
+        },
+        {
+          "source": "P06_03",
+          "speaker": "MAYA",
+          "text": "On this page she checks the plan twice. Why twice?",
+          "time": 10.2
+        },
+        {
+          "source": "P06_04",
+          "speaker": "SURYA",
+          "text": "First she thinks she's holding it the wrong way up.",
+          "time": 15.4
+        },
+        {
+          "source": "P06_05",
+          "speaker": "MAYA",
+          "text": "Oh. It's the room that's wrong. I can play that.",
+          "time": 21.7
+        }
+      ],
+      "duration": 28.29,
+      "next": -2,
+      "lock": false,
+      "kind": "traversal"
+    },
+    {
+      "index": 7,
+      "name": "Scene02_Perfect",
+      "scene": 2,
+      "cues": [
+        {
+          "source": "P06_08",
+          "speaker": "LARAS",
+          "text": "Dining room. Kitchen.",
+          "time": 1.2
+        },
+        {
+          "source": "P06_09",
+          "speaker": "LARAS",
+          "text": "The stairs line up.",
+          "time": 6.4
+        },
+        {
+          "source": "P06_11",
+          "speaker": "LARAS",
+          "text": "There's a whole room past this wall.",
+          "time": 10.2
+        },
+        {
+          "source": "P07_01",
+          "speaker": "LARAS",
+          "text": "Hello?",
+          "time": 17.4
+        }
+      ],
+      "duration": 20.07,
+      "next": -6,
+      "lock": true,
+      "kind": "take"
+    },
+    {
+      "index": 8,
+      "name": "Scene02_Failure_Cabinet",
+      "scene": 2,
+      "cues": [
+        {
+          "source": "P07_02",
+          "speaker": "MAYA",
+          "text": "I can't get past the cabinet with the plan open.",
+          "time": 3.0
+        },
+        {
+          "source": "P07_03",
+          "speaker": "SURYA (internal)",
+          "text": "I need to clear the way to the wall.",
+          "time": 7.7
+        }
+      ],
+      "duration": 13.89,
+      "next": -7,
+      "lock": true,
+      "kind": "failure"
+    },
+    {
+      "index": 9,
+      "name": "Scene02_Failure_Light",
+      "scene": 2,
+      "cues": [
+        {
+          "source": "P07_04",
+          "speaker": "MAYA",
+          "text": "I can see the plaster. Where's the outline?",
+          "time": 3.0
+        },
+        {
+          "source": "P07_05",
+          "speaker": "SURYA (internal)",
+          "text": "Turn the lamp across the wall. Catch that edge.",
+          "time": 7.5
+        }
+      ],
+      "duration": 13.53,
+      "next": -7,
+      "lock": true,
+      "kind": "failure"
+    },
+    {
+      "index": 10,
+      "name": "Scene02_Aftermath",
+      "scene": 2,
+      "cues": [
+        {
+          "source": "P07_06",
+          "speaker": "SURYA",
+          "text": "Cut. Print it.",
+          "time": 0.6
+        },
+        {
+          "source": "P07_07",
+          "speaker": "MAYA",
+          "text": "Was that knock my cue?",
+          "time": 4.5
+        },
+        {
+          "source": "P07_10",
+          "speaker": "CREW B",
+          "text": "Heard it over here too.",
+          "time": 8.7
+        },
+        {
+          "source": "P07_08",
+          "speaker": "SURYA",
+          "text": "I thought someone was at the door.",
+          "time": 13.5
+        },
+        {
+          "source": "P07_11",
+          "speaker": "MAYA",
+          "text": "So did I. That's why I said hello.",
+          "time": 19.2
+        },
+        {
+          "source": "P07_12",
+          "speaker": "SURYA",
+          "text": "Keep that sound on the take.",
+          "time": 25.4
+        }
+      ],
+      "duration": 30.52,
+      "next": 11,
+      "lock": true,
+      "kind": "dialogue"
+    },
+    {
+      "index": 11,
+      "name": "CrewTransition02_Service",
+      "scene": 2,
+      "cues": [
+        {
+          "source": "P07_13",
+          "speaker": "CREW C",
+          "text": "Last set's through the service passage.",
+          "time": 1.4
+        },
+        {
+          "source": "P07_14",
+          "speaker": "MAYA",
+          "text": "Would've walked straight past it.",
+          "time": 6.4
+        },
+        {
+          "source": "P07_15",
+          "speaker": "CREW C",
+          "text": "I did. Twice. Come on through.",
+          "time": 12.2
+        }
+      ],
+      "duration": 28,
+      "next": 12,
+      "lock": false,
+      "kind": "traversal"
+    },
+    {
+      "index": 12,
+      "name": "Interlude02_TheEdit",
+      "scene": 2,
+      "cues": [
+        {
+          "source": "P08_02",
+          "speaker": "MAYA",
+          "text": "Cut from a face to a door and you think someone's coming in.",
+          "time": 1.1
+        },
+        {
+          "source": "P08_05",
+          "speaker": "MAYA",
+          "text": "You could have filmed that door last week.",
+          "time": 7.0
+        },
+        {
+          "source": "P08_06",
+          "speaker": "MAYA",
+          "text": "You'd still wait for it to open.",
+          "time": 11.2
+        }
+      ],
+      "duration": 15,
+      "next": 13,
+      "lock": true,
+      "kind": "recording"
+    },
+    {
+      "index": 13,
+      "name": "Approach_TheLastRoom",
+      "scene": 3,
+      "cues": [
+        {
+          "source": "P08_07",
+          "speaker": "CREW C",
+          "text": "Continuity photo's on the little table.",
+          "time": 1.0
+        },
+        {
+          "source": "P08_09",
+          "speaker": "MAYA",
+          "text": "Do you want me to pick it up?",
+          "time": 7.6
+        },
+        {
+          "source": "P08_10",
+          "speaker": "SURYA",
+          "text": "Leave it there. Look from the photo to the chair.",
+          "time": 12.4
+        },
+        {
+          "source": "P08_11",
+          "speaker": "MAYA",
+          "text": "And when I see they match?",
+          "time": 18.8
+        },
+        {
+          "source": "P08_13",
+          "speaker": "SURYA",
+          "text": "Take your time. I'll stay on you.",
+          "time": 23.4
+        }
+      ],
+      "duration": 28.74,
+      "next": -3,
+      "lock": false,
+      "kind": "traversal"
+    },
+    {
+      "index": 14,
+      "name": "Scene03_Perfect",
+      "scene": 3,
+      "cues": [
+        {
+          "source": "P09_05",
+          "speaker": "LARAS",
+          "text": "Who took this?",
+          "time": 1.1
+        },
+        {
+          "source": "P09_07",
+          "speaker": "LARAS",
+          "text": "That chair. The lamp beside it.",
+          "time": 5.4
+        },
+        {
+          "source": "P09_08",
+          "speaker": "LARAS",
+          "text": "They put everything back.",
+          "time": 10.4
+        },
+        {
+          "source": "P09_09",
+          "speaker": "LARAS",
+          "text": "Who were they waiting for?",
+          "time": 13.5
+        }
+      ],
+      "duration": 16.4,
+      "next": -6,
+      "lock": true,
+      "kind": "take"
+    },
+    {
+      "index": 15,
+      "name": "Scene03_Failure_Chair",
+      "scene": 3,
+      "cues": [
+        {
+          "source": "P09_01",
+          "speaker": "MAYA",
+          "text": "The chair's in a different place in the picture.",
+          "time": 3.0
+        },
+        {
+          "source": "P09_02",
+          "speaker": "SURYA (internal)",
+          "text": "Match the chair to the photo before we roll again.",
+          "time": 7.7
+        }
+      ],
+      "duration": 12.81,
+      "next": -7,
+      "lock": true,
+      "kind": "failure"
+    },
+    {
+      "index": 16,
+      "name": "Scene03_Failure_Light",
+      "scene": 3,
+      "cues": [
+        {
+          "source": "P09_03",
+          "speaker": "MAYA",
+          "text": "I'm losing the edge of the chair in the dark.",
+          "time": 3.0
+        },
+        {
+          "source": "P09_04",
+          "speaker": "SURYA (internal)",
+          "text": "I'll match the lamp to the one in the picture.",
+          "time": 7.6
+        }
+      ],
+      "duration": 13.89,
+      "next": -7,
+      "lock": true,
+      "kind": "failure"
+    },
+    {
+      "index": 17,
+      "name": "Scene03_Aftermath",
+      "scene": 3,
+      "cues": [
+        {
+          "source": "P10_01",
+          "speaker": "SURYA",
+          "text": "Cut. That's the scene.",
+          "time": 0.65
+        },
+        {
+          "source": "P10_02",
+          "speaker": "MAYA",
+          "text": "Can I put my pages down now?",
+          "time": 4.1
+        },
+        {
+          "source": "P10_03",
+          "speaker": "SURYA",
+          "text": "Please. Keep the chair. One last pickup.",
+          "time": 9.2
+        },
+        {
+          "source": "P10_06",
+          "speaker": "MAYA",
+          "text": "I'll wait here.",
+          "time": 15.4
+        }
+      ],
+      "duration": 21.27,
+      "next": 18,
+      "lock": true,
+      "kind": "dialogue"
+    },
+    {
+      "index": 18,
+      "name": "Interlude03_TheEnding",
+      "scene": 3,
+      "cues": [
+        {
+          "source": "P10_07",
+          "speaker": "MAYA",
+          "text": "Sometimes I watch an ending twice.",
+          "time": 1.0
+        },
+        {
+          "source": "P10_10",
+          "speaker": "MAYA",
+          "text": "Same shot. Second time, I know where to look.",
+          "time": 5.1
+        }
+      ],
+      "duration": 12,
+      "next": -4,
+      "lock": true,
+      "kind": "recording"
+    },
+    {
+      "index": 19,
+      "name": "FinalPickup_TheUnseenTake",
+      "scene": 3,
+      "cues": [
+        {
+          "source": "P10_12",
+          "speaker": "SURYA",
+          "text": "All crew to the back room. One last pickup.",
+          "time": 1.0
+        },
+        {
+          "source": "P10_13",
+          "speaker": "CREW A (radio)",
+          "text": "On our way. I've got the case.",
+          "time": 5.1
+        },
+        {
+          "source": "P10_14",
+          "speaker": "CREW B",
+          "text": "Lamp's set. Want it where it was?",
+          "time": 25.7
+        },
+        {
+          "source": "P10_15",
+          "speaker": "SURYA",
+          "text": "Leave it. Thanks.",
+          "time": 29.4
+        },
+        {
+          "source": "P10_18",
+          "speaker": "MAYA",
+          "text": "Surya? When I finish, could you leave it running?",
+          "time": 33.0
+        },
+        {
+          "source": "P11_01",
+          "speaker": "SURYA",
+          "text": "How long do you need?",
+          "time": 38.5
+        },
+        {
+          "source": "P11_02",
+          "speaker": "MAYA",
+          "text": "Just a breath or two. I keep looking up on 'cut'.",
+          "time": 42.1
+        },
+        {
+          "source": "P11_03",
+          "speaker": "SURYA",
+          "text": "All right. In your own time.",
+          "time": 48.1
+        },
+        {
+          "source": "P11_04",
+          "speaker": "CREW C",
+          "text": "Rolling.",
+          "time": 52.4
+        },
+        {
+          "source": "P11_05",
+          "speaker": "SURYA",
+          "text": "Action.",
+          "time": 55.3
+        },
+        {
+          "source": "P11_07",
+          "speaker": "MAYA",
+          "text": "Okay. I'm ready.",
+          "time": 59.2
+        }
+      ],
+      "duration": 64.38,
+      "next": 20,
+      "lock": true,
+      "kind": "pickup"
+    },
+    {
+      "index": 20,
+      "name": "FinalConfession_TheTruth",
+      "scene": 3,
+      "cues": [
+        {
+          "source": "P11_08",
+          "speaker": "MAYA",
+          "text": "I left one name off when I introduced myself.",
+          "time": 1.5
+        },
+        {
+          "source": "P11_10",
+          "speaker": "MAYA",
+          "text": "Evelyn. The woman who died in this house.",
+          "time": 7.7
+        },
+        {
+          "source": "P11_11",
+          "speaker": "MAYA",
+          "text": "She was my sister.",
+          "time": 13.6
+        },
+        {
+          "source": "P11_12",
+          "speaker": "MAYA",
+          "text": "Afterwards, all anyone would say was 'an accident'.",
+          "time": 21.0
+        },
+        {
+          "source": "P11_13",
+          "speaker": "MAYA",
+          "text": "Then I found the old call sheet. Four names besides hers.",
+          "time": 29.0
+        },
+        {
+          "source": "P11_13",
+          "speaker": "MAYA",
+          "text": "Same director. Same crew. All here today.",
+          "time": 37.5
+        },
+        {
+          "source": "P11_15",
+          "speaker": "MAYA",
+          "text": "They had footage of what happened. Nobody ever got to see it.",
+          "time": 45.0
+        },
+        {
+          "source": "P11_16",
+          "speaker": "MAYA",
+          "text": "I wanted just one of them to say her name.",
+          "time": 54.0
+        },
+        {
+          "source": "P11_16",
+          "speaker": "MAYA",
+          "text": "We moved the chair. Matched the light. Did the whole thing again.",
+          "time": 62.0
+        },
+        {
+          "source": "P11_17",
+          "speaker": "MAYA",
+          "text": "The only person who said it was me.",
+          "time": 70.0
+        },
+        {
+          "source": "P12_01",
+          "speaker": "MAYA",
+          "text": "It wasn't enough.",
+          "time": 76.0
+        }
+      ],
+      "duration": 80,
+      "next": 21,
+      "lock": true,
+      "kind": "recording"
+    },
+    {
+      "index": 21,
+      "name": "EvidenceMontage",
+      "scene": 3,
+      "cues": [],
+      "duration": 10,
+      "next": 22,
+      "lock": true,
+      "kind": "montage"
+    },
+    {
+      "index": 22,
+      "name": "FinalReveal_TheFullFrame",
+      "scene": 3,
+      "cues": [
+        {
+          "source": "P12_02",
+          "speaker": "MAYA",
+          "text": "There's one more thing.",
+          "time": 1.0
+        },
+        {
+          "source": "P12_03",
+          "speaker": "MAYA",
+          "text": "Remember the rest of the room?",
+          "time": 5.0
+        },
+        {
+          "source": "P12_04",
+          "speaker": "MAYA (off camera)",
+          "text": "Now you've seen everything.",
+          "time": 19.0
+        }
+      ],
+      "duration": 24,
+      "next": 23,
+      "lock": true,
+      "kind": "reveal"
+    },
+    {
+      "index": 23,
+      "name": "FilmCredits",
+      "scene": 3,
+      "cues": [],
+      "duration": 12,
+      "next": -5,
+      "lock": true,
+      "kind": "credits"
+    }
+  ],
+  "take_beats": [
+    0,
+    1,
+    2,
+    7,
+    8,
+    9,
+    14,
+    15,
+    16
+  ],
+  "aftermath_beats": [
+    3,
+    10,
+    17
+  ],
+  "notes": [
+    "Scene 01 \u2014 The Arrival\nLaras returns to her childhood home after years away. She enters the living room and notices something unfamiliar.\n\nDirection: Give Maya a clear route through the room. Keep the unusual wall detail readable.",
+    "Scene 02 \u2014 The Hollow Wall\nLaras notices an inconsistency between the house's floor plan and its actual structure.\n\nDirection: Keep the corridor clear. Use the practical light to bring out the wall's texture.",
+    "Scene 03 \u2014 The Last Scene\nLaras finds the room she has been searching for. The photograph reveals the room's former arrangement.\n\nDirection: Match the reference. Let the photograph lead her to the final realization."
+  ]
+}

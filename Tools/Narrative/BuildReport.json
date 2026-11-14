@@ -1,0 +1,866 @@
+{
+  "success": true,
+  "sequences": [
+    {
+      "index": 0,
+      "path": "/Game/Game/Cinematics/Narrative/Scene01/LS_Scene01_Perfect",
+      "duration": 22.58,
+      "kind": "take"
+    },
+    {
+      "index": 1,
+      "path": "/Game/Game/Cinematics/Narrative/Scene01/LS_Scene01_Failure_Sofa",
+      "duration": 14.25,
+      "kind": "failure"
+    },
+    {
+      "index": 2,
+      "path": "/Game/Game/Cinematics/Narrative/Scene01/LS_Scene01_Failure_Wardrobe",
+      "duration": 13.17,
+      "kind": "failure"
+    },
+    {
+      "index": 3,
+      "path": "/Game/Game/Cinematics/Narrative/Scene01/LS_Scene01_Aftermath",
+      "duration": 21.63,
+      "kind": "dialogue"
+    },
+    {
+      "index": 4,
+      "path": "/Game/Game/Cinematics/Narrative/Scene01/LS_CrewTransition01",
+      "duration": 30,
+      "kind": "traversal"
+    },
+    {
+      "index": 5,
+      "path": "/Game/Game/Cinematics/Narrative/Recordings/LS_Interlude01_OutOfFrame",
+      "duration": 15,
+      "kind": "recording"
+    },
+    {
+      "index": 6,
+      "path": "/Game/Game/Cinematics/Narrative/Scene02/LS_Transition_Kitchen",
+      "duration": 28.29,
+      "kind": "traversal"
+    },
+    {
+      "index": 7,
+      "path": "/Game/Game/Cinematics/Narrative/Scene02/LS_Scene02_Perfect",
+      "duration": 20.07,
+      "kind": "take"
+    },
+    {
+      "index": 8,
+      "path": "/Game/Game/Cinematics/Narrative/Scene02/LS_Scene02_Failure_Cabinet",
+      "duration": 13.89,
+      "kind": "failure"
+    },
+    {
+      "index": 9,
+      "path": "/Game/Game/Cinematics/Narrative/Scene02/LS_Scene02_Failure_Light",
+      "duration": 13.53,
+      "kind": "failure"
+    },
+    {
+      "index": 10,
+      "path": "/Game/Game/Cinematics/Narrative/Scene02/LS_Scene02_Aftermath",
+      "duration": 30.52,
+      "kind": "dialogue"
+    },
+    {
+      "index": 11,
+      "path": "/Game/Game/Cinematics/Narrative/Scene02/LS_CrewTransition02_Service",
+      "duration": 28,
+      "kind": "traversal"
+    },
+    {
+      "index": 12,
+      "path": "/Game/Game/Cinematics/Narrative/Recordings/LS_Interlude02_TheEdit",
+      "duration": 15,
+      "kind": "recording"
+    },
+    {
+      "index": 13,
+      "path": "/Game/Game/Cinematics/Narrative/Scene03/LS_Approach_TheLastRoom",
+      "duration": 28.74,
+      "kind": "traversal"
+    },
+    {
+      "index": 14,
+      "path": "/Game/Game/Cinematics/Narrative/Scene03/LS_Scene03_Perfect",
+      "duration": 16.4,
+      "kind": "take"
+    },
+    {
+      "index": 15,
+      "path": "/Game/Game/Cinematics/Narrative/Scene03/LS_Scene03_Failure_Chair",
+      "duration": 12.81,
+      "kind": "failure"
+    },
+    {
+      "index": 16,
+      "path": "/Game/Game/Cinematics/Narrative/Scene03/LS_Scene03_Failure_Light",
+      "duration": 13.89,
+      "kind": "failure"
+    },
+    {
+      "index": 17,
+      "path": "/Game/Game/Cinematics/Narrative/Scene03/LS_Scene03_Aftermath",
+      "duration": 21.27,
+      "kind": "dialogue"
+    },
+    {
+      "index": 18,
+      "path": "/Game/Game/Cinematics/Narrative/Recordings/LS_Interlude03_TheEnding",
+      "duration": 12,
+      "kind": "recording"
+    },
+    {
+      "index": 19,
+      "path": "/Game/Game/Cinematics/Narrative/Recordings/LS_FinalPickup_TheUnseenTake",
+      "duration": 64.38,
+      "kind": "pickup"
+    },
+    {
+      "index": 20,
+      "path": "/Game/Game/Cinematics/Narrative/Recordings/LS_FinalConfession_TheTruth",
+      "duration": 80,
+      "kind": "recording"
+    },
+    {
+      "index": 21,
+      "path": "/Game/Game/Cinematics/Narrative/Recordings/LS_EvidenceMontage",
+      "duration": 10,
+      "kind": "montage"
+    },
+    {
+      "index": 22,
+      "path": "/Game/Game/Cinematics/Narrative/Recordings/LS_FinalReveal_TheFullFrame",
+      "duration": 24,
+      "kind": "reveal"
+    },
+    {
+      "index": 23,
+      "path": "/Game/Game/Cinematics/Narrative/Recordings/LS_FilmCredits",
+      "duration": 12,
+      "kind": "credits"
+    }
+  ],
+  "routes": [
+    {
+      "beat": 0,
+      "actor": "SET_Scene01_Maya_StandIn",
+      "points": [
+        [
+          -90,
+          360,
+          0
+        ],
+        [
+          -190,
+          200,
+          0
+        ],
+        [
+          -190,
+          80,
+          0
+        ],
+        [
+          -190,
+          -260,
+          0
+        ],
+        [
+          170,
+          -400,
+          0
+        ]
+      ],
+      "start": 0,
+      "end": 14.677
+    },
+    {
+      "beat": 1,
+      "actor": "SET_Scene01_Maya_StandIn",
+      "points": [
+        [
+          -90,
+          360,
+          0
+        ],
+        [
+          -190,
+          200,
+          0
+        ],
+        [
+          -190,
+          80,
+          0
+        ]
+      ],
+      "start": 0,
+      "end": 9.262500000000001
+    },
+    {
+      "beat": 2,
+      "actor": "SET_Scene01_Maya_StandIn",
+      "points": [
+        [
+          -90,
+          360,
+          0
+        ],
+        [
+          -190,
+          200,
+          0
+        ],
+        [
+          -190,
+          80,
+          0
+        ]
+      ],
+      "start": 0,
+      "end": 8.560500000000001
+    },
+    {
+      "beat": 4,
+      "actor": "SET_Scene01_Maya_StandIn",
+      "points": [
+        [
+          170,
+          -400,
+          0
+        ],
+        [
+          -190,
+          -400,
+          0
+        ],
+        [
+          -90,
+          -450,
+          0
+        ],
+        [
+          -90,
+          -700,
+          0
+        ],
+        [
+          -280,
+          -750,
+          0
+        ],
+        [
+          -280,
+          -850,
+          0
+        ]
+      ],
+      "start": 0,
+      "end": 14.54674608455535
+    },
+    {
+      "beat": 4,
+      "actor": "NPC_Intro_CrewA_PropMaster",
+      "points": [
+        [
+          230,
+          -470,
+          0
+        ],
+        [
+          -90,
+          -470,
+          0
+        ],
+        [
+          -90,
+          -700,
+          0
+        ],
+        [
+          -430,
+          -750,
+          0
+        ],
+        [
+          -430,
+          -1280,
+          0
+        ]
+      ],
+      "start": 6,
+      "end": 26.33795436498274
+    },
+    {
+      "beat": 4,
+      "actor": "NPC_Intro_CrewB_SetDresser",
+      "points": [
+        [
+          -280,
+          -210,
+          0
+        ],
+        [
+          -190,
+          -400,
+          0
+        ],
+        [
+          -90,
+          -470,
+          0
+        ],
+        [
+          -90,
+          -700,
+          0
+        ],
+        [
+          350,
+          -790,
+          0
+        ]
+      ],
+      "start": 13,
+      "end": 27.448767829019083
+    },
+    {
+      "beat": 4,
+      "actor": "NPC_Intro_CrewC_Lobby",
+      "points": [
+        [
+          -1290,
+          1270,
+          0
+        ],
+        [
+          -1080,
+          1100,
+          0
+        ],
+        [
+          -1080,
+          550,
+          0
+        ],
+        [
+          -1080,
+          0,
+          0
+        ],
+        [
+          -1080,
+          -1080,
+          0
+        ],
+        [
+          -650,
+          -1080,
+          0
+        ],
+        [
+          -430,
+          -1080,
+          0
+        ]
+      ],
+      "start": 0,
+      "end": 30
+    },
+    {
+      "beat": 6,
+      "actor": "SET_Scene01_Maya_StandIn",
+      "points": [
+        [
+          -280,
+          -850,
+          0
+        ],
+        [
+          350,
+          -790,
+          0
+        ],
+        [
+          400,
+          -695,
+          0
+        ],
+        [
+          620,
+          -695,
+          0
+        ],
+        [
+          1000,
+          -695,
+          0
+        ],
+        [
+          1050,
+          -500,
+          0
+        ]
+      ],
+      "start": 0,
+      "end": 28.29
+    },
+    {
+      "beat": 6,
+      "actor": "NPC_Intro_CrewB_SetDresser",
+      "points": [
+        [
+          350,
+          -790,
+          0
+        ],
+        [
+          400,
+          -695,
+          0
+        ],
+        [
+          620,
+          -695,
+          0
+        ],
+        [
+          950,
+          -695,
+          0
+        ],
+        [
+          1300,
+          -500,
+          0
+        ]
+      ],
+      "start": 0,
+      "end": 28.29
+    },
+    {
+      "beat": 6,
+      "actor": "NPC_Intro_CrewC_Lobby",
+      "points": [
+        [
+          -430,
+          -1080,
+          0
+        ],
+        [
+          -430,
+          -790,
+          0
+        ],
+        [
+          350,
+          -790,
+          0
+        ],
+        [
+          400,
+          -695,
+          0
+        ],
+        [
+          620,
+          -695,
+          0
+        ],
+        [
+          900,
+          -695,
+          0
+        ],
+        [
+          900,
+          -350,
+          0
+        ]
+      ],
+      "start": 6,
+      "end": 28.29
+    },
+    {
+      "beat": 7,
+      "actor": "SET_Scene01_Maya_StandIn",
+      "points": [
+        [
+          1050,
+          -500,
+          0
+        ],
+        [
+          1050,
+          50,
+          0
+        ],
+        [
+          1120,
+          220,
+          0
+        ]
+      ],
+      "start": 0,
+      "end": 12.042
+    },
+    {
+      "beat": 8,
+      "actor": "SET_Scene01_Maya_StandIn",
+      "points": [
+        [
+          1050,
+          -500,
+          0
+        ],
+        [
+          1050,
+          -50,
+          0
+        ]
+      ],
+      "start": 0,
+      "end": 8.334
+    },
+    {
+      "beat": 9,
+      "actor": "SET_Scene01_Maya_StandIn",
+      "points": [
+        [
+          1050,
+          -500,
+          0
+        ],
+        [
+          1050,
+          -50,
+          0
+        ]
+      ],
+      "start": 0,
+      "end": 8.117999999999999
+    },
+    {
+      "beat": 11,
+      "actor": "SET_Scene01_Maya_StandIn",
+      "points": [
+        [
+          1120,
+          220,
+          0
+        ],
+        [
+          1050,
+          180,
+          0
+        ],
+        [
+          900,
+          180,
+          0
+        ],
+        [
+          705,
+          180,
+          0
+        ],
+        [
+          705,
+          480,
+          0
+        ],
+        [
+          705,
+          1040,
+          0
+        ],
+        [
+          1000,
+          1040,
+          0
+        ]
+      ],
+      "start": 6,
+      "end": 28
+    },
+    {
+      "beat": 11,
+      "actor": "NPC_Intro_CrewC_Lobby",
+      "points": [
+        [
+          900,
+          -350,
+          0
+        ],
+        [
+          900,
+          180,
+          0
+        ],
+        [
+          705,
+          180,
+          0
+        ],
+        [
+          705,
+          480,
+          0
+        ],
+        [
+          705,
+          1040,
+          0
+        ],
+        [
+          1000,
+          1040,
+          0
+        ],
+        [
+          1000,
+          1250,
+          0
+        ],
+        [
+          1230,
+          1360,
+          0
+        ],
+        [
+          1450,
+          1400,
+          0
+        ]
+      ],
+      "start": 0,
+      "end": 28
+    },
+    {
+      "beat": 13,
+      "actor": "SET_Scene01_Maya_StandIn",
+      "points": [
+        [
+          1000,
+          1040,
+          0
+        ],
+        [
+          1080,
+          1040,
+          0
+        ],
+        [
+          1080,
+          860,
+          0
+        ],
+        [
+          1100,
+          850,
+          0
+        ]
+      ],
+      "start": 0,
+      "end": 8
+    },
+    {
+      "beat": 14,
+      "actor": "SET_Scene01_Maya_StandIn",
+      "points": [
+        [
+          1000,
+          1040,
+          0
+        ],
+        [
+          1080,
+          1040,
+          0
+        ],
+        [
+          1100,
+          850,
+          0
+        ],
+        [
+          1080,
+          1130,
+          0
+        ],
+        [
+          1230,
+          1130,
+          0
+        ]
+      ],
+      "start": 0,
+      "end": 10.66
+    },
+    {
+      "beat": 15,
+      "actor": "SET_Scene01_Maya_StandIn",
+      "points": [
+        [
+          1000,
+          1040,
+          0
+        ],
+        [
+          1080,
+          1040,
+          0
+        ],
+        [
+          1100,
+          850,
+          0
+        ]
+      ],
+      "start": 0,
+      "end": 8.326500000000001
+    },
+    {
+      "beat": 16,
+      "actor": "SET_Scene01_Maya_StandIn",
+      "points": [
+        [
+          1000,
+          1040,
+          0
+        ],
+        [
+          1080,
+          1040,
+          0
+        ],
+        [
+          1100,
+          850,
+          0
+        ]
+      ],
+      "start": 0,
+      "end": 9.028500000000001
+    },
+    {
+      "beat": 19,
+      "actor": "NPC_Intro_CrewA_PropMaster",
+      "points": [
+        [
+          -430,
+          -1280,
+          0
+        ],
+        [
+          -300,
+          -1345,
+          0
+        ],
+        [
+          340,
+          -1360,
+          0
+        ],
+        [
+          400,
+          -695,
+          0
+        ],
+        [
+          620,
+          -695,
+          0
+        ],
+        [
+          1000,
+          -695,
+          0
+        ],
+        [
+          1000,
+          -500,
+          0
+        ],
+        [
+          900,
+          180,
+          0
+        ],
+        [
+          705,
+          180,
+          0
+        ],
+        [
+          705,
+          1040,
+          0
+        ],
+        [
+          1000,
+          1040,
+          0
+        ],
+        [
+          1000,
+          1280,
+          0
+        ]
+      ],
+      "start": 6,
+      "end": 25
+    },
+    {
+      "beat": 19,
+      "actor": "NPC_Intro_CrewB_SetDresser",
+      "points": [
+        [
+          1300,
+          -500,
+          0
+        ],
+        [
+          1050,
+          -500,
+          0
+        ],
+        [
+          1050,
+          180,
+          0
+        ],
+        [
+          705,
+          180,
+          0
+        ],
+        [
+          705,
+          1040,
+          0
+        ],
+        [
+          1000,
+          1040,
+          0
+        ],
+        [
+          1410,
+          1120,
+          0
+        ]
+      ],
+      "start": 0,
+      "end": 18
+    }
+  ],
+  "errors": [],
+  "saved": true
+}

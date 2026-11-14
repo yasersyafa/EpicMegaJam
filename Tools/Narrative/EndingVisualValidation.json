@@ -1,0 +1,28 @@
+{
+  "close_camera": [
+    1230.0,
+    1450.0,
+    122.0
+  ],
+  "head": [
+    1232.802803157201,
+    1228.096600270165,
+    123.73359505654919
+  ],
+  "wide_camera": [
+    1230.0,
+    1450.0,
+    122.0
+  ],
+  "focal": 16.0,
+  "bodies": 4,
+  "shots": [
+    "full_frame",
+    "credits",
+    "reference_photo",
+    "closeup",
+    "empty_foreground",
+    "evidence_call_sheet"
+  ],
+  "same_camera_position": true
+}

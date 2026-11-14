@@ -1,0 +1,128 @@
+{
+  "events": [
+    {
+      "time": 0.33333370089530945,
+      "arrival_stage": 0,
+      "beat": -1,
+      "awaiting_take": false
+    },
+    {
+      "time": 0.7333337068557739,
+      "arrival_stage": 1,
+      "beat": 5,
+      "awaiting_take": false
+    },
+    {
+      "time": 7.589676909148693,
+      "arrival_stage": 1,
+      "beat": 6,
+      "awaiting_take": false
+    },
+    {
+      "time": 35.8909197114408,
+      "arrival_stage": 1,
+      "beat": 6,
+      "awaiting_take": true
+    },
+    {
+      "time": 40.91898550838232,
+      "arrival_stage": 1,
+      "beat": 7,
+      "awaiting_take": false
+    },
+    {
+      "time": 62.013022910803556,
+      "arrival_stage": 1,
+      "beat": 10,
+      "awaiting_take": false
+    },
+    {
+      "time": 92.53823291137815,
+      "arrival_stage": 1,
+      "beat": 11,
+      "awaiting_take": false
+    },
+    {
+      "time": 120.549530711025,
+      "arrival_stage": 1,
+      "beat": 12,
+      "awaiting_take": false
+    },
+    {
+      "time": 135.5985047109425,
+      "arrival_stage": 1,
+      "beat": 12,
+      "awaiting_take": false
+    },
+    {
+      "time": 135.64850521087646,
+      "arrival_stage": 1,
+      "beat": 13,
+      "awaiting_take": false
+    },
+    {
+      "time": 164.39182421192527,
+      "arrival_stage": 1,
+      "beat": 13,
+      "awaiting_take": true
+    },
+    {
+      "time": 169.4251389093697,
+      "arrival_stage": 1,
+      "beat": 14,
+      "awaiting_take": false
+    },
+    {
+      "time": 186.8538566082716,
+      "arrival_stage": 1,
+      "beat": 17,
+      "awaiting_take": false
+    },
+    {
+      "time": 208.1387790106237,
+      "arrival_stage": 1,
+      "beat": 18,
+      "awaiting_take": false
+    },
+    {
+      "time": 220.19303971156478,
+      "arrival_stage": 1,
+      "beat": 18,
+      "awaiting_take": false
+    },
+    {
+      "time": 223.22240130975842,
+      "arrival_stage": 1,
+      "beat": 19,
+      "awaiting_take": false
+    },
+    {
+      "time": 287.5903867073357,
+      "arrival_stage": 1,
+      "beat": 20,
+      "awaiting_take": false
+    },
+    {
+      "time": 367.6334169059992,
+      "arrival_stage": 1,
+      "beat": 21,
+      "awaiting_take": false
+    },
+    {
+      "time": 377.64388190582395,
+      "arrival_stage": 1,
+      "beat": 22,
+      "awaiting_take": false
+    },
+    {
+      "time": 401.6484565064311,
+      "arrival_stage": 1,
+      "beat": 23,
+      "awaiting_take": false
+    }
+  ],
+  "errors": [],
+  "mode": "normal-speed, gameplay callback simulation; character movement uses collision",
+  "ended": true,
+  "duration_seconds": 414.17199999999866
+}

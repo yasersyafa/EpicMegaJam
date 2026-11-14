@@ -1,0 +1,236 @@
+[
+  {
+    "scene": 1,
+    "prop": "Sofa",
+    "slot": "A",
+    "label": "NAR_Marker_Scene01_Sofa_Slot_A",
+    "location": [
+      -405,
+      -147,
+      0
+    ],
+    "yaw": 90,
+    "intended_result": "clear/reference"
+  },
+  {
+    "scene": 1,
+    "prop": "Sofa",
+    "slot": "B",
+    "label": "NAR_Marker_Scene01_Sofa_Slot_B",
+    "location": [
+      -190,
+      -80,
+      0
+    ],
+    "yaw": 90,
+    "intended_result": "obstruction/incorrect composition"
+  },
+  {
+    "scene": 1,
+    "prop": "Sofa",
+    "slot": "C",
+    "label": "NAR_Marker_Scene01_Sofa_Slot_C",
+    "location": [
+      100,
+      100,
+      0
+    ],
+    "yaw": 90,
+    "intended_result": "obstruction/incorrect composition"
+  },
+  {
+    "scene": 1,
+    "prop": "Wardrobe",
+    "slot": "A",
+    "label": "NAR_Marker_Scene01_Wardrobe_Slot_A",
+    "location": [
+      320,
+      -470,
+      0
+    ],
+    "yaw": 90,
+    "intended_result": "clear/reference"
+  },
+  {
+    "scene": 1,
+    "prop": "Wardrobe",
+    "slot": "B",
+    "label": "NAR_Marker_Scene01_Wardrobe_Slot_B",
+    "location": [
+      250,
+      -500,
+      0
+    ],
+    "yaw": 90,
+    "intended_result": "obstruction/incorrect composition"
+  },
+  {
+    "scene": 1,
+    "prop": "Wardrobe",
+    "slot": "C",
+    "label": "NAR_Marker_Scene01_Wardrobe_Slot_C",
+    "location": [
+      300,
+      -500,
+      0
+    ],
+    "yaw": 90,
+    "intended_result": "obstruction/incorrect composition"
+  },
+  {
+    "scene": 2,
+    "prop": "Cabinet",
+    "slot": "A",
+    "label": "NAR_Marker_Scene02_Cabinet_Slot_A",
+    "location": [
+      1300,
+      -100,
+      0
+    ],
+    "yaw": 0,
+    "intended_result": "clear/reference"
+  },
+  {
+    "scene": 2,
+    "prop": "Cabinet",
+    "slot": "B",
+    "label": "NAR_Marker_Scene02_Cabinet_Slot_B",
+    "location": [
+      1120,
+      220,
+      0
+    ],
+    "yaw": 0,
+    "intended_result": "obstruction/incorrect composition"
+  },
+  {
+    "scene": 2,
+    "prop": "Cabinet",
+    "slot": "C",
+    "label": "NAR_Marker_Scene02_Cabinet_Slot_C",
+    "location": [
+      1150,
+      300,
+      0
+    ],
+    "yaw": 0,
+    "intended_result": "obstruction/incorrect composition"
+  },
+  {
+    "scene": 2,
+    "prop": "Lamp",
+    "slot": "A",
+    "label": "NAR_Marker_Scene02_Lamp_Slot_A",
+    "location": [
+      1250,
+      220,
+      0
+    ],
+    "yaw": 0,
+    "intended_result": "clear/reference"
+  },
+  {
+    "scene": 2,
+    "prop": "Lamp",
+    "slot": "B",
+    "label": "NAR_Marker_Scene02_Lamp_Slot_B",
+    "location": [
+      900,
+      -100,
+      0
+    ],
+    "yaw": 0,
+    "intended_result": "obstruction/incorrect composition"
+  },
+  {
+    "scene": 2,
+    "prop": "Lamp",
+    "slot": "C",
+    "label": "NAR_Marker_Scene02_Lamp_Slot_C",
+    "location": [
+      1380,
+      -250,
+      0
+    ],
+    "yaw": 0,
+    "intended_result": "obstruction/incorrect composition"
+  },
+  {
+    "scene": 3,
+    "prop": "Chair",
+    "slot": "A",
+    "label": "NAR_Marker_Scene03_Chair_Slot_A",
+    "location": [
+      1230,
+      980,
+      0
+    ],
+    "yaw": 180,
+    "intended_result": "clear/reference"
+  },
+  {
+    "scene": 3,
+    "prop": "Chair",
+    "slot": "B",
+    "label": "NAR_Marker_Scene03_Chair_Slot_B",
+    "location": [
+      1120,
+      1030,
+      0
+    ],
+    "yaw": 180,
+    "intended_result": "obstruction/incorrect composition"
+  },
+  {
+    "scene": 3,
+    "prop": "Chair",
+    "slot": "C",
+    "label": "NAR_Marker_Scene03_Chair_Slot_C",
+    "location": [
+      1320,
+      1080,
+      0
+    ],
+    "yaw": 180,
+    "intended_result": "obstruction/incorrect composition"
+  },
+  {
+    "scene": 3,
+    "prop": "Lamp",
+    "slot": "A",
+    "label": "NAR_Marker_Scene03_Lamp_Slot_A",
+    "location": [
+      1410,
+      1000,
+      0
+    ],
+    "yaw": 0,
+    "intended_result": "clear/reference"
+  },
+  {
+    "scene": 3,
+    "prop": "Lamp",
+    "slot": "B",
+    "label": "NAR_Marker_Scene03_Lamp_Slot_B",
+    "location": [
+      1320,
+      800,
+      0
+    ],
+    "yaw": 0,
+    "intended_result": "obstruction/incorrect composition"
+  },
+  {
+    "scene": 3,
+    "prop": "Lamp",
+    "slot": "C",
+    "label": "NAR_Marker_Scene03_Lamp_Slot_C",
+    "location": [
+      1000,
+      1250,
+      0
+    ],
+    "yaw": 0,
+    "intended_result": "obstruction/incorrect composition"
+  }
+]

@@ -1,0 +1,104 @@
+{
+  "minimum_pair_distances": [
+    {
+      "beat": 4,
+      "actors": [
+        "SET_Scene01_Maya_StandIn",
+        "NPC_Intro_CrewA_PropMaster"
+      ],
+      "distance": 92.2,
+      "time": 0.0
+    },
+    {
+      "beat": 4,
+      "actors": [
+        "SET_Scene01_Maya_StandIn",
+        "NPC_Intro_CrewB_SetDresser"
+      ],
+      "distance": 210.63,
+      "time": 5.15
+    },
+    {
+      "beat": 4,
+      "actors": [
+        "SET_Scene01_Maya_StandIn",
+        "NPC_Intro_CrewC_Lobby"
+      ],
+      "distance": 277.45,
+      "time": 29.95
+    },
+    {
+      "beat": 4,
+      "actors": [
+        "NPC_Intro_CrewA_PropMaster",
+        "NPC_Intro_CrewB_SetDresser"
+      ],
+      "distance": 322.91,
+      "time": 10.55
+    },
+    {
+      "beat": 4,
+      "actors": [
+        "NPC_Intro_CrewA_PropMaster",
+        "NPC_Intro_CrewC_Lobby"
+      ],
+      "distance": 200.07,
+      "time": 29.95
+    },
+    {
+      "beat": 4,
+      "actors": [
+        "NPC_Intro_CrewB_SetDresser",
+        "NPC_Intro_CrewC_Lobby"
+      ],
+      "distance": 834.3,
+      "time": 13.0
+    },
+    {
+      "beat": 6,
+      "actors": [
+        "SET_Scene01_Maya_StandIn",
+        "NPC_Intro_CrewB_SetDresser"
+      ],
+      "distance": 218.74,
+      "time": 25.2
+    },
+    {
+      "beat": 6,
+      "actors": [
+        "SET_Scene01_Maya_StandIn",
+        "NPC_Intro_CrewC_Lobby"
+      ],
+      "distance": 94.8,
+      "time": 24.5
+    },
+    {
+      "beat": 6,
+      "actors": [
+        "NPC_Intro_CrewB_SetDresser",
+        "NPC_Intro_CrewC_Lobby"
+      ],
+      "distance": 303.1,
+      "time": 24.5
+    },
+    {
+      "beat": 11,
+      "actors": [
+        "SET_Scene01_Maya_StandIn",
+        "NPC_Intro_CrewC_Lobby"
+      ],
+      "distance": 224.07,
+      "time": 5.75
+    },
+    {
+      "beat": 19,
+      "actors": [
+        "NPC_Intro_CrewA_PropMaster",
+        "NPC_Intro_CrewB_SetDresser"
+      ],
+      "distance": 410.03,
+      "time": 24.35
+    }
+  ],
+  "issues": []
+}
