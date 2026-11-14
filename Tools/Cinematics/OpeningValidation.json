@@ -1,0 +1,102 @@
+{
+  "passed": true,
+  "checks": {
+    "caption": true,
+    "midpoint_caption": true,
+    "input_locked_during_opening": true,
+    "title": true,
+    "natural_handoff": true,
+    "objective": true,
+    "space_skip": true
+  },
+  "skip_finished_after_seconds": 15.229,
+  "natural_finish": {
+    "samples": [
+      {
+        "phase": "caption",
+        "time": 3.016582492738962,
+        "active": true,
+        "finished": false,
+        "move_ignored": true,
+        "look_ignored": true,
+        "view_target": "CINE_Opening_Camera_Closeup",
+        "widgets": [
+          {
+            "class": "WBP_OpeningOverlay_C",
+            "in_viewport": true,
+            "caption": "People say a camera captures the truth.",
+            "title_visibility": "<SlateVisibility.HIDDEN: 2>"
+          }
+        ]
+      },
+      {
+        "phase": "midpoint",
+        "time": 13.010608281940222,
+        "active": true,
+        "finished": false,
+        "move_ignored": true,
+        "look_ignored": true,
+        "view_target": "CINE_Opening_Camera_Closeup",
+        "widgets": [
+          {
+            "class": "WBP_OpeningOverlay_C",
+            "in_viewport": true,
+            "caption": "It only captures what someone chooses to show you.",
+            "title_visibility": "<SlateVisibility.HIDDEN: 2>"
+          }
+        ]
+      },
+      {
+        "phase": "title",
+        "time": 27.004685383290052,
+        "active": true,
+        "finished": false,
+        "move_ignored": true,
+        "look_ignored": true,
+        "view_target": "CINE_Opening_Camera_Closeup",
+        "widgets": [
+          {
+            "class": "WBP_OpeningOverlay_C",
+            "in_viewport": true,
+            "caption": " ",
+            "title_visibility": "<SlateVisibility.VISIBLE: 0>"
+          }
+        ]
+      },
+      {
+        "phase": "handoff",
+        "time": 31.011632684618235,
+        "active": false,
+        "finished": true,
+        "move_ignored": false,
+        "look_ignored": false,
+        "view_target": "BP_PlayerCharacter0",
+        "widgets": [
+          {
+            "class": "WBP_Scene01Objective_C",
+            "in_viewport": true
+          }
+        ]
+      }
+    ],
+    "mode": "natural_finish",
+    "errors": []
+  },
+  "skip": {
+    "time": 31.525989212095737,
+    "active": false,
+    "finished": true,
+    "move_ignored": false,
+    "look_ignored": false,
+    "view_target": "BP_PlayerCharacter0",
+    "objective_visible": true,
+    "skip_passed": true,
+    "finished_at_seconds_from_runtime_log": 15.229,
+    "input": "Space key sent to the Standalone preview window"
+  },
+  "limitations": [
+    "Temporary Quinn mannequin/idle pose; final seated Maya, facial animation and VO pending",
+    "Scene 01 handoff/objective only; full ACTION/CUT puzzle is separate work",
+    "PIE validated; packaged Windows build not tested"
+  ]
+}

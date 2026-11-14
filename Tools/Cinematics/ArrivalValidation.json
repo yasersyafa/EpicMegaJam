@@ -1,0 +1,99 @@
+{
+  "samples": [
+    {
+      "t": 0.0,
+      "stage": 0,
+      "text": ""
+    },
+    {
+      "t": 30.399462573230267,
+      "stage": 1,
+      "text": "WASD \u2014 Walk toward the house."
+    },
+    {
+      "t": 35.52620340138674,
+      "stage": 2,
+      "text": "Mouse \u2014 Look around."
+    },
+    {
+      "t": 35.68268308788538,
+      "stage": 3,
+      "text": "Approach the front door. E \u2014 Open."
+    },
+    {
+      "t": 35.75456339865923,
+      "stage": 4,
+      "text": "Tab \u2014 Open Director's Notes."
+    },
+    {
+      "t": 35.8253909945488,
+      "stage": 5,
+      "text": "Go to the living room. The crew is waiting."
+    },
+    {
+      "t": 37.85563737899065,
+      "stage": 6,
+      "text": "CREW A\nMorning, Director. We're almost ready in the front room."
+    },
+    {
+      "t": 42.33500970155001,
+      "stage": 6,
+      "text": "SURYA\nGood. How's the set looking?"
+    },
+    {
+      "t": 45.47348851710558,
+      "stage": 6,
+      "text": "CREW A\nA few pieces still need placing. Thought you'd want the final say."
+    },
+    {
+      "t": 51.08130031824112,
+      "stage": 6,
+      "text": " "
+    },
+    {
+      "t": 54.46529311686754,
+      "stage": 7,
+      "text": "MAYA\nMorning, Mr. Surya."
+    },
+    {
+      "t": 56.962139427661896,
+      "stage": 7,
+      "text": "SURYA\nMorning, Maya. Ready for your first scene?"
+    },
+    {
+      "t": 60.776233214884996,
+      "stage": 7,
+      "text": "MAYA\nAs ready as I'll ever be."
+    },
+    {
+      "t": 64.25882552564144,
+      "stage": 7,
+      "text": "SURYA\nDon't worry about getting everything perfect. We'll work through it."
+    },
+    {
+      "t": 69.14732344821095,
+      "stage": 7,
+      "text": "MAYA\nThat's reassuring. I've been going over the script all morning."
+    },
+    {
+      "t": 74.04763024672866,
+      "stage": 7,
+      "text": "SURYA\nYou'll be fine. Let's take a look at the room."
+    }
+  ],
+  "errors": [],
+  "initial_no_dialogue": true,
+  "outside_spawn": true,
+  "opening_dummy_removed": true,
+  "idle_does_not_progress": true,
+  "door_open": true,
+  "still_no_living_dialogue": true,
+  "crew_case_moves": true,
+  "maya_approached": true,
+  "finished_blank": true,
+  "maya_at_start": true,
+  "movement_enabled": true,
+  "case_placed": true,
+  "notes_updated": true,
+  "dialogue_lines": 9
+}
