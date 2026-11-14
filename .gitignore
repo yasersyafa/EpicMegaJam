@@ -79,3 +79,6 @@ DerivedDataCache/*
 
 # Local editor automation plugin (large, per-machine)
 Plugins/EngineWire/
+
+# Python bytecode from editor tools
+__pycache__/
