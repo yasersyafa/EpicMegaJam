@@ -137,6 +137,8 @@ Setelah pemain menekan E, objek masuk ke Holding State.
 
 ### 3.2 Placement System
 
+> **Update 15 Nov 2026 (v0.3): free placement menggantikan snap points.** Prop boleh diletakkan di permukaan datar mana pun (normal Z ≥ 0.85, tanpa overlap). Ghost hijau berarti valid, merah berarti tidak valid. Evaluasi tidak memakai `CurrentSlotID`. Sebagai gantinya, `BP_PlacementArea` (radius horizontal, diberi `AreaID`) menandai zona yang relevan bagi aturan scene. Beberapa area boleh berbagi `AreaID`, dan prop dianggap berada "di" `AreaID` jika pusat bounds-nya masuk salah satu area tersebut. Implementasi ada di `BP_PlayerCharacter` (`RefreshFreePlacement`, `ValidateFreePlacement`, `TryFreeInteract`, `CancelFreePlacement`). Teks snap di bawah ini adalah desain awal.
+
 Properti hanya dapat diletakkan pada predefined snap points.
 
 Alur:
@@ -829,7 +831,7 @@ E_FlagRuleType
 
 F_Placement
   PropID              : Name
-  SlotID              : Name
+  AreaID              : Name                     // v0.3: BP_PlacementArea.AreaID (was SlotID)
 
 F_FlagRule
   FlagName            : Name
@@ -842,6 +844,7 @@ F_OutcomeRule
   TriggerIfAnyFalse   : Array<Name>              // outcome terpilih jika salah satu flag ini false
   OutcomeSequence     : Soft Object Ref <LevelSequence>
   MayaReaction        : E_MayaReaction
+  PerformanceDialogueIDs : Array<Name>           // v0.3: lines played while the outcome sequence runs
   HintDialogueIDs     : Array<Name>              // [0] samar, [1] eksplisit
   CutDialogueID       : Name
 
@@ -857,6 +860,7 @@ PDA_SceneConfig (Primary Data Asset)
   DirectorNotesText   : Text
   ReferenceImage      : Texture2D                // opsional, dipakai L03
   OpeningSequence     : Soft Object Ref <LevelSequence>
+  HintDelaySeconds    : Float                    // v0.3: delay before the hint once WAITING_FOR_CUT
   IntroDialogueIDs    : Array<Name>
   EarlyCutDialogueID  : Name
   SuccessDialogueIDs  : Array<Name>
@@ -1076,6 +1080,14 @@ Apakah build game jam cukup mendukung satu playthrough, atau perlu Save/Continue
 ---
 
 ## 17. CHANGELOG
+
+**v0.3 (15 Nov 2026)**
+
+- Placement diubah dari snap slot ke free placement, sesuai keputusan tim (§3.2).
+- `F_Placement.SlotID` diganti `AreaID`. Flag rule mengecek apakah prop berada di area (`BP_PlacementArea`), dan zona larangan ditulis sebagai `ForbidAny`.
+- `F_OutcomeRule.PerformanceDialogueIDs` dan `PDA_SceneConfig.HintDelaySeconds` ditambahkan.
+- L01 diimplementasikan dengan area: `L01_Path` (3 lingkaran sepanjang jalur pintu hall → tengah) dan `L01_WallFront` (depan dinding janggal). Detail ada di `Docs/Scene01_TakeSystem.md`.
+- Teks dialog L01: hint 1 diambil dari katalog Team Review v3.0, hint 2 (eksplisit) dari tabel §8, baris CUT/success dari katalog. `L01_CUT_MISSED` adalah baris baru.
 
 **v0.2**
 
