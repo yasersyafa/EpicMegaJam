@@ -20,7 +20,7 @@ Level memakai GameMode override lokal `BP_GameplayTestMode`. Default map proyek 
 | WASD dan mouse | Berjalan dan melihat |
 | E | Memilih atau menempatkan prop. Saat objective final aktif, gunakan interkom dari jarak maksimal 300 cm |
 | RMB | Membatalkan pemilihan prop |
-| F | ACTION saat Setup. CUT saat TakeActive |
+| F | ACTION saat Setup, dari director mark scene aktif. CUT saat TakeActive |
 | Tab | Membuka atau menutup Notes tes |
 | N | Melanjutkan setelah scene selesai |
 | R | Memulai ulang scene aktif dan mengembalikan kedua prop ke slot A |
@@ -32,11 +32,11 @@ Tombol pemilihan scene mengganti objective dan pasangan prop aktif. Pemain tetap
 
 ## Coba loop pertama
 
-1. Biarkan sofa dan wardrobe di slot A, lalu tekan F. HUD menunjukkan masalah blocking. Gerak pemain terkunci, tetapi kamu masih dapat melihat ruangan dan menekan F.
+1. Biarkan sofa dan wardrobe di slot A. Berdiri pada lingkaran kuning `DIRECTOR MARK — SCENE 01`, lalu tekan F. HUD menunjukkan masalah blocking. Gerak pemain terkunci, tetapi kamu masih dapat melihat ruangan dan menekan F.
 2. Tunggu beberapa detik. Take gagal tetap aktif sampai kamu menekan CUT.
 3. Tekan F untuk CUT. Pemain bisa bergerak kembali. Posisi prop dipertahankan.
-4. Pindahkan sofa ke B, lalu tekan F lagi. HUD sekarang menunjukkan masalah komposisi pada prop kedua.
-5. CUT, pindahkan wardrobe ke C, lalu tekan F.
+4. Pindahkan sofa ke B, kembali ke director mark Scene 1, lalu tekan F lagi. HUD sekarang menunjukkan masalah komposisi pada prop kedua.
+5. CUT, pindahkan wardrobe ke C, kembali ke mark, lalu tekan F.
 6. Setelah dua detik, simulator tes menyelesaikan perfect take dan menampilkan AUTO CUT.
 7. Tekan N untuk mengaktifkan Scene 2. Berjalan ke area Kitchen/Hollow Wall.
 
@@ -59,6 +59,8 @@ Setelah Scene 3 selesai, tekan N. Objective berubah menjadi `CALL EVERYONE TO SE
 - Memilih scene yang sudah selesai menampilkan status selesai. Tekan R apabila ingin menguji scene tersebut dari awal.
 - Stop lalu Play kembali memulai sesi baru dari Scene 1. Progres saat ini disimpan dalam sesi bermain.
 - ACTION ditolak ketika masih ada prop yang dipilih. Tempatkan prop atau tekan RMB dahulu.
+- ACTION juga ditolak ketika pemain berada di luar director mark scene aktif. Batas default adalah radius horizontal 100 cm dan selisih ketinggian maksimal 120 cm dari marker lantai, agar pusat capsule pemain tetap diterima. Tidak ada syarat arah pandang.
+- CUT tetap bisa dipakai selama take, termasuk jika pemain berpindah keluar mark melalui debug atau sistem lain.
 
 ## Membaca Blueprint untuk pertama kali
 
@@ -104,6 +106,9 @@ Pilih actor `SYSTEM_GameplayTestManager` melalui Outliner. Details menyediakan r
 - `S1Correct1` dan `S1Correct2` berisi nama SlotID solusi, misalnya `S1_P1_B` dan `S1_P2_C`.
 - `SimulatorEnabled` mengaktifkan penyelesaian take sempurna secara otomatis di arena tes.
 - `SimulatorSeconds` menentukan durasi simulator. Nilai awal adalah 2 detik.
+- `S1DirectorMark`, `S2DirectorMark`, dan `S3DirectorMark` menunjuk marker yang mengizinkan ACTION untuk scene masing-masing.
+- `DirectorMarkRadius` mengatur radius penerimaan dalam cm. Visual lingkaran awal memiliki radius 100 cm. Sesuaikan ukuran visual apabila radius diubah.
+- `DirectorMarkHeightTolerance` membatasi selisih ketinggian pemain terhadap marker. `AtDirectorMark` diperbarui setiap Tick serta diperiksa ulang langsung ketika ACTION diminta.
 
 Konfigurasi ini menguji kondisi berbasis slot. Feedback blocking, pandangan, dan pencahayaan ditampilkan sebagai teks tes. Foto referensi Scene 3 dan penampilan Maya akan membutuhkan pekerjaan presentasi pada tahap integrasi.
 
@@ -114,6 +119,31 @@ Konfigurasi ini menguji kondisi berbasis slot. Feedback blocking, pandangan, dan
 Pada tahap ini, Tick manager hanya mensimulasikan akhir perfect take. Fase SceneComplete menunggu N sebagai pengganti transisi antarscene. Penyambungan Sequencer, reaksi Maya, dialog, perpindahan kru, dan dispatcher presentasi dilakukan setelah ada permintaan integrasi.
 
 ## Validasi
+
+### Functional test director mark yang dijalankan manual
+
+Perubahan director mark dikompilasi dan disimpan. PIE dan functional test untuk perubahan ini belum dijalankan oleh agen.
+
+1. Buka `L_GameplaySystems` dan mulai sesi PIE baru. Klik viewport agar keyboard masuk ke game.
+2. Tetap pada Setup, tanpa memegang prop dan sebelum menyelesaikan scene.
+3. Tekan **F6** sekali. Actor `TEST_DirectorMark_Functional` menjalankan native Unreal FunctionalTest `BP_DirectorMarkFunctionalTest`.
+4. Lihat hasil pada **Output Log** di editor. Cari `Director mark` atau nama kasus yang gagal. Test menyatakan `Succeeded` hanya setelah seluruh kasus lulus.
+5. Untuk mencoba bermain dari awal lagi, Stop lalu Play. Test memindahkan pemain sementara dan memulihkan lokasi, rotasi, scene aktif, counter take, serta konfigurasi simulator ketika selesai.
+
+Test mencakup sepuluh kasus dengan total 100 assertion apabila seluruh kasus mencapai akhir.
+
+- ACTION di luar mark ditolak tanpa menambah TakeID atau TakeCount.
+- ACTION di pusat mark dan tepat pada batas radius diterima.
+- Posisi satu cm di luar radius atau di atas toleransi ketinggian ditolak.
+- Mark scene lain dan referensi mark yang belum diisi ditolak.
+- Memegang prop tetap menghalangi ACTION meskipun pemain berada pada mark.
+- Mark Scene 2 dan Scene 3 mengikuti scene aktif.
+- Dalam setiap kasus yang menerima ACTION, pemain dipindahkan keluar mark sebelum CUT untuk memastikan CUT tetap tersedia.
+- Posisi dan SlotID kedua prop tetap sama setelah setiap kasus.
+
+F6 hanya memulai test ketika ditekan. Mulai PIE biasa tidak menjalankan test secara otomatis. Script validasi lama juga sudah diperbarui agar take yang sedang diuji dimulai dari mark. Script tersebut belum dijalankan ulang setelah perubahan ini.
+
+### Hasil sebelum penambahan director mark
 
 Pengujian dilakukan dalam PIE pada `L_GameplaySystems` di UE 5.6.1.
 

@@ -20,7 +20,13 @@ def check(name,condition):
 
 
 def get(name):return manager.get_editor_property(name)
-def invoke(name,*args):return manager.call_method(name,args)
+def invoke(name,*args):
+    # These checks exercise the take loop. The dedicated FunctionalTest covers
+    # ACTION rejection away from the director mark.
+    if name=='StartTake' or (name=='RequestActionCut' and get('State')==0):
+        mark=get('ActiveDirectorMark')
+        player.set_actor_location(mark.get_actor_location()+unreal.Vector(0,0,88),False,True)
+    return manager.call_method(name,args)
 
 
 def place(scene,index,slot):

@@ -27,7 +27,7 @@ for i in range(150):
         input_nodes.append(node.get_path_name())
 assert len(input_nodes)==8, str(input_nodes)
 unreal.BlueprintEditorLibrary.compile_blueprint(bp)
-for name in ['Intercom','SimulatorEnabled','SimulatorSeconds']+[f'S{s}{kind}{p}' for s in range(1,4) for p in range(1,3) for kind in ['Prop','Start','Correct']]:
+for name in ['Intercom','SimulatorEnabled','SimulatorSeconds','DirectorMarkRadius','DirectorMarkHeightTolerance']+[f'S{s}DirectorMark' for s in range(1,4)]+[f'S{s}{kind}{p}' for s in range(1,4) for p in range(1,3) for kind in ['Prop','Start','Correct']]:
     unreal.BlueprintEditorLibrary.set_blueprint_variable_instance_editable(bp,name,True)
 unreal.BlueprintEditorLibrary.compile_blueprint(bp)
 assets.save_asset(ROOT+'BP_GameplayTestManager')
@@ -94,3 +94,5 @@ assert levels.save_current_level()
 result={'map':PATH,'slots':records,'input_nodes_configured':len(input_nodes),'saved':True}
 with open(os.path.join(unreal.Paths.project_saved_dir(),'GameplaySystemsStaging.json'),'w') as f:json.dump(result,f,indent=2)
 unreal.log('GAMEPLAY_SYSTEMS_STAGED '+str(len(records))+' slots')
+with open(os.path.join(unreal.Paths.project_dir(),'Tools','StageDirectorMarks.py'),encoding='utf-8-sig') as stage:
+    exec(compile(stage.read(),stage.name,'exec'))

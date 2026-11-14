@@ -122,8 +122,11 @@ def start():
                ('StatusText','string','Arrange the props. F starts a take.'),('NotesText','string',''),
                ('Player','object:BP_GameplayPlayer_C','None'),('Controller','object:PlayerController','None'),
                ('ActiveProp1','object:BP_InteractableProp_C','None'),('ActiveProp2','object:BP_InteractableProp_C','None'),
+               ('ActiveDirectorMark','object:Actor','None'),('AtDirectorMark','bool','false'),
+               ('DirectorMarkRadius','double','100.0'),('DirectorMarkHeightTolerance','double','120.0'),
                ('Intercom','object:Actor','None')]
     for scene in range(1,4):
+        variables.append((f'S{scene}DirectorMark','object:Actor','None'))
         for prop in range(1,3):
             variables += [(f'S{scene}Prop{prop}','object:BP_InteractableProp_C','None'),
                           (f'S{scene}Start{prop}','object:Actor','None'),
@@ -132,7 +135,7 @@ def start():
         call('add_variable',path=MANAGER,variableName=name,type=kind,defaultValue=default,category='Gameplay Test')
     # Create all callable functions before building their callers.
     names=['ConfigureScene','EvaluatePuzzle','StartTake','CancelTake','RequestActionCut','CompleteScene',
-           'AdvanceScene','RestartScene','ToggleNotes','TogglePause','InteractIntercom','SelectScene1','SelectScene2','SelectScene3']
+           'AdvanceScene','RestartScene','ToggleNotes','TogglePause','InteractIntercom','SelectScene1','SelectScene2','SelectScene3','RefreshDirectorMark']
     graphs={name:function(name) for name in names}
     graphs['NotifyTakeFinished']=function('NotifyTakeFinished',[dict(name='FinishedTakeID',type='int')])
     graphs['SetHeldProp']=function('SetHeldProp',[dict(name='Prop',type='object:BP_InteractableProp_C')])
@@ -151,12 +154,14 @@ def start():
     call('compile_blueprint',path=MODE);call('save_blueprint',path=MODE)
 
 
-def build_functions(gs):
-    g=gs['ConfigureScene'];previous=g.entry
+def build_configure_scene(g):
+    previous=g.entry
     for scene in range(1,4):
         yes,no=g.branch(g.compare(g.get('SceneIndex'),'EqualEqual_IntInt',scene),previous)
         p=g.set('ActiveProp1',(g.get(f'S{scene}Prop1'),),yes)
         p=g.set('ActiveProp2',(g.get(f'S{scene}Prop2'),),p)
+        p=g.set('ActiveDirectorMark',(g.get(f'S{scene}DirectorMark'),),p)
+        p=g.invoke('RefreshDirectorMark',p)
         objective={1:'SCENE 1 - ARRIVAL\nSofa: clear the walking route (slot B).\nWardrobe: expose the wall (slot C).',
                    2:'SCENE 2 - HOLLOW WALL\nCabinet: clear the inspection mark (slot B).\nLamp: light the sealed doorway (slot C).',
                    3:'SCENE 3 - LAST SCENE\nChair: match the staged reference (slot B).\nLamp: light the reveal (slot C).'}[scene]
@@ -164,9 +169,77 @@ def build_functions(gs):
         done=g.get('Completed'+str(scene))
         d,n=g.branch(done,p)
         g.message('Scene already complete. N continues to the next objective.',g.set('State',2,d))
-        g.message('SETUP - arrange both props, then press F.',g.set('State',0,n))
+        g.message("SETUP - arrange props, then return to this scene's director mark.",g.set('State',0,n))
         previous=no
     g.build()
+
+
+def build_refresh_director_mark(g):
+    previous=g.set('AtDirectorMark','false',g.entry)
+    player=g.get('Player')
+    mark=g.get('ActiveDirectorMark')
+    for ref,target in [('validPlayer',player),('validMark',mark)]:
+        valid=g.fn(ref,'KismetSystemLibrary','IsValid')
+        g.wire(target,valid+'.Object')
+        previous,_=g.branch(valid+'.ReturnValue',previous)
+    player_location=g.fn('playerLocation','Actor','K2_GetActorLocation')
+    g.wire(player,player_location+'.self')
+    mark_location=g.fn('markLocation','Actor','K2_GetActorLocation')
+    g.wire(mark,mark_location+'.self')
+    distance=g.fn('horizontalDistance','KismetMathLibrary','Vector_Distance2D')
+    g.wire(player_location+'.ReturnValue',distance+'.V1')
+    g.wire(mark_location+'.ReturnValue',distance+'.V2')
+    horizontal=g.compare(distance+'.ReturnValue','LessEqual_DoubleDouble',(g.get('DirectorMarkRadius'),))
+    delta=g.fn('delta','KismetMathLibrary','Subtract_VectorVector')
+    g.wire(player_location+'.ReturnValue',delta+'.A')
+    g.wire(mark_location+'.ReturnValue',delta+'.B')
+    split=g.fn('splitDelta','KismetMathLibrary','BreakVector')
+    g.wire(delta+'.ReturnValue',split+'.InVec')
+    height=g.fn('absoluteHeight','KismetMathLibrary','Abs')
+    g.wire(split+'.Z',height+'.A')
+    vertical=g.compare(height+'.ReturnValue','LessEqual_DoubleDouble',(g.get('DirectorMarkHeightTolerance'),))
+    within=g.fn('withinMark','KismetMathLibrary','BooleanAND')
+    g.wire(horizontal,within+'.A');g.wire(vertical,within+'.B')
+    g.set('AtDirectorMark',(within+'.ReturnValue',),previous)
+    g.build()
+
+
+def build_start_take(g):
+    allowed,_=g.branch(g.compare(g.get('State'),'EqualEqual_IntInt',0),g.entry)
+    refreshed=g.invoke('RefreshDirectorMark',allowed)
+    mark=g.get('ActiveDirectorMark')
+    valid=g.fn('markAssigned','KismetSystemLibrary','IsValid')
+    g.wire(mark,valid+'.Object')
+    assigned,missing=g.branch(valid+'.ReturnValue',refreshed)
+    g.message("This scene has no director's mark assigned.",missing)
+    on_mark,outside=g.branch(g.get('AtDirectorMark'),assigned)
+    g.message("Return to the active scene's DIRECTOR MARK before ACTION.",outside)
+    held=g.get('HeldProp',owner='BP_GameplayPlayer_C',target=g.get('Player'))
+    valid=g.fn('heldValid','KismetSystemLibrary','IsValid');g.wire(held,valid+'.Object')
+    reject,begin=g.branch(valid+'.ReturnValue',on_mark)
+    g.message('Place or cancel the held prop before ACTION.',reject)
+    p=g.invoke('EvaluatePuzzle',begin)
+    add=g.fn('nextID','KismetMathLibrary','Add_IntInt',B='1');g.wire(g.get('TakeID'),add+'.A')
+    p=g.set('TakeID',(add+'.ReturnValue',),p)
+    add=g.fn('nextCount','KismetMathLibrary','Add_IntInt',B='1');g.wire(g.get('TakeCount'),add+'.A')
+    p=g.set('TakeCount',(add+'.ReturnValue',),p);p=g.set('State',1,p)
+    pc=g.get('Controller');g.fn('lock','Controller','SetIgnoreMoveInput',p,bNewMoveInput='true');g.wire(pc,'lock.self')
+    movement=g.get('CharacterMovement',owner='Character',target=g.get('Player'))
+    g.fn('stop','MovementComponent','StopMovementImmediately','lock.then');g.wire(movement,'stop.self')
+    now=g.fn('clock','KismetSystemLibrary','GetGameTimeInSeconds')
+    end=g.fn('endTime','KismetMathLibrary','Add_DoubleDouble');g.wire(now+'.ReturnValue',end+'.A');g.wire(g.get('SimulatorSeconds'),end+'.B')
+    p=g.set('Deadline',(end+'.ReturnValue',),'stop.then')
+    perfect,failed=g.branch(g.compare(g.get('Outcome'),'EqualEqual_IntInt',0),p)
+    g.message('ACTION - both conditions met. Test simulator finishes this take.',perfect)
+    path,visibility=g.branch(g.compare(g.get('Outcome'),'EqualEqual_IntInt',1),failed)
+    g.message('TAKE ACTIVE - blocking mismatch. Check first prop. Press F to CUT.',path)
+    g.message('TAKE ACTIVE - composition/light mismatch. Check second prop. Press F to CUT.',visibility)
+    g.build()
+
+
+def build_functions(gs):
+    build_refresh_director_mark(gs['RefreshDirectorMark'])
+    build_configure_scene(gs['ConfigureScene'])
 
     g=gs['EvaluatePuzzle'];previous=g.set('Outcome',0,g.entry)
     for scene in range(1,4):
@@ -180,28 +253,7 @@ def build_functions(gs):
         previous=no
     g.build()
 
-    g=gs['StartTake'];allowed,_=g.branch(g.compare(g.get('State'),'EqualEqual_IntInt',0),g.entry)
-    held=g.get('HeldProp',owner='BP_GameplayPlayer_C',target=g.get('Player'))
-    valid=g.fn('heldValid','KismetSystemLibrary','IsValid');g.wire(held,valid+'.Object')
-    reject,begin=g.branch(valid+'.ReturnValue',allowed)
-    g.message('Place or cancel the held prop before ACTION.',reject)
-    p=g.invoke('EvaluatePuzzle',begin)
-    add=g.fn('nextID','KismetMathLibrary','Add_IntInt',B='1');g.wire(g.get('TakeID'),add+'.A')
-    p=g.set('TakeID',(add+'.ReturnValue',),p)
-    add=g.fn('nextCount','KismetMathLibrary','Add_IntInt',B='1');g.wire(g.get('TakeCount'),add+'.A')
-    p=g.set('TakeCount',(add+'.ReturnValue',),p);p=g.set('State',1,p)
-    pc=g.get('Controller');lock=g.fn('lock','Controller','SetIgnoreMoveInput',p,bNewMoveInput='true');g.wire(pc,'lock.self')
-    movement=g.get('CharacterMovement',owner='Character',target=g.get('Player'))
-    stop=g.fn('stop','MovementComponent','StopMovementImmediately','lock.then');g.wire(movement,'stop.self')
-    now=g.fn('clock','KismetSystemLibrary','GetGameTimeInSeconds')
-    end=g.fn('endTime','KismetMathLibrary','Add_DoubleDouble');g.wire(now+'.ReturnValue',end+'.A');g.wire(g.get('SimulatorSeconds'),end+'.B')
-    p=g.set('Deadline',(end+'.ReturnValue',),'stop.then')
-    perfect,failed=g.branch(g.compare(g.get('Outcome'),'EqualEqual_IntInt',0),p)
-    g.message('ACTION - both conditions met. Test simulator finishes this take.',perfect)
-    path,visibility=g.branch(g.compare(g.get('Outcome'),'EqualEqual_IntInt',1),failed)
-    g.message('TAKE ACTIVE - blocking mismatch. Check first prop. Press F to CUT.',path)
-    g.message('TAKE ACTIVE - composition/light mismatch. Check second prop. Press F to CUT.',visibility)
-    g.build()
+    build_start_take(gs['StartTake'])
 
     g=gs['CancelTake'];p,_=g.branch(g.compare(g.get('State'),'EqualEqual_IntInt',1),g.entry)
     p=g.set('State',0,p)
@@ -298,7 +350,8 @@ def build_events():
     event=g.node('interact','EnhancedInputAction',inputAction='/Game/Game/Input/IA_Interact')
     g.invoke('InteractIntercom',event+'.Started')
     tick=g.node('tick','Event',eventName='ReceiveTick')
-    yes,_=g.branch(g.compare(g.get('State'),'EqualEqual_IntInt',1),'tick.then')
+    refreshed=g.invoke('RefreshDirectorMark','tick.then')
+    yes,_=g.branch(g.compare(g.get('State'),'EqualEqual_IntInt',1),refreshed)
     yes,_=g.branch(g.get('SimulatorEnabled'),yes)
     yes,_=g.branch(g.compare(g.get('Outcome'),'EqualEqual_IntInt',0),yes)
     now=g.fn('now','KismetSystemLibrary','GetGameTimeInSeconds')
@@ -316,10 +369,11 @@ def build_hud():
     g.node('cast','Cast',targetClass=CLASS);g.wire('find.then','cast.execute');g.wire('find.ReturnValue','cast.Object')
     status=g.get('StatusText',owner=CLASS,target='cast.AsBP Gameplay Test Manager')
     draw=g.fn('status','HUD','DrawText','cast.then',ScreenX='32',ScreenY='58',Scale='1.2',TextColor='(R=1,G=1,B=1,A=1)');g.wire(status,'status.Text')
-    draw=g.fn('controls','HUD','DrawText','status.then',Text='WASD move | Mouse look | E pick/place | RMB cancel | F ACTION/CUT\nTab notes | N continue | R restart scene | 1/2/3 select scene | P pause/resume',ScreenX='32',ScreenY='105',Scale='1.0',TextColor='(R=0.8,G=0.9,B=1,A=1)')
+    draw=g.fn('controls','HUD','DrawText','status.then',Text='WASD move | Mouse look | E pick/place | RMB cancel | F ACTION/CUT\nTab notes | N continue | R restart scene | 1/2/3 select scene | P pause/resume | F6 mark tests (fresh PIE)',ScreenX='32',ScreenY='105',Scale='1.0',TextColor='(R=0.8,G=0.9,B=1,A=1)')
     g.node('uiSequence','Sequence');g.wire('controls.then','uiSequence.execute')
+    g.node('statusSequence','Sequence');g.wire('uiSequence.then_0','statusSequence.execute')
     paused=g.get('Paused',owner=CLASS,target='cast.AsBP Gameplay Test Manager')
-    yes,no=g.branch(paused,'uiSequence.then_0')
+    yes,no=g.branch(paused,'statusSequence.then_0')
     g.fn('pauseText','HUD','DrawText',yes,Text='PAUSED - P resumes',ScreenX='32',ScreenY='170',Scale='1.5',TextColor='(R=1,G=0.8,B=0.2,A=1)')
     visible=g.get('NotesVisible',owner=CLASS,target='cast.AsBP Gameplay Test Manager')
     yes,_=g.branch(visible,no)
@@ -345,6 +399,15 @@ def build_hud():
     y=g.fn('promptY','KismetMathLibrary','Multiply_DoubleDouble',B='.63');g.wire('draw.SizeY','promptY.A')
     for ref,message,previous in [('place','[E] PLACE   [RMB] CANCEL',place),('invalid','NO VALID SLOT   [RMB] CANCEL',invalid),('pickup','[E] PICK UP',pickup)]:
         g.fn(ref,'HUD','DrawText',previous,Text=message,Scale='1.2',TextColor='(R=1,G=.7,B=.2,A=1)');g.wire('promptX.ReturnValue',ref+'.ScreenX');g.wire('promptY.ReturnValue',ref+'.ScreenY')
+    state=g.get('State',owner=CLASS,target='cast.AsBP Gameplay Test Manager')
+    setup,_=g.branch(g.compare(state,'EqualEqual_IntInt',0),'statusSequence.then_1')
+    _,unpaused=g.branch(paused,setup)
+    valid=g.fn('markPromptPlayer','KismetSystemLibrary','IsValid');g.wire(player,'markPromptPlayer.Object')
+    ready,_=g.branch('markPromptPlayer.ReturnValue',unpaused)
+    holding,empty=g.branch('validHeld.ReturnValue',ready)
+    on_mark,outside=g.branch(g.get('AtDirectorMark',owner=CLASS,target='cast.AsBP Gameplay Test Manager'),empty)
+    for ref,message,previous in [('markReady','[F] ACTION - director mark ready',on_mark),('markOutside','Return to the active scene director mark for ACTION',outside),('markHolding','Place or cancel the held prop before ACTION',holding)]:
+        g.fn(ref,'HUD','DrawText',previous,Text=message,ScreenX='32',ScreenY='170',Scale='1.1',TextColor='(R=1,G=.8,B=.25,A=1)')
     g.build()
 
 
