@@ -18,7 +18,7 @@ Take flow:
 2. **Opening.** `OpeningSequence` and `IntroDialogueIDs` play.
 3. **Outcome.** The selected `OutcomeSequence` and `PerformanceDialogueIDs` play. A non-perfect outcome sets `AWKWARD`.
 4. **Non-perfect end.** `WAITING_FOR_CUT`. After `HintDelaySeconds` one hint plays (index = `Min(FailCount-1, last)`) and `[F] CUT` shows. Nothing ends the take automatically.
-5. **Perfect end.** `HandlePerfectTake` (once, `bSuccessHandled`): auto CUT → `POST_TAKE` → `SCENE COMPLETE` + `SuccessDialogueIDs` → `FinishPostTake` → gate opens, next config, `SETUP`.
+5. **Perfect end.** `HandlePerfectTake` (once, `bSuccessHandled`): auto CUT → `POST_TAKE` → `SCENE COMPLETE` + `SuccessDialogueIDs` → `FinishPostTake`. If the config has an `InterludeSequence`, it plays first (`TakePhase` 3, cinematic mode, `InterludeDialogueIDs`, F ignored because the state stays `POST_TAKE`); its end runs `ResetTake`. Then `AdvanceScene`: gate opens, next config, `SETUP`.
 6. **Manual CUT.** `TakeID++` → `ResetTake` → CUT line (early cut during the opening or a perfect take, otherwise the outcome's `CutDialogueID`) → `SETUP`.
 
 `ResetTake` is the single reset path. It clears the hint timer and dialogue timer/queue, stops the sequence, restores the view and input, relaxes the crew and puts Maya back at her start point. Sequence-finished callbacks are ignored unless `SequenceTakeID == TakeID`, and hints are ignored unless `HintTakeID == TakeID`.
@@ -77,6 +77,20 @@ Gates (`SceneLevelRefs[...].GateActor`, invisible BlockAll walls hidden by `Open
 
 The director mark is at (1250, -300) in the kitchen. The 27 dialogue rows come from catalog pages 6–7; hint 2 uses the PRD text, and the outcome CUT lines are new.
 
+## Interlude 01 and Transition 07
+
+`Tools/Cinematics/BuildInterludes.py` stages both beats (actors in `Gameplay/Interludes`) and fills the config fields. Run it after the L01 and L02 scripts.
+
+| Beat | When | What |
+|---|---|---|
+| Interlude 01 "Out of Frame" | After the L01 success lines | `LS_Interlude01` (20.5 s): Maya close-up monologue on Ibra's opening set at (1230, 1230) with our own `CINE_IL01_Closeup` and his `CINE_Opening_KeyLight`. Lines `IL01_MAYA_01..05` (catalog p.5). Then first-person, L02 `SETUP` |
+| Transition 07 "A Different Kind of Scene" | First time the player reaches the kitchen doorway in L02 `SETUP` | `TR02_DialogueTrigger` (`BP_DialogueTrigger`, `SceneID` L02, box at (420, -695)) calls `PlayTransition`, which plays `TransitionDialogueIDs` (`TR02_01..07`, catalog p.6) once. Staging: Crew B with a floor lamp, Crew C with a flight case, Maya waiting by the dining table |
+
+- `PDA_SceneConfig` fields: `InterludeSequence`, `InterludeDialogueIDs`, `TransitionDialogueIDs`. An empty `InterludeSequence` skips the interlude.
+- `L02_MayaStart` is now at the dining table (160, -980), so Maya waits there in L02 `SETUP` and after every CUT. `LS_L02_*` still start her in the corridor on frame 0.
+- `PlayTransition` only plays when `CurrentSceneID` matches and the state is `SETUP`. Otherwise the trigger stays armed.
+- `BP_Maya.SetMayaState` skips invalid stand-ins: Ibra's opening destroys `CINE_Opening_Maya_StandIn` at runtime.
+
 ## Menus
 
 | Asset | Role |
@@ -104,6 +118,8 @@ The director mark is at (1250, -300) in the kitchen. The 27 dialogue rows come f
   - main menu renders; CREDITS scrolls; SKIP → menu; PLAY → `SB_GrayBox`
   - TogglePause pauses with the menu shown; a second toggle resumes
 - Director mark: ACTION off the mark stays SETUP (`TakeCount` 0). On the mark it starts TAKE_PLAYING. CUT still works.
+- Interlude: L01 perfect → success lines → `TakePhase` 3, `IL01_MAYA_01..05`, close-up camera → L02 `SETUP`, view back on the player pawn, Maya at `L02_MayaStart`.
+- Transition: entering the kitchen doorway box in L02 `SETUP` sets `bPlayed` and queues `TR02_01..07`.
 - `BP_PlayerCharacter`: pick up sofa → valid ghost → place moves the prop and clears `HeldProp`.
 
 ## Known issues
@@ -115,3 +131,5 @@ The director mark is at (1250, -300) in the kitchen. The 27 dialogue rows come f
 5. L03, the intercom, the ending cinematic and the credits trigger after the ending are not built yet. Director's Notes text from the config is not shown. After L02 the objective is empty until L03 is complete.
 6. Gates are invisible walls. A visible barrier (tape, crate) would read better.
 7. Unfocused PIE can jump game time (noted in the 15 Nov devlog). Click the viewport before timing tests.
+8. Ibra's opening owns the view for the first seconds of PIE. A take started before it ends saves his camera as `SavedViewTarget`, so test takes only after the view is back on the pawn.
+9. Interlude 01 uses Ibra's opening set (the room with the desk), not a new set. The transition crew are static idle poses; no carry animation.

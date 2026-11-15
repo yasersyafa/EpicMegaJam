@@ -25,9 +25,27 @@ maya = ts.take_maya() or ts.spawn(FOLDER, ts.bp_class('/Game/Game/Blueprints/Cha
                                   'MAYA_Take', MAYA_START, yaw=-90)
 maya.set_actor_label('MAYA_Take')
 maya.set_actor_location_and_rotation(unreal.Vector(*MAYA_START), unreal.Rotator(0, -90, 0), False, True)
-maya.set_actor_hidden_in_game(True)  # BP_Maya un-hides itself on the first ACTION
-standins = [x for x in (ts.by_label('MAYA_Scene01'), ts.by_label('SET_Scene01_Maya_StandIn')) if x]
+maya.set_actor_hidden_in_game(True)  # BP_Maya.ReplaceStandIns un-hides it when Ibra's intro ends
+# Ibra's intro cast, swapped out by FilmSceneManager.OnIntroFinished (called from BP_ArrivalDirector).
+# Crew B leaves the set: it ends right behind Maya's inspection point in the wall shot.
+STANDIN_LABELS = ['MAYA_Scene01', 'SET_Scene01_Maya_StandIn', 'PROP_Intro_Maya_Script',
+                  'PROP_Intro_ScriptLine_0', 'PROP_Intro_ScriptLine_1', 'PROP_Intro_ScriptLine_2',
+                  'PROP_Intro_ScriptLine_3', 'NPC_Intro_CrewB_SetDresser', 'CREW_Intro_SetDresser']
+standins = [x for x in (ts.by_label(l) for l in STANDIN_LABELS) if x]
 maya.set_editor_property('StandInsToHide', standins)
+
+# Ibra's crew carries a static wardrobe next to the director mark. The movable L01 wardrobe already
+# stands at the odd wall (PRD start layout), so the duplicate is hidden instead of competing with it.
+dup = ts.by_label('PROP_Scene01_Wardrobe')
+if dup:
+    dup.set_actor_hidden_in_game(True)
+    dup.set_actor_enable_collision(False)
+
+# Ibra's seated-director camera sat at sofa height, so the L01 sofa's back filled half the frame.
+seat_cam = ts.by_label('CINE_Arrival_Director_Seated')
+if seat_cam:
+    seat_cam.set_actor_location_and_rotation(unreal.Vector(-330.0, 120.0, 170.0),
+                                             unreal.Rotator(pitch=-14.0, yaw=-30.0, roll=0.0), False, True)
 
 sofa = ts.prop(FOLDER, 'L01_Prop_Sofa', 'Sofa', 'L01', 'SM_House_Sofa_TwoSeat', (-140.0, 140.0, 0.0), 90.0, 1.1)
 wardrobe = ts.prop(FOLDER, 'L01_Prop_Wardrobe', 'Wardrobe', 'L01', 'SM_House_Cabinet_Tall', (-490.0, -440.0, 0.0), 90.0)
