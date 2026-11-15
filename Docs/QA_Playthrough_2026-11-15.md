@@ -101,7 +101,17 @@ Ini menyentuh BP Ibra (`BP_ArrivalDirector`), jadi perlu disepakati dulu sama Ib
 
 ---
 
-## 5. Prioritas yang disarankan
+## 5. Status perbaikan (15 Nov, sesi siang)
+
+| Temuan | Status | Catatan |
+|---|---|---|
+| Bagian 1: play vs ACTION beda | **FIXED, dites PIE** | Serah-terima di akhir intro Ibra (`FilmSceneManager.OnIntroFinished`). Maya Ibra berhenti di luar sofa L01 lalu jalan ke luar frame dekat pintu hall; `MAYA_Take` muncul di start L01. Kertas naskah, Crew B dan lemari duplikat disembunyikan. Kamera duduk dinaikkan. Ruangan dari director mark sama sebelum ACTION, saat take dan setelah CUT. |
+| B1: dead end setelah L02 | **FIXED, dites PIE** | `EndOfDemo`: "TO BE CONTINUED..." 4 detik → `WBP_Credits` → main menu. F diabaikan (state `CREDITS`). |
+| M1–M9, minor | Belum | Lihat prioritas di bawah. |
+
+Perubahan di BP Ibra (`BP_ArrivalDirector`): dua target `MoveComponentTo` Maya diganti dan satu panggilan `OnIntroFinished` ditambah di akhir `FinishIntroduction`. Tidak ada logika tutorial yang diubah.
+
+## 6. Prioritas yang disarankan
 
 1. **Satukan staging Scene 1** (bagian 1). Perlu koordinasi dengan Ibra.
 2. **Penutup sementara setelah L02**: layar "To be continued" → `WBP_Credits` → main menu, sampai L03 jadi.

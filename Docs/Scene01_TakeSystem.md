@@ -18,7 +18,7 @@ Take flow:
 2. **Opening.** `OpeningSequence` and `IntroDialogueIDs` play.
 3. **Outcome.** The selected `OutcomeSequence` and `PerformanceDialogueIDs` play. A non-perfect outcome sets `AWKWARD`.
 4. **Non-perfect end.** `WAITING_FOR_CUT`. After `HintDelaySeconds` one hint plays (index = `Min(FailCount-1, last)`) and `[F] CUT` shows. Nothing ends the take automatically.
-5. **Perfect end.** `HandlePerfectTake` (once, `bSuccessHandled`): auto CUT → `POST_TAKE` → `SCENE COMPLETE` + `SuccessDialogueIDs` → `FinishPostTake`. If the config has an `InterludeSequence`, it plays first (`TakePhase` 3, cinematic mode, `InterludeDialogueIDs`, F ignored because the state stays `POST_TAKE`); its end runs `ResetTake`. Then `AdvanceScene`: gate opens, next config, `SETUP`.
+5. **Perfect end.** `HandlePerfectTake` (once, `bSuccessHandled`): auto CUT → `POST_TAKE` → `SCENE COMPLETE` + `SuccessDialogueIDs` → `FinishPostTake`. If the config has an `InterludeSequence`, it plays first (`TakePhase` 3, cinematic mode, `InterludeDialogueIDs`, F ignored because the state stays `POST_TAKE`); its end runs `ResetTake`. Then `AdvanceScene`: gate opens, next config, `SETUP`. With no next config (and `bLevel3Complete` still false) `AdvanceScene` calls `EndOfDemo` instead: state `CREDITS` (F ignored), objective cleared, "TO BE CONTINUED..." for 4 s, then `WBP_Credits` (UI-only input, cursor on), which returns to `L_MainMenu`.
 6. **Manual CUT.** `TakeID++` → `ResetTake` → CUT line (early cut during the opening or a perfect take, otherwise the outcome's `CutDialogueID`) → `SETUP`.
 
 `ResetTake` is the single reset path. It clears the hint timer and dialogue timer/queue, stops the sequence, restores the view and input, relaxes the crew and puts Maya back at her start point. Sequence-finished callbacks are ignored unless `SequenceTakeID == TakeID`, and hints are ignored unless `HintTakeID == TakeID`.
@@ -77,6 +77,18 @@ Gates (`SceneLevelRefs[...].GateActor`, invisible BlockAll walls hidden by `Open
 
 The director mark is at (1250, -300) in the kitchen. The 27 dialogue rows come from catalog pages 6–7; hint 2 uses the PRD text, and the outcome CUT lines are new.
 
+## Hand-over from Ibra's intro
+
+Ibra's `BP_ArrivalDirector` (tutorial + crew conversation) and the take system used to stage Scene 1 twice, so the room looked different before and after the first ACTION (QA 15 Nov, section 1). Now one cast and one prop set:
+
+- `StartConversation`: Maya's stand-in stops at (-245, 25), outside the `L01_Prop_Sofa` footprint (it used to stand inside it).
+- `FinishIntroduction`: the stand-in walks to (-232, 285), out of the seated camera's frame next to the hall door, instead of back to the room centre. At the end it calls `FilmSceneManager.OnIntroFinished`.
+- `OnIntroFinished` → `BP_Maya.ResetToStart` + `ReplaceStandIns`: `MAYA_Take` appears at `L01_MayaStart` (hall door) and everything in `StandInsToHide` is hidden: Ibra's Maya, her script props (`PROP_Intro_Maya_Script`, `PROP_Intro_ScriptLine_0..3`) and Crew B (it stood behind Maya's inspection point in the wall shot). `SetMayaState(PERFORMING)` uses the same function.
+- `PROP_Scene01_Wardrobe` (static, carried by Crew A next to the director mark) is hidden. The movable `L01_Prop_Wardrobe` already stands at the odd wall, as the PRD start layout wants.
+- `CINE_Arrival_Director_Seated` moved to (-330, 120, 170), pitch -14, yaw -30, so the L01 sofa no longer fills half the frame.
+
+`BuildL01Takes.py` applies the level side of this (stand-in list, hidden wardrobe, seated camera).
+
 ## Interlude 01 and Transition 07
 
 `Tools/Cinematics/BuildInterludes.py` stages both beats (actors in `Gameplay/Interludes`) and fills the config fields. Run it after the L01 and L02 scripts.
@@ -120,15 +132,17 @@ The director mark is at (1250, -300) in the kitchen. The 27 dialogue rows come f
 - Director mark: ACTION off the mark stays SETUP (`TakeCount` 0). On the mark it starts TAKE_PLAYING. CUT still works.
 - Interlude: L01 perfect → success lines → `TakePhase` 3, `IL01_MAYA_01..05`, close-up camera → L02 `SETUP`, view back on the player pawn, Maya at `L02_MayaStart`.
 - Transition: entering the kitchen doorway box in L02 `SETUP` sets `bPlayed` and queues `TR02_01..07`.
+- Intro hand-over (real input: Space, W, mouse, E, Tab): after stage 8 `MAYA_Take` is visible at the hall door; Ibra's Maya, script props, Crew B and the duplicate wardrobe are hidden. The room from the director mark looks the same before ACTION, during the take and after CUT.
+- End of demo: L02 `FinishPostTake` → `CREDITS` state → `WBP_Credits` → SKIP → `L_MainMenu`.
 - `BP_PlayerCharacter`: pick up sofa → valid ghost → place moves the prop and clears `HeldProp`.
 
 ## Known issues
 
 1. ~~ACTION is not gated~~. Fixed: ACTION needs the L01 director mark (`L01_DirectorMark`, orange disc at (240, -220) on the east side of the living room). F during Ibra's opening/intro is rejected because the player is not on the mark.
 2. Ibra's `WBP_Scene01Objective` tutorial text sits in the same bottom area as `WBP_GameHUD` subtitles and overlaps them.
-3. Ibra's static `PROP_Scene01_Wardrobe` and `CREW_Intro_SetDresser` (near the inspection point) are still in the room. Maya ends right next to that crew member.
+3. ~~Ibra's static `PROP_Scene01_Wardrobe` and `CREW_Intro_SetDresser` are still in the room~~. Fixed by the intro hand-over (see above). Crew A stays next to the director mark on purpose.
 4. `BP_PlacementArea` is used in production but lives under `Gameplay/Testing/`. Move it in the editor when Yaser agrees.
-5. L03, the intercom, the ending cinematic and the credits trigger after the ending are not built yet. Director's Notes text from the config is not shown. After L02 the objective is empty until L03 is complete.
+5. L03, the intercom, the ending cinematic and the credits trigger after the ending are not built yet. Director's Notes text from the config is not shown. Until L03 exists, the L02 success ends the demo through `EndOfDemo` (TO BE CONTINUED → credits → main menu).
 6. Gates are invisible walls. A visible barrier (tape, crate) would read better.
 7. Unfocused PIE can jump game time (noted in the 15 Nov devlog). Click the viewport before timing tests.
 8. Ibra's opening owns the view for the first seconds of PIE. A take started before it ends saves his camera as `SavedViewTarget`, so test takes only after the view is back on the pawn.
