@@ -101,7 +101,17 @@ Ini menyentuh BP Ibra (`BP_ArrivalDirector`), jadi perlu disepakati dulu sama Ib
 
 ---
 
-## 5. Prioritas yang disarankan
+## 5. Status perbaikan (15 Nov, sesi siang)
+
+| Temuan | Status | Catatan |
+|---|---|---|
+| Bagian 1: play vs ACTION beda | **FIXED, dites PIE** | Serah-terima di akhir intro Ibra (`FilmSceneManager.OnIntroFinished`). Maya Ibra berhenti di luar sofa L01 lalu jalan ke luar frame dekat pintu hall; `MAYA_Take` muncul di start L01. Kertas naskah, Crew B dan lemari duplikat disembunyikan. Kamera duduk dinaikkan. Ruangan dari director mark sama sebelum ACTION, saat take dan setelah CUT. |
+| B1: dead end setelah L02 | **FIXED, dites PIE** | `EndOfDemo`: "TO BE CONTINUED..." 4 detik → `WBP_Credits` → main menu. F diabaikan (state `CREDITS`). |
+| M1–M9, minor | Belum | Lihat prioritas di bawah. |
+
+Perubahan di BP Ibra (`BP_ArrivalDirector`): dua target `MoveComponentTo` Maya diganti dan satu panggilan `OnIntroFinished` ditambah di akhir `FinishIntroduction`. Tidak ada logika tutorial yang diubah.
+
+## 6. Prioritas yang disarankan
 
 1. **Satukan staging Scene 1** (bagian 1). Perlu koordinasi dengan Ibra.
 2. **Penutup sementara setelah L02**: layar "To be continued" → `WBP_Credits` → main menu, sampai L03 jadi.
@@ -109,3 +119,35 @@ Ini menyentuh BP Ibra (`BP_ArrivalDirector`), jadi perlu disepakati dulu sama Ib
 4. **Clue dinding** L01 + L02 (decal/mesh tambalan, outline pintu).
 5. **Framing BLOCKED L01** supaya sofa penghalang kelihatan.
 6. Sisanya (minor) kalau waktu cukup.
+
+## 7. Status perbaikan (15 Nov, sesi sore)
+
+Dites di PIE (`SB_GrayBox`) dengan input asli (Space, Tab, F, N, T). Props di-teleport untuk mengecek PERFECT.
+
+| Temuan / permintaan | Status | Catatan |
+|---|---|---|
+| Director's Notes (Tab) masih Scene 1 di Scene 2 | **FIXED, dites** | Clipboard `WBP_DirectorNotes` diisi dari `DA_SceneConfig_L0x` (`DisplayName`, `DirectorNotesText`) lewat `FilmSceneManager.RefreshDirectorNotes` (dipanggil di `ConfigureScene` dan setiap Tab). Overlay teks Ibra tidak dibuka lagi oleh Tab (`BP_ArrivalDirector.HandleNotes` cuma memajukan tutorial stage 4→5). |
+| M2: dua notes sekaligus | **FIXED, dites** | Satu sistem notes: clipboard. |
+| M3: director's mark tidak dijelaskan | **FIXED** | Baris notes "Stand on the orange director's mark, then [F] ACTION" + label lantai `L0x_DirectorMarkLabel`. |
+| M4: Laras tidak dikenalkan | **FIXED, dites** | Notes L01: "Laras (played by Maya)". Speaker 12 baris `DT_Dialogue` jadi "MAYA (as LARAS)". |
+| M6: clue dinding L01/L02 | **FIXED, dites** | L01: tambalan + kusen pintu lama di dinding barat (`Gameplay/Scene01/L01/Clue`), ketutup wardrobe di start (= MISSED_CLUE). L02: garis pintu tersegel + engsel + lubang kunci (`Gameplay/Scene02/L02/Clue`), kebaca jelas di PERFECT saat lampu di reveal zone. |
+| Crew masih di lobby | **FIXED, dites** | `BP_CrewMember.SceneSpots` (SceneID → `CrewSpot_<Scene>_<Role>`), dipindah oleh `FilmSceneManager.StageCrew` di `ConfigureScene`. Posisi di luar frame semua kamera take, di luar jalur Maya dan area prop (PRD §5.5). |
+| Animasi idle/walk error | **FIXED, dites** | `MAYA_Take` pakai `SKM_Quinn_Simple` + `MM_Idle`/`MF_Unarmed_Walk_Fwd` (9 sequence di-remap, yaw −90 untuk arah mesh). Follower Tripo intro disembunyikan, stand-in Manny/Quinn Ibra yang tampil. `TR02_Crew_B/C` pakai Manny. `BP_CrewMember` tetap Tripo (pose IK). |
+| Shortcut testing | **BARU** | `N` = skip ke scene berikut (selesaikan intro, reset take, buka gate, teleport ke mark). `T` = toggle kecepatan ×4. Mati di build Shipping (`IsPackagedForDistribution`). |
+| M1 objective terlalu cepat | **FIXED, dites** | `FilmSceneManager.ApplyObjective`: objective kosong selama intro Ibra, muncul di `OnIntroFinished` (`bIntroDone`). Tanpa `BP_ArrivalDirector` langsung tampil. |
+| M5 framing BLOCKED L01 | **FIXED, dites** | Kamera baru `CINE_L01_Blocked` (over-the-shoulder dari pintu hall, -60, 540) untuk `LS_L01_Blocked`: sofa terlihat memotong jalur Maya. |
+| M7 movable vs dekorasi | **FIXED (notes)** | Notes tiap scene menyebut prop yang bisa dipindah ("Movable: ..."). Tidak ada outline (custom shader = non-goal PRD). |
+| M8 arahan ke L02 | **FIXED, dites** | Objective L02: "go to the kitchen...". Belum ada penunjuk arah di dunia. |
+| Baru: objek gelap di bawah wide shot L01 | **FIXED, dites** | Bukan Surya (pawn sudah hidden), tapi sandaran sofa dekor `PROP_House_Living_Sofa_TwoSeat_01`. `CINE_L01_Wide` dinaikkan ke z 230, pitch -12. |
+| Baru: hint tutorial Ibra tetap jalan kalau intro tidak dimainkan | Info | Hanya kalau prop/pemain di-teleport; `N` menutup intro dengan `FinishIntroduction`. |
+| Clue L01 ketutup sofa dekor | **FIXED, dites** | Clue digeser ke y -490; sofa 3-seat + armchair dekor +120 y, pot tanaman ke (-477, 357). Masih di belakang wardrobe start. |
+| Crew Tripo (`BP_CrewMember`) | Tetap | Pose IK di-tuning untuk Tripo. |
+
+### 7b. Feedback setelah tes (15 Nov, sore)
+
+| Temuan | Status | Catatan |
+|---|---|---|
+| Crew L02 nembus counter dapur | **FIXED** | Spot L02 dipindah ke barat counter (x ≤ 1410). Dicek tanpa interseksi. Juga tidak di jalur mark → lampu. |
+| Standing lamp L02 tidak bisa di-interact | **FIXED, dites** | `SM_House_Lamp_Floor` tidak punya collision yang kena line trace. `BP_StandingLampProp` dapat `InteractBox` (BoxComponent, profile `InteractableProp`, 60×60×172). PIE: `FocusProp` → lampu, E → `HeldProp` = lampu. Penempatan belum dites manual. |
+| Sofa intro menghalangi player | **FIXED** | `BP_ArrivalDirector.InitializeArrival` menyembunyikan `Scene1Sofa` (`PROP_House_Living_Sofa_ThreeSeat_01`) dan mematikan collision-nya. |
+| Crew "mendorong" barang di cutscene awal | **FIXED** | Cabang Crew B (dorong sofa) dan Crew A (bawa wardrobe) di `StartConversation` dihapus. Crew diam di posisi awal; Maya tetap jalan ke kursi. |

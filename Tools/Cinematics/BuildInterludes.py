@@ -19,7 +19,7 @@ importlib.reload(ts)
 
 FOLDER = 'Gameplay/Interludes'
 SEQ_DIR = '/Game/Game/Cinematics/Interludes'
-CREW_ANIM = unreal.load_asset('/Game/Characters/Tripo/Anims/A_Tripo_Crew_Idle')
+CREW_ANIM = unreal.load_asset('/Game/Game/Characters/Crew/Animations/A_Crew_Idle')
 
 maya = ts.take_maya()
 assert maya, 'Run BuildL01Takes.py first: it creates MAYA_Take'
@@ -34,8 +34,8 @@ maya.set_editor_property('StandInsToHide', hide)
 
 # --- Interlude 01: close-up monologue (5 lines, 19 s of subtitles) ---------------------------
 # Same spot and key light as Ibra's opening close-up, but our own camera: his sits too close for
-# a standing Maya. Yaw 0 faces the camera (the Tripo mesh is offset, as on Ibra's stand-in).
-MARK = (1230.0, 1230.0, 0.0)
+# a standing Maya. Story facing +Y places Maya toward the camera after the shared yaw offset.
+MARK = (1230.0, 1230.0, 90.0)
 closeup = ts.camera(FOLDER, 'CINE_IL01_Closeup', (1230.0, 1520.0, 150.0), yaw=-90.0, pitch=-4.0, focal=35.0)
 
 seq = ts.sequence(SEQ_DIR, 'LS_Interlude01', 615)
@@ -49,7 +49,7 @@ ts.save(seq)
 def crew(label, mesh, loc, yaw):
     c = ts.spawn(FOLDER, unreal.SkeletalMeshActor, label, loc, yaw=yaw)
     sk = c.skeletal_mesh_component
-    sk.set_skeletal_mesh_asset(unreal.load_asset('/Game/Characters/Tripo/Crew/' + mesh))
+    sk.set_skeletal_mesh_asset(unreal.load_asset('/Game/Game/Characters/Crew/' + {'SKM_Crew_B':'SK_Crew_Boom','SKM_Crew_Utility':'SK_Crew_Base','SKM_Crew_A':'SK_Crew_Camera'}[mesh]))
     sk.set_editor_property('animation_mode', unreal.AnimationMode.ANIMATION_SINGLE_NODE)
     ad = sk.get_editor_property('animation_data')
     ad.set_editor_property('anim_to_play', CREW_ANIM)
