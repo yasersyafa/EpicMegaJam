@@ -58,7 +58,7 @@ Start layout: sofa across the path at (-140, 140), wardrobe against the odd west
 
 - **Corridor** = the Service passage (x 540..880). **Hollow wall** = `GB_Wall_KitchenServiceE` (y = 400, kitchen side), which hides the secret room.
 - **Maya path:** corridor north end (710, 1300) → service door (705, 400) → hollow wall (1100, 270), facing the wall.
-- **Props:** `SmallCabinet` (start in the corridor at (710, 830)) and `StandingLamp` (`BP_StandingLampProp`, a real point light, start in the far kitchen corner at (1150, -800)).
+- **Props:** `SmallCabinet` (start in the corridor at (710, 830)) and the movable L02 spotlight (the existing `BP_StandingLampProp` puzzle actor, start in the far kitchen corner at (1150, -800)). Its stage-light head and directional beam are attached to that actor, so they follow it into the reveal slot. The old point light is disabled.
 
 | Flag | Rule |
 |---|---|
@@ -66,7 +66,7 @@ Start layout: sofa across the path at (-140, 140), wardrobe against the odd west
 | `bDoorVisible` | ForbidAny `SmallCabinet@L02_HollowWall` |
 | `bClueLit` | RequireAny `StandingLamp@L02_LampReveal`, `StandingLamp@L02_Corridor` |
 
-Outcomes: OBSTRUCTED (`bPathClear`, `bDoorVisible`), DARK (`bClueLit`), PERFECT. Putting the lamp in the corridor is the PRD trap: it lights the wall but blocks the path. To solve, move the cabinet out of the corridor and away from the wall, and put the lamp in the reveal zone at (880, 180).
+Outcomes: OBSTRUCTED (`bPathClear`, `bDoorVisible`), DARK (`bClueLit`), PERFECT. Putting the lamp in the corridor is the PRD trap: it lights the wall but blocks the path. To solve, move the cabinet out of the corridor and away from the wall, and put the lamp in the reveal zone at (1060, 110), left of Laras in the wall shot.
 
 Gates (`SceneLevelRefs[...].GateActor`, invisible BlockAll walls hidden by `OpenSceneGate`):
 

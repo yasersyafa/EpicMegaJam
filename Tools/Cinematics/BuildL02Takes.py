@@ -35,7 +35,8 @@ ts.area(FOLDER, 'L02_Area_Corridor_A', 'L02_Corridor', (710.0, 1020.0, 0.0), 105
 ts.area(FOLDER, 'L02_Area_Corridor_B', 'L02_Corridor', (710.0, 800.0, 0.0), 110.0)
 ts.area(FOLDER, 'L02_Area_Corridor_C', 'L02_Corridor', (708.0, 560.0, 0.0), 110.0)
 ts.area(FOLDER, 'L02_Area_HollowWall', 'L02_HollowWall', (1100.0, 330.0, 0.0), 110.0)
-ts.area(FOLDER, 'L02_Area_LampReveal', 'L02_LampReveal', (880.0, 180.0, 0.0), 100.0)
+# Left of Laras in CINE_L02_Wall (lamp no longer stands between the camera and her), clear of her path.
+ts.area(FOLDER, 'L02_Area_LampReveal', 'L02_LampReveal', (1310.0, -220.0, 0.0), 90.0)
 
 mark = ts.director_mark(FOLDER, 'L02_DirectorMark', (1250.0, -300.0))
 # Service -> secret room doorway stays closed until L02 is complete (SceneLevelRefs[L02].GateActor).
@@ -74,4 +75,5 @@ ts.camera_cuts(seq, WALK_CUTS + [(240, 525, cam_wall)])
 ts.save(seq)
 
 ts.save_level()
+exec(open(unreal.Paths.project_dir() + 'Tools/Cinematics/StageL02SpotlightProp.py').read())
 print('L02 staged. start', start.get_path_name(), '| mark', mark.get_path_name(), '| gate', gate.get_path_name())
