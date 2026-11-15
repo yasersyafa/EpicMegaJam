@@ -1,0 +1,1118 @@
+{
+  "clips": {
+    "Opening": {
+      "sound": "/Game/Game/Isolated/IbraCampaign/Audio/S_VO_Opening",
+      "audio_duration": 13.322458333333334,
+      "cues": [
+        {
+          "id": "P03_01",
+          "speaker": "MAYA",
+          "text": "People say a camera captures the truth.",
+          "start": 0.0,
+          "end": 3.35
+        },
+        {
+          "id": "P03_02",
+          "speaker": "MAYA",
+          "text": "I don't think that's true.",
+          "start": 3.66,
+          "end": 5.81
+        },
+        {
+          "id": "P03_03",
+          "speaker": "MAYA",
+          "text": "It only captures what someone chooses to show you.",
+          "start": 6.18,
+          "end": 9.01
+        },
+        {
+          "id": "P03_04",
+          "speaker": "MAYA",
+          "text": "And I think... that's what makes films so interesting.",
+          "start": 9.32,
+          "end": 12.97
+        }
+      ],
+      "alignment_ratio": 1.0,
+      "source": "Awal bgt masuk game - Maya cutscene.mpeg",
+      "vo": true
+    },
+    "Intro": {
+      "sound": "/Game/Game/Isolated/IbraCampaign/Audio/S_VO_Intro",
+      "audio_duration": 24.032666666666668,
+      "cues": [
+        {
+          "id": "P03_05",
+          "speaker": "CREW A",
+          "text": "Morning, Director. We're almost ready in the front room.",
+          "start": 0.0,
+          "end": 3.07
+        },
+        {
+          "id": "P03_06",
+          "speaker": "SURYA",
+          "text": "Good. How's the set looking?",
+          "start": 3.12,
+          "end": 4.87
+        },
+        {
+          "id": "P03_07",
+          "speaker": "CREW A",
+          "text": "A few pieces still need placing. Thought you'd want the final say.",
+          "start": 4.92,
+          "end": 8.99
+        },
+        {
+          "id": "P03_08",
+          "speaker": "MAYA",
+          "text": "Morning, Mr. Surya.",
+          "start": 9.08,
+          "end": 10.19
+        },
+        {
+          "id": "P03_09",
+          "speaker": "SURYA",
+          "text": "Morning, Maya. Ready for your first scene?",
+          "start": 10.56,
+          "end": 12.94
+        },
+        {
+          "id": "P03_10",
+          "speaker": "MAYA",
+          "text": "As ready as I'll ever be.",
+          "start": 12.98,
+          "end": 14.62
+        },
+        {
+          "id": "P03_11",
+          "speaker": "SURYA",
+          "text": "Don't worry about getting everything perfect. We'll work through it.",
+          "start": 14.66,
+          "end": 17.78
+        },
+        {
+          "id": "P03_12",
+          "speaker": "MAYA",
+          "text": "That's reassuring. I've been going over the script all morning.",
+          "start": 17.82,
+          "end": 21.47
+        },
+        {
+          "id": "P03_13",
+          "speaker": "SURYA",
+          "text": "You'll be fine. Let's take a look at the room.",
+          "start": 21.62,
+          "end": 24.033
+        }
+      ],
+      "alignment_ratio": 0.986,
+      "source": "pre intro.mpeg",
+      "vo": true
+    },
+    "L01_Perfect": {
+      "sound": "/Game/Game/Isolated/IbraCampaign/Audio/S_VO_L01_Perfect",
+      "audio_duration": 12.512666666666666,
+      "cues": [
+        {
+          "id": "P04_01",
+          "speaker": "LARAS (MAYA)",
+          "text": "It's strange being back.",
+          "start": 0.14,
+          "end": 1.65
+        },
+        {
+          "id": "P04_02",
+          "speaker": "LARAS",
+          "text": "I thought I'd remember every corner of this place.",
+          "start": 2.34,
+          "end": 5.09
+        },
+        {
+          "id": "P04_03",
+          "speaker": "LARAS",
+          "text": "Wait...",
+          "start": 5.52,
+          "end": 6.01
+        },
+        {
+          "id": "P04_04",
+          "speaker": "LARAS",
+          "text": "Wasn't there a doorway here?",
+          "start": 6.22,
+          "end": 8.01
+        },
+        {
+          "id": "P05_03",
+          "speaker": "LARAS",
+          "text": "I could've sworn there was a door here.",
+          "start": 8.26,
+          "end": 10.59
+        },
+        {
+          "id": "P05_04",
+          "speaker": "LARAS",
+          "text": "Maybe I'm remembering it wrong.",
+          "start": 10.8,
+          "end": 12.43
+        }
+      ],
+      "alignment_ratio": 0.969,
+      "source": "Scene 02 - The Arrival (Living Room).mpeg",
+      "vo": true
+    },
+    "L01_FailBlocking": {
+      "sound": "/Game/Game/Isolated/IbraCampaign/Audio/S_VO_L01_FailBlocking",
+      "audio_duration": 7.6,
+      "cues": [
+        {
+          "id": "P04_05",
+          "speaker": "MAYA",
+          "text": "Sorry... should I come around this side instead?",
+          "start": 0.0,
+          "end": 3.99
+        },
+        {
+          "id": "P04_06",
+          "speaker": "SURYA",
+          "text": "The blocking's a bit cramped. I should cut and clear some space.",
+          "start": 4.16,
+          "end": 7.55
+        }
+      ],
+      "alignment_ratio": 1.0,
+      "source": "Failure - Sofa Blocking.mpeg",
+      "vo": true
+    },
+    "L01_FailClue": {
+      "sound": "/Game/Game/Isolated/IbraCampaign/Audio/S_VO_L01_FailClue",
+      "audio_duration": 6.269395833333333,
+      "cues": [
+        {
+          "id": "P05_01",
+          "speaker": "MAYA",
+          "text": "I'm not quite sure what I'm meant to notice.",
+          "start": 0.0,
+          "end": 3.13
+        },
+        {
+          "id": "P05_02",
+          "speaker": "SURYA",
+          "text": "The composition isn't helping her find the moment.",
+          "start": 3.48,
+          "end": 6.11
+        }
+      ],
+      "alignment_ratio": 1.0,
+      "source": "Failure - Wardrobe Blocking.mpeg",
+      "vo": true
+    },
+    "L01_Aftermath": {
+      "sound": null,
+      "audio_duration": 16.120370370370367,
+      "cues": [
+        {
+          "id": "P05_05",
+          "speaker": "SURYA",
+          "text": "CUT! Lovely. That felt very natural.",
+          "start": 0.0,
+          "end": 2.532
+        },
+        {
+          "id": "P05_06",
+          "speaker": "MAYA",
+          "text": "Thanks. I wasn't sure if I held that last pause too long.",
+          "start": 2.572,
+          "end": 7.327
+        },
+        {
+          "id": "P05_07",
+          "speaker": "SURYA",
+          "text": "No, it worked. Gave the moment a bit of space.",
+          "start": 7.367,
+          "end": 11.38
+        },
+        {
+          "id": "P05_08",
+          "speaker": "MAYA",
+          "text": "Great. One down, then.",
+          "start": 11.42,
+          "end": 13.73
+        },
+        {
+          "id": "P05_09",
+          "speaker": "SURYA",
+          "text": "One down.",
+          "start": 13.77,
+          "end": 16.12
+        }
+      ],
+      "vo": false
+    },
+    "L01_CrewTransition": {
+      "sound": "/Game/Game/Isolated/IbraCampaign/Audio/S_VO_L01_CrewTransition",
+      "audio_duration": 5.955916666666667,
+      "cues": [
+        {
+          "id": "P05_10",
+          "speaker": "CREW A",
+          "text": "Shall we clear the room?",
+          "start": 0.0,
+          "end": 1.53
+        },
+        {
+          "id": "P05_11",
+          "speaker": "SURYA",
+          "text": "Yes, please. Let's move on to the kitchen.",
+          "start": 1.68,
+          "end": 3.93
+        },
+        {
+          "id": "P05_12",
+          "speaker": "CREW B",
+          "text": "I'll bring the lighting kit through.",
+          "start": 4.18,
+          "end": 5.89
+        }
+      ],
+      "alignment_ratio": 1.0,
+      "source": "Crew Transition.mpeg",
+      "vo": true
+    },
+    "Interlude01": {
+      "sound": "/Game/Game/Isolated/IbraCampaign/Audio/S_VO_Interlude01",
+      "audio_duration": 13.008979166666666,
+      "cues": [
+        {
+          "id": "P05_13",
+          "speaker": "MAYA",
+          "text": "Because when you're watching a film...",
+          "start": 0.0,
+          "end": 2.25
+        },
+        {
+          "id": "P05_14",
+          "speaker": "MAYA",
+          "text": "You're only seeing a small part of what's happening.",
+          "start": 2.64,
+          "end": 5.53
+        },
+        {
+          "id": "P05_15",
+          "speaker": "MAYA",
+          "text": "Everything outside that frame...",
+          "start": 6.04,
+          "end": 8.03
+        },
+        {
+          "id": "P05_16",
+          "speaker": "MAYA",
+          "text": "Well, you just have to imagine it, don't you?",
+          "start": 8.3,
+          "end": 10.71
+        },
+        {
+          "id": "P05_17",
+          "speaker": "MAYA",
+          "text": "It's funny how easily we do that.",
+          "start": 10.84,
+          "end": 12.99
+        }
+      ],
+      "alignment_ratio": 1.0,
+      "source": "Scene 03 — Interlude 01 Out of Frame.mpeg",
+      "vo": true
+    },
+    "KitchenApproach": {
+      "sound": "/Game/Game/Isolated/IbraCampaign/Audio/S_VO_KitchenApproach",
+      "audio_duration": 17.3975625,
+      "cues": [
+        {
+          "id": "P06_01",
+          "speaker": "CREW B",
+          "text": "Careful with that cable.",
+          "start": 0.0,
+          "end": 1.41
+        },
+        {
+          "id": "P06_02",
+          "speaker": "CREW C",
+          "text": "I've got it.",
+          "start": 1.86,
+          "end": 2.59
+        },
+        {
+          "id": "P06_03",
+          "speaker": "MAYA",
+          "text": "This next one's the scene with the floor plan, right?",
+          "start": 2.82,
+          "end": 5.76
+        },
+        {
+          "id": "P06_04",
+          "speaker": "SURYA",
+          "text": "That's right. You're starting to piece things together.",
+          "start": 5.8,
+          "end": 8.54
+        },
+        {
+          "id": "P06_05",
+          "speaker": "MAYA",
+          "text": "Okay. So she's curious, but she's trying not to frighten herself.",
+          "start": 8.58,
+          "end": 13.37
+        },
+        {
+          "id": "P06_06",
+          "speaker": "SURYA",
+          "text": "Exactly. Don't play the fear too early.",
+          "start": 13.68,
+          "end": 16.47
+        },
+        {
+          "id": "P06_07",
+          "speaker": "MAYA",
+          "text": "Got it.",
+          "start": 16.6,
+          "end": 17.31
+        }
+      ],
+      "alignment_ratio": 1.0,
+      "source": "Scene 04 — Transition to Kitchen.mpeg",
+      "vo": true
+    },
+    "L02_Perfect": {
+      "sound": "/Game/Game/Isolated/IbraCampaign/Audio/S_VO_L02_Perfect",
+      "audio_duration": 12.74775,
+      "cues": [
+        {
+          "id": "P06_08",
+          "speaker": "LARAS",
+          "text": "Kitchen... dining room... stairs...",
+          "start": 0.0,
+          "end": 3.27
+        },
+        {
+          "id": "P06_09",
+          "speaker": "LARAS",
+          "text": "That can't be right.",
+          "start": 3.8,
+          "end": 5.05
+        },
+        {
+          "id": "P06_10",
+          "speaker": "LARAS",
+          "text": "If this drawing's accurate...",
+          "start": 5.46,
+          "end": 7.05
+        },
+        {
+          "id": "P06_11",
+          "speaker": "LARAS",
+          "text": "...there should be another room here.",
+          "start": 7.42,
+          "end": 9.39
+        },
+        {
+          "id": "P06_12",
+          "speaker": "LARAS",
+          "text": "Why would someone close it off?",
+          "start": 9.66,
+          "end": 11.39
+        },
+        {
+          "id": "P07_01",
+          "speaker": "LARAS",
+          "text": "Hello?",
+          "start": 11.9,
+          "end": 12.57
+        }
+      ],
+      "alignment_ratio": 1.0,
+      "source": "Scene 05 — The Hollow Wall Kitchen ACTION — Perfect Take.mpeg",
+      "vo": true
+    },
+    "L02_FailBlocking": {
+      "sound": "/Game/Game/Isolated/IbraCampaign/Audio/S_VO_L02_FailBlocking",
+      "audio_duration": 6.269395833333333,
+      "cues": [
+        {
+          "id": "P07_02",
+          "speaker": "MAYA",
+          "text": "Sorry, I can't quite get into position.",
+          "start": 0.0,
+          "end": 2.85
+        },
+        {
+          "id": "P07_03",
+          "speaker": "SURYA",
+          "text": "The cabinet's getting in the way of the shot. Better move it.",
+          "start": 3.12,
+          "end": 6.17
+        }
+      ],
+      "alignment_ratio": 1.0,
+      "source": "Failure A — Cabinet Blocking.mpeg",
+      "vo": true
+    },
+    "L02_FailLight": {
+      "sound": "/Game/Game/Isolated/IbraCampaign/Audio/S_VO_L02_FailLight",
+      "audio_duration": 6.765729166666667,
+      "cues": [
+        {
+          "id": "P07_04",
+          "speaker": "MAYA",
+          "text": "I'm having trouble seeing the detail.",
+          "start": 0.0,
+          "end": 2.17
+        },
+        {
+          "id": "P07_05",
+          "speaker": "SURYA",
+          "text": "The wall's getting lost in shadow. I need to reposition that light.",
+          "start": 2.74,
+          "end": 6.53
+        }
+      ],
+      "alignment_ratio": 1.0,
+      "source": "Failure B — Incorrect Lighting.mpeg",
+      "vo": true
+    },
+    "L02_Aftermath": {
+      "sound": "/Game/Game/Isolated/IbraCampaign/Audio/S_VO_Aftermath",
+      "audio_duration": 19.565729166666667,
+      "cues": [
+        {
+          "id": "P07_06",
+          "speaker": "SURYA",
+          "text": "CUT! Fantastic. That'll work beautifully.",
+          "start": 0.0,
+          "end": 3.25
+        },
+        {
+          "id": "P07_07",
+          "speaker": "MAYA",
+          "text": "That knocking sound caught me off guard.",
+          "start": 3.68,
+          "end": 5.93
+        },
+        {
+          "id": "P07_08",
+          "speaker": "SURYA",
+          "text": "Sorry. We should've given you a warning.",
+          "start": 6.2,
+          "end": 8.58
+        },
+        {
+          "id": "P07_09",
+          "speaker": "MAYA",
+          "text": "No, it's fine. I think it helped.",
+          "start": 8.62,
+          "end": 11.09
+        },
+        {
+          "id": "P07_10",
+          "speaker": "CREW B",
+          "text": "Got a bit of a creaky old building here.",
+          "start": 11.36,
+          "end": 13.78
+        },
+        {
+          "id": "P07_11",
+          "speaker": "MAYA",
+          "text": "Well, that's one way to save on sound effects.",
+          "start": 13.82,
+          "end": 16.63
+        },
+        {
+          "id": "P07_12",
+          "speaker": "SURYA",
+          "text": "Alright. Let's move on before we lose the light.",
+          "start": 16.88,
+          "end": 19.35
+        }
+      ],
+      "alignment_ratio": 0.981,
+      "source": "Perfect Take — Aftermath.mpeg",
+      "vo": true
+    },
+    "ServiceTransition": {
+      "sound": "/Game/Game/Isolated/IbraCampaign/Audio/S_VO_ServiceTransition",
+      "audio_duration": 10.266125,
+      "cues": [
+        {
+          "id": "P07_13",
+          "speaker": "CREW C",
+          "text": "Back room's through here, Director.",
+          "start": 0.54,
+          "end": 1.63
+        },
+        {
+          "id": "P07_14",
+          "speaker": "MAYA",
+          "text": "There's another room?",
+          "start": 1.84,
+          "end": 3.03
+        },
+        {
+          "id": "P07_15",
+          "speaker": "CREW C",
+          "text": "Yeah. Bit tucked away.",
+          "start": 3.16,
+          "end": 4.91
+        },
+        {
+          "id": "P07_16",
+          "speaker": "MAYA",
+          "text": "This building gets stranger the further in you go.",
+          "start": 5.06,
+          "end": 7.99
+        },
+        {
+          "id": "P07_17",
+          "speaker": "SURYA",
+          "text": "Which is rather useful for our film.",
+          "start": 8.06,
+          "end": 10.23
+        }
+      ],
+      "alignment_ratio": 0.893,
+      "source": "Crew Transition — Service Passage.mpeg",
+      "vo": true
+    },
+    "Interlude02": {
+      "sound": "/Game/Game/Isolated/IbraCampaign/Audio/S_VO_Interlude02",
+      "audio_duration": 12.826125,
+      "cues": [
+        {
+          "id": "P08_01",
+          "speaker": "MAYA",
+          "text": "And then there's editing.",
+          "start": 0.0,
+          "end": 1.45
+        },
+        {
+          "id": "P08_02",
+          "speaker": "MAYA",
+          "text": "You can take two completely different moments...",
+          "start": 2.16,
+          "end": 4.36
+        },
+        {
+          "id": "P08_03",
+          "speaker": "MAYA",
+          "text": "Put them together...",
+          "start": 4.36,
+          "end": 6.11
+        },
+        {
+          "id": "P08_04",
+          "speaker": "MAYA",
+          "text": "And suddenly, they tell a story.",
+          "start": 6.24,
+          "end": 8.67
+        },
+        {
+          "id": "P08_05",
+          "speaker": "MAYA",
+          "text": "But that doesn't mean it's what really happened.",
+          "start": 9.12,
+          "end": 11.57
+        },
+        {
+          "id": "P08_06",
+          "speaker": "MAYA",
+          "text": "Does it?",
+          "start": 12.18,
+          "end": 12.81
+        }
+      ],
+      "alignment_ratio": 1.0,
+      "source": "Scene 06 — Interlude 02 The Edit.mpeg",
+      "vo": true
+    },
+    "LastRoomApproach": {
+      "sound": "/Game/Game/Isolated/IbraCampaign/Audio/S_VO_LastRoomApproach",
+      "audio_duration": 15.568979166666667,
+      "cues": [
+        {
+          "id": "P08_07",
+          "speaker": "CREW A",
+          "text": "This is the last set, sir.",
+          "start": 0.0,
+          "end": 1.67
+        },
+        {
+          "id": "P08_08",
+          "speaker": "SURYA",
+          "text": "Good. Let's make it count.",
+          "start": 1.86,
+          "end": 3.55
+        },
+        {
+          "id": "P08_09",
+          "speaker": "MAYA",
+          "text": "So this is where Laras finally finds out what happened?",
+          "start": 3.78,
+          "end": 7.43
+        },
+        {
+          "id": "P08_10",
+          "speaker": "SURYA",
+          "text": "Yes. Everything should come together here.",
+          "start": 7.54,
+          "end": 10.08
+        },
+        {
+          "id": "P08_11",
+          "speaker": "MAYA",
+          "text": "Right.",
+          "start": 10.12,
+          "end": 10.75
+        },
+        {
+          "id": "P08_12",
+          "speaker": "MAYA",
+          "text": "It's a good ending.",
+          "start": 11.04,
+          "end": 12.43
+        },
+        {
+          "id": "P08_13",
+          "speaker": "SURYA",
+          "text": "Let's hope we do it justice.",
+          "start": 12.56,
+          "end": 13.91
+        },
+        {
+          "id": "P08_14",
+          "speaker": "MAYA",
+          "text": "I'll do my best.",
+          "start": 14.32,
+          "end": 15.31
+        }
+      ],
+      "alignment_ratio": 1.0,
+      "source": "Scene 07 — Approach The Last Room.mpeg",
+      "vo": true
+    },
+    "L03_FailChair": {
+      "sound": "/Game/Game/Isolated/IbraCampaign/Audio/S_VO_L03_FailChair",
+      "audio_duration": 6.922458333333333,
+      "cues": [
+        {
+          "id": "P09_01",
+          "speaker": "MAYA",
+          "text": "Sorry, this doesn't quite match the reference.",
+          "start": 0.0,
+          "end": 3.27
+        },
+        {
+          "id": "P09_02",
+          "speaker": "SURYA",
+          "text": "The continuity's off. I should check the chair placement.",
+          "start": 3.6,
+          "end": 6.65
+        }
+      ],
+      "alignment_ratio": 1.0,
+      "source": "Scene 08 — The Last Scene Failure A — Incorrect Chair.mpeg",
+      "vo": true
+    },
+    "L03_FailLight": {
+      "sound": "/Game/Game/Isolated/IbraCampaign/Audio/S_VO_L03_FailLight",
+      "audio_duration": 6.34775,
+      "cues": [
+        {
+          "id": "P09_03",
+          "speaker": "MAYA",
+          "text": "Could we get a little more light here?",
+          "start": 0.0,
+          "end": 2.23
+        },
+        {
+          "id": "P09_04",
+          "speaker": "SURYA",
+          "text": "The reveal needs to read properly. I should adjust the lamp.",
+          "start": 2.5,
+          "end": 6.11
+        }
+      ],
+      "alignment_ratio": 1.0,
+      "source": "Failure B — Incorrect Lighting last.mpeg",
+      "vo": true
+    },
+    "L03_Perfect": {
+      "sound": "/Game/Game/Isolated/IbraCampaign/Audio/S_VO_L03_Perfect",
+      "audio_duration": 9.482458333333334,
+      "cues": [
+        {
+          "id": "P09_05",
+          "speaker": "LARAS",
+          "text": "So this is where it leads.",
+          "start": 0.0,
+          "end": 1.97
+        },
+        {
+          "id": "P09_06",
+          "speaker": "LARAS",
+          "text": "This room...",
+          "start": 2.5,
+          "end": 3.69
+        },
+        {
+          "id": "P09_07",
+          "speaker": "LARAS",
+          "text": "It's exactly the same.",
+          "start": 4.2,
+          "end": 5.75
+        },
+        {
+          "id": "P09_08",
+          "speaker": "LARAS",
+          "text": "Someone was here.",
+          "start": 6.08,
+          "end": 7.49
+        },
+        {
+          "id": "P09_09",
+          "speaker": "LARAS",
+          "text": "What happened to them?",
+          "start": 8.26,
+          "end": 9.482
+        }
+      ],
+      "alignment_ratio": 1.0,
+      "source": "ACTION — Perfect Take last.mpeg",
+      "vo": true
+    },
+    "L03_Aftermath": {
+      "sound": null,
+      "audio_duration": 15.655555555555555,
+      "cues": [
+        {
+          "id": "P10_01",
+          "speaker": "SURYA",
+          "text": "CUT! Beautiful. That's our last scene.",
+          "start": 0.0,
+          "end": 2.532
+        },
+        {
+          "id": "P10_02",
+          "speaker": "MAYA",
+          "text": "Really? We're finished?",
+          "start": 2.572,
+          "end": 4.882
+        },
+        {
+          "id": "P10_03",
+          "speaker": "SURYA",
+          "text": "Nearly. Just a final pickup.",
+          "start": 4.922,
+          "end": 7.232
+        },
+        {
+          "id": "P10_04",
+          "speaker": "MAYA",
+          "text": "What do you need?",
+          "start": 7.272,
+          "end": 9.582
+        },
+        {
+          "id": "P10_05",
+          "speaker": "SURYA",
+          "text": "Something simple. One final shot to close the film.",
+          "start": 9.622,
+          "end": 13.266
+        },
+        {
+          "id": "P10_06",
+          "speaker": "MAYA",
+          "text": "Of course.",
+          "start": 13.306,
+          "end": 15.656
+        }
+      ],
+      "vo": false
+    },
+    "Interlude03": {
+      "sound": "/Game/Game/Isolated/IbraCampaign/Audio/S_VO_Interlude03",
+      "audio_duration": 12.826125,
+      "cues": [
+        {
+          "id": "P10_07",
+          "speaker": "MAYA",
+          "text": "I suppose that's why endings matter so much.",
+          "start": 0.0,
+          "end": 3.15
+        },
+        {
+          "id": "P10_08",
+          "speaker": "MAYA",
+          "text": "They make you look at everything that came before...",
+          "start": 3.62,
+          "end": 6.19
+        },
+        {
+          "id": "P10_09",
+          "speaker": "MAYA",
+          "text": "...a little differently.",
+          "start": 6.8,
+          "end": 7.93
+        },
+        {
+          "id": "P10_10",
+          "speaker": "MAYA",
+          "text": "Sometimes all it takes is one last shot.",
+          "start": 9.06,
+          "end": 11.59
+        },
+        {
+          "id": "P10_11",
+          "speaker": "MAYA",
+          "text": "Just one.",
+          "start": 11.96,
+          "end": 12.75
+        }
+      ],
+      "alignment_ratio": 1.0,
+      "source": "Scene 09 — Interlude 03 The Ending.mpeg",
+      "vo": true
+    },
+    "FinalPickup": {
+      "sound": "/Game/Game/Isolated/IbraCampaign/Audio/S_VO_FinalPickup",
+      "audio_duration": 24.9208125,
+      "cues": [
+        {
+          "id": "P10_12",
+          "speaker": "SURYA",
+          "text": "Everyone, back on set, please. One last pickup.",
+          "start": 0.0,
+          "end": 2.85
+        },
+        {
+          "id": "P10_13",
+          "speaker": "CREW A",
+          "text": "Copy that.",
+          "start": 3.24,
+          "end": 4.11
+        },
+        {
+          "id": "P10_14",
+          "speaker": "CREW B",
+          "text": "All set, Director.",
+          "start": 4.16,
+          "end": 5.33
+        },
+        {
+          "id": "P10_15",
+          "speaker": "SURYA",
+          "text": "Thank you, everyone. Nearly done.",
+          "start": 5.64,
+          "end": 7.91
+        },
+        {
+          "id": "P10_16",
+          "speaker": "MAYA",
+          "text": "Can I ask a favour?",
+          "start": 8.0,
+          "end": 8.99
+        },
+        {
+          "id": "P10_17",
+          "speaker": "SURYA",
+          "text": "Go on.",
+          "start": 9.5,
+          "end": 10.1
+        },
+        {
+          "id": "P10_18",
+          "speaker": "MAYA",
+          "text": "Could we leave the camera running for a moment? I'd like to try something for the ending.",
+          "start": 10.14,
+          "end": 14.69
+        },
+        {
+          "id": "P11_01",
+          "speaker": "SURYA",
+          "text": "An improvisation?",
+          "start": 14.88,
+          "end": 15.96
+        },
+        {
+          "id": "P11_02",
+          "speaker": "MAYA",
+          "text": "Something like that.",
+          "start": 16.0,
+          "end": 17.25
+        },
+        {
+          "id": "P11_03",
+          "speaker": "SURYA",
+          "text": "Alright. Let's give her a moment.",
+          "start": 17.96,
+          "end": 19.08
+        },
+        {
+          "id": "P11_04",
+          "speaker": "CREW C",
+          "text": "Camera ready.",
+          "start": 19.12,
+          "end": 20.01
+        },
+        {
+          "id": "P11_05",
+          "speaker": "SURYA",
+          "text": "And... action.",
+          "start": 20.56,
+          "end": 21.85
+        },
+        {
+          "id": "P11_06",
+          "speaker": "MAYA",
+          "text": "Okay.",
+          "start": 22.0,
+          "end": 22.67
+        },
+        {
+          "id": "P11_07",
+          "speaker": "MAYA",
+          "text": "I think I'm ready.",
+          "start": 23.4,
+          "end": 24.77
+        }
+      ],
+      "alignment_ratio": 0.952,
+      "source": "Scene 10 - Final Pickup.mpeg",
+      "vo": true
+    },
+    "Confession": {
+      "sound": "/Game/Game/Isolated/IbraCampaign/Audio/S_VO_Confession",
+      "audio_duration": 26.514291666666665,
+      "cues": [
+        {
+          "id": "P11_08",
+          "speaker": "MAYA",
+          "text": "There's something I haven't told you.",
+          "start": 0.0,
+          "end": 2.27
+        },
+        {
+          "id": "P11_09",
+          "speaker": "MAYA",
+          "text": "The woman who died here...",
+          "start": 3.12,
+          "end": 5.09
+        },
+        {
+          "id": "P11_10",
+          "speaker": "MAYA",
+          "text": "Her name was Evelyn.",
+          "start": 5.62,
+          "end": 6.89
+        },
+        {
+          "id": "P11_11",
+          "speaker": "MAYA",
+          "text": "She was my sister.",
+          "start": 7.48,
+          "end": 8.83
+        },
+        {
+          "id": "P11_12",
+          "speaker": "MAYA",
+          "text": "They said it was an accident.",
+          "start": 9.72,
+          "end": 11.23
+        },
+        {
+          "id": "P11_13",
+          "speaker": "MAYA",
+          "text": "But there were four people in this house who knew what happened.",
+          "start": 11.68,
+          "end": 14.85
+        },
+        {
+          "id": "P11_14",
+          "speaker": "MAYA",
+          "text": "They made a film out of it.",
+          "start": 15.28,
+          "end": 16.83
+        },
+        {
+          "id": "P11_15",
+          "speaker": "MAYA",
+          "text": "Then they made sure nobody would ever see it.",
+          "start": 17.12,
+          "end": 19.75
+        },
+        {
+          "id": "P11_16",
+          "speaker": "MAYA",
+          "text": "I thought I wanted them to tell the truth.",
+          "start": 20.24,
+          "end": 22.83
+        },
+        {
+          "id": "P11_17",
+          "speaker": "MAYA",
+          "text": "I thought that would be enough.",
+          "start": 23.32,
+          "end": 24.75
+        },
+        {
+          "id": "P12_01",
+          "speaker": "MAYA",
+          "text": "It wasn't.",
+          "start": 25.4,
+          "end": 26.43
+        }
+      ],
+      "alignment_ratio": 1.0,
+      "source": "Scene 11 - Final Confession.mpeg",
+      "vo": true
+    },
+    "Reveal": {
+      "sound": "/Game/Game/Isolated/IbraCampaign/Audio/S_VO_Reveal",
+      "audio_duration": 7.392666666666667,
+      "cues": [
+        {
+          "id": "P12_02",
+          "speaker": "MAYA",
+          "text": "There's one more thing.",
+          "start": 0.0,
+          "end": 1.75
+        },
+        {
+          "id": "P12_03",
+          "speaker": "MAYA",
+          "text": "Remember what I said about the frame?",
+          "start": 2.38,
+          "end": 4.19
+        },
+        {
+          "id": "P12_04",
+          "speaker": "MAYA",
+          "text": "Now you've seen everything.",
+          "start": 5.4,
+          "end": 7.23
+        }
+      ],
+      "alignment_ratio": 1.0,
+      "source": "Final Reveal — The Full Frame.mpeg",
+      "vo": true
+    }
+  },
+  "missing_vo": [
+    "L01_Aftermath",
+    "L03_Aftermath"
+  ],
+  "editorial_notes": [
+    "The sofa failure recording contains a spoken CUT. Its take audio is trimmed at 7.6 s; the remaining CUT is a separate player-triggered cue.",
+    "The supplied Aftermath recording belongs to Scene 2. Scene 1 and 3 aftermaths use canonical subtitles and no substitute/generated voice.",
+    "ASR is used only for timing. Names and subtitle wording come from the team-review dialogue catalog. Intro contains an ASR name discrepancy requiring listening review."
+  ],
+  "cut_sofa": {
+    "wav": "SourceArt/Isolated/IbraCampaign/VO/S_VO_CutSofa.wav",
+    "asset": "/Game/Game/Isolated/IbraCampaign/Audio/S_VO_CutSofa"
+  }
+}
