@@ -20,19 +20,19 @@ try:
   mesh=run('SK_Crew_'+n+'.fbx',{'Utility':'SK_Crew_Base','A':'SK_Crew_Camera','B':'SK_Crew_Boom'}[n],ui)
   if not skeleton:skeleton=mesh.get_editor_property('skeleton')
   assert mesh.get_editor_property('skeleton')==skeleton
-  materials=mesh.get_editor_property('materials');slot=materials[0];slot.material_interface=unreal.load_asset('/Game/Characters/Tripo/Crew/MI_Crew_'+n);materials[0]=slot;mesh.set_editor_property('materials',materials)
-  unreal.EditorAssetLibrary.save_loaded_asset(mesh);print('CREW MESH',n,mesh.get_bounds())
+  materials=mesh.get_editor_property('materials');slot=materials[0];slot.set_editor_property('material_interface',unreal.load_asset('/Game/Characters/Tripo/Crew/MI_Crew_'+n));materials[0]=slot;mesh.set_editor_property('materials',materials)
+  unreal.EditorAssetLibrary.save_loaded_asset(mesh, False);print('CREW MESH',n,mesh.get_bounds())
  ref=skeleton.get_reference_pose().get_bone_pose('root',unreal.AnimPoseSpaces.LOCAL)
  for n in ['Idle','Walk','Focused']:
   ui=unreal.FbxImportUI();ui.automated_import_should_detect_type=False;ui.mesh_type_to_import=unreal.FBXImportType.FBXIT_ANIMATION;ui.import_mesh=False;ui.import_animations=True;ui.import_materials=False;ui.import_textures=False;ui.skeleton=skeleton
   d=ui.anim_sequence_import_data;d.convert_scene=True;d.convert_scene_unit=True;d.set_editor_property('use_default_sample_rate',False);d.set_editor_property('custom_sample_rate',30)
   a=run('A_Crew_'+n+'.fbx','A_Crew_'+n,ui);a.get_editor_property('controller').set_bone_track_keys('root',[ref.translation],[ref.rotation],[ref.scale3d]);a.set_editor_property('enable_root_motion',False)
-  unreal.EditorAssetLibrary.save_loaded_asset(a);print('CREW ANIM',n)
+  unreal.EditorAssetLibrary.save_loaded_asset(a, False);print('CREW ANIM',n)
  parts=[];names=skeleton.get_reference_pose().get_bone_names()
  for i,bone in enumerate(skeleton.get_editor_property('bone_tree')):
   mode=unreal.BoneTranslationRetargetingMode.ANIMATION if str(names[i])=='root' else unreal.BoneTranslationRetargetingMode.ANIMATION_SCALED if str(names[i])=='pelvis' else unreal.BoneTranslationRetargetingMode.SKELETON
   bone.set_editor_property('translation_retargeting_mode',mode);parts.append(bone.export_text())
  payload={'path':skeleton.get_path_name(),'property':'BoneTree','value':'('+','.join(parts)+')'}
  (ROOT/'Saved/CharacterPolish/crew_bone_tree.json').write_text(json.dumps(payload))
- unreal.EditorAssetLibrary.save_loaded_asset(skeleton)
+ unreal.EditorAssetLibrary.save_loaded_asset(skeleton, False)
 finally:unreal.SystemLibrary.execute_console_command(None,'Interchange.FeatureFlags.Import.FBX '+str(old))

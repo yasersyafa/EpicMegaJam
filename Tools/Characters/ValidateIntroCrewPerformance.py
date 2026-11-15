@@ -26,7 +26,7 @@ for data in unreal.AssetRegistryHelpers.get_asset_registry().get_assets_by_path(
       anim=section.get_editor_property('params').animation
       assert anim and anim.get_editor_property('skeleton')==mesh.get_editor_property('skeleton'),(seq.get_name(),actor.get_name(),anim,'skeleton mismatch')
       r['binding_checks'].append({'sequence':seq.get_name(),'actor':actor.get_name(),'animation':anim.get_name(),'passed':True})
-for folder,meshes,animations in [('/Game/Game/Characters/Maya/',['SK_Maya'],['ReadScript','WalkWithScript']),('/Game/Game/Characters/Crew/',['SK_Crew_Camera','SK_Crew_Boom','SK_Crew_Base'],['Idle','Walk','Focused'])]:
+for folder,meshes,animations in [('/Game/Game/Characters/Maya/',['SK_Maya'],['ReadScript','WalkWithScript','Confession','TurnLeft','TurnRight']),('/Game/Game/Characters/Crew/',['SK_Crew_Camera','SK_Crew_Boom','SK_Crew_Base'],['Idle','Walk','Focused'])]:
  for mesh_name in meshes:
   mesh=unreal.load_asset(folder+mesh_name);options=unreal.AnimPoseEvaluationOptions();options.optional_skeletal_mesh=mesh
   for name in animations:
@@ -67,12 +67,15 @@ def tick(dt):
     assert root.scale3d.distance(unreal.Vector(1,1,1))<.01,(a.get_actor_label(),'live nonunit root')
     h=c.get_bone_transform('head',unreal.RelativeTransformSpace.RTS_COMPONENT).translation
     f=c.get_bone_transform('foot_l',unreal.RelativeTransformSpace.RTS_COMPONENT).translation
+    assert c.get_material(0) is not None,(a.get_actor_label(),'missing material')
     assert 105<h.z<200 and -30<f.z<75,(a.get_actor_label(),'live deformation',h,f)
     st['samples']+=1
   def shot(name):unreal.SystemLibrary.execute_console_command(w,'Shot filename="'+str(OUT/(name+'.png'))+'" -nosuffix',None)
   if st['step']==0:
    # The opening was playing before PIE; allow a rendered shot before leaving it.
    if now<2:return
+   assert all(by_label[n].get_editor_property('hidden') for n in ['Crew_Camera','Crew_Boom','Crew_Gaffer','Crew_Script','NPC_Intro_CrewC_Lobby']), 'take cast visible before intro handoff'
+   r['runtime_checks'].append({'check':'no_take_cast_during_tutorial','passed':True})
    shot('opening');st['step']=1;st['wait']=now+1
   elif st['step']==1 and now>st['wait']:
    opening=next(a for a in actors if a.get_class().get_name()=='BP_OpeningDirector_C');opening.call_method('FinishOpening')
@@ -95,7 +98,10 @@ def tick(dt):
   elif st['step']==5 and now>st['wait']:
    for label in ['Crew_Camera','Crew_Boom','Crew_Gaffer','Crew_Script']:
     assert by_label[label].get_editor_property('bFocused')
+    assert not by_label[label].get_editor_property('hidden')
+    assert by_label[label].get_component_by_class(unreal.SkeletalMeshComponent).get_material(0) is not None
     by_label[label].call_method('SetCrewFocus',args=(False,))
+   assert all(by_label[n].get_editor_property('hidden') for n in ['NPC_Intro_CrewA_PropMaster','NPC_Intro_CrewB_SetDresser','NPC_Intro_CrewC_Lobby']), 'intro extras survived handoff'
    r['runtime_checks'].append({'check':'four_crew_focus_relax_transitions','passed':True})
    manager.call_method('PlaySequenceAsset',args=(unreal.load_asset('/Game/Game/Cinematics/Interludes/LS_Interlude01'),))
    st['wait']=now+5;st['step']=6

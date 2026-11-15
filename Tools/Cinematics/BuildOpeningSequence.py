@@ -25,7 +25,7 @@ t=b.add_track(unreal.MovieScene3DTransformTrack);sec=t.add_section();sec.set_ran
 for ch,v in zip(sec.get_all_channels(),[1230.,1450.,122.,0.,0.,-90.,1.,1.,1.]):ch.set_default(v)
 cut=seq.add_track(unreal.MovieSceneCameraCutTrack);cs=cut.add_section();cs.set_range(0,900);bid=unreal.MovieSceneObjectBindingID();bid.set_editor_property('guid',b.get_id());cs.set_camera_binding_id(bid)
 pb=seq.add_possessable(proxy);pb.set_display_name('Maya / Tripo performance')
-track=pb.add_track(unreal.MovieSceneSkeletalAnimationTrack);asec=track.add_section();asec.set_range(0,900);params=asec.get_editor_property('params');params.set_editor_property('animation',unreal.load_asset('/Game/Game/Characters/Maya/Animations/A_Maya_Waiting'));asec.set_editor_property('params',params)
+track=pb.add_track(unreal.MovieSceneSkeletalAnimationTrack);asec=track.add_section();asec.set_range(0,900);params=asec.get_editor_property('params');params.set_editor_property('animation',unreal.load_asset('/Game/Game/Characters/Maya/Animations/A_Maya_Confession'));asec.set_editor_property('params',params)
 fade=seq.add_track(unreal.MovieSceneFadeTrack);fs=fade.add_section();fs.set_range(0,900);channel=fs.get_all_channels()[0]
 for frame,value in [(0,1.),(30,1.),(60,0.),(720,0.),(750,1.),(899,1.)]:channel.add_key(unreal.FrameNumber(frame),value,interpolation=unreal.MovieSceneKeyInterpolation.LINEAR)
 fs.set_completion_mode(unreal.MovieSceneCompletionMode.RESTORE_STATE)
