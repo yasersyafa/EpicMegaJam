@@ -5,10 +5,15 @@ Actors are reused by label so references stored on FilmSceneManager survive re-r
 import unreal
 
 FPS = 30
-_A = '/Game/Characters/Tripo/Anims/'
+# Maya's mesh and all take/interlude animations share the isolated, consistent bind pose.
+_A = '/Game/Game/Characters/Maya/Animations/A_Maya_'
 ANIM = {k: unreal.load_asset(_A + v) for k, v in {
-    'walk': 'A_Tripo_Walk', 'look': 'A_Tripo_LookAround', 'wait': 'A_Tripo_Wait',
-    'idle': 'A_Tripo_Idle', 'agree': 'A_Tripo_Agree'}.items()}
+    'walk': 'Walk', 'look': 'LookAround', 'wait': 'Waiting', 'idle': 'Idle',
+    'agree': 'LookAtDirector', 'director': 'LookAtDirector', 'hesitate': 'Hesitate',
+    'inspect': 'Inspect', 'surprised': 'Surprised', 'turn': 'Turn'}.items()}
+assert all(ANIM.values()), 'Import the Maya performance package before staging cinematics'
+# Mesh forward is +Y; convert story facing to actor yaw.
+MAYA_YAW_OFFSET = -90.0
 PROP_MESHES = '/Game/Game/Art/Environment/House/Meshes/Props/'
 
 subsys = unreal.get_editor_subsystem(unreal.EditorActorSubsystem)
@@ -126,13 +131,17 @@ def _keep(section):
 
 def maya_track(seq, maya, frames, keys, anims):
     """keys: [(frame, (x, y, yaw))]; anims: [(start, end, anim_key)]"""
+    mesh = maya.get_component_by_class(unreal.SkeletalMeshComponent).get_editor_property('skeletal_mesh_asset')
+    skeleton = mesh.get_editor_property('skeleton')
+    for _, _, key in anims:
+        assert ANIM[key].get_editor_property('skeleton') == skeleton, 'Maya animation/bind skeleton mismatch: ' + key
     b = seq.add_possessable(maya)
     s = b.add_track(unreal.MovieScene3DTransformTrack).add_section()
     s.set_range(0, frames)
     _keep(s)
     ch = s.get_all_channels()
     for f, (x, y, yaw) in keys:
-        for i, v in ((0, x), (1, y), (2, 0.0), (3, 0.0), (4, 0.0), (5, yaw), (6, 1.0), (7, 1.0), (8, 1.0)):
+        for i, v in ((0, x), (1, y), (2, 0.0), (3, 0.0), (4, 0.0), (5, yaw + MAYA_YAW_OFFSET), (6, 1.0), (7, 1.0), (8, 1.0)):
             ch[i].add_key(unreal.FrameNumber(f), v, interpolation=unreal.MovieSceneKeyInterpolation.AUTO)
     at = b.add_track(unreal.MovieSceneSkeletalAnimationTrack)
     for row, (a0, a1, key) in enumerate(anims):

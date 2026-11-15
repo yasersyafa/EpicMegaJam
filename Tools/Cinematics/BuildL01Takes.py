@@ -59,8 +59,11 @@ mark = ts.director_mark(FOLDER, 'L01_DirectorMark', (240.0, -220.0))
 # Dining -> kitchen doorway stays closed until L01 is complete (SceneLevelRefs[L01].GateActor).
 gate = ts.gate_blocker(FOLDER, 'L01_Gate_KitchenDoor', (540.0, -695.0), (30.0, 250.0))
 
-cam_wide = ts.camera(FOLDER, 'CINE_L01_Wide', (470.0, -200.0, 180.0), yaw=164.0, pitch=-10.0)
+# z 230 / pitch -12: the bottom of the frame clears the back of the decor two-seat sofa just in front (top z 126).
+cam_wide = ts.camera(FOLDER, 'CINE_L01_Wide', (470.0, -200.0, 230.0), yaw=164.0, pitch=-12.0)
 cam_wall = ts.camera(FOLDER, 'CINE_L01_Wall', (-20.0, -20.0, 155.0), yaw=-142.0, pitch=-4.0)
+# Over Laras's shoulder from the hall doorway, so the sofa visibly cuts across her path (QA M5).
+cam_blocked = ts.camera(FOLDER, 'CINE_L01_Blocked', (-60.0, 540.0, 175.0), yaw=-105.0, pitch=-14.0)
 
 DOOR = (MAYA_START[0], MAYA_START[1], -90.0)
 STEP_IN = (-105.0, 300.0, -100.0)
@@ -76,7 +79,7 @@ ts.save(seq)
 seq = ts.sequence(SEQ_DIR, 'LS_L01_Blocked', 150)
 ts.maya_track(seq, maya, 150, [(0, STEP_IN), (15, (-112.0, 284.0, -100.0)), (45, (-112.0, 284.0, -40.0))],
               [(0, 15, 'walk'), (15, 150, 'wait')])
-ts.camera_cuts(seq, [(0, 150, cam_wide)])
+ts.camera_cuts(seq, [(0, 150, cam_blocked)])
 ts.save(seq)
 
 # MISSED_CLUE (6.5 s): reaches the centre but has nothing to react to.

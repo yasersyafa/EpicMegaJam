@@ -89,6 +89,26 @@ Ibra's `BP_ArrivalDirector` (tutorial + crew conversation) and the take system u
 
 `BuildL01Takes.py` applies the level side of this (stand-in list, hidden wardrobe, seated camera).
 
+## Notes, objective, crew and clues (15 Nov afternoon)
+
+`Tools/Cinematics/StageCrewAndClues.py` stages the level side idempotently: crew spots, wall clues, director-mark labels, the `CINE_L01_Blocked` camera cut, and the notes/objective text in the configs.
+
+| System | How it works |
+|---|---|
+| Director's Notes (Tab) | One notes system: the 3D clipboard (`WBP_DirectorNotes` on `BP_PlayerCharacter.NotesWidget`). `FilmSceneManager.RefreshDirectorNotes` fills it from `CurrentConfig.DisplayName` + `DirectorNotesText` (called in `ConfigureScene` and on every Tab). `BP_ArrivalDirector.HandleNotes` no longer opens Ibra's text overlay; it only advances tutorial stage 4 → 5 |
+| Objective | `FilmSceneManager.ApplyObjective`: empty while Ibra's intro runs, shown once `OnIntroFinished` sets `bIntroDone` (or right away when the level has no `BP_ArrivalDirector`) |
+| Crew (PRD §5.5) | `BP_CrewMember.SceneSpots` (Map SceneID → TargetPoint `CrewSpot_<Scene>_<Role>`). `FilmSceneManager.StageCrew` (in `ConfigureScene`) calls `MoveToSceneSpot` on every crew member. Spots are outside every take camera, Maya's path, the prop areas and the kitchen counters |
+| Wall clues | L01: patched doorway + frame on the west wall at y -490 (`Gameplay/Scene01/L01/Clue`), behind the start wardrobe. L02: sealed-door seams, hinges, keyhole on the hollow wall (`Gameplay/Scene02/L02/Clue`) |
+| Takes | Maya's yaw keys carry `MAYA_YAW_OFFSET` (mesh forward axis); `BP_Maya.MeshYawOffset` does the same for start points. BLOCKED uses `CINE_L01_Blocked` (over the shoulder from the hall door). `CINE_L01_Wide` sits at z 230, pitch -12, above the decor sofa in front of it |
+| Standing lamp | `BP_StandingLampProp.InteractBox` (BoxComponent, `InteractableProp`): `SM_House_Lamp_Floor` has no queryable collision, so the interact trace missed it |
+| Intro | `InitializeArrival` hides `Scene1Sofa` and turns off its collision. `StartConversation` no longer walks Crew A/B with the wardrobe and sofa |
+| Speaker label | Laras's lines in `DT_Dialogue` read "MAYA (as LARAS)" |
+
+Debug keys in `BP_PlayerController` (ignored in Shipping builds via `IsPackagedForDistribution`):
+
+- `N`: `FilmSceneManager.DebugSkipScene`. It finishes Ibra's intro, resets the take, marks the scene complete, advances, restores the view and teleports the player to the next director mark.
+- `T`: toggles global time dilation between 1 and 4.
+
 ## Interlude 01 and Transition 07
 
 `Tools/Cinematics/BuildInterludes.py` stages both beats (actors in `Gameplay/Interludes`) and fills the config fields. Run it after the L01 and L02 scripts.
@@ -142,7 +162,7 @@ Ibra's `BP_ArrivalDirector` (tutorial + crew conversation) and the take system u
 2. Ibra's `WBP_Scene01Objective` tutorial text sits in the same bottom area as `WBP_GameHUD` subtitles and overlaps them.
 3. ~~Ibra's static `PROP_Scene01_Wardrobe` and `CREW_Intro_SetDresser` are still in the room~~. Fixed by the intro hand-over (see above). Crew A stays next to the director mark on purpose.
 4. `BP_PlacementArea` is used in production but lives under `Gameplay/Testing/`. Move it in the editor when Yaser agrees.
-5. L03, the intercom, the ending cinematic and the credits trigger after the ending are not built yet. Director's Notes text from the config is not shown. Until L03 exists, the L02 success ends the demo through `EndOfDemo` (TO BE CONTINUED → credits → main menu).
+5. L03, the intercom, the ending cinematic and the credits trigger after the ending are not built yet. Until L03 exists, the L02 success ends the demo through `EndOfDemo` (TO BE CONTINUED → credits → main menu).
 6. Gates are invisible walls. A visible barrier (tape, crate) would read better.
 7. Unfocused PIE can jump game time (noted in the 15 Nov devlog). Click the viewport before timing tests.
 8. Ibra's opening owns the view for the first seconds of PIE. A take started before it ends saves his camera as `SavedViewTarget`, so test takes only after the view is back on the pawn.
