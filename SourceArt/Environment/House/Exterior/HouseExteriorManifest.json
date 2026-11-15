@@ -1,0 +1,32 @@
+[
+  {
+    "name": "SM_House_Exterior_Shrub",
+    "file": "SM_House_Exterior_Shrub.obj",
+    "triangles": 360,
+    "vertices": 273,
+    "slots": [
+      "LeafDark",
+      "LeafSage"
+    ]
+  },
+  {
+    "name": "SM_House_Exterior_LampPost",
+    "file": "SM_House_Exterior_LampPost.obj",
+    "triangles": 612,
+    "vertices": 551,
+    "slots": [
+      "Metal",
+      "Bulb"
+    ]
+  },
+  {
+    "name": "SM_House_Exterior_WallLantern",
+    "file": "SM_House_Exterior_WallLantern.obj",
+    "triangles": 560,
+    "vertices": 542,
+    "slots": [
+      "Metal",
+      "Bulb"
+    ]
+  }
+]

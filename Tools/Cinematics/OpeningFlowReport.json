@@ -1,0 +1,8 @@
+{
+  "saved": true,
+  "director": "/Game/Game/Levels/SB_GrayBox.SB_GrayBox:PersistentLevel.BP_OpeningDirector_C_2",
+  "sequence_seconds": 30,
+  "temporary_maya": "Quinn mannequin",
+  "voice_over": false,
+  "gameplay_runtime": "Blueprint + LevelSequence"
+}

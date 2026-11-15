@@ -137,6 +137,8 @@ Setelah pemain menekan E, objek masuk ke Holding State.
 
 ### 3.2 Placement System
 
+> **Update 15 Nov 2026 (v0.3): free placement menggantikan snap points.** Prop boleh diletakkan di permukaan datar mana pun (normal Z ≥ 0.85, tanpa overlap). Ghost hijau berarti valid, merah berarti tidak valid. Evaluasi tidak memakai `CurrentSlotID`. Sebagai gantinya, `BP_PlacementArea` (radius horizontal, diberi `AreaID`) menandai zona yang relevan bagi aturan scene. Beberapa area boleh berbagi `AreaID`, dan prop dianggap berada "di" `AreaID` jika pusat bounds-nya masuk salah satu area tersebut. Implementasi ada di `BP_PlayerCharacter` (`RefreshFreePlacement`, `ValidateFreePlacement`, `TryFreeInteract`, `CancelFreePlacement`). Teks snap di bawah ini adalah desain awal.
+
 Properti hanya dapat diletakkan pada predefined snap points.
 
 Alur:
@@ -336,6 +338,35 @@ Setiap CUT harus menghentikan movement, animasi, dan sequence yang sedang berjal
 Sistem harus membersihkan state sebelumnya sebelum Maya dipindahkan kembali ke starting position.
 
 Tidak boleh ada animasi, timer, atau event dari take lama yang masih memengaruhi take baru.
+
+### 5.5 Film Crew (Ambient)
+
+Kru adalah karakter latar yang membuat set terasa hidup. Kru **bukan** AI bebas (lihat Non-Goals): tidak ada navigasi, keputusan, atau interaksi dengan player, dan tidak memengaruhi evaluasi take.
+
+**Roster default per scene (4 kru, mannequin sebagai placeholder):**
+
+| Role (`E_CrewRole`) | Pos di set                    | Pose / idle                         |
+| ------------------- | ----------------------------- | ----------------------------------- |
+| CAMERA              | Di belakang kamera film       | Berdiri, tangan setinggi kepala     |
+| BOOM                | Di sisi set, di luar frame    | Kedua tangan terangkat memegang boom |
+| GAFFER              | Dekat lampu standing          | Berdiri santai, tangan di pinggang  |
+| SCRIPT              | Dekat sutradara               | Memegang catatan di depan dada      |
+
+**Reaksi terhadap `E_TakeState`:**
+
+| Take state                                            | Perilaku kru                              |
+| ----------------------------------------------------- | ----------------------------------------- |
+| SETUP, POST_TAKE                                      | Relaxed: idle santai                      |
+| TAKE_PLAYING, AWKWARD, WAITING_FOR_CUT, PERFECT_TAKE  | Focused: diam, menghadap set, tanpa suara |
+| CUTTING                                               | Kembali ke Relaxed                        |
+| FINALE, CREDITS                                       | Disembunyikan atau tetap Relaxed (ditentukan per cinematic) |
+
+**Aturan teknis:**
+
+- Kru tidak memiliki state game sendiri. `BP_FilmSceneManager` memanggil `SetCrewFocus(bool)` pada semua kru di scene aktif saat state berubah (atau kru bind ke dispatcher `OnTakeStateChanged`).
+- Semua kru memakai **satu Anim Blueprint bersama** (`ABP_Crew`). Role dipilih lewat variabel, bukan ABP terpisah.
+- Optimasi animasi: Update Rate Optimization (URO) aktif, `VisibilityBasedAnimTickOption = OnlyTickPoseWhenRendered`, multi-threaded animation update, tanpa physics/collision kompleks.
+- Kru tidak boleh menghalangi jalur Maya atau slot prop.
 
 ---
 
@@ -732,6 +763,9 @@ Requirements:
 | `BP_InteractableProp`  | Pickup, placement, `PropID`, `SceneID`, `StartSlotID`, `CurrentSlotID` |
 | `BP_PropSlot`          | Snap transform, `SlotID`, `SceneID`, `AllowedPropID`, occupancy |
 | `BP_Maya`              | Maya actor reference dan animation state             |
+| `BP_CrewMember`        | Kru ambient: `Role`, `SetCrewFocus` (Section 5.5)    |
+| `ABP_Crew`             | Anim Blueprint bersama untuk semua kru               |
+| `E_CrewRole`           | CAMERA / BOOM / GAFFER / SCRIPT                      |
 | `BP_Intercom`          | Final objective trigger                              |
 | `WBP_GameHUD`          | Interaction prompts, subtitles, objective            |
 | `WBP_DirectorNotes`    | Scene instructions                                   |
@@ -797,7 +831,7 @@ E_FlagRuleType
 
 F_Placement
   PropID              : Name
-  SlotID              : Name
+  AreaID              : Name                     // v0.3: BP_PlacementArea.AreaID (was SlotID)
 
 F_FlagRule
   FlagName            : Name
@@ -810,6 +844,7 @@ F_OutcomeRule
   TriggerIfAnyFalse   : Array<Name>              // outcome terpilih jika salah satu flag ini false
   OutcomeSequence     : Soft Object Ref <LevelSequence>
   MayaReaction        : E_MayaReaction
+  PerformanceDialogueIDs : Array<Name>           // v0.3: lines played while the outcome sequence runs
   HintDialogueIDs     : Array<Name>              // [0] samar, [1] eksplisit
   CutDialogueID       : Name
 
@@ -825,6 +860,7 @@ PDA_SceneConfig (Primary Data Asset)
   DirectorNotesText   : Text
   ReferenceImage      : Texture2D                // opsional, dipakai L03
   OpeningSequence     : Soft Object Ref <LevelSequence>
+  HintDelaySeconds    : Float                    // v0.3: delay before the hint once WAITING_FOR_CUT
   IntroDialogueIDs    : Array<Name>
   EarlyCutDialogueID  : Name
   SuccessDialogueIDs  : Array<Name>
@@ -1045,12 +1081,21 @@ Apakah build game jam cukup mendukung satu playthrough, atau perlu Save/Continue
 
 ## 17. CHANGELOG
 
+**v0.3 (15 Nov 2026)**
+
+- Placement diubah dari snap slot ke free placement, sesuai keputusan tim (§3.2).
+- `F_Placement.SlotID` diganti `AreaID`. Flag rule mengecek apakah prop berada di area (`BP_PlacementArea`), dan zona larangan ditulis sebagai `ForbidAny`.
+- `F_OutcomeRule.PerformanceDialogueIDs` dan `PDA_SceneConfig.HintDelaySeconds` ditambahkan.
+- L01 diimplementasikan dengan area: `L01_Path` (3 lingkaran sepanjang jalur pintu hall → tengah) dan `L01_WallFront` (depan dinding janggal). Detail ada di `Docs/Scene01_TakeSystem.md`.
+- Teks dialog L01: hint 1 diambil dari katalog Team Review v3.0, hint 2 (eksplisit) dari tabel §8, baris CUT/success dari katalog. `L01_CUT_MISSED` adalah baris baru.
+
 **v0.2**
 
 - Tambah Blocking, Slot Table, Flag Rules, Outcome Rules, Start & Solution untuk Level 1–3.
 - Tambah spesifikasi Reference Photo Level 3.
 - Hapus `E_TakeOutcome`; ganti dengan outcome per scene berbasis data (Section 11.4).
 - Tambah schema `PDA_SceneConfig`, struct pendukung, algoritma evaluasi, hint escalation, validation checklist.
+- Tambah Section 5.5 Film Crew (ambient, reaksi ke take state, satu ABP bersama).
 
 ---
 

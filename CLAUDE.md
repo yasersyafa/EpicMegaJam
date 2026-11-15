@@ -17,11 +17,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - `EngineAssociation` in the `.uproject` is a GUID, which points to a locally registered engine build rather than a launcher version string. Do not change it.
 - Input uses Enhanced Input (set as the default player input and input component classes in `DefaultInput.ini`).
 - Rendering defaults to Lumen GI and reflections, virtual shadow maps, ray tracing and DX12/SM6 (`DefaultEngine.ini`).
-- `GameDefaultMap` is still the template `/Engine/Maps/Templates/OpenWorld`. The working level is `Content/Game/Levels/SB_GrayBox.umap`. (TODO: point `GameDefaultMap` / `EditorStartupMap` at the real map once it exists.)
+- `GameDefaultMap` is `L_MainMenu` (menu, `BP_MenuGameMode`). `EditorStartupMap` and the working level is `Content/Game/Levels/SB_GrayBox.umap`. Both maps are listed in `MapsToCook` (`DefaultGame.ini`).
 
 ## Running and validating
 
-There are no build scripts. Open the project with `Start-Process .\EpicMegaJam.uproject`, then test in Play In Editor. Package with **Platforms > Windows > Package Project**, and pick the gameplay map explicitly while `GameDefaultMap` is still the template. Rename or move assets only inside the Unreal Editor, then fix up redirectors. `AGENTS.md` has the full style, testing and PR guidelines.
+There are no build scripts. Open the project with `Start-Process .\EpicMegaJam.uproject`, then test in Play In Editor. Package with **Platforms > Windows > Package Project**. The build starts in `L_MainMenu`. Rename or move assets only inside the Unreal Editor, then fix up redirectors. `AGENTS.md` has the full style, testing and PR guidelines.
 
 ## How to help with Blueprint work
 

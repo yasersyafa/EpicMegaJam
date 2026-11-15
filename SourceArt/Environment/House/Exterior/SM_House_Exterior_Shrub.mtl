@@ -1,0 +1,6 @@
+newmtl LeafDark
+Kd 0.0300 0.0800 0.0350
+d 1
+newmtl LeafSage
+Kd 0.0550 0.1100 0.0550
+d 1
